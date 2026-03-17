@@ -1,49 +1,51 @@
 # Programming – File I/O, Parsing & Records
 
-**Grade:** Grade 12 (IV gimnazijos klasė)
+**Grade:** Grade 12 (IV gimnazijos klasė)  
 **Semester:** Semester 1
-**Status:** 🚧 WIP
-
-| | Count |
-|-|-------|
-| Total nodes | 12 |
-| Lessons (L) | 4 |
-| Integration tasks (I) | 2 |
-| Assessments / Practice (A/P/T) | 4 |
-| Nodes with full spec | 10/12 |
 
 ---
 
-## Module Contents
+> **Teacher note:** Spec reading is critical — spec-misread is the #1 VBE failure mode.
 
-| Seq | Type | Node | Spec |
-|-----|------|------|------|
-| 15 | L | [L15(4) — Specification Reading + I/O Discipline (Foundation)](./015_L%284%29%20-%20Specification%20Reading%20+%20IO%20Discipline%20%28Foundation%29.md) | ✓ |
-| 16 | L | [L16(5) — File Input (.txt/.csv) + Robust Parsing](./016_L%285%29%20-%20File%20Input%20%28.txt.csv%29%20+%20Robust%20Parsing.md) | ✓ |
-| 17 | F | [F17 — Formative check](./017_F%280%29%20-%20Formative%20check.md) | · |
-| 18 | I | [I18(4) — Workflow 1: File → Clean Parse → Basic Aggregates](./018_I%284%29%20-%20Workflow%201%20File%20→%20Clean%20Parse%20→%20Basic%20Aggregates.md) | ✓ |
-| 19 | P | [P19(2) — Timed Micro-Sections: I/O + Parsing Speed](./019_P%282%29%20-%20Timed%20Micro-Sections%20IO%20+%20Parsing%20Speed.md) | ✓ |
-| 20 | A | [A20(2) — Practical Assessment 1: File + aggregates + formatting](./020_A%282%29%20-%20Practical%20Assessment%201%20File%20+%20aggregates%20+%20formatting.md) | ✓ |
-| 21 | L | [L21(5) — Composite Structures (Records + Arrays/Lists of Records)](./021_L%285%29%20-%20Composite%20Structures%20%28Records%20+%20ArraysLists%20of%20Records%29.md) | ✓ |
-| 22 | F | [F22 — Formative check](./022_F%280%29%20-%20Formative%20check.md) | · |
-| 23 | L | [L23(4) — Modular Architecture (Functions + Parameter Discipline)](./023_L%284%29%20-%20Modular%20Architecture%20%28Functions%20+%20Parameter%20Discipline%29.md) | ✓ |
-| 24 | I | [I24(4) — Workflow 2: Records-Based Processing (Read → Select/Filter → Report Output) - Function based](./024_I%284%29%20-%20Workflow%202%20Records-Based%20Processing%20%28Read%20→%20SelectFilter%20→%20Report%20Output%29%20-%20Func.md) | ✓ |
-| 25 | P | [P25(2) — Timed Micro-Sections: Records + Filtering Logic](./025_P%282%29%20-%20Timed%20Micro-Sections%20Records%20+%20Filtering%20Logic.md) | ✓ |
-| 26 | A | [A26(2) — Practical Assessment 2: Records + filter + report output](./026_A%282%29%20-%20Practical%20Assessment%202%20Records%20+%20filter%20+%20report%20output.md) | ✓ |
+## Lesson Index
 
-**Type key:** L = Lesson · I = Integration · A = Assessment · P = Practice · T = Timed · M = Mock · D = Diagnostic · F = Formative
-**Spec:** ✓ = full roadmap spec extracted · · = stub only
+| # | Folder | Type | Lessons |
+|---|--------|------|---------|
+| 030 | `030_L(1) - Parsing a task statement into inputs → outputs → constraints → edge cases/` | 📖 Lesson | 1 |
+| 031 | `031_L(1) - Output formatting exact spec compliance/` | 📖 Lesson | 1 |
+| 032 | `032_L(1) - Minimal “acceptance checklist” for every solution/` | 📖 Lesson | 1 |
+| 033 | `033_L(1) - Specification Reading + IO Discipline (Foundation) - Part 4/` | 📖 Lesson | 1 |
+| 034 | `034_L(1) - Reading structured lines; tokenization; handling trailing spaces empty lines/` | 📖 Lesson | 1 |
+| 035 | `035_L(1) - CSV realities (delimiters, quoted fields-lightweight handling)/` | 📖 Lesson | 1 |
+| 036 | `036_L(1) - Defensive parsing missing values, unexpected formats/` | 📖 Lesson | 1 |
+| 037 | `037_L(1) - Designing internal representation from file structure/` | 📖 Lesson | 1 |
+| 038 | `038_L(1) - File Input (.txt.csv) + Robust Parsing - Part 5/` | 📖 Lesson | 1 |
+| 039 | `039_F(1) - Formative check/` | 📌 Formative check | 1 |
+| 040 | `040_I(1) - File reading and line parsing tokenization, type conversion, encoding/` | 🔗 Integration practice | 1 |
+| 041 | `041_I(1) - Data cleaning strip whitespace, validate types, handle missing values/` | 🔗 Integration practice | 1 |
+| 042 | `042_I(1) - Aggregate computation sum, min, max, count, average with edge cases/` | 🔗 Integration practice | 1 |
+| 043 | `043_I(1) - Formatted output assembly exact spec compliance and edge case verification/` | 🔗 Integration practice | 1 |
+| 044 | `044_P(1) - Timed drill file reading and exact-format output (accuracy under speed pressure)/` | 🏃 Practice exam | 1 |
+| 045 | `045_P(1) - Timed drill tokenization, type conversion, edge inputs (parsing speed conditioni/` | 🏃 Practice exam | 1 |
+| 046 | `046_A(1) - Practical assessment file IO, aggregate computation, edge case handling/` | 📝 Assessment | 1 |
+| 047 | `047_A(1) - Output formatting verification and correctness review/` | 📝 Assessment | 1 |
+| 048 | `048_L(1) - Structrecord modeling (fields, types)/` | 📖 Lesson | 1 |
+| 049 | `049_L(1) - Arraylist of records; record inside collection; collection inside record (basic/` | 📖 Lesson | 1 |
+| 050 | `050_L(1) - Selecting field keys for sortsearch/` | 📖 Lesson | 1 |
+| 051 | `051_L(1) - Memoryclarity tradeoffs (not optimization theatre-practical clarity)/` | 📖 Lesson | 1 |
+| 052 | `052_L(1) - Composite Structures (Records + ArraysLists of Records) - Part 5/` | 📖 Lesson | 1 |
+| 053 | `053_F(1) - Formative check/` | 📌 Formative check | 1 |
+| 054 | `054_L(1) - Decomposing into functions read(), transform(), compute(), output()/` | 📖 Lesson | 1 |
+| 055 | `055_L(1) - Functions returning values/` | 📖 Lesson | 1 |
+| 056 | `056_L(1) - Passing by value vs “by addressreference” (as required by spec)/` | 📖 Lesson | 1 |
+| 057 | `057_L(1) - Unit-level reasoning what each function guarantees/` | 📖 Lesson | 1 |
+| 058 | `058_I(1) - Multi-criteria record selection filter by two or more field conditions/` | 🔗 Integration practice | 1 |
+| 059 | `059_I(1) - Aggregation over selected records sum, count, average with grouping logic/` | 🔗 Integration practice | 1 |
+| 060 | `060_I(1) - Sorted and formatted report output ordered by key, exact spec compliance/` | 🔗 Integration practice | 1 |
+| 061 | `061_I(1) - Full workflow integration read → filter → aggregate → report with edge cases/` | 🔗 Integration practice | 1 |
+| 062 | `062_P(1) - Timed record filtering with deliberate edge cases (correctness first)/` | 🏃 Practice exam | 1 |
+| 063 | `063_P(1) - Timed correctness drill edge case traps under pressure, no-error target/` | 🏃 Practice exam | 1 |
+| 064 | `064_A(1) - Practical assessment composite structure and multi-criteria selection logic/` | 📝 Assessment | 1 |
+| 065 | `065_A(1) - Report output formatting and correctness verification under assessment condition/` | 📝 Assessment | 1 |
 
 ---
-
-## Teacher Notes
-
-Spec reading is critical — spec-misread is the #1 VBE failure mode.
-
----
-
-## TODO
-
-- [ ] Fill in Learning Objectives for each node file
-- [ ] Add rubrics to all A nodes
-- [ ] Develop slides and worksheets

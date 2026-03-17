@@ -1,49 +1,47 @@
 # Exam Preparation – VBE Simulation
 
-**Grade:** Grade 12 (IV gimnazijos klasė)
+**Grade:** Grade 12 (IV gimnazijos klasė)  
 **Semester:** Semester 2
-**Status:** 🚧 WIP
-
-| | Count |
-|-|-------|
-| Total nodes | 12 |
-| Lessons (L) | 0 |
-| Integration tasks (I) | 0 |
-| Assessments / Practice (A/P/T) | 9 |
-| Nodes with full spec | 12/12 |
 
 ---
 
-## Module Contents
+> **Teacher note:** Debrief every timed task without exception. Error clinics are the highest-value sessions.
 
-| Seq | Type | Node | Spec |
-|-----|------|------|------|
-| 40 | T | [T40(3) — Timed Data Practical Sections (progressive difficulty)](./040_T%283%29%20-%20Timed%20Data%20Practical%20Sections%20%28progressive%20difficulty%29.md) | ✓ |
-| 41 | T | [T41(3) — Timed Programming Microtasks: I/O + correctness](./041_T%283%29%20-%20Timed%20Programming%20Microtasks%20IO%20+%20correctness.md) | ✓ |
-| 42 | T | [T42(3) — Timed Programming Composition: records + sort/search + output spec](./042_T%283%29%20-%20Timed%20Programming%20Composition%20records%20+%20sortsearch%20+%20output%20spec.md) | ✓ |
-| 43 | T | [T43(3) — Mixed-section “exam halves” (Data + Programming in one sitting)](./043_T%283%29%20-%20Mixed-section%20“exam%20halves”%20%28Data%20+%20Programming%20in%20one%20sitting%29.md) | ✓ |
-| 44 | A | [A44(1) — End-of-targeted-prep assessment](./044_A%281%29%20-%20End-of-targeted-prep%20assessment.md) | ✓ |
-| 45 | A | [A45(1) — Mini-mock assessment](./045_A%281%29%20-%20Mini-mock%20assessment.md) | ✓ |
-| 46 | M | [M46(3) — Mock Exam 1](./046_M%283%29%20-%20Mock%20Exam%201.md) | ✓ |
-| 47 | M | [M47(3) — Mock Exam 2](./047_M%283%29%20-%20Mock%20Exam%202.md) | ✓ |
-| 48 | M | [M48(3) — Mock Exam 3](./048_M%283%29%20-%20Mock%20Exam%203.md) | ✓ |
-| 49 | D | [D49(3) — Error pattern clinics (top 3 class-wide)](./049_D%283%29%20-%20Error%20pattern%20clinics%20%28top%203%20class-wide%29.md) | ✓ |
-| 50 | D | [D50(3) — Individualized weak-skill stations (rotation)](./050_D%283%29%20-%20Individualized%20weak-skill%20stations%20%28rotation%29.md) | ✓ |
-| 51 | D | [D51(3) — Retest loops with “no-repeat error” rule](./051_D%283%29%20-%20Retest%20loops%20with%20“no-repeat%20error”%20rule.md) | ✓ |
+## Lesson Index
 
-**Type key:** L = Lesson · I = Integration · A = Assessment · P = Practice · T = Timed · M = Mock · D = Diagnostic · F = Formative
-**Spec:** ✓ = full roadmap spec extracted · · = stub only
+| # | Folder | Type | Lessons |
+|---|--------|------|---------|
+| 104 | `104_T(1) - Timed data section 1 multi-criteria selection → groupingsubtotals (VBE format)/` | ⏱ Timed task | 1 |
+| 105 | `105_T(1) - Timed data section 2 pivot table creation → chart selection and formatting/` | ⏱ Timed task | 1 |
+| 106 | `106_T(1) - Timed data section 3 conclusion writing with show evidence discipline/` | ⏱ Timed task | 1 |
+| 107 | `107_T(1) - Timed Programming Microtasks IO + correctness - Part 1/` | ⏱ Timed task | 1 |
+| 108 | `108_T(1) - Timed Programming Microtasks IO + correctness - Part 2/` | ⏱ Timed task | 1 |
+| 109 | `109_T(1) - Timed Programming Microtasks IO + correctness - Part 3/` | ⏱ Timed task | 1 |
+| 110 | `110_T(1) - Timed task composite structures and key selection (record field operations)/` | ⏱ Timed task | 1 |
+| 111 | `111_T(1) - Timed task sorting and searching - choose algorithm, justify, implement correctl/` | ⏱ Timed task | 1 |
+| 112 | `112_T(1) - Timed output precision drill exact specification compliance under time pressure/` | ⏱ Timed task | 1 |
+| 113 | `113_T(1) - Mixed timed run 1 Data task then Programming task (switching cost + time budget/` | ⏱ Timed task | 1 |
+| 114 | `114_T(1) - Mixed timed run 2 Programming task then Data task (reset routine practice)/` | ⏱ Timed task | 1 |
+| 115 | `115_T(1) - Full mixed-section timed run minimal-error execution under exam conditions/` | ⏱ Timed task | 1 |
+| 116 | `116_A(1) - End-of-targeted-prep assessment/` | 📝 Assessment | 1 |
+| 117 | `117_A(1) - Mini-mock assessment/` | 📝 Assessment | 1 |
+| 118 | `118_M(1) - Mock exam session 1 first full exam simulation under timed conditions/` | 🎯 Mock exam | 1 |
+| 119 | `119_M(1) - Mock exam session 2 repeat or variant paper under conditions/` | 🎯 Mock exam | 1 |
+| 120 | `120_M(1) - Mock exam debrief and individual action plan creation/` | 🎯 Mock exam | 1 |
+| 121 | `121_M(1) - Mock exam session 1 full exam simulation under official conditions/` | 🎯 Mock exam | 1 |
+| 122 | `122_M(1) - Mock exam session 2 second attempt or variant paper under conditions/` | 🎯 Mock exam | 1 |
+| 123 | `123_M(1) - Mock exam debrief systematic error analysis and priority action list/` | 🎯 Mock exam | 1 |
+| 124 | `124_M(1) - Final conditioning mock session 1 performance stability under exam time pressure/` | 🎯 Mock exam | 1 |
+| 125 | `125_M(1) - Final conditioning mock session 2 output formatting discipline and pacing strate/` | 🎯 Mock exam | 1 |
+| 126 | `126_M(1) - Mock debrief and stress management review errors, finalize exam strategy/` | 🎯 Mock exam | 1 |
+| 127 | `127_D(1) - Data error clinic wrong grouping level, incorrect aggregation, misleading chart,/` | 🔁 Diagnostic / redo | 1 |
+| 128 | `128_D(1) - Programming error clinic parsing mistakes, off-by-one, wrong key selection, form/` | 🔁 Diagnostic / redo | 1 |
+| 129 | `129_D(1) - Cross-section mixed drill apply targeted corrections across both data and progra/` | 🔁 Diagnostic / redo | 1 |
+| 130 | `130_D(1) - Station A rotation Data workflow correction sprints (filtergroupaggregate errors/` | 🔁 Diagnostic / redo | 1 |
+| 131 | `131_D(1) - Station B rotation Programming IO and output specification sprints/` | 🔁 Diagnostic / redo | 1 |
+| 132 | `132_D(1) - Station C rotation Algorithm correctness sprints (sort, search, modify)/` | 🔁 Diagnostic / redo | 1 |
+| 133 | `133_D(1) - Comparable task retest 1 demonstrate elimination of previously identified error/` | 🔁 Diagnostic / redo | 1 |
+| 134 | `134_D(1) - Comparable task retest 2 demonstrate elimination of a second error class/` | 🔁 Diagnostic / redo | 1 |
+| 135 | `135_D(1) - Final verification session process reliability and error-absence confirmation/` | 🔁 Diagnostic / redo | 1 |
 
 ---
-
-## Teacher Notes
-
-Debrief every timed task without exception. Error clinics are the highest-value sessions.
-
----
-
-## TODO
-
-- [ ] Fill in Learning Objectives for each node file
-- [ ] Add rubrics to all A nodes
-- [ ] Develop slides and worksheets

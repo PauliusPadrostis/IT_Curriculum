@@ -1,0 +1,78 @@
+# A86 (1) — Structured output task: exact format compliance and edge case correctness
+
+**Type:** 📝 Assessment
+**Grade:** Grade 12 (IV gimnazijos klasė)
+**Module:** Programming – Sort/Search, Modular & Robustness
+**Semester:** Semester 2
+**Sequence:** 86 of grade year
+**Lessons allocated:** 1
+**Parent topic:** A5–A6 (2) — Practical Assessment 3: Sort/Search + Structured Output
+**Status:** 🚧 WIP
+
+---
+
+## Overview
+
+- Structured output task: exact format compliance and edge case correctness
+
+## Sub-topics
+
+- Structured output task: exact format compliance and edge case correctness
+
+---
+
+## 1️⃣ Completion Definition
+
+Student can analyse structured output task: exact format compliance and edge case correctness.
+
+## 2️⃣ Minimum Evidence
+
+Achieves ≥ 70 % on assessment items covering structured output task: exact format compliance and edge case correctness.
+
+## 3️⃣ Bloom's Taxonomy Level
+
+Level 5 — Evaluate / Analyse
+
+## 4️⃣ Readiness Gate
+
+✔ All must be true:
+
+- Records correctly stored in composite structure
+
+- Sorting matches specification exactly
+
+- Binary search used only when collection sorted (if applicable)
+
+- Search result correct for both found and not-found cases
+
+- Output formatting exactly matches specification
+
+- Program runs without runtime errors
+
+Violation of invariants or incorrect algorithm → grade penalty per rubric.
+
+---
+
+## 5️⃣ Common Failure Modes
+
+- Sorting wrong field
+
+- Incorrect comparator direction
+
+- Performing binary search on unsorted data
+
+- Off-by-one indexing errors
+
+- Not handling not-found safely
+
+- Mutating collection unintentionally
+
+- Formatting errors under pressure
+
+- Failing on single-element or empty dataset
+
+---
+
+## 📁 Resources
+
+*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*

@@ -1,0 +1,72 @@
+# L49 (1) — Array/list of records; record inside collection; collection inside record (basic nesting)
+
+**Type:** 📖 Lesson
+**Grade:** Grade 12 (IV gimnazijos klasė)
+**Module:** Programming – File I/O, Parsing & Records
+**Semester:** Semester 1
+**Sequence:** 49 of grade year
+**Lessons allocated:** 1
+**Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
+**Status:** 🚧 WIP
+
+---
+
+## Overview
+
+- Array/list of records; record inside collection; collection inside record (basic nesting)
+
+## Sub-topics
+
+- Array/list of records; record inside collection; collection inside record (basic nesting)
+
+---
+
+## 1️⃣ Completion Definition
+
+Student can explain array/list of records; record inside collection; collection inside record (basic nesting).
+
+## 2️⃣ Minimum Evidence
+
+Correctly explains array/list of records; record inside collection; collection inside record (basic nesting) in own words or in response to targeted questions without reference.
+
+## 3️⃣ Bloom's Taxonomy Level
+
+Level 2 — Understand / Remember
+
+## 4️⃣ Readiness Gate
+
+✔ All must be true:
+
+- Composite structure matches specification exactly
+
+- All parsed records correctly stored in structure
+
+- No parallel-array implementation
+
+- Field access is correct and type-safe
+
+- Aggregate computation uses structured access
+
+If structure misaligned with spec or parallel arrays used → Gate not met.
+
+---
+
+## 5️⃣ Common Failure Modes
+
+- Using multiple primitive arrays instead of composite structure
+
+- Incorrect field ordering or type mismatch
+
+- Storing entire row as string instead of structured fields
+
+- Incorrect structured access syntax
+
+- Forgetting to instantiate structure properly
+
+- Hardcoding field positions without clear mapping
+
+---
+
+## 📁 Resources
+
+*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*

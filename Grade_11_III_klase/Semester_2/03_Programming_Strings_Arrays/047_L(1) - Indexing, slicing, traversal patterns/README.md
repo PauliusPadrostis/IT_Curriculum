@@ -1,0 +1,58 @@
+# L47 (1) — Indexing, slicing, traversal patterns
+
+**Type:** 📖 Lesson
+**Grade:** Grade 11 (III gimnazijos klasė)
+**Module:** Programming – Strings, Arrays & Sort/Search
+**Semester:** Semester 2
+**Sequence:** 47 of grade year
+**Lessons allocated:** 1
+**Parent topic:** L1–L4 (4) — Strings as data structures (not “text typing”)
+**Status:** 🚧 WIP
+
+---
+
+## Overview
+
+- Indexing, slicing, traversal patterns
+
+## Sub-topics
+
+- Indexing, slicing, traversal patterns
+
+---
+
+## 1️⃣ Completion Definition
+
+Student can explain indexing, slicing, traversal patterns.
+
+## 2️⃣ Minimum Evidence
+
+Correctly explains indexing, slicing, traversal patterns in own words or in response to targeted questions without reference.
+
+## 3️⃣ Bloom's Taxonomy Level
+
+Level 2 — Understand / Remember
+
+## 4️⃣ Readiness Gate
+
+✔ All must be true:
+
+- Uses built-in string methods correctly (not manual looping unless justified)
+
+- Output format matches specification exactly
+
+- Invalid input handled explicitly
+
+- No hardcoded result logic
+
+If any condition fails → Not ready for array traversal block.
+
+## 5️⃣ Common Failure Modes
+
+*(To be defined)*
+
+---
+
+## 📁 Resources
+
+*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*

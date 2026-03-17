@@ -1,0 +1,46 @@
+# L131 (1) — Environmental impact + data-based forecasting
+
+**Type:** 📖 Lesson
+**Grade:** Grade 11 (III gimnazijos klasė)
+**Module:** Safety – Advanced Topics
+**Semester:** Semester 2
+**Sequence:** 131 of grade year
+**Lessons allocated:** 1
+**Status:** 🚧 WIP
+
+---
+
+## Overview
+
+What can be measured; what conclusions are valid; avoiding false certainty.\
+\
+
+---
+
+## 1️⃣ Completion Definition
+
+Student can explain how digital technologies impact the environment (energy consumption, e-waste, data center load, device lifecycle) and can interpret simple data trends to make a basic forecast or sustainability recommendation.
+
+## 2️⃣ Minimum Evidence
+
+Given a small dataset or chart (e.g., device usage growth, energy consumption trend), student identifies the trend direction, explains one environmental implication, and proposes one evidence-based action (e.g., device lifecycle extension, energy-saving policy).
+
+## 3️⃣ Bloom's Taxonomy Level
+
+Analyze → Evaluate
+
+## 4️⃣ Readiness Gate
+
+Can the student use the provided data trend to justify a forecast or recommendation rather than making a general sustainability statement?\
+Yes → Ready for I1\
+No → Reinforce data-to-conclusion reasoning
+
+## 5️⃣ Common Failure Modes
+
+*(To be defined)*
+
+---
+
+## 📁 Resources
+
+*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*

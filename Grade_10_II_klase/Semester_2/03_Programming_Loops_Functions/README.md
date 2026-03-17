@@ -1,46 +1,33 @@
 # Programming – Loops, Algorithms & Functions
 
-**Grade:** Grade 10 (II gimnazijos klasė)
+**Grade:** Grade 10 (II gimnazijos klasė)  
 **Semester:** Semester 2
-**Status:** 🚧 WIP
-
-| | Count |
-|-|-------|
-| Total nodes | 9 |
-| Lessons (L) | 3 |
-| Integration tasks (I) | 3 |
-| Assessments / Practice (A/P/T) | 3 |
-| Nodes with full spec | 9/9 |
 
 ---
 
-## Module Contents
+> **Teacher note:** Loops are the hardest conceptual jump. Plan for differentiated support.
 
-| Seq | Type | Node | Spec |
-|-----|------|------|------|
-| 16 | L | [L16(3) — Loops (mechanical mastery)](./016_L%283%29%20-%20Loops%20%28mechanical%20mastery%29.md) | ✓ |
-| 17 | A | [A17(1) — Practical assessment](./017_A%281%29%20-%20Practical%20assessment.md) | ✓ |
-| 18 | L | [L18(4) — One-loop algorithm patterns](./018_L%284%29%20-%20One-loop%20algorithm%20patterns.md) | ✓ |
-| 19 | A | [A19(1) — Practical assessment](./019_A%281%29%20-%20Practical%20assessment.md) | ✓ |
-| 20 | I | [I20(2) — Combined loop problems](./020_I%282%29%20-%20Combined%20loop%20problems.md) | ✓ |
-| 21 | L | [L21(2) — Basic functions + testing discipline](./021_L%282%29%20-%20Basic%20functions%20+%20testing%20discipline.md) | ✓ |
-| 22 | A | [A22(1) — Practical assessment](./022_A%281%29%20-%20Practical%20assessment.md) | ✓ |
-| 23 | I | [I23(2) — Function-based decomposition tasks](./023_I%282%29%20-%20Function-based%20decomposition%20tasks.md) | ✓ |
-| 24 | I | [I24(2) — Mini-project (console-based)](./024_I%282%29%20-%20Mini-project%20%28console-based%29.md) | ✓ |
+## Lesson Index
 
-**Type key:** L = Lesson · I = Integration · A = Assessment · P = Practice · T = Timed · M = Mock · D = Diagnostic · F = Formative
-**Spec:** ✓ = full roadmap spec extracted · · = stub only
+| # | Folder | Type | Lessons |
+|---|--------|------|---------|
+| 019 | `019_L(1) - while andor for/` | 📖 Lesson | 1 |
+| 020 | `020_L(1) - Counter pattern/` | 📖 Lesson | 1 |
+| 021 | `021_L(1) - Sentinel loop concept/` | 📖 Lesson | 1 |
+| 022 | `022_A(1) - Practical assessment/` | 📝 Assessment | 1 |
+| 023 | `023_L(1) - Sum count/` | 📖 Lesson | 1 |
+| 024 | `024_L(1) - Minimum maximum/` | 📖 Lesson | 1 |
+| 025 | `025_L(1) - Average (derived value logic)/` | 📖 Lesson | 1 |
+| 026 | `026_L(1) - Linear search (find element flag variable)/` | 📖 Lesson | 1 |
+| 027 | `027_A(1) - Practical assessment/` | 📝 Assessment | 1 |
+| 028 | `028_I(1) - Multi-pattern loop task plan before coding (count + min + search in one problem)/` | 🔗 Integration practice | 1 |
+| 029 | `029_I(1) - Multi-pattern loop task verify, debug, and structured review of solution/` | 🔗 Integration practice | 1 |
+| 030 | `030_L(1) - Defining and calling simple functions/` | 📖 Lesson | 1 |
+| 031 | `031_L(1) - Passing parameters (value only, basic level)/` | 📖 Lesson | 1 |
+| 032 | `032_A(1) - Practical assessment/` | 📝 Assessment | 1 |
+| 033 | `033_I(1) - Implement input() and compute() functions with correct parameter passing and ret/` | 🔗 Integration practice | 1 |
+| 034 | `034_I(1) - Implement output() function and integrate full three-function program/` | 🔗 Integration practice | 1 |
+| 035 | `035_I(1) - Mini-project design and implementation grade analyzer, number statistics, or men/` | 🔗 Integration practice | 1 |
+| 036 | `036_I(1) - Mini-project refinement and testing verify function use, algorithm patterns, and/` | 🔗 Integration practice | 1 |
 
 ---
-
-## Teacher Notes
-
-Loops are the hardest conceptual jump. Plan for differentiated support.
-
----
-
-## TODO
-
-- [ ] Fill in Learning Objectives for each node file
-- [ ] Add rubrics to all A nodes
-- [ ] Develop slides and worksheets

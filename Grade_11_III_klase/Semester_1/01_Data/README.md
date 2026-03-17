@@ -1,52 +1,43 @@
 # Data – Collection, Joins & Databases
 
-**Grade:** Grade 11 (III gimnazijos klasė)
+**Grade:** Grade 11 (III gimnazijos klasė)  
 **Semester:** Semester 1
-**Status:** 🚧 WIP
-
-| | Count |
-|-|-------|
-| Total nodes | 15 |
-| Lessons (L) | 3 |
-| Integration tasks (I) | 3 |
-| Assessments / Practice (A/P/T) | 6 |
-| Nodes with full spec | 12/15 |
 
 ---
 
-## Module Contents
+> **Teacher note:** Three-phase: (1) collection + reliability, (2) joins + pivot, (3) databases + queries.
 
-| Seq | Type | Node | Spec |
-|-----|------|------|------|
-| 1 | L | [L1(3) — Data collection + source reliability](./001_L%283%29%20-%20Data%20collection%20+%20source%20reliability.md) | ✓ |
-| 2 | F | [F2 — Formative check](./002_F%280%29%20-%20Formative%20check.md) | · |
-| 3 | I | [I3(3) — Workflow 1: Collect → clean → justify source quality](./003_I%283%29%20-%20Workflow%201%20Collect%20→%20clean%20→%20justify%20source%20quality.md) | ✓ |
-| 4 | P | [P4(1) — VBE 1-style closed/short-answer packet (data interpretation)](./004_P%281%29%20-%20VBE%201-style%20closedshort-answer%20packet%20%28data%20interpretation%29.md) | ✓ |
-| 5 | A | [A5(1) — Practical data workflow assessment](./005_A%281%29%20-%20Practical%20data%20workflow%20assessment.md) | ✓ |
-| 6 | L | [L6(3) — Data joining + preparation (big-data “practical” mindset)](./006_L%283%29%20-%20Data%20joining%20+%20preparation%20%28big-data%20“practical”%20mindset%29.md) | ✓ |
-| 7 | F | [F7 — Formative check](./007_F%280%29%20-%20Formative%20check.md) | · |
-| 8 | I | [I8(3) — Workflow 2: Join datasets + pivot basics → resolve mismatches → explain impact](./008_I%283%29%20-%20Workflow%202%20Join%20datasets%20+%20pivot%20basics%20→%20resolve%20mismatches%20→%20explain%20impact.md) | ✓ |
-| 9 | P | [P9(1) — Query logic drills (structured questions)](./009_P%281%29%20-%20Query%20logic%20drills%20%28structured%20questions%29.md) | ✓ |
-| 10 | A | [A10(1) — Practical data workflow assessment (joining/prep focus)](./010_A%281%29%20-%20Practical%20data%20workflow%20assessment%20%28joiningprep%20focus%29.md) | ✓ |
-| 11 | L | [L11(4) — Databases & queries (conceptual + applied)](./011_L%284%29%20-%20Databases%20&%20queries%20%28conceptual%20+%20applied%29.md) | ✓ |
-| 12 | F | [F12 — Formative check](./012_F%280%29%20-%20Formative%20check.md) | · |
-| 13 | I | [I13(3) — Workflow 3: Query reasoning set (interpret results + choose correct query)](./013_I%283%29%20-%20Workflow%203%20Query%20reasoning%20set%20%28interpret%20results%20+%20choose%20correct%20query%29.md) | ✓ |
-| 14 | P | [P14(1) — Timed mixed mini-set (data lifecycle)](./014_P%281%29%20-%20Timed%20mixed%20mini-set%20%28data%20lifecycle%29.md) | ✓ |
-| 15 | A | [A15(1) — Query reasoning](./015_A%281%29%20-%20Query%20reasoning.md) | ✓ |
+## Lesson Index
 
-**Type key:** L = Lesson · I = Integration · A = Assessment · P = Practice · T = Timed · M = Mock · D = Diagnostic · F = Formative
-**Spec:** ✓ = full roadmap spec extracted · · = stub only
+| # | Folder | Type | Lessons |
+|---|--------|------|---------|
+| 001 | `001_L(1) - Collecting from multiple sources; metadata basics/` | 📖 Lesson | 1 |
+| 002 | `002_L(1) - Source credibility & bias indicators/` | 📖 Lesson | 1 |
+| 003 | `003_L(1) - Recording provenance (where data came from, when, how)/` | 📖 Lesson | 1 |
+| 004 | `004_F(1) - Formative check/` | 📌 Formative check | 1 |
+| 005 | `005_I(1) - Collect a small dataset identify source and document data provenance/` | 🔗 Integration practice | 1 |
+| 006 | `006_I(1) - Clean data handle missing values, inconsistent formats, and obvious errors/` | 🔗 Integration practice | 1 |
+| 007 | `007_I(1) - Justify source quality written assessment of data reliability and limitations/` | 🔗 Integration practice | 1 |
+| 008 | `008_P(1) - VBE 1-style closedshort-answer packet (data interpretation)/` | 🏃 Practice exam | 1 |
+| 009 | `009_A(1) - Practical data workflow assessment/` | 📝 Assessment | 1 |
+| 010 | `010_L(1) - Joining datasets (keys, mismatches, duplicates)/` | 📖 Lesson | 1 |
+| 011 | `011_L(1) - Cleaning missing values, inconsistent categories, type conversion/` | 📖 Lesson | 1 |
+| 012 | `012_L(1) - “Analysis-ready table” criteria/` | 📖 Lesson | 1 |
+| 013 | `013_F(1) - Formative check/` | 📌 Formative check | 1 |
+| 014 | `014_I(1) - Join two datasets identify matching keys, perform join, check for mismatches/` | 🔗 Integration practice | 1 |
+| 015 | `015_I(1) - Pivot basics construct a pivot from joined data to answer a question/` | 🔗 Integration practice | 1 |
+| 016 | `016_I(1) - Resolve join mismatches and explain how they change the conclusions drawn/` | 🔗 Integration practice | 1 |
+| 017 | `017_P(1) - Query logic drills (structured questions)/` | 🏃 Practice exam | 1 |
+| 018 | `018_A(1) - Practical data workflow assessment (joiningprep focus)/` | 📝 Assessment | 1 |
+| 019 | `019_L(1) - Tablerecordfield; primary key; relationships (basic)/` | 📖 Lesson | 1 |
+| 020 | `020_L(1) - Query logic selection (WHERE), sorting (ORDER), groupingaggregation (conceptual)/` | 📖 Lesson | 1 |
+| 021 | `021_L(1) - Reading query results and explaining what a query does/` | 📖 Lesson | 1 |
+| 022 | `022_L(1) - Common mistakes wrong condition, wrong join assumption, aggregation misuse/` | 📖 Lesson | 1 |
+| 023 | `023_F(1) - Formative check/` | 📌 Formative check | 1 |
+| 024 | `024_I(1) - What does this query return - VBE 1 style analysis drill (part 1)/` | 🔗 Integration practice | 1 |
+| 025 | `025_I(1) - What does this query return - VBE 1 style analysis drill (part 2, different quer/` | 🔗 Integration practice | 1 |
+| 026 | `026_I(1) - Choose the correct query and explain why the alternatives fail/` | 🔗 Integration practice | 1 |
+| 027 | `027_P(1) - Timed mixed mini-set (data lifecycle)/` | 🏃 Practice exam | 1 |
+| 028 | `028_A(1) - Query reasoning/` | 📝 Assessment | 1 |
 
 ---
-
-## Teacher Notes
-
-Three-phase: (1) collection + reliability, (2) joins + pivot, (3) databases + queries.
-
----
-
-## TODO
-
-- [ ] Fill in Learning Objectives for each node file
-- [ ] Add rubrics to all A nodes
-- [ ] Develop slides and worksheets

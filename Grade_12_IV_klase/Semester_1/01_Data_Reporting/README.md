@@ -1,51 +1,44 @@
 # Data – Reporting & Analysis
 
-**Grade:** Grade 12 (IV gimnazijos klasė)
+**Grade:** Grade 12 (IV gimnazijos klasė)  
 **Semester:** Semester 1
-**Status:** 🚧 WIP
-
-| | Count |
-|-|-------|
-| Total nodes | 14 |
-| Lessons (L) | 5 |
-| Integration tasks (I) | 4 |
-| Assessments / Practice (A/P/T) | 4 |
-| Nodes with full spec | 13/14 |
 
 ---
 
-## Module Contents
+> **Teacher note:** Pivot tables are exam-critical. Students confuse grouping with filtering — address explicitly.
 
-| Seq | Type | Node | Spec |
-|-----|------|------|------|
-| 1 | L | [L1(3) — Data structure hygiene for reporting](./001_L%283%29%20-%20Data%20structure%20hygiene%20for%20reporting.md) | ✓ |
-| 2 | L | [L2(3) — Multi-criteria sorting + filtering logic](./002_L%283%29%20-%20Multi-criteria%20sorting%20+%20filtering%20logic.md) | ✓ |
-| 3 | L | [L3(4) — Grouping + subtotals (tarpinės sumos) as report mechanics](./003_L%284%29%20-%20Grouping%20+%20subtotals%20%28tarpinės%20sumos%29%20as%20report%20mechanics.md) | ✓ |
-| 4 | L | [L4(4) — Pivot Tables (Suvestinės) and Report Layouts (Ataskaitos)](./004_L%284%29%20-%20Pivot%20Tables%20%28Suvestinės%29%20and%20Report%20Layouts%20%28Ataskaitos%29.md) | ✓ |
-| 5 | L | [L5(2) — Chart Choice + Narrative Conclusions](./005_L%282%29%20-%20Chart%20Choice%20+%20Narrative%20Conclusions.md) | ✓ |
-| 6 | F | [F6 — Formative Check (mini-quiz) - End of L16](./006_F%280%29%20-%20Formative%20Check%20%28mini-quiz%29%20-%20End%20of%20L16.md) | · |
-| 7 | I | [I7(2) — Workflow 1: Clean → Filter/Sort → Subtotals → Conclusion](./007_I%282%29%20-%20Workflow%201%20Clean%20→%20FilterSort%20→%20Subtotals%20→%20Conclusion.md) | ✓ |
-| 8 | I | [I8(2) — Workflow 2: Clean → Pivot report → Chart → Conclusion](./008_I%282%29%20-%20Workflow%202%20Clean%20→%20Pivot%20report%20→%20Chart%20→%20Conclusion.md) | ✓ |
-| 9 | I | [I9(2) — Workflow 3: Compare Two Report Methods (Subtotals vs Pivot)](./009_I%282%29%20-%20Workflow%203%20Compare%20Two%20Report%20Methods%20%28Subtotals%20vs%20Pivot%29.md) | ✓ |
-| 10 | I | [I10(2) — Workflow 4: Multi-Question Packet (Mini “Exam Set”)](./010_I%282%29%20-%20Workflow%204%20Multi-Question%20Packet%20%28Mini%20“Exam%20Set”%29.md) | ✓ |
-| 11 | P | [P11(1) — Timed Execution Rehearsal (Data Practical Simulation)](./011_P%281%29%20-%20Timed%20Execution%20Rehearsal%20%28Data%20Practical%20Simulation%29.md) | ✓ |
-| 12 | P | [P12(1) — Quality Checklist + Error Taxonomy](./012_P%281%29%20-%20Quality%20Checklist%20+%20Error%20Taxonomy.md) | ✓ |
-| 13 | A | [A13(1) — Practical Data Task (Graded)](./013_A%281%29%20-%20Practical%20Data%20Task%20%28Graded%29.md) | ✓ |
-| 14 | A | [A14(1) — Structured Written / Interpretation Check (Graded)](./014_A%281%29%20-%20Structured%20Written%20Interpretation%20Check%20%28Graded%29.md) | ✓ |
+## Lesson Index
 
-**Type key:** L = Lesson · I = Integration · A = Assessment · P = Practice · T = Timed · M = Mock · D = Diagnostic · F = Formative
-**Spec:** ✓ = full roadmap spec extracted · · = stub only
+| # | Folder | Type | Lessons |
+|---|--------|------|---------|
+| 001 | `001_L(1) - Dataset integrity headers, types, missing values, duplicates/` | 📖 Lesson | 1 |
+| 002 | `002_L(1) - Converting “raw export” → analysis-ready table/` | 📖 Lesson | 1 |
+| 003 | `003_L(1) - Reproducible cleaning log (what changed, why)/` | 📖 Lesson | 1 |
+| 004 | `004_L(1) - Multi-level sorting (primarysecondary keys)/` | 📖 Lesson | 1 |
+| 005 | `005_L(1) - Multi-criteria filtering (ANDOR logic)/` | 📖 Lesson | 1 |
+| 006 | `006_L(1) - “Filter-as-question” turning prompt into selection rules/` | 📖 Lesson | 1 |
+| 007 | `007_L(1) - Grouping rules (what can be grouped, when grouping fails)/` | 📖 Lesson | 1 |
+| 008 | `008_L(1) - Subtotal logic countssumsaverages by group/` | 📖 Lesson | 1 |
+| 009 | `009_L(1) - Nested grouping and “resetting totals”/` | 📖 Lesson | 1 |
+| 010 | `010_L(1) - Reading subtotal output as evidence for conclusions/` | 📖 Lesson | 1 |
+| 011 | `011_L(1) - Pivot design dimensions vs measures/` | 📖 Lesson | 1 |
+| 012 | `012_L(1) - Multi-dimensional pivot interpretation (rowscolumnsfilters)/` | 📖 Lesson | 1 |
+| 013 | `013_L(1) - Pivot formatting for a “submit-ready” report/` | 📖 Lesson | 1 |
+| 014 | `014_L(1) - Common pivot mistakes (double-counting, wrong aggregation)/` | 📖 Lesson | 1 |
+| 015 | `015_L(1) - Chart selection logic (what question → what chart)/` | 📖 Lesson | 1 |
+| 016 | `016_L(1) - Writing conclusions grounded in computed evidence (not vibes)/` | 📖 Lesson | 1 |
+| 017 | `017_F(1) - Formative Check (mini-quiz) - End of L16/` | 📌 Formative check | 1 |
+| 018 | `018_I(1) - Data cleaning pipeline applied to a real dataset validate, strip, correct/` | 🔗 Integration practice | 1 |
+| 019 | `019_I(1) - Filter and sort, then compute subtotals and write a short written conclusion/` | 🔗 Integration practice | 1 |
+| 020 | `020_I(1) - Design and build a pivot report that answers a clearly stated question/` | 🔗 Integration practice | 1 |
+| 021 | `021_I(1) - Select and create a chart that matches the message; write a conclusion/` | 🔗 Integration practice | 1 |
+| 022 | `022_I(1) - Build a subtotal-based report and interpret the results/` | 🔗 Integration practice | 1 |
+| 023 | `023_I(1) - Build a pivot-based report for the same question; compare both and justify which/` | 🔗 Integration practice | 1 |
+| 024 | `024_I(1) - Multi-technique switching task filter → pivot → chart (time-budgeting strategy)/` | 🔗 Integration practice | 1 |
+| 025 | `025_I(1) - Written inference task draw conclusions from results and justify with evidence/` | 🔗 Integration practice | 1 |
+| 026 | `026_P(1) - Timed Execution Rehearsal (Data Practical Simulation)/` | 🏃 Practice exam | 1 |
+| 027 | `027_P(1) - Quality Checklist + Error Taxonomy/` | 🏃 Practice exam | 1 |
+| 028 | `028_A(1) - Practical Data Task (Graded)/` | 📝 Assessment | 1 |
+| 029 | `029_A(1) - Structured Written Interpretation Check (Graded)/` | 📝 Assessment | 1 |
 
 ---
-
-## Teacher Notes
-
-Pivot tables are exam-critical. Students confuse grouping with filtering — address explicitly.
-
----
-
-## TODO
-
-- [ ] Fill in Learning Objectives for each node file
-- [ ] Add rubrics to all A nodes
-- [ ] Develop slides and worksheets
