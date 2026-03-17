@@ -6,19 +6,31 @@
 
 ---
 
-## Structure
-
-Each grade → semester → module → **one file per node**.
+## Folder structure
 
 ```
 Grade_9_I_klase/
   Semester_1/
     01_Safety/
       README.md                              ← module index
-      L1 (1) - Ergonomics & healthy computer use.md
-      L2 (1) - Privacy & account safety.md
+      001_L(1) - Ergonomics & healthy computer use.md
+      002_L(1) - Privacy & account safety.md
       ...
 ```
+
+## Filename format
+
+```
+[seq]_[type]([lessons]) - [name].md
+ ^^^   ^      ^^^          ^^^
+ │     │      │            └─ descriptive name (old range prefix stripped)
+ │     │      └─ lesson count for this block
+ │     └─ node type: L/I/A/P/T/M/D/F
+ └─ sequential position in grade year (resets each grade, zero-padded to 3 digits)
+```
+
+Example: `007_L(1) - Computer components overview.md`
+Inside the file, the title reads: `# L7 (1) — Computer components overview`
 
 ## Grades
 
@@ -29,24 +41,9 @@ Grade_9_I_klase/
 | [Grade_11_III_klase](./Grade_11_III_klase/) | Grade 11 | Data · Digital content · Arrays · AI ethics · Networks |
 | [Grade_12_IV_klase](./Grade_12_IV_klase/) | Grade 12 | Advanced data/programming · VBE exam prep |
 
-## Node file anatomy
-
-Each node `.md` contains:
-1. **Context** — why this node exists in the sequence
-2. **Sub-topics** — bullet list of specific skills/concepts
-3. **Completion Definition** — observable capability (what "done" looks like)
-4. **Minimum Evidence** — what students must independently produce
-5. **Cognitive Level** — Bloom's taxonomy level
-6. **Readiness Gate** — binary pass/fail criteria before moving on
-7. **Common Failure Modes** — known pitfalls
-8. **Learning Objectives** *(to be filled in)*
-9. **Resources & Materials** *(to be filled in)*
-10. **Teacher Notes** *(to be filled in)*
-
 ## Open TODOs
 
 - [ ] Fill in Learning Objectives for every node file
 - [ ] Add rubrics/marking schemes to all Assessment nodes
 - [ ] Develop slide decks and student worksheets
 - [ ] Review Grade 12 Exam Prep against current VBE spec
-- [ ] Translate module content to Lithuanian where needed

@@ -1,6 +1,6 @@
 # Grade 11 (III gimnazijos klasė)
 
-The most content-rich year. Deep data literacy, advanced programming (strings, arrays, files, subprograms), digital content, safety, virtual communications, and networks.
+Data literacy, advanced programming (strings/arrays/files/subprograms), digital content, safety, comms, networks.
 
 ## Modules
 
@@ -20,12 +20,13 @@ The most content-rich year. Deep data literacy, advanced programming (strings, a
 
 ## Lesson-type key
 
-| Code | Type |
-|------|------|
-| L | Lesson (theory/skill) |
-| P | Practice / timed exercise |
-| A | Assessment |
-| I | Integrated workflow / project task |
+| Code | Meaning |
+|------|---------|
+| L | Lesson (theory / skill-building) |
+| I | Integration (workflow / project task) |
+| A | Assessment (graded) |
+| P | Practice (timed or structured) |
 | T | Timed exam-simulation task |
 | M | Mock exam |
 | D | Diagnostic |
+| F | Formative check (ungraded) |

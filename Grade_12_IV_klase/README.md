@@ -1,6 +1,6 @@
 # Grade 12 (IV gimnazijos klasė)
 
-Execution year. Advanced data reporting and programming. Heavy VBE exam simulation throughout both semesters.
+Execution year: advanced data reporting, advanced programming, heavy VBE exam simulation.
 
 ## Modules
 
@@ -15,12 +15,13 @@ Execution year. Advanced data reporting and programming. Heavy VBE exam simulati
 
 ## Lesson-type key
 
-| Code | Type |
-|------|------|
-| L | Lesson (theory/skill) |
-| P | Practice / timed exercise |
-| A | Assessment |
-| I | Integrated workflow / project task |
+| Code | Meaning |
+|------|---------|
+| L | Lesson (theory / skill-building) |
+| I | Integration (workflow / project task) |
+| A | Assessment (graded) |
+| P | Practice (timed or structured) |
 | T | Timed exam-simulation task |
 | M | Mock exam |
 | D | Diagnostic |
+| F | Formative check (ungraded) |

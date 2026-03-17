@@ -1,6 +1,6 @@
 # Grade 10 (II gimnazijos klasė)
 
-Spreadsheet data literacy followed by programming fundamentals — variables, conditionals, loops, and an introduction to functions.
+Spreadsheet data literacy followed by programming fundamentals — variables, conditionals, loops, functions.
 
 ## Modules
 
@@ -14,12 +14,13 @@ Spreadsheet data literacy followed by programming fundamentals — variables, co
 
 ## Lesson-type key
 
-| Code | Type |
-|------|------|
-| L | Lesson (theory/skill) |
-| P | Practice / timed exercise |
-| A | Assessment |
-| I | Integrated workflow / project task |
+| Code | Meaning |
+|------|---------|
+| L | Lesson (theory / skill-building) |
+| I | Integration (workflow / project task) |
+| A | Assessment (graded) |
+| P | Practice (timed or structured) |
 | T | Timed exam-simulation task |
 | M | Mock exam |
 | D | Diagnostic |
+| F | Formative check (ungraded) |

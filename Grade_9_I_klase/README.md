@@ -1,6 +1,6 @@
 # Grade 9 (I gimnazijos klasė)
 
-Introduction to IT fundamentals — hardware, safety, computer graphics, and a choice specialisation track (digital printing or website design). Ends with a small project.
+Introduction to IT fundamentals — hardware, safety, computer graphics, and a choice specialisation track.
 
 ## Modules
 
@@ -18,12 +18,13 @@ Introduction to IT fundamentals — hardware, safety, computer graphics, and a c
 
 ## Lesson-type key
 
-| Code | Type |
-|------|------|
-| L | Lesson (theory/skill) |
-| P | Practice / timed exercise |
-| A | Assessment |
-| I | Integrated workflow / project task |
+| Code | Meaning |
+|------|---------|
+| L | Lesson (theory / skill-building) |
+| I | Integration (workflow / project task) |
+| A | Assessment (graded) |
+| P | Practice (timed or structured) |
 | T | Timed exam-simulation task |
 | M | Mock exam |
 | D | Diagnostic |
+| F | Formative check (ungraded) |
