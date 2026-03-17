@@ -1,0 +1,31 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temp / build artifacts
+*.tmp
+*.bak
+*.log
+
+# Node (if you ever add tooling)
+node_modules/
+package-lock.json
+
+# Python (if you ever add scripts)
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Export / scratch files
+*_export.json
+*_nodes.json
+informatika_node_contents.json
