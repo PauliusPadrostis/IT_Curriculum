@@ -15,11 +15,11 @@
 | 035 | `035_L - Visual hierarchy in web pages/` | 📖 Lesson |
 | 036 | `036_L - Image size & optimization awareness/` | 📖 Lesson |
 | 037 | `037_L - Publishing concept (local vs online)/` | 📖 Lesson |
-| 038 | `038_I - Prepare logo and images correct sizing, format, and web optimization/` | 🔗 Integration practice |
-| 039 | `039_I - Prepare icons and organize asset folder structure for web integration/` | 🔗 Integration practice |
+| 038 | `038_I - Prepare logo and images correct sizing/` | 🔗 Integration practice |
+| 039 | `039_I - Prepare icons and organize asset folder/` | 🔗 Integration practice |
 | 040 | `040_F - Checkpoint submission (feedback)/` | 📌 Formative check |
-| 041 | `041_I - Structure HTML semantic elements, hierarchy, and navigation/` | 🔗 Integration practice |
-| 042 | `042_I - Integrate optimized images and achieve coherent visual flow across the page/` | 🔗 Integration practice |
+| 041 | `041_I - Structure HTML semantic elements, hierarchy/` | 🔗 Integration practice |
+| 042 | `042_I - Integrate optimized images and achieve/` | 🔗 Integration practice |
 | 043 | `043_P - Web checklist rehearsal/` | 🏃 Practice exam |
 | 044 | `044_A - Practical web page submission/` | 📝 Assessment |
 

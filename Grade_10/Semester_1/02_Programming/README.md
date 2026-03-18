@@ -12,7 +12,7 @@
 | # | Folder | Type |
 |---|--------|------|
 | 011 | `011_L - What a program is (input → process → output model)/` | 📖 Lesson |
-| 012 | `012_L - Development environment basics (run, error messages, print)/` | 📖 Lesson |
+| 012 | `012_L - Development environment basics/` | 📖 Lesson |
 | 013 | `013_L - Variables + assignment/` | 📖 Lesson |
 | 014 | `014_L - if else structure/` | 📖 Lesson |
 | 015 | `015_L - Comparison operators/` | 📖 Lesson |

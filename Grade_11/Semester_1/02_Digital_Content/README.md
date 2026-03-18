@@ -22,12 +22,12 @@
 | 037 | `037_L - Manipulation via scale, cropping, selective display/` | 📖 Lesson |
 | 038 | `038_L - Misleading infographics and distortion/` | 📖 Lesson |
 | 039 | `039_F - Formative check/` | 📌 Formative check |
-| 040 | `040_I - Choose data representation and design visual layout dataset → charttable selecti/` | 🔗 Integration practice |
-| 041 | `041_I - Write a short justification of visual choices made in the poster design/` | 🔗 Integration practice |
-| 042 | `042_I - Design infographic structure title, key metric, chart, and supporting elements w/` | 🔗 Integration practice |
-| 043 | `043_I - Apply consistency rules and refine for clarity over decoration; produce final ve/` | 🔗 Integration practice |
-| 044 | `044_I - Analyse a poorly designed visual identify manipulation techniques and structural/` | 🔗 Integration practice |
-| 045 | `045_I - Redesign the visual and write a justification of improvements made/` | 🔗 Integration practice |
+| 040 | `040_I - Choose data representation and design visual/` | 🔗 Integration practice |
+| 041 | `041_I - Write a short justification of visual choices/` | 🔗 Integration practice |
+| 042 | `042_I - Design infographic structure title, key/` | 🔗 Integration practice |
+| 043 | `043_I - Apply consistency rules and refine for clarity/` | 🔗 Integration practice |
+| 044 | `044_I - Analyse a poorly designed visual identify/` | 🔗 Integration practice |
+| 045 | `045_I - Redesign the visual and write a justification/` | 🔗 Integration practice |
 | 046 | `046_A - Practical Design Assessment/` | 📝 Assessment |
 
 ---

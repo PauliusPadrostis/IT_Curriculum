@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -1d \"C:\\\\Users\\\\Paulius\\\\Documents\\\\informatika-curriculum/Grade_10/Semester_1/\"*)",
+      "Read(//c/Users/Paulius/Documents/informatika-curriculum/**)",
+      "Bash(python /tmp/do_renames.py)"
+    ]
+  }
+}

@@ -6,44 +6,55 @@
 
 ---
 
-## Folder structure
+## Structure
 
 ```
-Grade_9_I_klase/
-  Semester_1/
-    01_Safety/
-      README.md                              ← module index
-      001_L(1) - Ergonomics & healthy computer use.md
-      002_L(1) - Privacy & account safety.md
-      ...
+informatika-curriculum/
+├── Grade_9/                         ← Year 9: Safety · Hardware · Graphics · Specialisation
+│   ├── README.md
+│   ├── Semester_1/
+│   │   ├── README.md
+│   │   ├── 01_Safety/
+│   │   │   ├── README.md            ← module index (lesson list, teacher note)
+│   │   │   ├── 001_L - Ergonomics & healthy computer use/
+│   │   │   │   └── README.md        ← lesson (overview, Bloom level, evidence, gate)
+│   │   │   └── ...
+│   │   └── ...
+│   └── Semester_2/
+│       └── ...
+├── Grade_10/                        ← Year 10: Spreadsheets · Programming fundamentals
+├── Grade_11/                        ← Year 11: Data · Digital content · Arrays · AI ethics · Networks
+└── Grade_12/                        ← Year 12: Advanced data/programming · VBE exam prep
 ```
 
-## Filename format
+Each lesson folder contains a single `README.md` with:
+- **Overview** – what the lesson covers
+- **Completion definition** – what "done" looks like
+- **Minimum evidence** – artefact required
+- **Bloom's level** – cognitive demand
+- **Readiness gate** – prerequisite check
+- **Resources** – placeholder for materials
 
-```
-[seq]_[type]([lessons]) - [name].md
- ^^^   ^      ^^^          ^^^
- │     │      │            └─ descriptive name (old range prefix stripped)
- │     │      └─ lesson count for this block
- │     └─ node type: L/I/A/P/T/M/D/F
- └─ sequential position in grade year (resets each grade, zero-padded to 3 digits)
-```
+Lesson folder naming: `NNN_T - Short description/`
+- `NNN` – sequence number within the grade year (zero-padded, resets each grade)
+- `T` – type code: `L` Lesson · `A` Assessment · `I` Integration practice · `P` Practice drill · `F` Formative check · `T` Timed task · `M` Mock · `D` Diagnostic
 
-Example: `007_L(1) - Computer components overview.md`
-Inside the file, the title reads: `# L7 (1) — Computer components overview`
+---
 
 ## Grades
 
 | Folder | Year | Theme |
 |--------|------|-------|
-| [Grade_9_I_klase](./Grade_9_I_klase/) | Grade 9 | Safety · Hardware · Graphics · Specialisation |
-| [Grade_10_II_klase](./Grade_10_II_klase/) | Grade 10 | Spreadsheets · Programming fundamentals |
-| [Grade_11_III_klase](./Grade_11_III_klase/) | Grade 11 | Data · Digital content · Arrays · AI ethics · Networks |
-| [Grade_12_IV_klase](./Grade_12_IV_klase/) | Grade 12 | Advanced data/programming · VBE exam prep |
+| [Grade_9](./Grade_9/) | Grade 9 | Safety · Hardware · Graphics · Specialisation |
+| [Grade_10](./Grade_10/) | Grade 10 | Spreadsheets · Programming fundamentals |
+| [Grade_11](./Grade_11/) | Grade 11 | Data · Digital content · Arrays · AI ethics · Networks |
+| [Grade_12](./Grade_12/) | Grade 12 | Advanced data/programming · VBE exam prep |
+
+---
 
 ## Open TODOs
 
-- [ ] Fill in Learning Objectives for every node file
+- [ ] Fill in learning objectives for every lesson
 - [ ] Add rubrics/marking schemes to all Assessment nodes
 - [ ] Develop slide decks and student worksheets
 - [ ] Review Grade 12 Exam Prep against current VBE spec

@@ -13,14 +13,14 @@
 |---|--------|------|
 | 101 | `101_L - Choosing representation by question type/` | 📖 Lesson |
 | 102 | `102_L - Chart misuse and misleading visuals/` | 📖 Lesson |
-| 103 | `103_L - Map use cases (when geography matters, when it doesn’t)/` | 📖 Lesson |
+| 103 | `103_L - Map use cases (when geography matters, when it/` | 📖 Lesson |
 | 104 | `104_F - Formative check/` | 📌 Formative check |
-| 105 | `105_I - Dataset → choose appropriate visualization type (charttable) and build it/` | 🔗 Integration practice |
-| 106 | `106_I - Write a short conclusion data → claim → evidence (structured argumentation)/` | 🔗 Integration practice |
-| 107 | `107_I - Add AIethics lens identify what could go wrong if this data is used for decision/` | 🔗 Integration practice |
-| 108 | `108_L - Neural networkAI application interpretation at a user level/` | 📖 Lesson |
+| 105 | `105_I - Dataset → choose appropriate visualization/` | 🔗 Integration practice |
+| 106 | `106_I - Write a short conclusion data → claim/` | 🔗 Integration practice |
+| 107 | `107_I - Add AIethics lens identify what could go wrong/` | 🔗 Integration practice |
+| 108 | `108_L - Neural networkAI application interpretation/` | 📖 Lesson |
 | 109 | `109_L - What data drives AI outcomes (training data impact)/` | 📖 Lesson |
-| 110 | `110_L - Ethical risks (bias, privacy) + regulation logic (why rules exist)/` | 📖 Lesson |
+| 110 | `110_L - Ethical risks (bias, privacy) + regulation/` | 📖 Lesson |
 | 111 | `111_F - Formative check/` | 📌 Formative check |
 | 112 | `112_P - Short argument responses (ethicsregulation)/` | 🏃 Practice exam |
 | 113 | `113_A - Analytical extension (VBE 1 style)/` | 📝 Assessment |

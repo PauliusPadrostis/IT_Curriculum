@@ -19,7 +19,7 @@
 | 014 | `014_F - Retrieval checks/` | 📌 Formative check |
 | 015 | `015_I - Troubleshooting simulation/` | 🔗 Integration practice |
 | 016 | `016_I - Safe e-service workflow task/` | 🔗 Integration practice |
-| 017 | `017_P - Concept consolidation map (components → roles → risks)/` | 🏃 Practice exam |
+| 017 | `017_P - Concept consolidation map/` | 🏃 Practice exam |
 | 018 | `018_A - Troubleshooting + E. services/` | 📝 Assessment |
 
 ---
