@@ -1,45 +1,71 @@
-# L4 — Environmental impact of digital technologies
+# 004_L — Skaitmeninių technologijų poveikis aplinkai
 
-**Type:** 📖 Lesson
-**Grade:** Grade 9
-**Module:** Safety
-**Semester:** Semester 1
-**Sequence:** 4 of grade year
-**Status:** 🚧 WIP
-
----
-
-## Overview
-
-Energy use, e-waste, how tech can support sustainability.
+| Laukas          | Reikšmė                                          |
+|-----------------|---------------------------------------------------|
+| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Klasė**       | 9                                                 |
+| **Semestras**   | 1                                                 |
+| **Tema**        | Sauga                                             |
+| **Eilės nr.**   | 004 iš metų sekos                                 |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
-## 1️⃣ Completion Definition
+## Apžvalga
 
-Student explains how digital technologies affect environment (energy, e-waste, data centers) and proposes one mitigation strategy.
-
-## 2️⃣ Minimum Evidence
-
-Short structured explanation linking cause → impact → mitigation.
-
-## 3️⃣ Bloom's Taxonomy Level
-
-Understand → Apply.
-
-## 4️⃣ Readiness Gate
-
-If student cannot connect digital behavior to environmental consequence, topic not complete.
-
-## 5️⃣ Common Failure Modes
-
-*(To be defined)*
+Mokiniai nagrinėja, kaip skaitmeninės technologijos veikia aplinką: energijos suvartojimas (duomenų centrai, įrenginiai), elektroninės atliekos (e-waste) ir galimybės mažinti neigiamą poveikį. Pamoka susieja kasdienį skaitmeninį elgesį su aplinkos pasekmėmis.
 
 ---
 
-## 📁 Resources
+## Mokymosi tikslai
 
-*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*
+Pasibaigus pamokai, mokinys gebės:
+
+1. Įvardinti tris pagrindinius būdus, kuriais skaitmeninės technologijos veikia aplinką.
+2. Paaiškinti priežasties–pasekmės ryšį tarp skaitmeninio elgesio ir aplinkos poveikio.
+3. Pasiūlyti bent vieną konkrečią priemonę neigiamam poveikiui mažinti.
+
+---
+
+## Bloom taksonomijos lygis
+
+**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.
+
+---
+
+## Dažniausios klaidos
+
+Bus papildyta po pirmos pamokos vykdymo.
+
+---
+
+## Trukmė
+
+**1 pamoka (40 min)**
+
+---
+
+## Namų darbas
+
+Nėra.
+
+---
+
+## 📁 Reikalingi failai
+
+| Failas               | Būsena | Pastaba                                      |
+|----------------------|--------|----------------------------------------------|
+| Teacher_Plan.docx    | ❌     | Privalomas                                   |
+| Visual_Aid.pdf       | ❌     | Infografika: energija, e-waste, duomenų centrai |
+| Student_Task.docx    | ❌     | Priežastis → poveikis → sprendimas lapas     |
+
+---
+
+## Papildomi ištekliai
+
+Nėra.
+
+---
 
 ## 📌 Embedded Formative Check
 

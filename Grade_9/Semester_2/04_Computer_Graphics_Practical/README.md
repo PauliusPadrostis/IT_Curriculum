@@ -11,7 +11,7 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 021 | `021_P - Applying learned knowledge + design principle/` | 🏃 Practice exam |
-| 022 | `022_A - Technical graphics assessment/` | 📝 Assessment |
+| 019 | `019_P - Applying learned knowledge + design principle/` | 🏃 Practice exam |
+| 020 | `020_A - Technical graphics assessment/` | 📝 Assessment |
 
 ---

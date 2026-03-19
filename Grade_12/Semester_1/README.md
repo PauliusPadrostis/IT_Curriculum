@@ -11,4 +11,4 @@
 
 ## Notes
 
-Both modules run at VBE pace from the start. Timed drills in Module 02 (lessons 044–045) build speed and accuracy under pressure. Use the integration tasks to simulate cross-section exam conditions before Semester 2.
+Both modules run at VBE pace from the start. Timed drills in Module 02 (lessons 042–043) build speed and accuracy under pressure. Use the integration tasks to simulate cross-section exam conditions before Semester 2.

@@ -27,17 +27,17 @@
 | 014 | `014_L - Common pivot mistakes/` | 📖 Lesson |
 | 015 | `015_L - Chart selection logic (what question → what chart)/` | 📖 Lesson |
 | 016 | `016_L - Writing conclusions grounded in computed/` | 📖 Lesson |
-| 018 | `018_I - Data cleaning pipeline applied to a real/` | 🔗 Integration practice |
-| 019 | `019_I - Filter and sort, then compute subtotals/` | 🔗 Integration practice |
-| 020 | `020_I - Design and build a pivot report that answers/` | 🔗 Integration practice |
-| 021 | `021_I - Select and create a chart that matches/` | 🔗 Integration practice |
-| 022 | `022_I - Build a subtotal-based report and interpret/` | 🔗 Integration practice |
-| 023 | `023_I - Build a pivot-based report for the same/` | 🔗 Integration practice |
-| 024 | `024_I - Multi-technique switching task filter → pivot/` | 🔗 Integration practice |
-| 025 | `025_I - Written inference task draw conclusions/` | 🔗 Integration practice |
-| 026 | `026_P - Timed Execution Rehearsal/` | 🏃 Practice exam |
-| 027 | `027_P - Quality Checklist + Error Taxonomy/` | 🏃 Practice exam |
-| 028 | `028_A - Practical Data Task (Graded)/` | 📝 Assessment |
-| 029 | `029_A - Structured Written Interpretation Check (Graded)/` | 📝 Assessment |
+| 017 | `017_I - Data cleaning pipeline applied to a real/` | 🔗 Integration practice |
+| 018 | `018_I - Filter and sort, then compute subtotals/` | 🔗 Integration practice |
+| 019 | `019_I - Design and build a pivot report that answers/` | 🔗 Integration practice |
+| 020 | `020_I - Select and create a chart that matches/` | 🔗 Integration practice |
+| 021 | `021_I - Build a subtotal-based report and interpret/` | 🔗 Integration practice |
+| 022 | `022_I - Build a pivot-based report for the same/` | 🔗 Integration practice |
+| 023 | `023_I - Multi-technique switching task filter → pivot/` | 🔗 Integration practice |
+| 024 | `024_I - Written inference task draw conclusions/` | 🔗 Integration practice |
+| 025 | `025_P - Timed Execution Rehearsal/` | 🏃 Practice exam |
+| 026 | `026_P - Quality Checklist + Error Taxonomy/` | 🏃 Practice exam |
+| 027 | `027_A - Practical Data Task (Graded)/` | 📝 Assessment |
+| 028 | `028_A - Structured Written Interpretation Check (Graded)/` | 📝 Assessment |
 
 ---

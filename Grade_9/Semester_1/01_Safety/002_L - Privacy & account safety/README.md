@@ -1,42 +1,66 @@
-# L2 — Privacy & account safety
+# 002_L — Privatumas ir paskyrų sauga
 
-**Type:** 📖 Lesson
-**Grade:** Grade 9
-**Module:** Safety
-**Semester:** Semester 1
-**Sequence:** 2 of grade year
-**Status:** 🚧 WIP
-
----
-
-## Overview
-
-Password logic, 2FA concept, personal data awareness.
+| Laukas          | Reikšmė                                          |
+|-----------------|---------------------------------------------------|
+| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Klasė**       | 9                                                 |
+| **Semestras**   | 1                                                 |
+| **Tema**        | Sauga                                             |
+| **Eilės nr.**   | 002 iš metų sekos                                 |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
-## 1️⃣ Completion Definition
+## Apžvalga
 
-Student configures a mock account using strong password logic, 2FA reasoning, and explains risks of weak credential behavior.
-
-## 2️⃣ Minimum Evidence
-
-Password strength justification + short scenario-based risk explanation.
-
-## 3️⃣ Bloom's Taxonomy Level
-
-Apply → Analyze.
-
-## 4️⃣ Readiness Gate
-
-If student cannot distinguish safe vs unsafe credential practices in a scenario, topic not complete.
-
-## 5️⃣ Common Failure Modes
-
-*(To be defined)*
+Mokiniai mokosi kurti stiprius slaptažodžius, supranta dviejų veiksnių autentifikacijos (2FA) logiką ir įvertina, kokie asmeniniai duomenys yra jautrūs. Pamokoje analizuojami silpnų prisijungimo įpročių pavojai ir praktikuojamas saugus paskyros kūrimas.
 
 ---
 
-## 📁 Resources
+## Mokymosi tikslai
 
-*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*
+Pasibaigus pamokai, mokinys gebės:
+
+1. Paaiškinti, kas daro slaptažodį stiprų, ir sukurti slaptažodį pagal saugumo kriterijus.
+2. Apibūdinti, kaip veikia dviejų veiksnių autentifikacija ir kodėl ji padidina saugumą.
+3. Atskirti saugų ir nesaugų elgesį su asmeniniais duomenimis konkrečiose situacijose.
+
+---
+
+## Bloom taksonomijos lygis
+
+**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.
+
+---
+
+## Dažniausios klaidos
+
+Bus papildyta po pirmos pamokos vykdymo.
+
+---
+
+## Trukmė
+
+**1 pamoka (40 min)**
+
+---
+
+## Namų darbas
+
+Nėra.
+
+---
+
+## 📁 Reikalingi failai
+
+| Failas               | Būsena | Pastaba                              |
+|----------------------|--------|--------------------------------------|
+| Teacher_Plan.docx    | ❌     | Privalomas                           |
+| Visual_Aid.pdf       | ❌     | Slaptažodžių pavyzdžiai, 2FA schema  |
+| Student_Task.docx    | ❌     | Scenarijų vertinimo lapas            |
+
+---
+
+## Papildomi ištekliai
+
+Nėra.

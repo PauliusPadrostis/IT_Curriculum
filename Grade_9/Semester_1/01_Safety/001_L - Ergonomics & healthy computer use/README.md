@@ -1,42 +1,66 @@
-# L1 — Ergonomics & healthy computer use
+# 001_L — Ergonomika ir sveikas kompiuterio naudojimas
 
-**Type:** 📖 Lesson
-**Grade:** Grade 9
-**Module:** Safety
-**Semester:** Semester 1
-**Sequence:** 1 of grade year
-**Status:** 🚧 WIP
-
----
-
-## Overview
-
-Posture, breaks, eye distance, work–rest rhythm.
+| Laukas          | Reikšmė                                          |
+|-----------------|---------------------------------------------------|
+| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Klasė**       | 9                                                 |
+| **Semestras**   | 1                                                 |
+| **Tema**        | Sauga                                             |
+| **Eilės nr.**   | 001 iš metų sekos                                 |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
-## 1️⃣ Completion Definition
+## Apžvalga
 
-Student correctly demonstrates proper sitting posture, screen distance, hand position, and explains why each reduces long-term physical strain.
-
-## 2️⃣ Minimum Evidence
-
-Annotated posture diagram + short written explanation (3–4 causal statements).
-
-## 3️⃣ Bloom's Taxonomy Level
-
-Apply → Explain.
-
-## 4️⃣ Readiness Gate
-
-If student cannot identify at least three correct ergonomic principles and justify them, topic not complete.
-
-## 5️⃣ Common Failure Modes
-
-*(To be defined)*
+Mokiniai susipažįsta su ergonomikos principais dirbant kompiuteriu: taisyklinga sėdėjimo laikysena, ekrano atstumas, rankų padėtis, akių poilsis ir darbo–poilsio ritmas. Pamoka pagrindžia, kodėl kiekvienas principas mažina ilgalaikę fizinę įtampą.
 
 ---
 
-## 📁 Resources
+## Mokymosi tikslai
 
-*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*
+Pasibaigus pamokai, mokinys gebės:
+
+1. Įvardinti pagrindinius ergonomikos principus (laikysena, atstumas, pertraukos).
+2. Paaiškinti, kaip kiekvienas principas padeda išvengti sveikatos problemų.
+3. Pademonstruoti taisyklingą sėdėjimo pozą ir ekrano padėtį.
+
+---
+
+## Bloom taksonomijos lygis
+
+**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.
+
+---
+
+## Dažniausios klaidos
+
+Bus papildyta po pirmos pamokos vykdymo.
+
+---
+
+## Trukmė
+
+**1 pamoka (40 min)**
+
+---
+
+## Namų darbas
+
+Nėra.
+
+---
+
+## 📁 Reikalingi failai
+
+| Failas               | Būsena | Pastaba                          |
+|----------------------|--------|----------------------------------|
+| Teacher_Plan.docx    | ❌     | Privalomas                       |
+| Visual_Aid.pdf       | ❌     | Laikysenos diagrama / nuotraukos |
+| Student_Task.docx    | ❌     | Ergonomikos vertinimo lapas      |
+
+---
+
+## Papildomi ištekliai
+
+Nėra.

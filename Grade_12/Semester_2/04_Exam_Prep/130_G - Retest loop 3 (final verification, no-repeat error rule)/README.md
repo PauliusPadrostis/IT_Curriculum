@@ -1,0 +1,63 @@
+# D135 — Final verification session: process reliability and error-absence confirmation
+
+**Type:** 🔁 Diagnostic / redo
+**Grade:** Grade 12
+**Module:** Exam Preparation – VBE Simulation
+**Semester:** Semester 2
+**Sequence:** 130 of grade year
+**Parent topic:** G7–G9 (3) — Retest loops with “no-repeat error” rule
+**Status:** 🚧 WIP
+
+---
+
+## Overview
+
+- Final verification session: process reliability and error-absence confirmation
+
+## Sub-topics
+
+- Final verification session: process reliability and error-absence confirmation
+
+---
+
+## 1️⃣ Completion Definition
+
+Student can diagnose final verification session: process reliability and error-absence confirmation.
+
+## 2️⃣ Minimum Evidence
+
+Demonstrates corrected understanding of final verification session: process reliability and error-absence confirmation on a comparable redo task.
+
+## 3️⃣ Bloom's Taxonomy Level
+
+Level 4 — Analyse
+
+## 4️⃣ Readiness Gate
+
+✔ Previously documented major error does not reappear\
+✔ Task completed within time threshold\
+✔ Output formatting exact\
+✔ No runtime or structural failures\
+✔ Verification step visibly performed (student self-check log)
+
+If the same major error category reappears → Gate not met.
+
+---
+
+## 5️⃣ Common Failure Modes
+
+- Fixing symptom but not mechanism → recurrence
+
+- Forgetting preventive strategy under time pressure
+
+- Regression in formatting precision
+
+- Time collapse during retest
+
+- Overconfidence leading to skipped verification
+
+---
+
+## 📁 Resources
+
+*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*

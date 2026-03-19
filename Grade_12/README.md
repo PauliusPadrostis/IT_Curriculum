@@ -19,5 +19,5 @@ Semester 1 consolidates both data and programming at exam level; every task mirr
 
 - Practical assessments in every module
 - Timed tasks in Module 04 (VBE format)
-- Two full mock sessions (lessons 124–125)
-- Error clinics and diagnostic rotation drills (lessons 127–130)
+- Two full mock sessions (lessons 119–120)
+- Error clinics and diagnostic rotation drills (lessons 122–125)

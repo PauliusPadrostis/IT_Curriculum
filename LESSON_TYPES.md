@@ -138,7 +138,7 @@ The teacher role is highly diagnostic and adaptive: identify whether gaps are co
 
 **Should not become:** A vague "catch-up" lesson with no diagnostic basis · A repetition of the entire module for everyone · An unstructured help session without defined targets
 
-> **In the repo:** G lessons occupy the final 9 lessons of Grade 12 `04_Exam_Prep` (sequences 127–135): three error pattern clinics (G1–G3), three individualized weak-skill stations (G4–G6), and three retest loops with the no-repeat error rule (G7–G9).
+> **In the repo:** G lessons occupy the final 9 lessons of Grade 12 `04_Exam_Prep` (sequences 122–130): three error pattern clinics (G1–G3), three individualized weak-skill stations (G4–G6), and three retest loops with the no-repeat error rule (G7–G9).
 
 ---
 
@@ -180,4 +180,4 @@ The teacher role is partly supervisory and partly diagnostic. During the timed p
 
 **Should not become:** A normal drill lesson with an arbitrary timer added · A full mock exam · A broad revision lesson without authentic time pressure · A lesson focused mainly on reteaching content
 
-> **In the repo:** T lessons occupy sequences 104–115 in Grade 12 `04_Exam_Prep`, covering timed section runs (data, programming, mixed) before the mock exam sequence begins.
+> **In the repo:** T lessons occupy sequences 099–110 in Grade 12 `04_Exam_Prep`, covering timed section runs (data, programming, mixed) before the mock exam sequence begins.

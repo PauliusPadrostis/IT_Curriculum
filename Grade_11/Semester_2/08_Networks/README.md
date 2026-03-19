@@ -11,11 +11,11 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 142 | `142_L - TCPIP model as a reasoning tool (not memorization)/` | 📖 Lesson |
-| 143 | `143_L - IP addressing essentials/` | 📖 Lesson |
-| 144 | `144_L - Protocols + ports (functional mapping)/` | 📖 Lesson |
-| 145 | `145_L - Domain, URL anatomy, DNS resolution path/` | 📖 Lesson |
-| 147 | `147_I - Scenario-based diagnostics mini-lab/` | 🔗 Integration practice |
-| 148 | `148_A - Structured test (VBE 1 style)/` | 📝 Assessment |
+| 126 | `126_L - TCPIP model as a reasoning tool (not memorization)/` | 📖 Lesson |
+| 127 | `127_L - IP addressing essentials/` | 📖 Lesson |
+| 128 | `128_L - Protocols + ports (functional mapping)/` | 📖 Lesson |
+| 129 | `129_L - Domain, URL anatomy, DNS resolution path/` | 📖 Lesson |
+| 130 | `130_I - Scenario-based diagnostics mini-lab/` | 🔗 Integration practice |
+| 131 | `131_A - Structured test (VBE 1 style)/` | 📝 Assessment |
 
 ---

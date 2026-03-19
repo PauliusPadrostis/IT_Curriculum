@@ -11,7 +11,7 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 019 | `019_L - Raster vs vector + file formats/` | 📖 Lesson |
-| 020 | `020_L - Resolution & color basics/` | 📖 Lesson |
+| 017 | `017_L - Raster vs vector + file formats/` | 📖 Lesson |
+| 018 | `018_L - Resolution & color basics/` | 📖 Lesson |
 
 ---

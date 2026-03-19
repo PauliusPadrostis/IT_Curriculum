@@ -1,42 +1,66 @@
-# L3 — Online risks & safe response logic
+# 003_L — Internetinės grėsmės ir saugaus reagavimo logika
 
-**Type:** 📖 Lesson
-**Grade:** Grade 9
-**Module:** Safety
-**Semester:** Semester 1
-**Sequence:** 3 of grade year
-**Status:** 🚧 WIP
-
----
-
-## Overview
-
-Phishing basics, suspicious links, safe sharing.
+| Laukas          | Reikšmė                                          |
+|-----------------|---------------------------------------------------|
+| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Klasė**       | 9                                                 |
+| **Semestras**   | 1                                                 |
+| **Tema**        | Sauga                                             |
+| **Eilės nr.**   | 003 iš metų sekos                                 |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
-## 1️⃣ Completion Definition
+## Apžvalga
 
-Student classifies digital threat scenarios (phishing, harassment, scam) and selects appropriate response actions.
-
-## 2️⃣ Minimum Evidence
-
-Scenario classification sheet with justified action steps.
-
-## 3️⃣ Bloom's Taxonomy Level
-
-Analyze → Decide.
-
-## 4️⃣ Readiness Gate
-
-If student selects emotionally reactive or unsafe response logic, topic not complete.
-
-## 5️⃣ Common Failure Modes
-
-*(To be defined)*
+Mokiniai susipažįsta su dažniausiomis internetinėmis grėsmėmis: sukčiavimo laiškai (phishing), įtartinos nuorodos, patyčios, apgaulingos svetainės. Pamoka moko atpažinti grėsmę ir pasirinkti tinkamą reagavimo veiksmą, o ne reaguoti emociškai.
 
 ---
 
-## 📁 Resources
+## Mokymosi tikslai
 
-*(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*
+Pasibaigus pamokai, mokinys gebės:
+
+1. Atpažinti pagrindinius sukčiavimo internete požymius (phishing, apgaulingos nuorodos, netikri pranešimai).
+2. Klasifikuoti skaitmenines grėsmes pagal tipą (sukčiavimas, priekabiavimas, duomenų vagystė).
+3. Pasirinkti tinkamą reagavimo veiksmą konkrečiame grėsmės scenarijuje.
+
+---
+
+## Bloom taksonomijos lygis
+
+**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.
+
+---
+
+## Dažniausios klaidos
+
+Bus papildyta po pirmos pamokos vykdymo.
+
+---
+
+## Trukmė
+
+**1 pamoka (40 min)**
+
+---
+
+## Namų darbas
+
+Nėra.
+
+---
+
+## 📁 Reikalingi failai
+
+| Failas               | Būsena | Pastaba                                |
+|----------------------|--------|----------------------------------------|
+| Teacher_Plan.docx    | ❌     | Privalomas                             |
+| Visual_Aid.pdf       | ❌     | Grėsmių pavyzdžiai su vizualais        |
+| Student_Task.docx    | ❌     | Scenarijų klasifikavimo lapas          |
+
+---
+
+## Papildomi ištekliai
+
+Nėra.

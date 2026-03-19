@@ -11,11 +11,11 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 046 | `046_I - Define project goal and identify target audience/` | 🔗 Integration practice |
-| 047 | `047_I - Create task plan ordered steps with realistic/` | 🔗 Integration practice |
-| 048 | `048_I - Feedback + revision cycle/` | 🔗 Integration practice |
-| 049 | `049_I - Conduct structured peer review using/` | 🔗 Integration practice |
-| 050 | `050_I - Revise own project based on peer feedback/` | 🔗 Integration practice |
-| 051 | `051_A - Final submission + presentation + short reflection/` | 📝 Assessment |
+| 041 | `041_I - Define project goal and identify target audience/` | 🔗 Integration practice |
+| 042 | `042_I - Create task plan ordered steps with realistic/` | 🔗 Integration practice |
+| 043 | `043_I - Feedback + revision cycle/` | 🔗 Integration practice |
+| 044 | `044_I - Conduct structured peer review using/` | 🔗 Integration practice |
+| 045 | `045_I - Revise own project based on peer feedback/` | 🔗 Integration practice |
+| 046 | `046_A - Final submission + presentation + short reflection/` | 📝 Assessment |
 
 ---

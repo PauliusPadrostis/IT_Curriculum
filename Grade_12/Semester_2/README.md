@@ -11,4 +11,4 @@
 
 ## Notes
 
-Module 03 should be fully complete before the first mock (lesson 124). Error clinics (lessons 127–130) are targeted at the specific mistake patterns identified in mocks — run them after each mock, not before.
+Module 03 should be fully complete before the first mock (lesson 119). Error clinics (lessons 122–125) are targeted at the specific mistake patterns identified in mocks — run them after each mock, not before.
