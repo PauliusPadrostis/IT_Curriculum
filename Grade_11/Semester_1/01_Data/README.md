@@ -18,7 +18,7 @@
 | 005 | `005_I - Collect a small dataset identify source/` | 🔗 Integration practice |
 | 006 | `006_I - Clean data handle missing values, inconsistent/` | 🔗 Integration practice |
 | 007 | `007_I - Justify source quality written assessment/` | 🔗 Integration practice |
-| 008 | `008_P - VBE 1-style closedshort-answer packet/` | 🏃 Practice exam |
+| 008 | `008_P - VBE 1-style short-answer packet/` | 🏃 Practice exam |
 | 009 | `009_A - Practical data workflow assessment/` | 📝 Assessment |
 | 010 | `010_L - Joining datasets (keys, mismatches, duplicates)/` | 📖 Lesson |
 | 011 | `011_L - Cleaning missing values, inconsistent/` | 📖 Lesson |
@@ -29,7 +29,7 @@
 | 016 | `016_I - Resolve join mismatches and explain how they/` | 🔗 Integration practice |
 | 017 | `017_P - Query logic drills (structured questions)/` | 🏃 Practice exam |
 | 018 | `018_A - Practical data workflow assessment/` | 📝 Assessment |
-| 019 | `019_L - Tablerecordfield; primary key; relationships (basic)/` | 📖 Lesson |
+| 019 | `019_L - Table, record, field; primary key; relationships/` | 📖 Lesson |
 | 020 | `020_L - Query logic selection/` | 📖 Lesson |
 | 021 | `021_L - Reading query results and explaining what/` | 📖 Lesson |
 | 022 | `022_L - Common mistakes wrong condition, wrong join/` | 📖 Lesson |

@@ -32,7 +32,7 @@
 | 065 | `065_L - Linear search vs search in sorted sequence (whenwhy)/` | 📖 Lesson |
 | 066 | `066_L - Sorting by key; stable intuition/` | 📖 Lesson |
 | 067 | `067_L - Correctness reasoning invariants/` | 📖 Lesson |
-| 068 | `068_L - Reading and predicting code for sortsearch/` | 📖 Lesson |
+| 068 | `068_L - Reading and predicting code for sort-search/` | 📖 Lesson |
 | 069 | `069_L - Sorting + searching/` | 📖 Lesson |
 | 070 | `070_F - Formative check/` | 📌 Formative check |
 | 071 | `071_I - Linear search implement correctly, identify/` | 🔗 Integration practice |
@@ -41,6 +41,6 @@
 | 074 | `074_I - Code-reading comparison tasks/` | 🔗 Integration practice |
 | 075 | `075_P - Which fragment fits and what changes if…/` | 🏃 Practice exam |
 | 076 | `076_P - Choose correct sequence questions/` | 🏃 Practice exam |
-| 077 | `077_A - Practical assessment SortSearch Algorithms/` | 📝 Assessment |
+| 077 | `077_A - Practical assessment sort-search algorithms/` | 📝 Assessment |
 
 ---

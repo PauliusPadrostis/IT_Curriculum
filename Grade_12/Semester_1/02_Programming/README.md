@@ -16,7 +16,7 @@
 | 032 | `032_L - Minimal “acceptance checklist” for every solution/` | 📖 Lesson |
 | 033 | `033_L - Specification Reading + IO Discipline/` | 📖 Lesson |
 | 034 | `034_L - Reading structured lines; tokenization/` | 📖 Lesson |
-| 035 | `035_L - CSV realities (delimiters, quoted fields-lightw/` | 📖 Lesson |
+| 035 | `035_L - CSV realities (delimiters, quoted fields)/` | 📖 Lesson |
 | 036 | `036_L - Defensive parsing missing values, unexpected formats/` | 📖 Lesson |
 | 037 | `037_L - Designing internal representation from file/` | 📖 Lesson |
 | 038 | `038_L - File Input (.txt.csv) + Robust Parsing - Part 5/` | 📖 Lesson |
@@ -29,9 +29,9 @@
 | 045 | `045_P - Timed drill tokenization, type conversion/` | 🏃 Practice exam |
 | 046 | `046_A - Practical assessment file IO, aggregate/` | 📝 Assessment |
 | 047 | `047_A - Output formatting verification and correctness/` | 📝 Assessment |
-| 048 | `048_L - Structrecord modeling (fields, types)/` | 📖 Lesson |
-| 049 | `049_L - Arraylist of records; record inside collection/` | 📖 Lesson |
-| 050 | `050_L - Selecting field keys for sortsearch/` | 📖 Lesson |
+| 048 | `048_L - Struct-record modeling (fields, types)/` | 📖 Lesson |
+| 049 | `049_L - Array-list of records (record inside collection)/` | 📖 Lesson |
+| 050 | `050_L - Selecting field keys for sort-search/` | 📖 Lesson |
 | 051 | `051_L - Memoryclarity tradeoffs/` | 📖 Lesson |
 | 052 | `052_L - Composite Structures/` | 📖 Lesson |
 | 053 | `053_F - Formative check/` | 📌 Formative check |

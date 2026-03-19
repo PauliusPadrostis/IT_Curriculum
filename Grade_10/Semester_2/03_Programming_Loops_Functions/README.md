@@ -11,7 +11,7 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 019 | `019_L - while andor for/` | 📖 Lesson |
+| 019 | `019_L - while or for/` | 📖 Lesson |
 | 020 | `020_L - Counter pattern/` | 📖 Lesson |
 | 021 | `021_L - Sentinel loop concept/` | 📖 Lesson |
 | 022 | `022_A - Practical assessment/` | 📝 Assessment |

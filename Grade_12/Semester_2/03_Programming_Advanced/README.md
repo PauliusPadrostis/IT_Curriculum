@@ -14,7 +14,7 @@
 | 066 | `066_L - Sorting algorithms selection, insertion/` | 📖 Lesson |
 | 067 | `067_L - Correctness analysis choosing the right sort/` | 📖 Lesson |
 | 068 | `068_L - Linear search implementation, time cost, when to use/` | 📖 Lesson |
-| 069 | `069_L - Sorted sequence search binary or sequential-sor/` | 📖 Lesson |
+| 069 | `069_L - Sorted sequence search (binary or sequential)/` | 📖 Lesson |
 | 070 | `070_L - Collection operations insert, delete, update/` | 📖 Lesson |
 | 071 | `071_L - Edge cases, invariants, and reliability/` | 📖 Lesson |
 | 072 | `072_F - Formative check/` | 📌 Formative check |

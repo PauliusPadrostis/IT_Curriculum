@@ -15,7 +15,7 @@
 | 002 | `002_L - Converting “raw export” → analysis-ready table/` | 📖 Lesson |
 | 003 | `003_L - Reproducible cleaning log (what changed, why)/` | 📖 Lesson |
 | 004 | `004_L - Multi-level sorting (primarysecondary keys)/` | 📖 Lesson |
-| 005 | `005_L - Multi-criteria filtering (ANDOR logic)/` | 📖 Lesson |
+| 005 | `005_L - Multi-criteria filtering (AND-OR logic)/` | 📖 Lesson |
 | 006 | `006_L - “Filter-as-question” turning prompt/` | 📖 Lesson |
 | 007 | `007_L - Grouping rules (what can be grouped, when/` | 📖 Lesson |
 | 008 | `008_L - Subtotal logic countssumsaverages by group/` | 📖 Lesson |

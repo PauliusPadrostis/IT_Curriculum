@@ -37,7 +37,18 @@ Each lesson folder contains a single `README.md` with:
 
 Lesson folder naming: `NNN_T - Short description/`
 - `NNN` – sequence number within the grade year (zero-padded, resets each grade)
-- `T` – type code: `L` Lesson · `A` Assessment · `I` Integration practice · `P` Practice drill · `F` Formative check · `T` Timed task · `M` Mock · `D` Diagnostic
+- `T` – type code: `L` Lesson · `A` Assessment · `I` Integration practice · `P` Practice exam · `F` Formative check · `T` Timed task · `M` Mock · `D` Diagnostic
+
+---
+
+## How to navigate
+
+New to this repo? Follow this path:
+
+1. **Grade README** → pick a grade, read `Grade_X/README.md` for the year focus, full module list, and progression logic
+2. **Semester README** → read `Grade_X/Semester_Y/README.md` for the semester goal, module order, and key assessment points
+3. **Module README** → open any `NN_Module/README.md` for the lesson index, teacher notes, and lesson type breakdown
+4. **Lesson folder** → open any `NNN_T - Name/README.md` for overview, completion definition, evidence required, Bloom level, and readiness gate
 
 ---
 
