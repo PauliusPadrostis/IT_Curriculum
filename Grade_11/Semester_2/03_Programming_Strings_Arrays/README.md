@@ -15,13 +15,11 @@
 | 048 | `048_L - Frequencycounting patterns on characters/` | 📖 Lesson |
 | 049 | `049_L - Comparisons and normalization (case, spaces)/` | 📖 Lesson |
 | 050 | `050_L - Typical pitfalls off-by-one, empty string/` | 📖 Lesson |
-| 051 | `051_F - Formative check/` | 📌 Formative check |
 | 052 | `052_L - Standard scan patterns/` | 📖 Lesson |
 | 053 | `053_L - Conditional accumulation (“count if…”)/` | 📖 Lesson |
 | 054 | `054_L - Multi-pass logic (derive then use)/` | 📖 Lesson |
 | 055 | `055_L - Trace tables (manual execution as exam skill)/` | 📖 Lesson |
 | 056 | `056_L - 1D arrays disciplined traversal + aggregate/` | 📖 Lesson |
-| 057 | `057_F - Formative check/` | 📌 Formative check |
 | 058 | `058_I - String parsing pipeline split string/` | 🔗 Integration practice |
 | 059 | `059_I - Array counting and aggregation from parsed/` | 🔗 Integration practice |
 | 060 | `060_I - Mixed composition tasks string → array/` | 🔗 Integration practice |
@@ -34,7 +32,6 @@
 | 067 | `067_L - Correctness reasoning invariants/` | 📖 Lesson |
 | 068 | `068_L - Reading and predicting code for sort-search/` | 📖 Lesson |
 | 069 | `069_L - Sorting + searching/` | 📖 Lesson |
-| 070 | `070_F - Formative check/` | 📌 Formative check |
 | 071 | `071_I - Linear search implement correctly, identify/` | 🔗 Integration practice |
 | 072 | `072_I - Sorted sequence search implement and justify/` | 🔗 Integration practice |
 | 073 | `073_I - Sorting by key choose sort type, implement/` | 🔗 Integration practice |

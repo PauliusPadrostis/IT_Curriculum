@@ -34,14 +34,14 @@
 | 124 | `124_M - Final conditioning mock session 1 performance/` | 🎯 Mock exam |
 | 125 | `125_M - Final conditioning mock session 2 output/` | 🎯 Mock exam |
 | 126 | `126_M - Mock debrief and stress management review/` | 🎯 Mock exam |
-| 127 | `127_D - Data error clinic wrong grouping level/` | 🔁 Diagnostic / redo |
-| 128 | `128_D - Programming error clinic parsing mistakes/` | 🔁 Diagnostic / redo |
-| 129 | `129_D - Cross-section mixed drill apply targeted/` | 🔁 Diagnostic / redo |
-| 130 | `130_D - Station A rotation Data workflow correction/` | 🔁 Diagnostic / redo |
-| 131 | `131_D - Station B rotation Programming IO and output/` | 🔁 Diagnostic / redo |
-| 132 | `132_D - Station C rotation Algorithm correctness/` | 🔁 Diagnostic / redo |
-| 133 | `133_D - Comparable task retest 1 demonstrate/` | 🔁 Diagnostic / redo |
-| 134 | `134_D - Comparable task retest 2 demonstrate/` | 🔁 Diagnostic / redo |
-| 135 | `135_D - Final verification session process reliability/` | 🔁 Diagnostic / redo |
+| 127 | `127_G - Error pattern clinic 1 (data, class-wide)/` | 🔁 Diagnostic / redo |
+| 128 | `128_G - Error pattern clinic 2 (programming, class-wide)/` | 🔁 Diagnostic / redo |
+| 129 | `129_G - Error pattern clinic 3 (cross-section, class-wide)/` | 🔁 Diagnostic / redo |
+| 130 | `130_G - Individualized station A (data weak-skill)/` | 🔁 Diagnostic / redo |
+| 131 | `131_G - Individualized station B (programming weak-skill)/` | 🔁 Diagnostic / redo |
+| 132 | `132_G - Individualized station C (algorithm weak-skill)/` | 🔁 Diagnostic / redo |
+| 133 | `133_G - Retest loop 1 (no-repeat error rule)/` | 🔁 Diagnostic / redo |
+| 134 | `134_G - Retest loop 2 (no-repeat error rule)/` | 🔁 Diagnostic / redo |
+| 135 | `135_G - Retest loop 3 (final verification, no-repeat error rule)/` | 🔁 Diagnostic / redo |
 
 ---

@@ -27,7 +27,6 @@
 | 014 | `014_L - Common pivot mistakes/` | 📖 Lesson |
 | 015 | `015_L - Chart selection logic (what question → what chart)/` | 📖 Lesson |
 | 016 | `016_L - Writing conclusions grounded in computed/` | 📖 Lesson |
-| 017 | `017_F - Formative Check (mini-quiz) - End of L16/` | 📌 Formative check |
 | 018 | `018_I - Data cleaning pipeline applied to a real/` | 🔗 Integration practice |
 | 019 | `019_I - Filter and sort, then compute subtotals/` | 🔗 Integration practice |
 | 020 | `020_I - Design and build a pivot report that answers/` | 🔗 Integration practice |

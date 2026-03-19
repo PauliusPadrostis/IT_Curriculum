@@ -11,7 +11,6 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 045 | `045_F - Project readiness gate (formative)/` | 📌 Formative check |
 | 046 | `046_I - Define project goal and identify target audience/` | 🔗 Integration practice |
 | 047 | `047_I - Create task plan ordered steps with realistic/` | 🔗 Integration practice |
 | 048 | `048_I - Feedback + revision cycle/` | 🔗 Integration practice |

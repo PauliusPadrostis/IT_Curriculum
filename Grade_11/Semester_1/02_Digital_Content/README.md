@@ -21,7 +21,6 @@
 | 036 | `036_L - Integrating icons, vector elements, and charts/` | 📖 Lesson |
 | 037 | `037_L - Manipulation via scale, cropping, selective display/` | 📖 Lesson |
 | 038 | `038_L - Misleading infographics and distortion/` | 📖 Lesson |
-| 039 | `039_F - Formative check/` | 📌 Formative check |
 | 040 | `040_I - Choose data representation and design visual/` | 🔗 Integration practice |
 | 041 | `041_I - Write a short justification of visual choices/` | 🔗 Integration practice |
 | 042 | `042_I - Design infographic structure title, key/` | 🔗 Integration practice |

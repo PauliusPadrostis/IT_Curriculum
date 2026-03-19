@@ -15,7 +15,6 @@
 | 136 | `136_L - Roles, responsibilities, and workflow contracts/` | 📖 Lesson |
 | 137 | `137_L - Tool discipline (not tool shopping)/` | 📖 Lesson |
 | 138 | `138_L - Feedback and conflict handling in digital teams/` | 📖 Lesson |
-| 139 | `139_F - Formative check/` | 📌 Formative check |
 | 140 | `140_I - Coordination simulation/` | 🔗 Integration practice |
 | 141 | `141_A - Practical coordination check/` | 📝 Assessment |
 

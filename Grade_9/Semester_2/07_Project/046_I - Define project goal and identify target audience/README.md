@@ -10,6 +10,13 @@
 
 ---
 
+## 🚦 Readiness Gate (opening activity)
+
+Before project work begins: students present their specialisation output, plan, and checklist. Teacher gives a go / no-go decision plus targeted corrections. Students who do not pass the gate do not proceed to independent project work until gaps are resolved.
+
+*(Rubric to be aligned with the specialisation module outcomes.)*
+
+
 ## Overview
 
 - Define project goal and identify target audience

@@ -20,7 +20,6 @@
 | 036 | `036_L - Defensive parsing missing values, unexpected formats/` | 📖 Lesson |
 | 037 | `037_L - Designing internal representation from file/` | 📖 Lesson |
 | 038 | `038_L - File Input (.txt.csv) + Robust Parsing - Part 5/` | 📖 Lesson |
-| 039 | `039_F - Formative check/` | 📌 Formative check |
 | 040 | `040_I - File reading and line parsing tokenization/` | 🔗 Integration practice |
 | 041 | `041_I - Data cleaning strip whitespace, validate/` | 🔗 Integration practice |
 | 042 | `042_I - Aggregate computation sum, min, max, count/` | 🔗 Integration practice |
@@ -34,7 +33,6 @@
 | 050 | `050_L - Selecting field keys for sort-search/` | 📖 Lesson |
 | 051 | `051_L - Memoryclarity tradeoffs/` | 📖 Lesson |
 | 052 | `052_L - Composite Structures/` | 📖 Lesson |
-| 053 | `053_F - Formative check/` | 📌 Formative check |
 | 054 | `054_L - Decomposing into functions read/` | 📖 Lesson |
 | 055 | `055_L - Functions returning values/` | 📖 Lesson |
 | 056 | `056_L - Passing by value vs “by addressreference”/` | 📖 Lesson |

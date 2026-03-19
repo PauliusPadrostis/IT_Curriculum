@@ -16,7 +16,6 @@
 | 011 | `011_L - Operating system basics/` | 📖 Lesson |
 | 012 | `012_A - Hardware + OS test/` | 📝 Assessment |
 | 013 | `013_L - E-services & digital identity/` | 📖 Lesson |
-| 014 | `014_F - Retrieval checks/` | 📌 Formative check |
 | 015 | `015_I - Troubleshooting simulation/` | 🔗 Integration practice |
 | 016 | `016_I - Safe e-service workflow task/` | 🔗 Integration practice |
 | 017 | `017_P - Concept consolidation map/` | 🏃 Practice exam |

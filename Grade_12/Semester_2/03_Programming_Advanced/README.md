@@ -17,7 +17,6 @@
 | 069 | `069_L - Sorted sequence search (binary or sequential)/` | 📖 Lesson |
 | 070 | `070_L - Collection operations insert, delete, update/` | 📖 Lesson |
 | 071 | `071_L - Edge cases, invariants, and reliability/` | 📖 Lesson |
-| 072 | `072_F - Formative check/` | 📌 Formative check |
 | 073 | `073_I - Key-based sorting single and multi-key, stable/` | 🔗 Integration practice |
 | 074 | `074_I - Search algorithm choice sorted vs unsorted/` | 🔗 Integration practice |
 | 075 | `075_I - Output specification enforcement exact format/` | 🔗 Integration practice |
@@ -36,7 +35,6 @@
 | 088 | `088_L - Typical pitfalls empty set, single element/` | 📖 Lesson |
 | 089 | `089_L - Program completeness criteria/` | 📖 Lesson |
 | 090 | `090_L - Error taxonomy logic vs parsing vs formatting/` | 📖 Lesson |
-| 091 | `091_F - Formative check/` | 📌 Formative check |
 | 092 | `092_I - Problem decomposition plan required functions/` | 🔗 Integration practice |
 | 093 | `093_I - Implement read() and compute() with correct/` | 🔗 Integration practice |
 | 094 | `094_I - Implement output() with required return-value/` | 🔗 Integration practice |

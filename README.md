@@ -37,7 +37,9 @@ Each lesson folder contains a single `README.md` with:
 
 Lesson folder naming: `NNN_T - Short description/`
 - `NNN` – sequence number within the grade year (zero-padded, resets each grade)
-- `T` – type code: `L` Lesson · `A` Assessment · `I` Integration practice · `P` Practice exam · `F` Formative check · `T` Timed task · `M` Mock · `D` Diagnostic
+- `T` – type code: `L` Learning · `I` Integration · `P` Pre-assessment prep · `A` Assessment · `D` Exam drill · `T` Timed pre-mock · `M` Mock · `G` Gap repair
+
+See [LESSON_TYPES.md](./LESSON_TYPES.md) for full definitions, expectations, and boundary conditions for each type.
 
 ---
 

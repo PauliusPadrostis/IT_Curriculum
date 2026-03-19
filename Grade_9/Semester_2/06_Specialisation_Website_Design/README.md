@@ -17,7 +17,6 @@
 | 037 | `037_L - Publishing concept (local vs online)/` | 📖 Lesson |
 | 038 | `038_I - Prepare logo and images correct sizing/` | 🔗 Integration practice |
 | 039 | `039_I - Prepare icons and organize asset folder/` | 🔗 Integration practice |
-| 040 | `040_F - Checkpoint submission (feedback)/` | 📌 Formative check |
 | 041 | `041_I - Structure HTML semantic elements, hierarchy/` | 🔗 Integration practice |
 | 042 | `042_I - Integrate optimized images and achieve/` | 🔗 Integration practice |
 | 043 | `043_P - Web checklist rehearsal/` | 🏃 Practice exam |

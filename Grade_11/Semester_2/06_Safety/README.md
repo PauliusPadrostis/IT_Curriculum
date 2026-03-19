@@ -15,7 +15,6 @@
 | 129 | `129_L - Accountdevice safety in “real school life”/` | 📖 Lesson |
 | 130 | `130_L - Health & ergonomics/` | 📖 Lesson |
 | 131 | `131_L - Environmental impact + data-based forecasting/` | 📖 Lesson |
-| 132 | `132_F - Formative check/` | 📌 Formative check |
 | 133 | `133_I - Case study pack/` | 🔗 Integration practice |
 | 134 | `134_A - Mixed-format assessment/` | 📝 Assessment |
 

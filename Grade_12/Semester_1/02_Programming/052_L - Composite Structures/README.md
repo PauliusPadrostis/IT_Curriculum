@@ -61,3 +61,9 @@ If structure misaligned with spec or parallel arrays used → Gate not met.
 ## 📁 Resources
 
 *(Add lesson materials — PDFs, worksheets, slides, data files — to this folder)*
+
+## 📌 Embedded Formative Check
+
+A short, low-stakes check at the end of this lesson (~10 minutes) to confirm recall and understanding before moving on. Not formally graded.
+
+*(Format and questions to be defined — e.g., exit ticket, short quiz, verbal check.)*

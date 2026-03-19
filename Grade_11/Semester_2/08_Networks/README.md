@@ -15,7 +15,6 @@
 | 143 | `143_L - IP addressing essentials/` | 📖 Lesson |
 | 144 | `144_L - Protocols + ports (functional mapping)/` | 📖 Lesson |
 | 145 | `145_L - Domain, URL anatomy, DNS resolution path/` | 📖 Lesson |
-| 146 | `146_F - Formative check/` | 📌 Formative check |
 | 147 | `147_I - Scenario-based diagnostics mini-lab/` | 🔗 Integration practice |
 | 148 | `148_A - Structured test (VBE 1 style)/` | 📝 Assessment |
 
