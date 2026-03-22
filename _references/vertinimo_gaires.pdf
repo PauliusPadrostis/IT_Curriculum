@@ -1,0 +1,2899 @@
+PATVIRTINTA
+Nacionalinės švietimo agentūros 
+direktoriaus 2025 m. d. įsakymu Nr. 
+INFORMATIKOS VERTINIMO GAIRĖS
+Vilnius
+2025
+
+2
+PROJEKTAS
+INFORMATIKOS VERTINIMO GAIRĖS
+1. Bendrosios nuostatos........................................................................................................................ 3
+1.1. Gairių tikslas ir paskirtis............................................................................................................3
+1.2. Reikalavimai klausimams ir užduotims pagal mokinių pasiekimų lygių požymius.................3
+1.3. Klausimų ir užduočių sąsajos su kognityviniais gebėjimais.....................................................4
+1.4. Paaiškinimai ..............................................................................................................................4
+2. Užduočių vertinimas III–IV gimnazijos klasėse.............................................................................. 4
+2.1. III gimnazijos klasės (VBE 1 dalies) užduotis..........................................................................4
+2.2. IV gimnazijos klasės (VBE 2 dalies) užduotis..........................................................................4
+2.3. Galimi klausimų tipai ................................................................................................................5
+2.4. Galimi praktinių užduočių tipai.................................................................................................5
+3. VBE 1 dalies užduoties vertinimas. Klausimų pavyzdžiai .............................................................. 7
+4. VBE 2 dalies užduoties vertinimas. Klausimų pavyzdžiai ............................................................ 50
+5. Literatūros ir šaltinių sąrašas........................................................................................................ 105
+1 priedas. Skaičiuoklės funkcijos..................................................................................................... 106
+
+3
+PROJEKTAS
+1. Bendrosios nuostatos
+1.1. Gairių tikslas ir paskirtis
+Informatikos vertinimo gairių tikslas – sudaryti prielaidas užtikrinti objektyvų, nuoseklų ir 
+patikimą mokinių informatikos pasiekimų vertinimą, atitinkantį Informatikos bendrosios programos 
+pasiekimų lygių požymių aprašus.
+Informatikos vertinimo gairių paskirtis:
+• padėti mokytojams ir užduočių rengėjams vienodai interpretuoti Informatikos bendrojoje 
+programoje aprašytus pasiekimų lygių požymius;
+• leisti patikimai įvertinti mokinių gebėjimus spręsti informatikos problemas, taikyti 
+skaitmenines technologijas, algoritminį mąstymą, programavimo gebėjimus, projektuoti sprendimus ir 
+vertinti jų efektyvumą;
+• sudaryti sąlygas kurti užduotis ir vertinti mokinių pasiekimus taikant aiškius, vienodus 
+kriterijus;
+• užtikrinti, kad vertinimas būtų skaidrus, suprantamas ir pagrįstas;
+• sudaryti prielaidas analizuoti mokinių pasiekimų tendencijas, siekiant tobulinti ugdymo(si)
+turinį ir procesą.
+Vertinimo gairės taikomos:
+• Informatikos valstybinio brandos egzamino 1 daliai (III gimnazijos klasėms);
+• Informatikos valstybinio brandos egzamino 2 daliai (IV gimnazijos klasėms).
+Informatikos valstybinio brandos egzamino (toliau – VBE) užduotimis tikrinama kandidato 
+informatikos mokymosi pasiekimai – žinios, supratimas ir gebėjimai, aprašyti Priešmokyklinio, 
+pradinio, pagrindinio ir vidurinio ugdymo bendrųjų programų 21 priede „Informatikos bendroji 
+programa“.
+VBE pirmos dalies užduoties struktūra aprašyta Priešmokyklinio, pradinio, pagrindinio ir 
+vidurinio ugdymo bendrųjų programų 21 priedo „Informatikos bendroji programa“ 40.2. punkte, o VBE 
+antros dalies užduoties struktūra – 40.3. punkte.
+Vertinimo gairės remiasi Informatikos VBE aprašyta struktūra. Jos sudarytos iš dviejų dalių: 
+viena skirta III gimnazijos klasėms (VBE 1 dalis), antra IV gimnazijos klasėms (VBE 2 dalis).
+1.2. Reikalavimai klausimams ir užduotims pagal mokinių pasiekimų lygių požymius
+Užduotys ir klausimai siejami su keturiais mokinių pasiekimų lygiais: slenkstiniu, patenkinamu, 
+pagrindiniu ir aukštesniuoju.
+Slenkstinio pasiekimų lygio klausimai ir užduotys tikrina pagrindinių dalyko žinių įsisavinimą 
+ir gebėjimą jas taikyti tipiškose, standartinėse situacijose, įprastoje aplinkoje. Šio lygio užduotys ir 
+klausimai formuluojami taip, kad mokiniai gebėtų nurodyti, pasirinkti, atpažinti ar apibrėžti sąvokas, 
+veiksmus, pateiktas schemas ar paveikslus bei atlikti nesudėtingus veiksmus. Klausimuose ir užduotyse 
+pateikiamas įprastas kontekstas, suteikiama pagalbinė informacija arba jos dalis pateikiama kaip 
+netiesioginė pagalba, padedanti atsakyti į klausimą ar atlikti užduotį.
+Patenkinamo pasiekimų lygio klausimai ir užduotys tikrina gebėjimą taikyti įgytas žinias ir 
+gebėjimus ne tik įprastose, bet ir sudėtingesnėse situacijose. Klausimuose ir užduotyse dalis informacijos 
+pateikiama kaip papildoma medžiaga padedanti atsakyti į klausimą ar atlikti užduotį. Atsakydami į 
+klausimus ir atlikdami užduotis mokiniai nurodo, aptaria, apibendrina sąvokas, procesus bei pagal 
+nurodymus atlieka ir pritaiko veiksmus.
+Pagrindinio pasiekimų lygio klausimai ir užduotys tikrina gebėjimą kūrybiškai taikyti dalyko 
+žinias ir supratimą naujose, ne visada standartinėse situacijose. Šio lygio klausimai ir užduotys reikalauja 
+nagrinėti, analizuoti informaciją bei ją apibendrinti, pagrįsti savo atsakymus bei veiksmus, gebėti 
+pritaikyti ir atlikti veiksmus naujame kontekste.
+Aukštesniojo pasiekimų lygio klausimai ir užduotys tikrina mokinio gebėjimą kūrybiškai ir 
+savarankiškai taikyti įgytas dalyko žinias ir gebėjimus sudėtingose, nestandartinėse ar neapibrėžtose 
+situacijose įvairiuose kontekstuose. Šio lygio klausimai ir užduotys reikalauja kritinio mąstymo, 
+
+4
+PROJEKTAS
+gebėjimo analizuoti ir vertinti pateiktą informaciją, ją apibendrinti ir priimti argumentuotą sprendimą 
+bei atlikti reikiamus veiksmus.
+1.3. Klausimų ir užduočių sąsajos su kognityviniais gebėjimais
+Klausimai ir užduotys, skirti įvertinti žinias ir supratimą siejami su informatikos sąvokų 
+apibrėžimu (pvz., algoritmas, duomenų struktūra, skaitmeninis turinys), pagrindinių veikimo principų 
+paaiškinimu (pvz., kompiuterio komponentų funkcijos, programavimo kalbos sintaksė), duomenų ir 
+informacijos skirtumų atpažinimu, technologijų veikimo logikos supratimu.
+Klausimai ir užduotys, skirti įvertinti taikymo gebėjimus apima žinių ir supratimo taikymą 
+sprendžiant praktines užduotis, tokias kaip duomenų analizė skaičiuokle, paprastų algoritmų kūrimas, 
+programos testavimas ir (ar) klaidų taisymas, informacijos paieška internete, skaitmeninio turinio 
+kūrimas naudojant grafikos ir (ar) animacijos rengykles, duomenų vizualizavimas lentelėmis ir 
+diagramomis.
+Klausimai ir užduotys, skirti įvertinti aukštesniuosius mąstymo gebėjimus siejami su 
+informacijos patikimumo vertinimu, duomenų šaltinių analizavimu, algoritmų efektyvumo lyginimu, 
+programų tobulinimu, sprendimų argumentavimu, dirbtinio intelekto taikymo etikos ir saugumo 
+klausimais, problemų sprendimu naujuose ar sudėtinguose kontekstuose.
+1.4. Paaiškinimai
+Informacija visų pasiekimų lygių klausimuose gali būti pateikta gali būti pateikta tekstu, kodu, 
+lentelėmis, schemomis, grafikais, paveikslais, duomenų rinkiniais ar interaktyviomis vizualizacijomis. 
+Visos iliustracijos turi būti reikalingos atsakymui pateikti.
+Klausimų tipų ir jų sąsajų su vertinamais pasiekimais sąrašas nėra baigtinis – jis gali būti 
+papildomas atsižvelgiant į ugdymo(si) turinį ir kontekstą.
+Klausimų turinys siejamas su atitinkamo klasių koncentro mokymo(si) turiniu, kaip apibrėžta 
+Informatikos bendrojoje programoje.
+Pasirenkamųjų atsakymų klausimuose teisingi atsakymai gali būti paryškinti arba pažymėti.
+Pateikto pavyzdžio įvertinimas atitinka kiekvieno klausimo tipo taškų priskyrimo logiką ir taškų 
+priskyrimo aprašymą.
+2. Užduočių vertinimas III–IV gimnazijos klasėse
+2.1. III gimnazijos klasės (VBE 1 dalies) užduotis
+Užduotį sudaro pasirenkamojo, trumpojo atsakymo ir struktūriniai klausimai.
+Pasirenkamojo atsakymo klausimai – tai tokie klausimai, kurių atsakymus mokinys pasirenka iš 
+pateiktų variantų. Pasirenkamojo atsakymo klausimų galimi tipai:
+● klausimas su vienu teisingu pasirenkamuoju atsakymu iš galimų keturių;
+● klausimas su dviem teisingais pasirenkamaisiais atsakymais iš galimų šešių;
+● klausimas su atsakymų porų susiejimu;
+● klausimas su pateiktos sekos eiliškumo nustatymu;
+● klausimas su objektų įkėlimu iš pateikto sąrašo;
+● klausimas su atsakymo nurodymu pateiktoje iliustracijoje (diagramoje, grafike, schemoje, 
+paveiksle).
+Trumpojo atsakymo klausimai – tai klausimai su pateiktu atsakymo lauku, kuriame mokinys turi 
+įrašyti klausimo atsakymą (skaičių, kelis skaičius, raidę, simbolį, žodį ir pan.)
+Struktūriniai klausimai – tai klausimai, kuriuos sudaro įvadinė informacija ir su ja susiję 
+poklausimiai. Įvadinė informacija pateikiama tekstu, bet gali būti papildoma diagramomis, paveikslais, 
+schemomis, lentelėmis ir pan. Poklausimiai gali būti pasirenkamojo ir (ar) trumpojo atsakymo. 
+Poklausimių atsakymai yra nepriklausomi ir nesusiję vienas su kitu. 
+2.2. IV gimnazijos klasės (VBE 2 dalies) užduotis
+Užduotį sudaro trumpojo, atvirojo atsakymo ir struktūriniai klausimai, duomenų tyrybos ir 
+programavimo praktinės užduotys.
+
+5
+PROJEKTAS
+Trumpojo atsakymo klausimai – tai klausimai su pateiktu atsakymo lauku, kuriame mokinys turi 
+įrašyti klausimo atsakymą (skaičių, kelis skaičius, raidę, simbolį, žodį ir pan.) 
+Atvirojo atsakymo klausimai – tai klausimai, į kuriuos atsakydamas mokinys turi pateikti (jei 
+nenurodyta kitaip) argumentuotą kelių sakinių atsakymą, pateikti pavyzdžių.
+Galimi atvirojo atsakymo klausimų tipai:
+● klausimai, į kuriuos reikia atsakyti pilnu sakiniu arba dviem trimis sakiniais, atskleidžiančiais 
+gebėjimus daryti išvadas, paaiškinti, pagrįsti atsakymą;
+● klausimai, į kuriuos reikia atsakyti pateikiant pavyzdžių.
+Struktūriniai klausimai – tai klausimai, kuriuos sudaro įvadinė informacija ir su ja susiję 
+poklausimiai. Įvadinė informacija pateikiama tekstu, bet gali būti papildoma diagramomis, paveikslais, 
+schemomis, lentelėmis ir pan. Poklausimiai gali būti trumpojo ir (arba) atvirojo atsakymo. Poklausimių 
+atsakymai yra nepriklausomi ir nesusiję vienas su kitu.
+Duomenų tyrybos praktinė užduotis
+Atliekant šią užduotį kompiuteriu, reikia (jei nenurodyta kitaip) pagal pateiktą sąlygą laikantis 
+nurodymų atlikti pateiktų duomenų tyrybos veiksmus (pavyzdžiui, skaičiuoti, rikiuoti, atrinkti, grupuoti, 
+pavaizduoti, analizuoti ir pan.) ir pateikti išvadas. 
+Programavimo praktinė užduotis
+Atliekant šią užduotį kompiuteriu, reikia (jei nenurodyta kitaip) pagal pateiktą sąlygą laikantis 
+nurodymų sukurti programą.
+2.3. Galimi klausimų tipai
+Užduotis Užduoties tipas
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu
+Uždari klausimai Pasirenkamojo atsakymo su keliais teisingais atsakymais
+Uždari klausimai Objektų porų susiejimo
+Uždari klausimai Pateiktos sekos eiliškumo nustatymo
+Uždari klausimai Objektų iš pateikto sąrašo pasirinkimo (įkėlimo)
+Uždari klausimai Objektų pateiktoje iliustracijoje nurodymo
+Trumpojo atsakymo klausimai Skaičiaus įrašymas nurodytu formatu
+Trumpojo atsakymo klausimai Kelių skaičių (simbolių, simbolių eilučių) įrašymas, atskiriant juos 
+nurodytu simboliu
+Trumpojo atsakymo klausimai Simbolio(-ių) įrašymas
+Trumpojo atsakymo klausimai Žodžio įrašymas
+Atviri klausimai Iliustracijos (paveikslo, brėžinio, diagramos, schemos, lentelės) 
+elementų paaiškinimas
+Atviri klausimai Atvejo (iliustracijos) analizė
+Atviri klausimai Algoritmo vykdymas
+Atviri klausimai Algoritmo sudarymas
+Atviri klausimai Pavyzdžių pateikimas
+Atviri klausimai Išsamūs atsakymai (reikalaujantys argumentavimo, paaiškinimo, 
+samprotavimo).
+2.4. Galimi praktinių užduočių tipai
+Užduotis Užduoties tipas
+Duomenų tyrybos praktinė užduotis Skaičiavimai
+Duomenų tyrybos praktinė užduotis Duomenų pateikimas suvestinėmis lentelėmis
+
+6
+PROJEKTAS
+Užduotis Užduoties tipas
+Duomenų tyrybos praktinė užduotis Duomenų rikiavimas pagal kelis kriterijus
+Duomenų tyrybos praktinė užduotis Duomenų atranka pagal kelis kriterijus
+Duomenų tyrybos praktinė užduotis Duomenų grupavimas
+Duomenų tyrybos praktinė užduotis Duomenų vaizdavimas diagrama (linijine, stulpeline, 
+skrituline, juostine, histograma, stačiakampe, sklaidos, 
+kombinuotaja)
+Duomenų tyrybos praktinė užduotis Išvadų formulavimas ir pagrindimas, remiantis duomenų 
+analize
+Programavimo praktinė užduotis Duomenų struktūrų (tekstinių eilučių ir masyvų) naudojimas. 
+Sudėtinės duomenų struktūros (struktūrų masyvas (sąrašas), 
+masyvas (sąrašas) struktūroje)
+Programavimo praktinė užduotis Duomenų įvedimas iš tekstinių failų (.txt, .csv)
+Programavimo praktinė užduotis Rezultatų rašymas į failus
+Programavimo praktinė užduotis Programos skaidymas į paprogrames. Paprogramės, kurios 
+grąžina vieną reikšmę per funkcijos vardą. Paprogramės, kai 
+parametrais perduodamos reikšmės ir kai parametrais 
+perduodami kintamųjų adresai
+Programavimo praktinė užduotis Sumos, sandaugos, kiekio, vidurkio skaičiavimo, mažiausios 
+(didžiausios) reikšmės radimo, tiesinės paieškos algoritmai
+Programavimo praktinė užduotis Rikiavimo, reikšmės paieškos nerikiuotame ir rikiuotame 
+masyve, reikšmių šalinimo iš masyvo, masyvo papildymo 
+naujomis reikšmėmis algoritmai
+Programavimo praktinė užduotis Veiksmai su simbolių eilutėmis: eilutės ilgio radimas, 
+reikšmės priskyrimas eilutei, eilučių palyginimas, simbolių 
+eilučių sujungimas
+Programavimo praktinė užduotis Programos išbaigtumas
+
+7
+PROJEKTAS
+3. VBE 1 dalies užduoties vertinimas. Klausimų pavyzdžiai
+1 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinktas teisingas 
+atsakymas
+Slenkstinis pasiekimų lygis. Atpažįsta pagrindines higienos ir technines saugaus 
+darbo skaitmeninėmis technologijomis problemas (F1.1).
+Taškas skiriamas, jei pasirinktas teisingas atsakymas – A
+1
+Dirbant kompiuteriu labai svarbu taisyklingai sėdėti. Kuriame iš paveikslėlių pateikta taisyklingai sėdinti mergina?
+
+8
+PROJEKTAS
+2 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinktas teisingas 
+atsakymas
+Patenkinamas pasiekimų lygis. Naudojasi kompiuterių tinklais ir tinklo 
+įrenginiais, prisijungia prie belaidžių įrenginių (D1.2).
+Taškas skiriamas, jei pasirinktas teisingas atsakymas intranetu
+1
+
+9
+PROJEKTAS
+3 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinktas teisingas 
+atsakymas
+Pagrindinis pasiekimų lygis. Apibūdina kompiuterių tinklus ir jų sąrangą, geba 
+prisijungti prie tinklo įrenginių ir jais naudojasi, geba prisijungti prie belaidžių 
+įrenginių, nagrinėja technines naujoves (D1.3)
+Taškas skiriamas, jei pasirinktas teisingas atsakymas:
+Versti interneto domenų vardus į IP adresus.
+1
+
+10
+PROJEKTAS
+4 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinktas teisingas 
+atsakymas
+Pagrindinis pasiekimų lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras (taip pat ir abstrakčiąsias). Naudojasi įvairiais duomenų 
+šaltiniais (pavyzdžiui, tekstiniais failais, jutikliais, internetu) (B2.3).
+Taškas skiriamas už teisingą atsakymą Arnas 2b Augustina 2a
+1 Atsakymų variantai turi būti 
+išmaišyti
+C++ Python
+
+11
+PROJEKTAS
+5 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su vienu teisingu atsakymu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinktas teisingas 
+atsakymas
+Aukštesnysis pasiekimų lygis. Analizuoja programinės įrangos sąsajos 
+naudotojo poreikius, pateikia keletą alternatyvių sąsajos projektų. Kuria ir 
+modifikuoja reikiamus algoritmus informacijai apdoroti (B3.4).
+C++
+#include <bits/stdc++.h>
+using namespace std;
+int nelyg(int sk) {
+ return sk % 2;
+}
+int main(){
+ int A[10] = {5,3,2,7,4,1,6,8,0,9};
+ for (int i = 0; i < 9; i++) {
+ int m = i;
+ for (int j = i + 1; j < 10; j++) {
+ if (nelyg(A[j]) == nelyg(A[m]) && A[j] < A[m]) m = j;
+ else if( nelyg(A[j]) < nelyg(A[m])) m = j;
+ }
+ swap(A[i], A[m]);
+ }
+ for (int i = 0; i < 10; i++)
+ cout << A[i] << " ";
+ return 0;
+}
+Python
+def nelyg(sk) :
+ return sk%2
+A = [5,3,2,7,4,1,6,8,0,9]
+for i in range(9):
+ m = i
+ for j in range(i + 1, 10):
+ if nelyg(A[j]) == nelyg(A[m]) and A[j] < A[m]: m = j
+ elif nelyg(A[j]) < nelyg(A[m]): m = j
+ A[i], A[m] = A[m], A[i]
+for sk in A: print(sk, end=" ")
+Atsakymas: nelyg(A[j]) == nelyg(A[m]) ir nelyg(A[j]) < nelyg(A[m])
+1
+
+12
+PROJEKTAS
+Kokius kodo fragmentus reikia įrašyti daugtaškių vietose, kad įvykdžius programą atsakymas būtų:
+0 2 4 6 8 1 3 5 7 9
+C++ Python
+Atsakymų variantai
+Nr 1 fragmentas 2 fragmentas
+A nelyg(A[j]) == nelyg(A[m]) nelyg(A[j]) < nelyg(A[m])
+B nelyg(A[j]) == nelyg(A[m]) nelyg(A[j]) > nelyg(A[m])
+C nelyg(A[j]) < nelyg(A[m]) nelyg(A[j]) == nelyg(A[m])
+D nelyg(A[j]) > nelyg(A[m]) nelyg(A[j]) == nelyg(A[m])
+
+13
+PROJEKTAS
+6 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su keliais teisingais atsakymais Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinkti du teisingi 
+atsakymai
+Slenkstinis pasiekimų lygis. Naudodamasis netiesiogine pagalba pritaiko ir 
+integruoja įvairų skaitmeninį turinį (A2.1).
+Po vieną tašką skiriama už kiekvieną pasirinktą teisingą atsakymą.
+A ir C atsakymai yra teisingi.
+2
+Kokie yra vektorinės grafikos privalumai, kuriant logotipą, kuris bus naudojamas mokyklos interneto svetainėje ir elektroniniame metraštyje? Pasirinkite 
+du teisingus atsakymus.
+A. Vektorinį logotipą galima keisti – keisti formas, spalvas ar proporcijas neprarandant kokybės.
+B. Vektorinis failo formatas neleis iškraipyti teisingą proporciją net ir norintiems ją pakeisti.
+C. Vektorinė grafika leidžia lengvai išlaikyti vienodą logotipo stilių.
+D. Vektorinis logotipas visada bus rodomas teisingų spalvų, net ir prastai suderintame vaizduoklyje.
+E. Vektorinė grafika apsaugo logotipą nuo kopijavimo.
+F. Vektorinė grafika visada užims mažiau vietos kompiuterio atmintinėje.
+
+14
+PROJEKTAS
+7 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su keliais teisingais atsakymais Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinkti du teisingi 
+atsakymai
+Patenkinamas pasiekimų lygis. Kuria, pagal nurodymus pritaiko ir integruoja 
+įvairų skaitmeninį turinį (A2.2).
+Po vieną tašką skiriama už kiekvieną pasirinktą teisingą atsakymą.
+B ir D atsakymai yra teisingi.
+2
+Kuris iš pateiktų teiginių apie duomenų vizualizavimą naudojant infografikus yra teisingas? (Pasirinkite du teisingus atsakymus.)
+A. Infografikuose reikia naudoti kuo daugiau skirtingų diagramų tipų. 
+B. Infografikuose duomenys turėtų būti pateikiami kuo paprasčiau ir aiškiau.
+C. Infografikai efektyviausi, kai juose dominuoja tekstinė informacija. 
+D. Infografikai dažniausiai naudojami apibendrintai informacijai ir tendencijoms atvaizduoti.
+E. Infografikai geriausiai tinka detalioms statistinėms analizėms. 
+F. Infografikuose būtina naudoti animaciją.
+
+15
+PROJEKTAS
+8 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su keliais teisingais atsakymais Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinkti du teisingi 
+atsakymai
+Pagrindinis pasiekimų lygis. Apibūdina kompiuterių tinklus ir jų sąrangą, geba 
+prisijungti prie tinklo įrenginių ir jais naudojasi, geba prisijungti prie belaidžių 
+įrenginių, nagrinėja technines naujoves (D1.3).
+Po vieną tašką skiriama už kiekvieną pasirinktą teisingą atsakymą.
+2 Leidžiama pažymėti ne daugiau 
+atsakymų nei nurodyta klausimo 
+sąlygoje.
+
+16
+PROJEKTAS
+9 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pasirenkamojo atsakymo su keliais teisingais atsakymais Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Pasirinkti du teisingi 
+atsakymai
+Aukštesnysis pasiekimų lygis. Savarankiškai suranda nesunkiai kompiuteriu 
+sprendžiamas realaus pasaulio problemas, pasirenka reikiamą informacinį įrankį 
+(programą), pateikia ir paaiškina galimo sprendimo idėją (B1.4).
+Po vieną tašką skiriama už kiekvieną pasirinktą teisingą atsakymą.
+2
+Masyve A yra n elementų. n – lyginis skaičius. Du iš pateiktų programos fragmentų sukeičia gretimus masyvo elementus vietomis. Vietomis keičiami: 0 ir 
+1, 2 ir 3 ir t.t. masyvo elementai. Pažymėkite du teisingus programos fragmentus.
+C++ Python
+
+17
+PROJEKTAS
+10 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų porų susiejimo Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai sujungtos 
+objektų poros
+Slenkstinis pasiekimų lygis. Naudojasi kompiuterių tinklais ir tinklo įrenginiais, 
+padedamas prisijungia prie belaidžių įrenginių (D1.1).
+Teisingai sujungtos poros:
+https – protokolas
+www – subdomenas
+jusupuslapis.lt – domenas
+produktai – kelias
+2 Po vieną tašką skiriama už 2 
+tinkamai susietas poras.
+Objektai, skirti susieti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Susiekite URL adreso dalis su atitinkamais pavadinimais.
+https://www.jusupuslapis.lt/produktai/
+https www jusupuslapis.lt produktai
+domenas protokolas kelias subdomenas
+
+18
+PROJEKTAS
+11 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų porų susiejimo Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai sujungtos 
+objektų poros
+Patenkinamas pasiekimų lygis. Naudojasi kompiuterių tinklais ir tinklo 
+įrenginiais, prisijungia prie belaidžių įrenginių (D1.2).
+Po vieną tašką už kiekvieną teisingą pasirinkimą.
+2 Pasirenkami protokolų 
+apibūdinimai turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Sujunkite kiekvieną iš pateiktų duomenų perdavimo protokolų HTTP(S) ir FTP(S) su tinkamu apibūdinimu.
+
+19
+PROJEKTAS
+12 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų porų susiejimas Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai susietos 
+objektų poros
+Pagrindinis pasiekimų lygis. Apibūdina kompiuterių tinklus ir jų sąrangą, geba 
+prisijungti prie tinklo įrenginių ir jais naudojasi, geba prisijungti prie belaidžių 
+įrenginių, nagrinėja technines naujoves (D1.3)
+Už kiekvieną teisingai susietą objektų porą skiriama po 1 tašką
+3 Atsakymų objektų turi būti vienu 
+daugiau nei klausimo objektų
+
+20
+PROJEKTAS
+13 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų porų susiejimas Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai sujungtos 
+objektų poros
+Aukštesnysis pasiekimų lygis. Analizuoja programinės įrangos sąsajos 
+naudotojo poreikius, pateikia keletą alternatyvių sąsajos projektų. Kuria ir 
+modifikuoja reikiamus algoritmus informacijai apdoroti (B3.4).
+2 Po 1 tašką skiriama už 2 tinkamai 
+susietas poras.
+Šį klausimą galima performuluoti 
+taip, kad mokiniai turėtų susieti 
+atitinkamus programų fragmentus 
+su algoritmais:
+1. Masyvo elementų rikiavimas 
+mažėjančiai
+2. Masyvo elementų rikiavimas 
+didėjančiai
+3. Masyvo elemento šalinimas
+4. Masyvo elemento įterpimas
+Objektai, skirti susieti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų keisti 
+savo pasirinkimus.
+
+21
+PROJEKTAS
+Pateiktas sveikųjų skaičių masyvas A, kuriame yra n = 6 elementai: 4, 2, 8, 1, -1, 3.
+Susiekite programų fragmentus su rezultatais, kurie bus gauti įvykdžius programų fragmentus.
+C++ Python Rezultatas
+8 4 3 2 1 -1
+-1 1 2 3 4 8
+4 8 1 -1 3
+4 2 2 8 1 -1 3
+
+22
+PROJEKTAS
+14 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pateiktos sekos eiliškumo nustatymo Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai parinkta 
+veiksmų seka
+Slenkstinis pasiekimų lygis. Sprendžia paprastas problemas, susijusias su 
+asmens duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save 
+virtualiojoje aplinkoje (F3.1).
+Trys taškai skiriami už visas teisingas vietas, kadangi trijų teisingų vietų negali 
+būti.
+Du taškai skiriami už du teisingose vietose esančius etapus.
+Vienas taškas skiriamas už vieną teisingoje vietoje esantį etapą.
+Teisinga eilės tvarka:
+Prisijungimo duomenų įvedimas
+Papildomo tapatybės patvirtinimo prašymas
+Patvirtinimo įvedimas
+Autentifikacijos pabaiga
+3 Atsakymų variantai pateikiami 
+sumaišyta tvarka, mokiniai gali 
+neribotą kartų skaičių keisti 
+vietomis veiksmų seką
+
+23
+PROJEKTAS
+15 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pateiktos sekos eiliškumo nustatymo Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Visi žingsniai 
+sudėlioti tinkama 
+tvarka
+Patenkinamas pasiekimų lygis. Nurodo dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis (C3.2).
+Taškas skiriamas, jei visi žingsniai išdėstyti tinkama tvarka:
+Duomenų rinkimas modelio apmokymui ir testavimui
+Duomenų parengimas modelio apmokymui ir testavimui
+Modelio pasirinkimas ir apmokymas
+Modelio testavimas
+Modelio taikymas
+3 Atsakymų variantai pateikiami 
+sumaišyta tvarka.
+Mokiniai gali neribotą kartų 
+skaičių keisti vietomis žingsnių 
+tvarką
+
+24
+PROJEKTAS
+16 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pateiktos sekos eiliškumo nustatymo Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisinga etapų vieta Pagrindinis pasiekimų lygis. Kuria, kūrybiškai pritaiko ir integruoja įvairų 
+skaitmeninį turinį (A2.3).
+Trys taškai skiriami už visas teisingas vietas, kadangi trijų teisingų vietų negali 
+būti.
+Du taškai skiriami už du teisingose vietose esančius etapus.
+Vienas taškas skiriamas už vieną teisingoje vietoje esantį etapą.
+Teisinga eilės tvarka:
+Sukuriami objektų kontūrai ir formos
+Grupuojami objektai, kuriami nauji sluoksniai
+Pridedami spalvų užpildai ir kontūrai
+Failas eksportuojamas norimu formatu
+3 Atsakymų variantai pateikiami 
+sumaišyta tvarka.
+Mokiniai gali neribotą kartų 
+skaičių keisti vietomis etapų 
+tvarką
+
+25
+PROJEKTAS
+17 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Pateiktos sekos eiliškumo nustatymo Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisinga etapų vieta Aukštesnysis pasiekimų lygis. Kuria ir derina skirtingą skaitmeninį turinį, 
+savarankiškai atsirenka tinkamą informaciją iš įvairių šaltinių (A2.4).
+Trys taškai skiriami už visas teisingas vietas, kadangi trijų teisingų vietų negali būti.
+Du taškai skiriami už du teisingose vietose esančius žingsnius.
+Vienas taškas skiriamas už vieną teisingoje vietoje esantį žingsnį.
+Teisinga eilės tvarka:
+Atveriamas taškinės grafikos logotipas.
+Sumažinama naudojamų spalvų ir pašalinamos smulkios nereikšmingos detalės.
+Vektorizuojama
+Tobulinamos kreivės. Išsaugoma.
+3 Atsakymų variantai pateikiami 
+sumaišyta tvarka.
+Mokiniai gali neribotą kartų 
+skaičių keisti vietomis etapų 
+tvarką.
+Eiliškumo nustatymo klausime 
+rekomenduojama sudaryti ne 
+mažiau kaip 3 ne daugiau kaip 6 
+elementus.
+
+26
+PROJEKTAS
+18 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų iš pateikto sąrašo pasirinkimo (įkėlimo) Virtualioji komunikacija ir bendradarbiavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Į nurodytą vietą 
+įkeltas tinkamas 
+apibūdinimas
+Slenkstinis pasiekimų lygis. Bendrauja naudodamas nurodytas skaitmenines 
+technologijas, padedamas paaiškina komunikacijos svarbą (E1.1).
+Teisingas atsakymas: bendradarbiavimu.
+1 Objektai, skirti įkelti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Du mokiniai bendrintame dokumente atlieka skirtingas užduotis: vienas rašo tekstą, kitas taiso gramatines klaidas. Kiekvienas mokinys dirba jam patogiu 
+laiku. Jų tikslas yra parengti bendrą galutinę dokumento versiją. Tai vadinama …..
+bendradarbiavimu
+bendravimu
+nei bendravimu, nei 
+bendradarbiavimu
+
+27
+PROJEKTAS
+19 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų iš pateikto sąrašo pasirinkimo (įkėlimo) Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Į nurodytą vietą 
+įkelta tinkama 
+skaičiuoklės funkcija 
+(formulės dalis)
+Patenkinamas pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ir 
+apklausų duomenis ir išgauna reikalingą informaciją (C2.2).
+Teisingas atsakymas: 
+1 Objektai, skirti įkelti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Įkelkite į formulę tinkamą skaičiuoklės funkciją (formulės dalį), kad formulė teisingai apskaičiuotų, kiek grybų bendrai surinko vaikai iš Meškučių kaimo: 
+
+28
+PROJEKTAS
+20 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų iš pateikto sąrašo pasirinkimo (įkėlimo) Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Į nurodytą vietą 
+įkeltas tinkamas 
+apibūdinimas
+Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Teisingas atsakymas: kategoriniais.
+1 Objektai, skirti įkelti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Mokiniai analizuoja duomenų rinkinį apie žmonių sveikatos įpročius. Rinkinyje yra duomenys apie kūno masės indeksą (masės ir ūgio, pakelto kvadratu, 
+santykis), amžius (metais), kraujospūdis (sistolinis / diastolinis, mmHg), ar žmogus rūko (taip/ne), fizinio aktyvumo lygis (žemas, vidutinis, aukštas).
+Fizinio aktyvumo lygį apibūdinantys duomenys vadinami .............................. duomenimis.
+kiekybiniais
+kategoriniais
+loginiais
+
+29
+PROJEKTAS
+21 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų iš pateikto sąrašo pasirinkimo (įkėlimo) Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Į nurodytą vietą 
+įkeltas tinkamas 
+apibūdinimas
+Aukštesnysis pasiekimų lygis. Savarankiškai ieško informacijos apie dirbtinio 
+intelekto, mašininio mokymosi, neuroninių tinklų taikymo sritis, vertina 
+privalumus, grėsmes ir etines problemas, siūlo sprendimus. Vertina 
+kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.4).
+Teisingas atsakymas: Tiuringo testas
+1 Objektai, skirti įkelti, turėtų būti 
+pateikiami atsitiktine tvarka.
+Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+ .............................. analizuoja teksto užklausas, bando jas apdoroti ir reaguoja natūralia kalba taip, kad žmogui atrodytų, jog bendrauja su kitu žmogumi. 
+Proceso tikslas – įvertinti, ar žmogus gali atskirti, su kuo kalba, remdamasis tik pokalbio turiniu. 
+Autentifikavimo sistema
+Tiuringo testas
+Neuroninis tinklas
+
+30
+PROJEKTAS
+22 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų pateiktoje iliustracijoje nurodymo Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai pažymėtas 
+objektas
+Slenkstinis lygis. Apibrėžia kriptografinės sistemos, viešojo rakto, sertifikato 
+sąvokas (C3.1)
+Taškas skiriamas, jei teisingai pažymėtas viešasis (skirtas užšifravimui) raktas
+1
+Schemoje pavaizduotas užšifruotos žinutės siuntimas. Žinutę gali perskaityti tik gavėjas. Schemoje nurodykite (paspauskite) viešąjį raktą.
+
+31
+PROJEKTAS
+23 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų pateiktoje iliustracijoje nurodymo Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+1 taškas skiriamas už 
+teisingai pažymėtus 
+legendos ir antraštės 
+duomenis.
+1 taškas skiriamas už 
+teisingai pažymėtus 
+skritulinei diagramai 
+sudaryti skirtus 
+duomenis.
+Patenkinamas pasiekimų lygis. Kuria, pagal nurodymus pritaiko ir integruoja 
+įvairų skaitmeninį turinį (A2.2).
+Teisingi pažymėjimai: legenda – B, diagramos antraštė – A, skritulinei diagramai 
+sudaryti panaudoti duomenys – D.
+2 Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Lentelės sritis reikia žymėti 
+sąlygoje nurodyta tvarka.
+Pateikta skaičiuoklės lentelė ir iš jos duomenų sukurta skritulinė diagrama. Lentelėje pažymėkite:
+● duomenis, kurie pavaizduoti diagramos legendoje;
+● duomenis, kurie yra diagramos antraštėje;
+● skritulinės diagramos duomenis.
+Lentelės sritis pažymėkite aukščiau nurodyta tvarka.
+
+32
+PROJEKTAS
+24 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų pateiktoje iliustracijoje nurodymo Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+1 taškas skiriamas už 
+teisingai pažymėtą 
+maršrutizatorių.
+1 taškas skiriamas už 
+teisingai pažymėtą 
+komutatorių.
+Pagrindinis pasiekimų lygis. Apibūdina kompiuterių tinklus ir jų sąrangą, geba 
+prisijungti prie tinklo įrenginių ir jais naudojasi, geba prisijungti prie belaidžių 
+įrenginių, nagrinėja technines naujoves (D1.3).
+Teisingi pažymėjimai: komutatorius – B ir/arba C, maršrutizatorius – A.
+2 Mokinys gali kiek nori kartų 
+keisti savo pasirinkimus.
+Iliustracijos sritis reikia žymėti 
+sąlygoje nurodyta tvarka. Kad 
+mokinys gautų 1 tašką už 
+tinkamai pažymėtą komutatorių, 
+užtenka, kad jis pažymėtų B arba 
+C stačiakampį.
+Pateikta įmonės kompiuterių tinklo schema.
+Iliustracijoje pažymėkite:
+● komutatorių;
+● maršrutizatorių;
+Elementus pažymėkite aukščiau nurodyta tvarka.
+
+33
+PROJEKTAS
+25 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Uždari klausimai Objektų pateiktoje iliustracijoje nurodymo Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai įkelti abu 
+objektai
+Aukštesnysis pasiekimų lygis. Nagrinėja skaitmeninių įrenginių veikimo ir 
+technologinius principus, naudojasi tais įrenginiais, dalijasi informacija apie 
+technines naujoves (D1.4)
+Po vieną tašką skiriama už kiekvieną teisingai įkeltą pavadinimą į tinkamą vietą.
+2 Atsakymų objektų turi būti vienu 
+daugiau nei klausimo objektų.
+
+34
+PROJEKTAS
+26 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Skaičiaus įrašymas nurodytu formatu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Slenkstinis pasiekimų lygis. Pasirenka ir naudoja programai reikalingas 
+duomenų struktūras. Naudojasi tekstiniais failais kaip duomenų šaltiniu (B2.1).
+Vienas taškas skiriamas už teisingai pateiktą rezultatą 5
+1
+Ką spausdins duotas programos fragmentas?
+C++ Python
+
+35
+PROJEKTAS
+27 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Skaičiaus įrašymas nurodytu formatu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras. Naudojasi įvairiais duomenų šaltiniais (pavyzdžiui, 
+tekstiniais failais, internetu) (B2.1).
+Vienas taškas skiriamas už teisingai pateiktą rezultatą 2.00
+1 Jei mokinys vietoj taško įrašo 
+kablelį, tašką skirti.
+Vykdant programos fragmentą, klaviatūra įvestos kintamųjų reikšmės 5 ir 2. Kokį rezultatą spausdins programa?
+C++ Python
+
+36
+PROJEKTAS
+28 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Skaičiaus įrašymas nurodytu formatu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras (taip pat ir abstrakčiąsias). Naudojasi įvairiais duomenų 
+šaltiniais (pavyzdžiui, tekstiniais failais, jutikliais, internetu) (B2.3).
+Teisingas atsakymas: 7.50
+1
+Kokį rezultatą išspausdins duota programa?
+C++ Python
+
+37
+PROJEKTAS
+29 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Skaičiaus įrašymas nurodytu formatu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Kuria, naudoja ir modifikuoja programai 
+reikalingas duomenų struktūras (taip pat ir abstrakčiąsias). Derina įvairius 
+duomenų šaltinius (B2.4).
+Teisingas atsakymas: 2.6
+1
+Kokį rezultatą išspausdins duota programa?
+C++ Python
+
+38
+PROJEKTAS
+30 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Kelių skaičių (simbolių, simbolių eilučių) įrašymas, 
+atskiriant juos nurodytu simboliu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Slenkstinis pasiekimų lygis. Pasirenka ir naudoja programai reikalingas 
+duomenų struktūras. Naudojasi tekstiniais failais kaip duomenų šaltiniu (B2.1).
+Taškas skiriamas už teisingą atsakymą: 13 yra nelyginis
+1
+Kokį rezultatą išspausdins duota programa?
+ 
+C++ Python
+
+39
+PROJEKTAS
+31 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Kelių skaičių (simbolių, simbolių eilučių) įrašymas, 
+atskiriant juos nurodytu simboliu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras. Naudojasi įvairiais duomenų šaltiniais (pavyzdžiui, 
+tekstiniais failais, internetu) (B2.1).
+Taškas skiriamas už teisingą atsakymą: 17 10
+1
+Kokį rezultatą išspausdins duota programa?
+ 
+C++ Python
+
+40
+PROJEKTAS
+32 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Kelių skaičių (simbolių, simbolių eilučių) įrašymas, 
+atskiriant juos nurodytu simboliu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras (taip pat ir abstrakčiąsias). Naudojasi įvairiais duomenų 
+šaltiniais (pavyzdžiui, tekstiniais failais, jutikliais, internetu) (B2.3).
+Vienas taškas skiriamas už teisingą atsakymą 6;12;18;
+1
+Kokį rezultatą atspausdins duota programa?
+C++
+#include <iostream>
+using namespace std;
+int main() {
+ int sar[] = {2, 6, 8, 9, 12, 15, 18, 20};
+ int i = 0;
+ while (i < 8) {
+ if (sar[i] % 2 == 0 && sar[i] % 3 == 0) {
+ cout << sar[i] << ";";
+ }
+ i++;
+ }
+ return 0;
+}
+Python
+sar = [2, 6, 8, 9, 12, 15, 18, 20]
+i = 0
+while i < 8:
+ if sar[i] % 2 == 0 and sar[i] % 3 == 0:
+ print(sar[i], end=";")
+ i += 1
+
+41
+PROJEKTAS
+33 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Kelių skaičių (simbolių, simbolių eilučių) įrašymas, 
+atskiriant juos nurodytu simboliu Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Kuria, naudoja ir modifikuoja programai 
+reikalingas duomenų struktūras (taip pat ir abstrakčiąsias). Derina įvairius 
+duomenų šaltinius (B2.4).
+Teisingas atsakymas: 15 15 8 25
+1 Po paskutinio skaičiaus tarpelio 
+gali nebūti
+Kokią skaičių eilutę matysime ekrane įvykdžius duotą programą? Tekstiniame faile Duomenys.txt įrašyta tokia skaičių eilutė:
+5 13 15 -10 8 25
+C++ Python
+
+42
+PROJEKTAS
+34 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Simbolio(-ių) įrašymas Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Įrašytas teisingas 
+palyginimo 
+operatorius
+Slenkstinis pasiekimų lygis. Aptaria pateiktą realaus pasaulio problemą, nurodo 
+galimą sprendimą (B1.1).
+Teisingas atsakymas: <
+1
+Įrašykite trūkstamą loginį operatorių, kad programa nustatytų, kuris iš dviejų bėgikų yra greitesnis.
+C++ Python
+
+43
+PROJEKTAS
+35 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Simbolio(-ių) įrašymas Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Įrašytas teisingas 
+atsakymas
+Patenkinamas pasiekimų lygis. Modifikuoja savo ir kitų kuriamas programas. 
+Naudoja grupinio programavimo įrankius (B4.2).
+Vienas taškas skiriamas už teisingai įrašytą operatorių && arba and
+1 Galimas teisingas atsakymas and
+Įrašykite trūkstamą loginį operatorių, kad programa skaičiuotų, kiek įvestame žodyje yra mažųjų raidžių.
+C++ Python
+
+44
+PROJEKTAS
+36 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Simbolio(-ių) įrašymas Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Analizuoja programinės įrangos sąsajos 
+naudotojo poreikius, pateikia sąsajos projektą. Apibūdina ir kuria ar parenka 
+reikiamus algoritmus informacijai apdoroti (B3.3).
+Teisingas atsakymas:
+3 1 taškas skiriamas už teisingai įrašytą 
+k ciklo antraštėje.
+1 taškas skiriamas už masyvo narių 
+tinkamą masyvo elementų 
+perstūmimą: X[i] = X[i+1].
+1 taškas skiriamas už masyvo ilgio 
+sutrumpinimą 1. Sutrumpinimas gali 
+būti užrašytas ir taip:
+n = n - 1.
+Pateiktas programos fragmentas, kuris turėtų pašalinti masyvo X, kuriame yra n elementų, k-tąjį elementą. Tuščiuose langeliuose įrašykite trūkstamus kodo 
+fragmentus.
+C++ Python
+
+45
+PROJEKTAS
+37 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Simbolio(-ių) įrašymas Algoritmai ir programavimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Analizuoja programinės įrangos sąsajos 
+naudotojo poreikius, pateikia keletą alternatyvių sąsajos projektų. Kuria ir 
+modifikuoja reikiamus algoritmus informacijai apdoroti (B3.4).
+Teisingi atsakymai:
+Taip pat vietoj n - 1 - i galima rašyti ir n - 1
+2 1 taškas už vidinio ciklo antraštėje 
+įrašytą reikšmę n - 1 - i arba n - 1
+1 taškas už tinkamai įrašytas 
+reikšmes sąlygoje.
+Pateiktas sveikųjų skaičių masyvo A, kuriame yra n elementų, rikiavimo algoritmas Burbulo metodu. Stačiakampiuose įrašykite trūkstamus kodo 
+fragmentus, kad masyvo elementai būtų rikiuojami didėjančiai.
+C++ Python
+
+46
+PROJEKTAS
+38 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Žodžio įrašymas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+1 taškas skiriamas už 
+tinkamai įrašytą 
+sąvoką.
+Slenkstinis pasiekimų lygis. Naudodamasis netiesiogine pagalba pritaiko ir 
+integruoja įvairų skaitmeninį turinį (A2.1).
+Teisingas atsakymas: Infografikas
+1 Didžiosios ir mažosios raidės 
+neturi įtakos.
+Įrašykite tinkamą sąvoką.
+___________ – tai iliustracija, kurioje taikant grafinius elementus vizualiai patraukliai pateikiama informacija tam tikra tema. Įvairiais grafikais, simboliais, 
+paveikslėliais, komiksais, animacija pateikti duomenys padeda atkreipti auditorijos dėmesį, daug geriau įsiminti informaciją.
+
+47
+PROJEKTAS
+39 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Žodžio įrašymas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+1 taškas skiriamas už 
+tinkamai įrašytą 
+sąvoką.
+Patenkinamas pasiekimų lygis. Kuria, pagal nurodymus pritaiko ir integruoja 
+įvairų skaitmeninį turinį (A2.2).
+Teisingas atsakymas: vizualizavimas
+1 Didžiosios ir mažosios raidės 
+neturi įtakos.
+Trumpo atsakymo klausime, 
+kuriame reikia įrašyti žodį, reikia 
+numatyti, kad gali būti įrašyti 
+žodžiai vizualizacija, 
+vizualizavimas įvairiais 
+linksniais, panaudojant didžiąsias 
+raides.
+Įrašykite tinkamą žodį.
+Duomenų ________________ – tai duomenų pateikimo metodas, kai skaitiniai arba kokybiniai duomenys atvaizduojami naudojant lenteles, diagramas, 
+grafikus, žemėlapius, infografikus, siekiant aiškiai ir suprantamai parodyti tendencijas, modelius, ryšius tarp duomenų ar atskleisti jų reikšmę. 
+
+48
+PROJEKTAS
+40 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Žodžio įrašymas Technologinių problemų sprendimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Apibūdina kompiuterių tinklus ir jų sąrangą, geba 
+prisijungti prie tinklo įrenginių ir jais naudojasi, geba prisijungti prie belaidžių 
+įrenginių, nagrinėja technines naujoves (D1.3).
+Taškas skiriamas už teisingą atsakymą Ekstranetas
+1 Didžiosios ir mažosios raidės 
+neturi įtakos
+Įrašykite tinkamą sąvoką.
+_____________________ – tai organizacijos tinklas, kurį pasiekti gali organizacijos nariai ir registruoti išorės naudotojai.
+
+49
+PROJEKTAS
+41 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Trumpojo atsakymo klausimai Žodžio įrašymas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+1 taškas skiriamas už 
+tinkamai įrašytą 
+sąvoką.
+Aukštesnysis pasiekimų lygis. Savarankiškai ieško informacijos apie dirbtinio 
+intelekto, mašininio mokymosi, neuroninių tinklų taikymo sritis, vertina 
+privalumus, grėsmes ir etines problemas, siūlo sprendimus. Vertina 
+kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.4).
+Teisingas atsakymas – perceptronu.
+1 Didžiosios ir mažosios raidės 
+neturi įtakos.
+Įrašykite tinkamą sąvoką įnagininko linksniu.
+Tarpusavyje sujungti dirbtiniai neuronai vadinami dirbtiniu neuroniniu tinklu. Vieno neurono modelis, kuris skirtas duomenų atskyrimui į dvi klases, yra 
+vadinamas ____________________.
+
+50
+PROJEKTAS
+4. VBE 2 dalies užduoties vertinimas. Klausimų pavyzdžiai
+42 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Iliustracijos (paveikslo, brėžinio, diagramos, 
+schemos, lentelės) elementų paaiškinimas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Slenkstinis pasiekimų lygis. Naudodamasis netiesiogine pagalba pritaiko ir 
+integruoja įvairų skaitmeninį turinį (A2.1).
+Galimi teisingi atsakymai:
+Pasvirusi kūno padėtis į priekį – rodo, kad veikėjas pasiruošęs šokti, bėgti ar pulti. 
+Tai stiprina įtampos ir judesio laukimo įspūdį.
+Sukelti, sulenkti keliai – leidžia veikėjui greitai atsispirti nuo žemės. Tai būdinga 
+pasiruošimo judėjimui poza.
+Įtempti pirštai ir delnai prispausti prie žemės – perteikia raumenų įtampą ir 
+pasiruošimą staigiam veiksmui.
+Ryški veido išraiška (sukąsti dantys, suraukti antakiai) – rodo ryžtą, susikaupimą ar 
+pyktį, tai dažnai lydi veiksmo pradžią.
+Judesių linijos už veikėjo nugaros – tai animacijos principas, kuris nurodo kryptį ir 
+stiprina įspūdį, kad veikėjas tuoj pajudės.
+1 Jei nurodytas daugiau negu vienas 
+veiksmas, vertinamas tik pirmasis.
+Pasirengimas veiksmui („anticipation“) animacijoje apibūdina judesį, kuris paruošia žiūrovą kitam, svarbesniam veiksmui.
+Pateiktame animacijos kadre personažo rankos atitraukimas rodo pasirengimą veiksmui.
+Parašykite dar vieną iliustracijos elementą, kuris rodo, kad veikėjas tuoj atliks veiksmą.
+
+51
+PROJEKTAS
+43 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Iliustracijos (paveikslo, brėžinio, diagramos, 
+schemos, lentelės) elementų paaiškinimas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai nurodyti 2 
+animacijos kūrimo 
+elementai.
+Patenkinamas pasiekimų lygis. Kuria, pagal nurodymus pritaiko ir integruoja 
+įvairų skaitmeninį turinį (A2.2).
+Galimi teisingi atsakymai:
+Veikėjo ėjimo poza – rodo judesio teorijos taikymą (ėjimas), kad veikėjas atrodytų 
+gyvas.
+Veido išraiška – parodo emociją (nustebimas), tai susiję su kūno kalba ir išraiškomis.
+Garso takelio simbolis – rodo, kad yra integruotas įgarsinimas ar foninė muzika 
+(animacijos įgarsinimas).
+Fonas ir apšvietimas – parinktas tam, kad sukurtų tinkamą nuotaiką scenai (fono 
+parinkimas).
+2 Po 1 tašką už nurodytą ir 
+paaiškintą animacijos kūrimo 
+elementą.
+Jeigu nurodyti daugiau negu 2 
+elementai, vertinami pirmieji du.
+Žemiau pateiktas animacijos kadras. Paaiškinkite, kokie animacijos kūrimo elementai jame pavaizduoti. Nurodykite 2 skirtingus elementus ir paaiškinkite 
+jų paskirtį animacijoje.
+1.
+2.
+
+52
+PROJEKTAS
+44 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Iliustracijos (paveikslo, brėžinio, diagramos, 
+schemos, lentelės) elementų paaiškinimas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai paaiškinta 
+kaip šioje 
+iliustracijoje 
+pritaikyta trečdalių 
+taisyklė.
+Pagrindinis pasiekimų lygis. Kuria, kūrybiškai pritaiko ir integruoja įvairų 
+skaitmeninį turinį, naudoja programavimo elementus (A2.3).
+Veikėjas yra kairėje kadro pusėje, maždaug ties vertikalia trečdalių linija, o 
+ne centre – tai padeda atkreipti dėmesį į veikėjo žvilgsnio kryptį.
+Fono elementai (suoliukas, medis, takelis) subalansuoja kompoziciją dešinėje 
+pusėje – kadras atrodo harmoningas ir neperkrautas. Žiūrovo akis natūraliai seka 
+nuo veikėjo veido į foną – taip skatinamas vizualus pasakojimas.
+2 Po 1 tašką už nurodytą ir 
+paaiškintą trečdalių taisyklės 
+taikymo požymį.
+Jeigu nurodyti daugiau negu 2 
+požymiai, vertinami pirmieji du.
+Veikėjas nupieštas ne animacijos kadro centre, o šone. Paaiškinkite, kaip šioje iliustracijoje pritaikyta trečdalių taisyklė. Nurodykite du trečdalių taisyklės 
+taikymo požymius ir juos pagrįskite.
+
+53
+PROJEKTAS
+45 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Iliustracijos (paveikslo, brėžinio, diagramos, 
+schemos, lentelės) elementų paaiškinimas Skaitmeninio turinio kūrimas
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai nurodytas 
+iliustracijoje 
+pateiktas animavimo 
+principas. 
+Aukštesnysis pasiekimų lygis. Kuria ir derina skirtingą skaitmeninį turinį, 
+savarankiškai atsirenka tinkamą informaciją iš įvairių šaltinių (A2.4).
+Galimi teisingi atsakymai:
+Iliustracijoje parodyta, kaip animacijoje naudojamos deformacijos, siekiant 
+sustiprinti judesio įspūdį.
+● Iliustracijoje veikėjas pašoka aukštyn, o jo kūnas išsitempęs (stretch) –
+tai sustiprina greičio ir šuolio aukščio įspūdį.
+● Kai nusileidžia, kūnas suplokštėja (squash) – tai perteikia smūgio jėgą ir 
+svorio pojūtį.
+Deformacijos padeda animacijai atrodyti gyvai, lanksčiai ir fiziškai įtikinamai. 
+Jas taikyčiau, pvz., kai veikėjas krenta, šokinėja ar labai greitai reaguoja.
+2 1 taškas skiriamas už animavimo 
+principo pavadinimą.
+1 taškas skiriamas už 
+paaiškinimą, kokius fizinius 
+jausmus ar emocijas perteikia 
+deformacijos principas.
+Koks animavimo principas pateiktas iliustracijoje? Paaiškinkite, kokius fizinius jausmus ar emocijas perteikia iliustracijoje pateiktas animavimo principas.
+
+54
+PROJEKTAS
+46 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Atvejo (iliustracijos) analizė Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai nurodyti ir 
+paaiškinti veido 
+atpažinimo 
+technologijos 
+taikymo privalumai
+Slenkstinis pasiekimų lygis. Atpažįsta dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis. Apibrėžia kriptografinės sistemos, 
+viešojo rakto, sertifikato sąvokas (C3.1).
+Galimi teisingi atsakymai:
+1. Saugumas ir efektyvi prieiga. Veido atpažinimas suteikia saugesnę prieigą 
+nei rakto kortelė ar kodas. Nelegalios prieigos atveju – sistema gali atpažinti 
+nepažįstamą veidą ir aktyvuoti signalizaciją ar įspėjimus.
+2. Patogumas ir personalizacija. Namuose nereikalingi raktai ir slaptažodžiai 
+– durų spyna atrakinama automatiškai, o namuose pasitinka jūsų personalizuotas 
+aplinkos nustatymas: apšvietimas, muzika, temperatūra.
+3. Saugumas internete ir privatumo kontrolė. Aukštos kokybės sistemos 
+naudoja vietinį atpažinimą (edge computing) – asmeniniai veido profiliai 
+saugomi namuose, ne debesyje, taip sumažinant privatumo riziką.
+Galimi ir kiti teisingi atsakymai.
+2 Po 1 tašką už kiekvieną nurodytą 
+ir paaiškintą privalumą. Jei 
+privalumai nurodyti, bet 
+nepaaiškinti, skiriamas 1 taškas.
+Jei nurodyti daugiau negu 2 
+privalumai, vertinami tik pirmieji 
+du.
+Modernaus namo savininkas nori sukurti saugią ir personalizuotą namų aplinką. Planuojama įdiegti sistemą su veido atpažinimo kameromis, susijusiomis 
+su išmaniomis spynomis, apšvietimu ir namų pramogų įranga. Kameros atpažįsta gyventojus prie durų, automatiškai atrakina duris, reguliuoja apšvietimą ir 
+temperatūrą bei įjungia muziką ar televizorių pagal asmens profilį. Sistema taip pat stebi aplinką – identifikuoja nepažįstamus veidus, siunčia įspėjimus ir 
+inicijuoja apsaugos sistemą.
+Pateikite du veido atpažinimo technologijos taikymo išmaniuosiuose namuose privalumus ir juos paaiškinkite.
+
+55
+PROJEKTAS
+47 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Atvejo (iliustracijos) analizė Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingai nurodyti ir 
+paaiškinti pokalbių 
+roboto taikymo 
+bibliotekoje 
+privalumai
+Patenkinamas pasiekimų lygis. Nurodo dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis, įžvelgia privalumus ir grėsmes. 
+Aptaria kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.2).
+Galimi teisingi atsakymai:
+1.Greitas ir 24/7 aptarnavimas – pokalbių robotas gali automatiškai atsakyti į 
+dažniausius klausimus bet kokiu metu, sumažindamas skaitytojų laukimo 
+laiką.
+2.Efektyvumas ir kaštų taupymas – automatizuotas aptarnavimas mažina 
+darbuotojų krūvį ir leidžia jiems susitelkti į sudėtingesnes užduotis.
+3.Personalizuotos rekomendacijos ir informacijos gavimas – naudojant DI, 
+pokalbių robotas gali siūlyti tinkamiausias knygas, renginius ar tyrimų 
+šaltinius, remdamasis skaitytojo istorija ir interesais.
+4.Duomenų rinkimas aptarnavimo kokybei – pokalbių robotas gali analizuoti 
+vartotojų užklausas, identifikuoti pasikartojančias temas ir padėti 
+optimizuoti bibliotekos paslaugas.
+5.Įtraukties didinimas – DI padeda skaitytojams, kurie neturi galimybės 
+lankytis bibliotekoje – peržiūrėti knygų katalogą, registruotis į renginius.
+Galimi ir kiti teisingi atsakymai.
+2 Po 1 tašką už kiekvieną nurodytą 
+ir paaiškintą privalumą. Jei 
+privalumai nurodyti, bet 
+nepaaiškinti, skiriamas 1 taškas.
+Jei nurodyti daugiau negu 2 
+privalumai, vertinami tik pirmieji 
+du.
+Viešoji biblioteka susiduria su augančiu lankytojų skaičiumi ir vis sudėtingesnėmis užklausomis (pvz., apie retas knygas, mokslinius straipsnius, renginių 
+registracijas). Tačiau bibliotekos darbuotojų skaičius neleidžia operatyviai atsakyti į visus vartotojų klausimus, ypač po darbo valandų ir savaitgaliais. 
+Iškilusioms problemoms spręsti bibliotekoje rengiamasi įdiegti dirbtiniu intelektu pagrįstą pokalbių robotą.
+Nurodykite 2 pokalbių roboto taikymo bibliotekoje privalumus ir juos paaiškinkite.
+
+56
+PROJEKTAS
+48 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Atvejo (iliustracijos) analizė Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Pagrindinis pasiekimų lygis. Nagrinėja dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis, vertina privalumus ir grėsmes. 
+Vertina kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.3).
+Galimi atsakymai:
+1. Privalumai:
+● Didesnis tikslumas kai kuriose srityse (pvz., radiologijoje).
+● Mažesnis gydytojų darbo krūvis.
+● Pagalba atokiuose regionuose, kur trūksta specialistų.
+2. Trūkumai:
+● Sunku paaiškinti, kaip sistema priėmė sprendimą („juodoji dėžė“).
+● Duomenų privatumo pažeidimai.
+● Per didelis pasitikėjimas automatika.
+Galimi kiti panašūs teisingi atsakymai.
+2 Po 1 tašką už kiekvieną teisingą 
+atsakymą.
+Jei privalumų / trūkumų pateikta 
+daugiau kaip po vieną, vertinami 
+tik pirmieji.
+Ligoninė pradeda naudoti dirbtinio intelekto sistemą, kuri padeda gydytojams analizuoti rentgeno nuotraukas. Sistema gali automatiškai atpažinti plaučių 
+uždegimo ar navikų požymius, pasiūlyti galimas diagnozes ir padėti gydytojui priimti sprendimą greičiau.
+Vienas iš sistemos privalumų yra tas, kad gydytojas gali greičiau pastebėti ligą, sumažėja rizika, kad liga bus nepastebėta.
+Vienas iš sistemos trūkumų yra tas, kad jei sistema padaro klaidą, gali būti netinkama diagnozė.
+1. Nurodykite dar vieną kitokį sistemos privalumą………………………………………
+2. Nurodykite dar vieną kitokį sistemos trūkumą………………………………………...
+
+57
+PROJEKTAS
+49 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Atvejo (iliustracijos) analizė Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Aukštesnysis pasiekimų lygis. Savarankiškai ieško informacijos apie dirbtinio 
+intelekto, mašininio mokymosi, neuroninių tinklų taikymo sritis, vertina 
+privalumus, grėsmes ir etines problemas, siūlo sprendimus. Vertina 
+kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.4).
+Galimi teisingi atsakymai:
+1. Jei perkamas pienas, rekomenduoti sviestą.
+2. Padidėja pardavimai, nes vartotojas dažnai perka šiuos produktus kartu. 
+Sutaupoma laiko, nes pirkėjas greičiau suranda norimą prekę.
+3. Jei taisyklės taikomos neteisingai, sistema gali siūlyti neaktualius 
+produktus, o tai erzina pirkėjus, mažina pasitikėjimą sistema.
+Galimi kiti teisingi 2 ir 3 atsakymų variantai.
+3
+Elektroninė parduotuvė analizuoja klientų pirkinių krepšelius. Kad būtų galima automatiškai rekomenduoti papildomas prekes, siekiama taikyti asociacijų 
+taisykles: ieškoma prekių porų, kurios dažnai pasitaiko kartu. Jei dvi prekės perkamos kartu bent 3 kartus, sudaroma taisyklė: „Jei perkama prekė X, 
+rekomenduoti prekę Y“.
+1. Pagal pateiktus prekių krepšelius sudarykite taisyklę „Jei perkamas pienas, rekomenduoti prekę Y“.
+2. Pagrįskite, kodėl asociacijų taisyklės yra naudingos el. parduotuvei ar vartotojui.
+3. Kokia rizika gali kilti, jei sistema remsis klaidingomis taisyklėmis?
+
+58
+PROJEKTAS
+50 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo vykdymas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Slenkstinis pasiekimų lygis. Atpažįsta dirbtinio intelekto, mašininio mokymosi, 
+neuroninių tinklų taikymo sritis. Apibrėžia kriptografinės sistemos, viešojo rakto, 
+sertifikato sąvokas (C3.1).
+Taškas skiriamas už abi teisingai nurodytas reikšmes: C E.
+1 Duomenys sąraše gali būti 
+skiriami tarpais arba bet kokiu 
+kitu simboliu.
+Pateiktas situacijų sąrašas:
+A Mobilioji programėlė leidžia atidaryti paštomato dureles, kai sistema atpažįsta siuntą pagal QR kodą.
+B Naudotojas įveda slaptažodį norėdamas prisijungti prie el. bankininkystės sistemos.
+C Muzikos programėlė automatiškai siūlo dainas pagal tai, ką naudotojas dažniausiai klauso.
+D Kompiuteris atveria dokumento failą ir išsaugo PDF formatu.
+E Elektroninė parduotuvė rodo prekes, kurios „turėtų patikti“, nes naudotojas jas peržiūrėjo anksčiau.
+F Smulkaus verslo įmonė naudoja skaičiuoklę buhalterinei apskaitai.
+Pateiktas algoritmas, kuris leidžia nustatyti, ar taikomas dirbtinis intelektas:
+1. Perskaitykite situacijos aprašymą.
+2. Patikrinkite, ar aprašytoje situacijoje taikomas mokymasis iš duomenų, sprendimų priėmimas ar modelių atpažinimas (pvz., vaizdų, tekstų, 
+balsų, elgsenos).
+3. Jei taip – laikoma, kad naudojamas dirbtinis intelektas.
+4. Jei taikomas dirbtinis intelektas, įtraukite situaciją į tinkamų sąrašą.
+Koks bus sąrašas, kiekvienai situacijai pritaikius algoritmą? Sąraše nurodykite tik situacijas žyminčias didžiąsias raides.
+
+59
+PROJEKTAS
+51 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo vykdymas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Nurodo dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis, įžvelgia privalumus ir grėsmes. 
+Aptaria kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.2).
+Taškas skiriamas už abi teisingai nurodytas reikšmes:
+Šlamštas: 3
+Nešlamštas: 2
+1 Duomenys sąraše gali būti 
+skiriami tarpais arba bet kokiu 
+kitu simboliu. Gali būti su 
+aprašymu. Jei be aprašymo, tai 
+pirmiausia turi būti nurodytas 
+šlamšto laiškų skaičius.
+Pateikti 5 elektroninių laiškų aprašymai:
+A Laiškas iš prizes@fast-win.com siūlo atsiimti išmanųjį telefoną paspaudus pateiktą nuorodą.
+B Laiškas iš draugo su priedu: klasės nuotraukos iš išvykos.
+C Laiškas iš joboffers@bestcareer.com siūlo darbą su dideliu atlyginimu ir įtartina nuoroda.
+D Laiškas iš mokyklos administracijos su priminimu apie tėvų susirinkimą.
+E Laiškas iš info@web-gift.net rašo apie laimėjimą, laiške nėra jokios nuorodos.
+Sistema automatiškai tikrina el. laiškus, kad nuspręstų, ar jie yra šlamštas, ar svarbūs.
+Algoritmas
+1. Perskaitykite laiško aprašymą.
+2. Pažymėkite, ar jame yra šie šlamšto požymiai:
+● siūloma greita nauda ar prizas;
+● yra įtartina nuoroda;
+● neįprastas arba nežinomas siuntėjas.
+3. Jei laiške yra bent 2 iš 3 požymių, jis laikomas šlamštu. Visais kitais atvejais - ne šlamštas.
+Pritaikykite algoritmą kiekvieno laiško aprašymui ir apskaičiuokite, kiek yra šlamšto ir kiek ne šlamšto.
+Šlamštas:
+Nešlamštas:
+
+60
+PROJEKTAS
+52 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo vykdymas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Nagrinėja dirbtinio intelekto, mašininio 
+mokymosi, neuroninių tinklų taikymo sritis, vertina privalumus ir grėsmes. 
+Vertina kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.3).
+Taškas skiriamas už visas teisingai normalizuotas reikšmes.
+0; 0,75; 1
+1 Trupmeninė dalis gali būti 
+atskirta ir tašku, ir kableliu.
+Duomenys gali būti skiriami 
+tarpais arba bet kokiu kitu 
+simboliu.
+Skaičiaus formatas nesvarbus.
+Kuriant mašininio mokymosi ir neuroninių tinklų modelius, pradiniai duomenys yra normalizuojami. Normalizuojant, duomenys transformuojami į vieną 
+skalę, kad visi požymiai turėtų panašią įtaką modeliui. Normalizuoti duomenys padaro požymius palyginamus.
+Pateiktas duomenų normalizavimo algoritmas:
+1. Pradiniai duomenys: 10; 40; 50.
+2. Pradinių duomenų rinkinyje randamos minimali ir maksimali reikšmės.
+3. Kiekviena reikšmė transformuojama pritaikant formulę:
+Kokios bus duomenų reikšmės atlikus normalizavimą?
+
+61
+PROJEKTAS
+53 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo vykdymas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Savarankiškai ieško informacijos apie dirbtinio 
+intelekto, mašininio mokymosi, neuroninių tinklų taikymo sritis, vertina 
+privalumus, grėsmes ir etines problemas, siūlo sprendimus. Vertina 
+kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.4).
+Taškas skiriamas už tris teisingai nurodytus vardus: Gabija, Emilija, Saulė
+1 Duomenys sąraše gali būti 
+skiriami tarpais arba bet kokiu 
+kitu simboliu. Vardų tvarka 
+nesvarbi.
+Dirbtinio intelekto sistema naudoja sprendimų medį, kad nuspręstų, ar naudotojas gali prisijungti prie paskyros. Reikia vykdyti sprendimo medžio algoritmą 
+ir įvertinti, kaip sistema veikia.
+Algoritmas
+1. Jei įvestas slaptažodis yra teisingas, pereikite prie 2 žingsnio. Jei neteisingas – prisijungti neleidžiama, tolimesnių algoritmo žingsnių nevykdykite.
+2. Jei įjungta dviejų faktorių autentifikacija (2FA), pereikite prie 3 žingsnio. Jei 2FA neįjungta – prisijungti leidžiama, trečio žingsnio nevykdykite.
+3. Jei vartotojas įveda teisingą patvirtinimo kodą – prisijungti leidžiama. Jei kodas neteisingas – prisijungti neleidžiama.
+Pateikti duomenys apie naudotojus:
+Pritaikykite sprendimų medžio algoritmą ir nurodykite tų naudotojų vardus, kurie prisijungs prie paskyros.
+
+62
+PROJEKTAS
+54 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo sudarymas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi algoritmo 
+žingsniai
+Slenkstinis pasiekimų lygis. Sprendžia paprastas problemas, susijusias su 
+asmens duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save 
+virtualiojoje aplinkoje (F3.1).
+Teisingi algoritmo žingsniai
+● Sulaukti 2FA užklausos – pamatyti prašymą įvesti papildomą kodą.
+● Gauti kodą SMS žinute ar panaudojant autentifikavimo programėlę 
+(pvz., Google Authenticator).
+● Suvesti kodą ir prisijungti prie paskyros.
+Už kiekvieną teisingą žingsnį skiriamas vienas taškas.
+3 Žingsnių eilės tvarka yra svarbi.
+Gabija yra įjungusi dviejų faktorių autentifikaciją savo el. pašto paskyroje. Dabar ji nori prisijungti prie paskyros iš naujo kompiuterio.
+Papildykite pradėtą kurti algoritmą, kuris padėtų Gabijai prisijungti, dar trimis žingsniais. Kiekvienas informacijos gavimas ar išsiuntimas laikytinas 
+atskiru žingsniu.
+Algoritmas
+1. Įeiti į prisijungimo puslapį ir įvesti el. pašto naudotojo vardą bei slaptažodį
+2. …
+3. …
+4. …
+
+63
+PROJEKTAS
+55 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo sudarymas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi algoritmo 
+žingsniai.
+Patenkinamas pasiekimų lygis. Sprendžia įvairias problemas, susijusias su 
+asmens duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save ir 
+kitus virtualiojoje aplinkoje (F3.2).
+Galimi algoritmo žingsniai
+● Patikrinti paskyros saugos nustatymus.
+● Suaktyvinti papildomas saugos priemones, tokias kaip dviejų faktorių 
+autentifikaciją, slaptažodžių tvarkyklę.
+● Pakeisti slaptažodžius kitose susietose paskyrose.
+Galimi ir kiti teisingi algoritmo žingsniai.
+Už kiekvieną teisingą žingsnį skiriamas vienas taškas.
+3 Žingsnių eilės tvarka nesvarbi.
+Jei kandidatas parašo daugiau nei 
+tris žingsnius, vertinami pirmi 
+trys.
+Tomas pastebėjo, kad jo el. pašto paskyra pradėjo siųsti laiškus be jo žinios. Prisijungimų istorijoje jis mato, kad prie paskyros buvo jungtasi iš užsienio 
+šalies, kurioje jis niekada nesilankė. Jis įtaria, kad jo slaptažodis buvo pavogtas kibernetinės atakos metu.
+Papildykite pradėtą kurti algoritmą kaip Tomui derėtų elgtis šioje situacijoje dar trimis žingsniais.
+Algoritmas
+1. Nedelsiant pakeisti slaptažodį.
+2. …
+3. …
+4. …
+
+64
+PROJEKTAS
+56 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo sudarymas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi algoritmo 
+žingsniai.
+Pagrindinis pasiekimų lygis. Pasirenka tinkamiausius būdus spręsti problemas, 
+susijusias su asmens duomenimis, jų privatumu ir teisėtu naudojimu, siekdamas 
+apsaugoti save ir kitus virtualiojoje aplinkoje (F3.3).
+Galimi algoritmo žingsniai
+● Pateikti tik būtiną informaciją (tik tai, ko reikia prekių užsakymui ir 
+pristatymui).
+● Pasirinkti stiprų, niekur kitur nenaudojamą slaptažodį.
+● Patikrinti paskyros saugumo nustatymus ir, jei įmanoma, įjungti dviejų 
+veiksnių autentifikavimą (2FA).
+Galimi ir kiti teisingi algoritmo žingsniai.
+Už kiekvieną teisingą žingsnį skiriamas vienas taškas.
+3 Žingsnių eilės tvarka nesvarbi.
+Jei kandidatas parašo daugiau nei 
+tris žingsnius, vertinami pirmi 
+trys.
+Ema nori užsiregistruoti naujoje elektroninėje parduotuvėje, kad galėtų užsakyti drabužių internetu. Registracijos metu jos prašoma nurodyti šiuos 
+duomenis:
+● vardą ir pavardę,
+● el. pašto adresą,
+● telefono numerį,
+● namų adresą,
+● pasirinkti slaptažodį.
+Papildykite pradėtą kurti algoritmą trimis žingsniais, kaip Ema turėtų elgtis, kad saugiai užsiregistruotų elektroninėje parduotuvėje ir apsaugotų savo asmens 
+duomenis.
+Algoritmas
+1. Patikrinti, ar parduotuvė yra patikima – ar turi saugų (https://) adresą, aiškias privatumo taisykles; internete galima rasti atsiliepimų apie parduotuvės 
+prekių kokybę ir pristatymo terminus.
+2. …
+3. …
+4. …
+
+65
+PROJEKTAS
+57 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Algoritmo sudarymas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi algoritmo 
+žingsniai
+Aukštesnysis pasiekimų lygis. Įsivertina gebėjimus efektyviai spręsti 
+problemas, susijusias su asmens duomenimis, jų privatumu ir teisėtu naudojimu, 
+siekdamas apsaugoti save ir kitus virtualiojoje aplinkoje, juos tobulinasi (F3.4).
+Galimi algoritmo žingsniai
+● Patikrinkite, ar svetainė leidžia naudotojui sutikti arba atsisakyti duomenų 
+rinkimo (pvz., pažymėti varnelę „Sutinku su privatumo politika“).
+● Patikrinkite, ar svetainėje nerenkama daugiau duomenų, nei būtina (pvz., ar 
+būtina rinkti naudotojo telefono numerį?).
+● Patikrinkite, ar naudotojui suteikiama galimybė atsisakyti savo duomenų 
+saugojimo (pvz., pareikalauti ištrinti duomenis).
+● Patikrinkite, ar duomenys perduodami saugiai į svetainę, pvz., ar 
+naudojamas HTTPS protokolas.
+Galimi ir kiti teisingi algoritmo žingsniai.
+Už kiekvieną teisingą žingsnį skiriamas vienas taškas.
+3 Žingsnių eilės tvarka nesvarbi.
+Jei kandidatas parašo daugiau nei 
+tris žingsnius, vertinami pirmi 
+trys.
+Įmonė kuria naują internetinę svetainę ir nori įsitikinti, kad laikosi BDAR (Bendrojo duomenų apsaugos reglamento) reikalavimų. Svetainėje lankytojai 
+pateikia savo vardą, elektroninio pašto adresą ir telefono numerį registracijos formoje.
+Papildykite pradėtą kurti algoritmą, kuris padėtų įvertinti, ar svetainėje laikomasi BDAR reikalavimų, dar trimis žingsniais.
+Algoritmas
+1. Patikrinkite, ar svetainėje aiškiai pateikiama privatumo politika ir ar naudotojas su ja gali susipažinti prieš pateikdamas savo duomenis.
+2. …
+3. …
+4. …
+
+66
+PROJEKTAS
+58 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Pavyzdžių pateikimas Saugus elgesys
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais Pastabos
+Teisingas atsakymas. Slenkstinis pasiekimų lygis. Sprendžia paprastas problemas, susijusias su asmens 
+duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save virtualiojoje 
+aplinkoje (F3.1).
+Galimi teisingi atsakymai:
+1 pavyzdys: Mokinys įkelia į socialinius tinklus klasės nuotrauką be kitų mokinių 
+sutikimo.
+Pažeidžiami duomenys: veidai (vaizdo duomenys).
+Tinkamas elgesys: Prieš viešinant reikia gauti raštišką ar žodinį sutikimą.
+2 pavyzdys: Mokinė bendraklasiui persiunčia draugo adresą ir telefono numerį.
+Pažeidžiami duomenys: kontaktiniai duomenys.
+Tinkamas elgesys: Asmeniniais duomenimis galima dalintis tik gavus sutikimą.
+3 pavyzdys: Mokinys viešai paskelbia klasės sąrašą su pavardėmis ir gimimo datomis 
+mokyklos forume.
+Pažeidžiami duomenys: pavardės, gimimo datos.
+Tinkamas elgesys: Tokie duomenys turi būti prieinami tik mokytojams ar 
+administracijai, o ne viešai.
+4 pavyzdys: Mokytojas pamokos įrašą, kuriame matyti mokinių veidai ir girdimi 
+vardai, įkelia į „YouTube“ be tėvų ar mokinių sutikimo.
+Pažeidžiami duomenys: vaizdas, vardas, balsas.
+Tinkamas elgesys: Pamokų įrašai turi būti saugomi saugioje aplinkoje, pasiekiami tik 
+mokyklos bendruomenei ir tik su sutikimu.
+5 pavyzdys: Mokinė prisijungia prie internetinės viktorinos naudodama klasės draugo 
+vardą ir el. pašto adresą.
+Pažeidžiami duomenys: vardas, el. paštas, galimai renkami atsakymai/testo rezultatai.
+Tinkamas elgesys: Kiekvienas turi naudoti tik savo duomenis.
+Galimi ir kiti teisingi atsakymai.
+3 1 taškas už 2 pavyzdžių pateikimą.
+Po 1 tašką už kiekvieno pavyzdžio 
+paaiškinimą.
+Jei pateikti daugiau negu 2 
+pavyzdžiai, vertinami tik pirmieji 2 
+atsakymai.
+Pateikite du pavyzdžius, kai virtualioje aplinkoje pažeidžiamos asmens duomenų apsaugos taisyklės pagal BDAR.
+1. Aprašykite 2 trumpus pavyzdžius, kuriuose būtų pažeidžiamos BDAR taisyklės.
+2. Paaiškinkite, kaip galimai pažeista asmens duomenų sauga ir kaip reikėtų elgtis teisingai, kad to būtų išvengta.
+
+67
+PROJEKTAS
+59 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Pavyzdžių pateikimas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Patenkinamas pasiekimų lygis. Sprendžia įvairias problemas, susijusias su asmens 
+duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save ir kitus 
+virtualiojoje aplinkoje (F3.2).
+Teisingas atsakymas:
+Elektroninė laiko žyma patvirtina, kada tiksliai tam tikras dokumentas ar duomenys 
+buvo sukurti, gauti ar pasirašyti. Ji svarbi tiek teisiniais, tiek techniniais tikslais.
+Galimi ir kiti panašūs teisingi atsakymai
+Galimi pavyzdžiai:
+1. Pasirašant sutartį internetu tarp dviejų šalių laiko žyma įrodo, kada tiksliai 
+sutartis buvo pasirašyta (ypač svarbu dėl terminų, galiojimo ar ginčų).
+2. Teikiant paraišką konkursui (pvz., viešiesiems pirkimams) įrodoma, kad 
+dokumentas pateiktas iki nurodyto termino.
+3. Archyvuojant skaitmeninius dokumentus įmonėje užtikrinama, kad dokumentai 
+egzistavo konkrečiu metu ir nebuvo pakeisti po to.
+4. Įrodant, kada buvo išsiųstas ar gautas el. laiškas su dokumentu. Laiko žyma 
+padeda spręsti ginčus dėl terminų.
+5. Pasirašant elektroninę sąskaitą faktūrą laiko žyma padeda atsekti, kada sąskaita 
+buvo sugeneruota.
+6. Notariniai ar teisiniai dokumentai (pvz., testamentai, skundai, pareiškimai).
+Laiko žyma suteikia teisinę galią, kad dokumentas galiojo nuo tam tikro momento.
+7. Verslo sandoriai su griežtu įsigaliojimo laiku, pvz., kai kaina ar sąlygos priklauso 
+nuo konkrečios datos ir laiko.
+8. Studentų baigiamieji darbai ar projektai, teikiami per el. sistemas. Laiko žyma 
+leidžia patikrinti, ar darbas pateiktas laiku.
+9. Finansinių duomenų registravimas. Apskaitoje svarbu turėti įrodymų, kada įrašas 
+buvo padarytas.
+10. Duomenų atsarginės kopijos (backup) fiksavimas. Laiko žyma parodo, kada 
+buvo padaryta kopija – tai svarbu atstatant duomenis ar vykdant auditą.
+2 1 taškas už paaiškinimą.
+1 taškas už 2 pateiktus pavyzdžius.
+Jei pavyzdžių daugiau negu 2, 
+vertinami tik du pirmieji.
+Paaiškinkite, kam skirta elektroninė laiko žyma.
+Pateikite 2 pavyzdžius, kada elektroninė laiko žyma yra būtina.
+
+68
+PROJEKTAS
+60 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Pavyzdžių pateikimas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Pagrindinis pasiekimų lygis. Pasirenka tinkamiausius būdus spręsti problemas, 
+susijusias su asmens duomenimis, jų privatumu ir teisėtu naudojimu, siekdamas 
+apsaugoti save ir kitus virtualiojoje aplinkoje (F3.3).
+Galimi teisingi atsakymai:
+1.Pagal Bendrąjį duomenų apsaugos reglamentą (BDAR), netiesioginiai asmens 
+duomenys – tai tokia informacija, kuri pati savaime asmens neidentifikuoja, 
+bet kartu su kita informacija gali leisti atpažinti konkretų asmenį.
+2.Pavyzdžiai:
+Automobilio valstybinis numeris. Per registrų duomenis galima nustatyti 
+savininką.
+IP adresas. Su tinklo ar paslaugų teikėjo informacija galima nustatyti vartotoją.
+Mokyklos pavadinimas + klasė + amžius. Jei žinome, kad kažkas mokosi 
+konkrečioje klasėje ir yra tam tikro amžiaus, galima susiaurinti iki konkretaus 
+mokinio.
+Darbo vieta + pareigos + darbo el. pašto adresas, pvz., „vyriausiasis 
+buhalteris ligoninėje X“ – tai siauras ratas, kuris leidžia identifikuoti asmenį.
+Nuotrauka be vardo, bet su vietove ir data. Nuotraukoje žmogus neįvardytas, 
+tačiau žinant, kur ir kada ji daryta, galima atpažinti jį per socialinius tinklus ar 
+kitą kontekstą.
+Galimi ir kiti teisingi pavyzdžiai.
+2 1 taškas skiriamas už 
+paaiškinimą. 1 taškas skiriamas 
+už 2 pateiktus pavyzdžius.
+Jei pavyzdžių daugiau negu 2, 
+vertinami tik pirmieji du.
+BDAR apibrėžia asmens duomenis kaip informaciją, pagal kurią asmuo gali būti identifikuotas tiesiogiai arba netiesiogiai. 
+1. Paaiškinkite, kaip naudojant netiesioginius asmens duomenis galima identifikuoti asmenį. 
+2. Pateikite 2 pavyzdžius, kaip asmuo gali būti identifikuojamas pagal netiesioginius asmens duomenis.
+
+69
+PROJEKTAS
+61 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Pavyzdžių pateikimas Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Aukštesnysis pasiekimų lygis. Įsivertina gebėjimus efektyviai spręsti problemas, susijusias su asmens 
+duomenimis, jų privatumu ir teisėtu naudojimu, siekdamas apsaugoti save ir kitus virtualiojoje 
+aplinkoje, juos tobulinasi (F3.4).
+Teisingi atsakymai:
+1. Kibernetinė sauga = technologijos + procedūros, saugančios sistemą. Duomenų sauga = informacijos 
+apsauga nuo neteisėto naudojimo. Ryšys: viena be kitos neveikia – kibernetinė sauga saugo prieigą, o 
+duomenų sauga – turinį.
+Kibernetinė sauga yra apsauginis sluoksnis, leidžiantis apsaugoti informaciją, kai ji perduodama, 
+saugoma ar naudojama. Kai kibernetinės saugos nėra arba ji neefektyvi – pažeidžiama ir duomenų 
+sauga.
+2. Pavyzdžiai:
+1. El. pašto paskyros nulaužimas
+● Situacija: Vartotojas neapsaugo savo el. pašto paskyros dviejų veiksnių autentifikavimu. 
+Įsilaužėlis sužino slaptažodį per duomenų nutekinimą ir prisijungia prie paskyros.
+● Kibernetinė sauga: Neužtikrinta paskyros apsauga (techninis pažeidžiamumas).
+● Duomenų sauga: Įsilaužėlis gauna prieigą prie asmeninių ar konfidencialių laiškų, failų, net 
+finansinių duomenų.
+2. Duomenų nutekinimas dėl pažeidžiamo serverio
+● Situacija: Įmonė naudoja pasenusią sistemą, kurioje aptinkamas saugumo spragų turintis 
+serveris.
+● Kibernetinė sauga: Nepakankama – neįdiegti atnaujinimai, silpnos prieigos kontrolės 
+priemonės.
+● Duomenų sauga: Nutekinami tūkstančių klientų vardai, el. paštai, gal net mokėjimo duomenys.
+3. Duomenų šifravimas siekiant apsaugoti informaciją per ataką
+● Situacija: Organizacijos kompiuteriai užkrėsti išpirkos reikalaujančiu virusu (ransomware).
+● Kibernetinė sauga: Programinė įranga neaptiko grėsmės laiku.
+● Duomenų sauga: Duomenys užšifruoti įsilaužėlių – organizacija netenka prieigos.
+4. Darbuotojas prisijungia prie įmonės tinklo iš viešo „Wi-Fi“
+● Situacija: Darbuotojas jungiasi prie įmonės sistemos kavinėje naudodamas viešą, neapsaugotą 
+tinklą.
+● Kibernetinė sauga: Nesaugi tinklo aplinka kelia grėsmę perėmimui (sniffing).
+2 1 taškas skiriamas už 
+ryšio paaiškinimą.
+1 taškas skiriamas už 2 
+tinkamus pavyzdžius.
+Jei pateikti daugiau 
+negu 2 pavyzdžiai, 
+vertinami pirmieji du. 
+
+70
+PROJEKTAS
+● Duomenų sauga: Galima perimti prisijungimo duomenis, konfidencialią informaciją.
+5. Darbuotojas netyčia parsisiunčia kenkėjišką failą iš el. pašto
+● Situacija: Darbuotojas atidaro prisegtuką iš „vadovo“ el. laiško – laiškas iš tikro buvo 
+suklastotas.
+● Kibernetinė sauga: Nebuvo įjungti laiškų filtravimo mechanizmai ar SPF patikra.
+● Duomenų sauga: Ataka gali leisti pasiekti įmonės dokumentus ar pavogti failus.
+6. Socialinė inžinerija įveikia autentifikavimo sistemą
+● Situacija: Telefonu prisistatęs „IT specialistas“ įkalbina darbuotoją pasakyti prisijungimo 
+slaptažodį.
+● Kibernetinė sauga: Tinklas techniškai saugus, bet žmonių elgesys sukelia pažeidžiamumą.
+Duomenų sauga: Įsilaužėlis gauna prieigą prie konfidencialių dokumentų.
+1. Paaiškinkite, kaip kibernetinė sauga yra susijusi su duomenų sauga.
+2. Pateikite 2 pavyzdžius, iliustruojančius kas gali nutikti duomenims, jei neužtikrinama kibernetinė sauga.
+
+71
+PROJEKTAS
+62 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Išsamūs atsakymai (reikalaujantys argumentavimo, 
+paaiškinimo, samprotavimo) Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Slenkstinis pasiekimų lygis. Atpažįsta dirbtinio intelekto, mašininio mokymosi, 
+neuroninių tinklų taikymo sritis. Apibrėžia kriptografinės sistemos, viešojo rakto, 
+sertifikato sąvokas (C3.1).
+Galimi teisingi atsakymai:
+1. Tinkamos užklausos esminiai bruožai: (1) užklausoje turi būti viena pagrindinė 
+idėja ar klausimas; (2) apibrėžiamas reikalingas kontekstas, kad robotas suprastų 
+situaciją; (3) pateikiami konkretūs terminai, skaičiai; (4) aiškiai nurodoma, kokiu 
+formatu pateikti atsakymą; (5) nurodomos atsakymo apimties ribos; (6) nurodoma, 
+kokio žinių lygio atsakymo tikimasi; (7) mandagi formuluotė ir tiksli semantika.
+Gera užklausa pokalbių robotui yra konkreti, kontekstinė, struktūruota ir ribota apimtimi, su 
+aiškiu formatu ir norimu gauti rezultatu.
+2. Motyvacinio laiško rašymo užklausos pavyzdžiai:
+2.1. Padėk parašyti motyvacinį laišką skatinamajai stipendijai universitete. Studijuoju 
+informatiką, turiu aukštus pažymius ir aktyviai dalyvauju fakulteto veikloje. Noriu, kad 
+laiškas būtų trumpas, bet įtikinamas.
+2.2. Kaip parašyti laisvos formos motyvacinį laišką norint gauti universiteto skatinamąją 
+stipendiją, jei turiu gerus akademinius rezultatus ir dalyvauju savanoriškoje veikloje?
+2.3. Pateik motyvacinio laiško šabloną, skirtą universiteto skatinamajai stipendijai gauti. 
+Studijuoju informatiką, turiu puikius pažymius ir dalyvauju organizuojant studentų 
+renginius.
+2.4. Parašyk motyvacinio laiško pavyzdį (iki 200 žodžių), skirtą skatinamajai stipendijai 
+gauti universitete. Noriu, kad būtų paminėta: geri informatikos specialybės pažymiai, 
+socialinė veikla ir motyvacija toliau tobulėti.
+Galimi ir kiti panašūs atsakymai.
+3 2 taškai skiriami, jei nurodyti 
+ir paaiškinti esminiai 
+užklausos požymiai.
+1 taškas skiriamas, jei 
+nurodyta ir paaiškinta dalis 
+esminių užklausos požymių.
+1 taškas skiriamas, jei 
+tinkamai suformuluota 
+motyvacinio laiško rašymo 
+užklausa.
+Naudodamiesi pokalbių robotais (pvz., ChatGPT, Gemini ir kt.), turime tinkamai suformuluoti užklausą. 
+Pretenduojant gauti skatinamąją stipendiją studijuojant informatiką universitete, reikia parašyti motyvacinį laišką laisva forma. Jūs neturite motyvacinių 
+laiškų rašymo patirties ir rašysite užklausą pokalbių robotui. 
+1. Paaiškinkite, kaip tinkamai pateikti užklausą pokalbių robotui, kad gautumėte aiškų, tikslų ir naudingą atsakymą.
+2. Pateikite tinkamos motyvacinio laiško rašymo užklausos pavyzdį.
+
+72
+PROJEKTAS
+63 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Išsamūs atsakymai (reikalaujantys argumentavimo, 
+paaiškinimo, samprotavimo) Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingi atsakymai Patenkinamas pasiekimų lygis. Sprendžia įvairias problemas, susijusias su asmens 
+duomenų teisėtu naudojimu ir privatumu, siekdamas apsaugoti save ir kitus 
+virtualiojoje aplinkoje (F3.2).
+Galimi teisingi atsakymai.
+1.Socialinių tinklų renkami duomenys gali būti naudojami ne tik paslaugoms teikti, bet 
+ir reklamai, duomenų analizei ar net perduoti kitoms įmonėms. Tai reiškia, kad apie 
+žmogų gali būti renkama daugiau informacijos, nei jis pats supranta – pavyzdžiui, ne 
+tik vardas ar amžius, bet ir buvimo vieta, nuotraukos, pomėgiai, net pokalbių turinys.
+Pagal BDAR (Bendrąjį duomenų apsaugos reglamentą) kiekvienas vartotojas turi 
+svarbias teises. Viena jų – teisė gauti informaciją, kokie jo duomenys renkami ir kam 
+jie naudojami. Taip pat – teisė susipažinti su tais duomenimis, prašyti juos pataisyti 
+ar ištrinti („teisė būti pamirštam“), nesutikti su jų naudojimu, apriboti tvarkymą ar 
+atšaukti sutikimą.
+2.1. Pavyzdžiui, jei žmogus ištrina paskyrą socialiniame tinkle, bet vis tiek mato, kad 
+jo duomenys išliko vieši (pvz., nuotraukos ar įrašai), jis gali pasinaudoti teise 
+reikalauti, kad jie būtų ištrinti. Jeigu į tai nereaguojama – jis gali kreiptis į Valstybinę 
+duomenų apsaugos inspekciją.
+2.2. Mokinys įkėlė savo mokyklos pažymėjimą į socialinio tinklo istoriją, manydamas, 
+kad tai mato tik draugai. Tačiau paskyra buvo vieša ir duomenis (vardas, gimimo data, 
+mokykla, pažymiai) galėjo peržiūrėti bet kas.
+Kokios teisės svarbios:
+– Teisė susipažinti, kokie duomenys pasiekiami.
+– Teisė ištrinti (teisė būti pamirštam).
+– Teisė riboti duomenų matomumą (privatumo nustatymai).
+2.3. Socialinio tinklo naudotojas aplankė sportinių prekių puslapį socialiniame tinkle, o 
+vėliau pradėjo matyti reklamas apie sportinę avalynę kitose svetainėse. Socialinis 
+tinklas seka naršymą ir kaupia duomenis apie pomėgius.
+3 1 taškas skiriamas už 
+atsakymą kodėl svarbu 
+žinoti, kokie duomenys 
+renkami socialinių tinklų 
+platformose.
+1 taškas skiriamas, jei 
+mokinys nurodo ir 
+paaiškina 1 teisę.
+1 taškas skiriamas už 
+tinkamą pavyzdį.
+
+73
+PROJEKTAS
+Kokios teisės svarbios:
+– Teisė žinoti, kam duomenys perduodami (pvz., reklamos partneriams).
+– Teisė nesutikti su duomenų tvarkymu rinkodaros tikslais.
+– Teisė atšaukti sutikimą dėl sekimo (slapukų).
+2.4. Kažkas sukūrė netikrą paskyrą, naudodamas tikrą žmogaus vardą, nuotrauką ir 
+aprašymą.
+Kokios teisės svarbios:
+– Teisė reikalauti ištrinti netikrus ar klaidinančius duomenis.
+– Teisė pateikti skundą priežiūros institucijai.
+– Teisė į žalos atlyginimą, jei tai pakenkė reputacijai.
+2.5. Žmogus, ieškodamas darbo, atrado, kad prieš penkerius metus parašytas 
+komentaras socialiniame tinkle vis dar matomas internete ir sukelia jam nepatogumų.
+Kokios teisės svarbios:
+– Teisė būti pamirštam.
+– Teisė reikalauti pašalinti asmeninius duomenis, jei jie nebereikalingi.
+– Teisė susisiekti su svetaine ir pateikti prašymą dėl ištrynimo.
+– Teisė reikalauti pašalinti duomenis.
+– Teisė kontroliuoti, kaip naudojami atvaizdai, susiję su asmens tapatybe.
+1. Kodėl svarbu žinoti, kokius asmens duomenis renka socialinių tinklų platformos, ir kokiomis teisėmis galima pasinaudoti pagal BDAR (Bendrąjį 
+duomenų apsaugos reglamentą) siekiant apsaugoti savo duomenis? Nurodykite renkamų duomenų pavyzdį ir vieną teisę.
+2. Pateikite konkretų pavyzdį, kuris iliustruoja situaciją, kai socialinio tinklo naudotojas gali pasinaudoti BDAR suteikiama teise apie socialiniame 
+tinkle renkamus ir naudojamus duomenis.
+
+74
+PROJEKTAS
+64 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Išsamūs atsakymai (reikalaujantys argumentavimo, paaiškinimo, samprotavimo) Saugus elgesys
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Pasirenka tinkamiausius būdus spręsti problemas, susijusias 
+su asmens duomenimis, jų privatumu ir teisėtu naudojimu, siekdamas apsaugoti save ir 
+kitus virtualiojoje aplinkoje (F3.3).
+Galimi teisingi atsakymai:
+Toks sprendimas – laikinai užblokuoti populiarią socialinių tinklų platformą dėl 
+kibernetinio incidento – gali būti teisingas ir proporcingas, jei tikslas yra apsaugoti viešąjį 
+interesą, o priemonės taikomos tik tiek, kiek būtina.
+1. Viešojo intereso saugojimo privalumai:
+Viešasis interesas – tai visuomenės saugumas, vaikų privatumo apsauga, duomenų 
+saugumas. Jeigu platformoje įvyko rimtas kibernetinis incidentas (pvz., nutekėjo asmens 
+duomenys, įvyko įsilaužimas ar plinta pavojingos žinutės), valstybė turi pareigą reaguoti 
+greitai, kad apsaugotų piliečius – ypač pažeidžiamus, kaip vaikai.
+Tokiu atveju laikinas platformos blokavimas gali padėti:
+● sustabdyti žalos plitimą,
+● užkirsti kelią tolimesniam duomenų nutekinimui,
+● suteikti laiko grėsmių suvaldymui.
+2. Ar ribojimai visiems yra teisingi?
+Iš pirmo žvilgsnio atrodo, kad neteisinga riboti visus, jei nukentėjo tik kai kurie vartotojai. 
+Tačiau kibernetinės grėsmės dažnai veikia visą sistemą, o ne pavienius naudotojus. Kol nėra 
+tiksliai žinoma, kas pažeista, rizika gali būti bendrinė, todėl prevencinis blokavimas gali 
+būti pagrįstas.
+Taip pat tai rodo, kad valstybė visus gyventojus traktuoja lygiai atsakingai – nelaukia, kol 
+nutiks didesnė nelaimė, bet bando užkirsti jai kelią.
+3. Proporcingumo principas:
+Proporcingumo principas reiškia, kad priemonė turi būti:
+● tinkama tikslui pasiekti (sustabdyti incidentą),
+● būtina (jei nėra švelnesnės alternatyvos),
+4 Po 1 tašką už kiekvieną 
+tinkamai pateiktą 
+atsakymą.
+
+75
+PROJEKTAS
+● ne per griežta (ribojimas trumpalaikis ir aiškiai pagrįstas).
+48 valandų apribojimas atrodo proporcingas, jei incidentas rimtas, o per tą laiką galima 
+atlikti patikrinimus ir apsaugoti naudotojus.
+4. Ar valstybė turėtų turėti tokią teisę?
+Taip, valstybė turėtų turėti teisę laikinai apriboti platformas, jei tai susiję su: ● nacionaliniu saugumu, ● vaikų apsauga, ● asmens duomenų saugumu.
+Tačiau tai turi būti skaidriai pagrįsta, riboto laikotarpio ir su galimybe atnaujinti ryšį vos tik 
+pavojus pašalinamas. Tik platforma pati to spręsti negali, nes jos prioritetas dažnai būna 
+verslas, o ne visuomenės saugumas.
+Išvada:
+Toks laikinas apribojimas, jei jis pagrįstas rimta grėsme, yra teisėtas ir proporcingas. Nors 
+tai gali trumpam apriboti žmonių teisę bendrauti ar naudotis informacija, saugumas ir 
+duomenų apsauga turi būti svarbiausi, ypač kai kalbame apie mokyklas ir šeimas. Tuo 
+labiau, kad tai laikina priemonė – ne cenzūra, o apsauga.
+Alternatyvus atsakymas:
+Visiškas socialinės platformos užblokavimas visoje Lietuvoje 48 valandoms – nėra 
+teisingas ir proporcingas sprendimas. Nors kibernetinis incidentas kelia grėsmę, tokios 
+priemonės gali peržengti valstybės įgaliojimus ir pažeisti žmonių teisę gauti informaciją, 
+bendrauti, reikšti nuomonę.
+1. Viešojo intereso saugojimas – svarbus, bet ne viską pateisinantis
+Taip, viešasis interesas yra svarbus, bet jį galima saugoti ir mažiau ribojančiomis 
+priemonėmis – pvz., įspėjant vartotojus, laikinai ribojant pavojingas funkcijas, bet 
+neblokuojant visos platformos. Visuotinis ribojimas primena cenzūrą, o tai kelia pavojų 
+laisvei internete.
+2. Kodėl ribojami visi, jei problema paliečia tik kai kuriuos?
+Ribojimas visiems vartotojams, net tiems, kurie nėra paveikti incidento, yra per plati 
+priemonė. Tai gali atimti svarbius bendravimo, mokymosi ar darbo įrankius, pvz., jei 
+platforma naudojama nuotolinėms pamokoms ar tėvų bendravimui su mokytojais.
+Tai tarsi „užrakinti visą miestą, nes viename name kilo gaisras“.
+3. Proporcingumo principas – pažeidžiamas
+Pagal proporcingumo principą, priemonė turi būti proporcinga grėsmei. Jei grėsmė nėra 
+mirtina ar išskirtinai pavojinga visiems vartotojams, toks griežtas ribojimas – 48 valandoms 
+
+76
+PROJEKTAS
+– gali būti laikomas pertekliniu. Ypač, jei nėra skaidriai paaiškinta, kokio pobūdžio 
+incidentas įvyko.
+4. Ar valstybė turėtų turėti tokią galią?
+Valstybė turi saugoti piliečius, tačiau ji neturėtų turėti galios bet kada blokuoti informacijos 
+kanalus. Tokia praktika pavojinga, nes gali būti išplėsta ir naudojama kituose kontekstuose 
+– pvz., nepatogioms žinutėms ar kritikams nutildyti.
+Užuot ribojusi prieigą, valstybė turėtų bendradarbiauti su platforma, paskatinti ją imtis 
+atsakomybės, bet sprendimus daryti kartu, o ne vienašališkai.
+Išvada:
+Nors saugumas svarbus, visuotinis blokavimas gali sukurti pavojingą precedentą, 
+pažeidžiantį žmonių teises ir laisves. Geriau ieškoti tikslinių, protingų, aiškiai pagrįstų 
+sprendimų, nei naudoti bendrus draudimus visai visuomenei.
+Įsivaizduokite, kad įvyko kibernetinis incidentas, kuris paveikė populiarią socialinių tinklų platformą, naudojamą mokyklose ir šeimose. 
+Nacionalinis kibernetinio saugumo centras laikinai nurodė ją užblokuoti visoje Lietuvoje 48 valandoms.
+Ar, jūsų nuomone, toks sprendimas yra teisingas ir proporcingas? Ar valstybė turėtų riboti prieigą prie platformos, kad apsaugotų viešąjį interesą, net jei 
+tai gali pažeisti žmonių teisę naudotis informacija ar bendrauti?
+Pateikite argumentuotą atsakymą, atsižvelgdami į šiuos aspektus:
+● Kokie gali būti viešojo intereso saugojimo privalumai?
+● Ar ribojimai turėtų būti taikomi visiems, net jei paveikti tik kai kurie naudotojai?
+● Kaip tu supranti proporcingumo principą tokioje situacijoje?
+● Ar valstybė turėtų turėti tokią teisę, ar tai turėtų spręsti tik pati platforma?
+
+77
+PROJEKTAS
+65 klausimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Atviri klausimai Išsamūs atsakymai (reikalaujantys argumentavimo, 
+paaiškinimo, samprotavimo) Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Savarankiškai ieško informacijos apie dirbtinio 
+intelekto, mašininio mokymosi, neuroninių tinklų taikymo sritis, vertina 
+privalumus, grėsmes ir etines problemas, siūlo sprendimus. Vertina 
+kriptografinės sistemos, viešojo rakto, sertifikato patikimumą (C3.4).
+Galimi teisingi atsakymai:
+1. Neuroniniai tinklai geba mokytis iš daugybės vaizdų ir atpažinti 
+sudėtingus raštus, todėl jie tinkami objektų ir elgesio atpažinimui.
+2. Privalumai:
+● Eismo saugumas: sumažėja taisyklių pažeidimų, nes vairuotojai ir 
+pėstieji žino, kad stebimi.
+● Automatizacija: nereikia žmogaus, kuris visą parą stebėtų kameras –
+sistema veikia savarankiškai.
+● Greitis ir efektyvumas: pažeidimai fiksuojami iškart, sprendimai 
+priimami greitai.
+● Mokymosi galimybės: neuroniniai tinklai gali tobulėti analizuodami vis 
+daugiau duomenų – tikslumas didėja.
+● Nuovargio nebuvimas: priešingai nei žmogus, dirbtinis intelektas 
+nepavargsta ir neklysta dėl nuovargio.
+● Objektyvumas: sprendimai pagrįsti duomenimis, ne emocijomis ar
+nuomone.
+● Veikimas realiuoju laiku: sistema gali iškart įspėti arba aktyvuoti kitus 
+veiksmus (pvz., įjungti signalą).
+3. Trūkumai:
+● Privatumo pažeidimas: žmonės gali jaustis stebimi visą laiką – kyla 
+etinių klausimų.
+4 Po 1 tašką už kiekvieną tinkamai 
+pateiktą atsakymą. Jeigu nurodyta 
+daugiau negu po vieną privalumą 
+ir trūkumą, vertinami tik pirmieji.
+
+78
+PROJEKTAS
+● Klaidingi atpažinimai: sistema gali suklysti (pvz., supainioti 
+dviratininką su pėsčiuoju).
+● Automatinis baudimas: be žmogaus peržiūros gali būti išsiųstos 
+neteisingos baudos.
+● Duomenų saugumas: jei pažeidžiamas sistemos saugumas, vaizdo 
+duomenys gali nutekėti.
+● Diskriminacijos rizika: netinkamai apmokyti modeliai gali būti šališki 
+tam tikrų žmonių atžvilgiu.
+● Per didelis pasitikėjimas DI: žmonės gali per daug pasitikėti sistema ir 
+nebekontroliuoti, ar ji veikia teisingai.
+● Brangumas: diegimas ir palaikymas kainuoja, reikalauja specialistų.
+Taip, jei tokia sistema yra tiksliai veikianti, skaidri ir apsauganti asmens 
+duomenis. Ji gali pagerinti eismo saugumą, bet reikia užtikrinti, kad būtų galima 
+apskųsti klaidingus sprendimus.
+Miestas įdiegė vaizdo stebėjimo sistemą, kuri naudoja neuroninį tinklą, kad automatiškai atpažintų:
+● ar žmogus pereina gatvę per perėją,
+● ar vairuotojai pažeidžia eismo taisykles (pvz., važiuoja per raudoną šviesą, stovi neleistinoje vietoje).
+Sistema iš nuotraukų ar vaizdo srauto pati mokosi atpažinti objektus, ir jos tikslumas laikui bėgant gerėja. Remiantis atpažinimais, gali būti siunčiami 
+įspėjimai arba baudos.
+1. Paaiškinkite, kodėl šioje situacijoje taikomas neuroninis tinklas.
+2. Įvardinkite vieną privalumą, kurį ši sistema suteikia miesto gyventojams.
+3. Įvardinkite vieną galimą grėsmę ar riziką, susijusią su tokio tipo automatiniu atpažinimu.
+4. Kaip manote, ar tokia sistema turėtų būti taikoma visuomenėje? Pagrįskite savo nuomonę.
+
+79
+PROJEKTAS
+VBE 2 dalies užduočių vertinimas. Duomenų tyrybos praktinės užduoties pavyzdys
+Visa užduotis atliekama skaičiuokle.
+Faile Lietuvos eksporto duomenys.xlsx, kurį sudaro 6 darbo lakštai, pateikti iš statistikos 
+portalo https://osp.stat.gov.lt/ paimti 2024 ir dalies 2025 metų Lietuvos eksporto duomenys. 
+Darbo lakštuose „Eksporto duomenys“, „Ataskaita“, „Atranka“, „Rikiavimas“, duomenys 
+pateikti nurodant prekės ir paslaugų kategorijų kodus, jų pavadinimus ir kiekvieno mėnesio visų 
+prekių ir paslaugų kategorijų eksporto vertę (tūkst. Eurais). Mėnesio laikotarpis koduojamas tokia 
+tvarka: metai, didžioji raidė M, mėnuo, didžioji raidė D ir paskutinė mėnesio diena. 
+Darbo lakšte „Rezultatai“ pateikite atliktų 1 ir 2 užduočių rezultatus. Į lakšto „Rezultatai“ 
+pilkos spalvos langelius perkelkite iš darbo lakšto „Eksporto duomenys“ gautus užduoties rezultatus, 
+nurodydami langelio adresą. 
+Darbo lakšte „Eksporto duomenys“ naudodamiesi tinkamomis formulėmis ir funkcijomis
+atlikite 1 ir 2 užduotis. Galima šiame lakšte atlikti ir tarpinius skaičiavimus, bet galutinę formulę, 
+pateikiančią rezultatą, užrašykite R stulpelyje specialiai pažymėtuose langeliuose (pilkos spalvos).
+1. Suraskite visų eksportuojamų prekių ir paslaugų kategorijų visų laikotarpių vidutinę eksporto 
+vertę. Atsakymą suapvalinkite iki sveikojo didesnio skaičiaus. 
+(2 taškai)
+2. Suraskite, koks ir kada buvo mažiausias drabužių eksportas, kai drabužių buvo eksportuojama 
+daugiau už 45000 €. Laikotarpį pateikite trumpuoju datos formatu (pvz.: 2025-05-01). 
+Konvertavimui į datą naudokite formulę (galite naudotis siūlomais tarpiniais skaičiavimais)
+(3 taškai)
+3. Naudodamiesi darbo lakšto „Eksporto duomenys“ duomenimis, naujame lakšte sukurkite 
+suvestinę lentelę, kurioje pateikite vasaros mėnesių (birželio, liepos, rugpjūčio) „Maisto 
+produktai“ ir „Gėrimai“ kategorijų eksporto sumą. 
+(3 taškai)
+4. Darbo lakšte „Ataskaita“, naudodami grupavimą, sukurkite dvi grupes. Vieną sudaro pavasario 
+mėnesiai (kovas, balandis, gegužė), kitą – rudens mėnesiai (rugsėjis, spalis, lapkritis). Sukurtas 
+grupes paslėpkite, kad matytųsi tik žiemos ir vasaros mėnesiai. 
+(2 taškai)
+5. Darbo lakšte „Atranka“ atrinkite gaminiams priskiriamas prekių ir paslaugų kategorijas 
+(pavadinime yra žodis gaminiai), kurių paskutinio mėnesio (2025M01D31) eksportas buvo 
+aukštesnis už vidurkį.
+(2 taškai)
+6. Darbo lakšte „Rikiavimas“ surikiuokite duomenis pagal 2 kriterijus: kodus didėjimo tvarka ir 
+paskutinio laikotarpio (2025M01D31) rezultatus mažėjimo tvarka.
+(2 taškai)
+7. Darbo lakšte „Diagrama“ pateikti eksporto duomenys ir jie pavaizduoti stulpeline diagrama. 
+Atlikite šiuos veiksmus su pateikta diagrama:
+7.1. Suteikite diagramai pavadinimą „Eksportas (tūkst. Eurais)“ ir panaikinkite legendą. 
+(1 taškas)
+
+80
+PROJEKTAS
+7.2. 2024 m. sekos didžiausios reikšmės duomenų tašką išskirkite pakeisdami spalvą ir 
+pateikdami jo reikšmę.
+(1 taškas)
+7.3. Įtraukite tiesinės krypties liniją ir nustatykite, kad būtų rodoma R2reikšmė. 
+(1 taškas)
+8. Remdamiesi darbo lakšte „Diagrama“ pateiktais duomenimis ir žinodami, kad tiesinės krypties 
+linijos determinacijos koeficientas R2=0,0037, paaiškinkite, ar galima patikimai prognozuoti 2025 
+m. birželio-gruodžio mėnesių eksporto duomenis. Savo atsakymą pagrįskite. 
+Atsakymą parašykite darbo lakšte „Rezultatai“.
+(2 taškai)
+
+81
+PROJEKTAS
+VBE 2 dalies užduočių vertinimas. Duomenų tyrybos užduoties vertinimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Skaičiavimai Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ir 
+apklausų duomenis ir išgauna reikalingą informaciją (C2.2).
+Vienas taškas skiriamas už teisingai pateiktą formulę vidurkiui skaičiuoti, pvz.: 
+=AVERAGE(C2:O53)
+Teisingas atsakymas 117805,4737
+Vienas taškas skiriamas už teisingai pateiktą formulę reikšmei suapvalinti, pvz.: 
+=ROUNDUP(AVERAGE(C2:O53);0)
+Teisingas atsakymas 117806
+2 Skiriama po 1 tašką už kiekvieną 
+teisingai užrašytą formulės dalį.
+Taškas skiriamas jei tinkamai 
+užrašyta kitokia formulė ir/ar 
+tinkamai nurodytas kitaip 
+diapazonas.
+1. Suraskite visų eksportuojamų prekių ir paslaugų kategorijų visų laikotarpių vidutinę eksporto vertę. Atsakymą suapvalinkite iki sveikojo didesnio 
+skaičiaus. 
+
+82
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Skaičiavimai Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Vienas taškas skiriamas už teisingai pateiktą formulę rasti mažiausią drabužių 
+eksportą, kai drabužių buvo eksportuota daugiau nei už 45000. pvz.: 
+=MINIFS(C13:O13;C13:O13;">45000")
+Teisingas atsakymas 45370,6
+Vienas taškas skiriamas už teisingai pateiktą formulę laikotarpiui rasti,
+pvz.,
+=INDEX(C1:O1;MATCH(R4;C13:O13;0))
+arba
+=XLOOKUP(R4;C13:O13;C1:O1)
+Teisingas atsakymas 2024M06D30
+Vienas taškas skiriamas už tinkamą konvertavimą į datos formatą, 
+pvz.: =DATE(LEFT(R5;4);MID(R5;6;2);RIGHT(R5;2))
+Teisingas atsakymas 2024-06-30
+3
+1
+1
+1
+Skiriama po 1 tašką už kiekvieną 
+teisingai užrašytą formulę ar jos 
+dalį.
+Gali būti naudojami tarpiniai 
+skaičiavimai.
+Taškai skiriami jei tinkamai 
+užrašyta kitokia formulė ir/ar 
+pasinaudota ankstesnėje 
+užduoties dalyje rasta reikšme 
+ir/ar tinkamai nurodytas kitaip 
+diapazonas. 
+2. Suraskite, koks ir kada buvo mažiausias drabužių eksportas, kai drabužių buvo eksportuojama daugiau už 45000. Laikotarpį pateikite trumpuoju datos 
+formatu (pvz.: 2025-05-01). Konvertavimui į datą naudokite formulę (galite naudotis siūlomais tarpiniais skaičiavimais)
+
+83
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų pateikimas suvestinėmis lentelėmis Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Sukurta suvestinė lentelė atskirame darbo lakšte, už abu įvykdytus nurodymus 
+skiriamas vienas taškas
+Sumavimui įtraukti vasaros mėnesių (2024M06D30, 2024M07D31, 
+2024M08D31) ir „Prekių paslaugų kategorijos“ laukai.
+Jei visi reikalavimai teisingai įvykdyti skiriamas vienas taškas. 
+Atrinkta „Maisto produktai“ ir „Gėrimai“ kategorijos
+3
+1
+1
+1
+Skiriama po 1 tašką už kiekvieną 
+teisingai atliktą nurodymą
+Vienas taškas gali būti skirtas, jei 
+įtraukti tik 2 vasaros mėnesių ir 
+„Prekių paslaugų kategorijos“ 
+laikai
+3.Naudodamiesi darbo lakšto „Eksporto duomenys“ duomenimis, naujame lakšte sukurkite suvestinę lentelę, kurioje pateikite vasaros mėnesių (birželio, 
+liepos, rugpjūčio) „Maisto produktai“ ir „Gėrimai“ kategorijų eksporto sumą.
+
+84
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų grupavimas Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Naudojantis Duomenys>Grupavimas sukurtos dvi grupės pavasario ir rudens 
+mėnesių – skiriamas vienas taškas už abu teisingai atliktus nurodymus
+Dvi sukurtos grupės paslėptos (rodo „–“) matomi tik vasaros ir žiemos mėnesiai.
+Skiriamas vienas taškas už teisingai atliktą nurodymą
+2
+1
+1
+Skiriama po 1 tašką už kiekvieną 
+teisingai atliktą nurodymą
+4. Darbo lakšte „Ataskaita“, naudodami grupavimą, sukurkite dvi grupes. Vieną sudaro pavasario mėnesiai (kovas, balandis, gegužė), kitą – rudens mėnesiai 
+(rugsėjis, spalis, lapkritis). Sukurtas grupes paslėpkite, kad matytųsi tik žiemos ir vasaros mėnesiai.
+
+85
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų atranka pagal kelis kriterijus Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Vienas taškas skiriamas už teisingai atrinktas prekių ir paslaugų kategorijas: 
+Teisingas atsakymas:
+1 Taškas neskiriamas jei atrankos 
+kriterijus parinktas ne antraštės 
+eilutėje ir/ar tinkamos prekės ir 
+paslaugų kategorijos išrinktos 
+rankiniu būdu. 
+5.1 Darbo lakšte „Atranka“ atrinkite gaminiams priskiriamas prekių ir paslaugų kategorijas (pavadinime yra žodis gaminiai).
+
+86
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų atranka pagal kelis kriterijus Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Vienas taškas skiriamas už teisingai atrinktas prekių ir paslaugų kategorijas: 
+Teisingas atsakymas:
+1 Taškas skiriamas jei ir nebuvo 
+atliekama 7.1 užduoties dalis.
+Taškas taip pat skiriamas jei 
+atskirai suskaičiuojamas vidurkis 
+ir panaudojama atrankos sąlyga 
+tikrinanti ar daugiau už 
+apskaičiuotą vidurkį
+Taškas neskiriamas jei atrankos 
+kriterijus parinktas ne antraštės 
+eilutėje ir/ar išrinkta rankiniu 
+būdu. 
+5.2 Darbo lakšte „Atranka“ atrinkite prekių ir paslaugų kategorijas, kurių paskutinio mėnesio (2025M01D31) eksportas buvo aukštesnis už vidurkį.
+
+87
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų rikiavimas pagal kelis kriterijus Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ir 
+apklausų duomenis ir išgauna reikalingą informaciją (C2.2).
+Vienas taškas skiriamas už teisingą duomenų surikiavimą pagal kodų (stulpelis 
+A) didėjimo tvarka.
+Vienas taškas skiriamas už teisingą duomenų surikiavimą pagal paskutinio 
+laikotarpio (2025M01D31) (stulpelis O) rezultatus mažėjimo tvarka.
+Teisingas atsakymas:
+2
+1
+1
+Skiriama po 1 tašką už kiekvieną 
+teisingai atliktą dalį.
+Taškai skiriami, jei surikiuota tik 
+duomenų lentelė, be antraščių.
+Jei rikiavimai atlikti teisingai, tik 
+sukeistas kriterijų eiliškumas, 
+skiriamas vienas taškas. 
+6. Darbo lakšte „Rikiavimas“ surikiuokite duomenis pagal 2 kriterijus: kodus didėjimo tvarka ir paskutinio laikotarpio (2025M01D31) rezultatus mažėjimo 
+tvarka.
+
+88
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų vaizdavimas diagrama Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Slenkstinis pasiekimų lygis. Tyrinėja ir apibendrina apklausų duomenis ir 
+išgauna reikalingą informaciją (C2.1).
+Vienas taškas skiriamas už tinkamai pavadintą diagramą ir panaikintą legendą.
+1 Taškas skiriamas jei įvykdyti abu 
+reikalavimai. 
+7.1 Darbo lakšte „Diagrama“ suteikite diagramai pavadinimą „Eksportas 
+(tūkst. Eurais)“ ir panaikinkite legendą. 
+Teisingas atsakymas:
+
+89
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų vaizdavimas diagrama Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Patenkinamas pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ir 
+apklausų duomenis ir išgauna reikalingą informaciją (C2.2).
+Vienas taškas skiriamas jei pakeista 2024 m. sekos didžiausios reikšmės 
+duomenų taško spalva ir pateikta jo reikšmė.
+1 Taškas skiriamas jei įvykdyti abu 
+reikalavimai.
+Taškas skiriamas jei ir nebuvo 
+atlikta 5.1 užduoties dalis.
+7.2 Darbo lakšte „Diagrama“ 2024 m. sekos didžiausios reikšmės tašką 
+(laikotarpis 2024M09) išskirkite pakeisdami spalvą ir pateikdami jo reikšmę.
+Teisingas atsakymas, pvz.,
+
+90
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Duomenų vaizdavimas diagrama Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Pagrindinis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis ir išgauna reikalingą informaciją (C2.3).
+Vienas taškas skiriamas jei įtraukta teisinė krypties linija ir parinkta, kad būtų 
+rodoma R2reikšmė
+1 Taškas skiriamas jei įvykdyti abu 
+reikalavimai.
+Taškas skiriamas jei ir nebuvo 
+atlikta 5.1 ir/ar 5.2 užduoties 
+dalis. 
+7.3 Darbo lakšte „Diagrama“ įtraukite tiesinės krypties liniją ir nustatykite, 
+kad būtų rodoma R
+2
+reikšmė.
+Teisingas atsakymas, pvz.,
+
+91
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Duomenų tyrybos praktinė užduotis Išvadų formulavimas ir pagrindimas, remiantis 
+duomenų analize Duomenų tyryba ir informacija
+Vertinimo 
+kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas taškais Pastabos
+Teisingas atsakymas Aukštesnysis pasiekimų lygis. Tyrinėja ir apibendrina viešai prieinamus ar 
+automatizuotai renkamus duomenis, išgauna reikalingą informaciją ir ją taiko 
+prognozavimui. Aptaria informacijos ir žinių sąryšį (C2.4).
+Du taškai skiriami jei remiamasi R2reikšme ir paaiškinama, kad ji rodo, kad tarp 
+duomenų nėra tiesioginio ryšio ir jo negalima naudoti patikimoms prognozėms.
+Teisingo atsakymo pavyzdys:
+„Negalima patikimai prognozuoti 2025 m., birželio -gruodžio mėnesių eksporto 
+duomenų, nes R2=0,0037 rodo labai silpną ryšį tarp duomenų.“
+Vienas taškas skiriamas jei atsakymas yra nepilnas, ar paaiškinama nesiremiant 
+R
+2
+reikšme.
+Atsakymų pavyzdžiai:
+„Ne, nes R2reikšmė maža“ – trūksta paaiškinimo, ką R2reikšmė reiškia 
+prognozei.“
+„Ne, nes ekonominė vertė nurodytais mėnesiais gali priklausyti nuo sezoniškumo 
+ir kitų ekonominių politinių įvykių ir kita“.
+2
+2
+1
+8. Remdamiesi darbo lakšte „Diagrama“ pateiktais duomenimis ir žinodami, kad tiesinės krypties linijos determinacijos koeficientas R2=0,0037, paaiškinkite, 
+ar galima patikimai prognozuoti 2025 m. birželio-gruodžio mėnesių eksporto duomenis. Savo atsakymą pagrįskite. 
+Atsakymą parašykite darbo lakšte „Rezultatai“.
+
+92
+PROJEKTAS
+VBE 2 dalies užduočių vertinimas. Programavimo praktinės užduoties pavyzdys
+Augintinių analizė
+Lietuvos atvirų duomenų portale (https://data.gov.lt/datasets/292/#info) pateikiama 
+informacija apie Gyvūnų augintinių registre registruotus augintinius pagal rūšį ir laikymo vietą 
+(savivaldybę, seniūniją, vietovę, gatvę).
+Parašykite programa, kuri pagal žemiau pateiktus nurodymus analizuotų duomenis.
+Pradiniai duomenys
+Pradiniai duomenys saugomi faile „Duomenys.csv“, kuriame įrašyta:
+● gyvūnų augintinio laikymo vietos savivaldybės pavadinimas;
+● seniūnijos pavadinimas. Seniūnijos pavadinimas gali būti praleistas, tačiau kabliataškis 
+rašomas;
+● vietovės pavadinimas;
+● gatvės pavadinimas;
+● gyvūno augintinio rūšis (pvz.: „Iguana“, „Voras“, „Katinas“, ir kt.);
+● gyvūnų augintinių skaičius (natūralusis skaičius).
+Duomenų laukai atskirti kabliataškiu (;). Failo ilgis – ne daugiau kaip 1000 eilučių. Duomenys 
+pateikti vien lotyniškomis raidėmis.
+Rezultatai
+Rezultatai pateikiami faile „Rezultatai.txt“.
+Nurodymai
+1. Duomenų struktūrų pasirinkimas.
+1.1. Aprašykite duomenų struktūras ir kintamuosius, kuriuos naudosite programoje.
+(1 taškas)
+2. Pradinių duomenų nuskaitymas. Funkcijos kūrimas. 
+2.1. Parašykite funkciją, kuri nuskaito duomenis iš failo.
+2.2. Visi duomenys turi būti išsaugomi į pasirinktą duomenų struktūrą.
+2.3. Panaudokite duomenų skaitymo funkciją programoje.
+(6 taškai)
+3. Bendro gyvūnų skaičiaus radimas. 
+3.1. Raskite bendrą visų registre esančių augintinių skaičių. 
+3.2. Gautą rezultatą spausdinkite į failą „Rezultatai.txt“.
+(4 taškai)
+4. Rūšių statistika. 
+4.1. Raskite kiekvienos rūšies gyvūnų skaičių.
+4.2. Surikiuokite rūšių sąrašą:
+4.2.1. pirmiausia – pagal skaičių mažėjančia tvarka;
+4.2.2. esant vienodam skaičiui – pagal rūšies pavadinimą abėcėlės tvarka.
+4.3. Papildykite failą „Rezultatai.txt“ failą šia statistika. Kiekvienoje eilutėje pateikite rūšies 
+pavadinimą ir skaičių, atskirtus vienu tarpu.
+(8 taškai)
+5. Gyvūnai pagal savivaldybes.
+5.1. Raskite, kiek ir kokių rūšių gyvūnų registruota kiekvienoje savivaldybėje. Sąraše 
+pateikite tik tas rūšis, kurios registruotos konkrečioje savivaldybėje (jei gyvūnų skaičius 
+savivaldybėje lygus nuliui, rūšies sąraše neturi būti).
+5.2. Sąrašą rikiuokite:
+5.2.1. savivaldybes pateikite abėcėlės tvarka;
+5.2.2. rūšių sąrašą kiekvienoje savivaldybėje taip pat pateikite abėcėlės tvarka.
+
+93
+PROJEKTAS
+5.3. Papildykite failą „Rezultatai.txt“ gautais rezultatais. Kiekvienoje naujoje eilutėje 
+pateikite savivaldybės pavadinimą, po to – rūšies pavadinimą ir skaičių, atskirtus vienu 
+tarpu.
+(10 taškai)
+6. Programos stilius ir komentarai.
+6.1. Išlaikykite vientisą kodo stilių.
+6.2. Naudokite prasmingus kintamųjų pavadinimus.
+6.3. Komentuokite svarbiausias programos dalis.
+(1 taškas)
+Pradinių duomenų ir rezultatų pavyzdys
+Duomenys.csv
+Vilniaus m. sav.;;Vilniaus m.;Rasos g.;Iguana;22
+Vilniaus m. sav.;;Vilniaus m.;Lygumos g.;Iguana;1
+Vilniaus r. sav.;Lentvario sen.;Normantos k.;Neries g.;Katinas;1
+Kauno m. sav.;;Kauno m.;Ramioji g.;Iguana;4
+Kauno m. sav.;;Kauno m.;Taikos g.;Katinas;5
+Rezultatai.txt
+33
+Iguana 27
+Katinas 6
+Kauno m. sav.
+Katinas 5
+Iguana 4
+Vilniaus m. sav.
+Iguana 23
+Vilniaus r. sav.
+Katinas 1
+
+94
+PROJEKTAS
+VBE 2 dalies užduočių vertinimas. Programavimo praktinės užduoties vertinimas
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Sudėtinės duomenų struktūros (struktūrų masyvas 
+(sąrašas), masyvas (sąrašas) struktūroje)
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+Teisingai aprašyta 
+duomenų struktūra
+Patenkinamas lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras.(B2.1)
+Vienas taškas skiriamas už teisingai aprašytą programai reikalingą duomenų 
+struktūrą
+1
+1. Duomenų struktūrų pasirinkimas.
+
+95
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Duomenų įvedimas iš tekstinių failų (.txt, .csv) Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Parašyta duomenų 
+nuskaitymo funkcija, kurioje 
+nuskaitomi pradiniai 
+duomenys.
+2. Teisingai atidaromas ir 
+skaitomas failas.
+3. Apdorojamos visos failo 
+eilutės.
+4. Teisingai skaidomi 
+duomenys pagal kabliataškį.
+Patenkinamas lygis. Kuria ir (ar) naudoja programai reikalingas 
+duomenų struktūras. (B2.1).
+Vienas taškas skiriamas už parašytą duomenų nuskaitymo funkciją, 
+kurioje nuskaitomi (arba bandoma nuskaityti) visi pradiniai duomenys.
+Vienas taškas skiriamas už teisingai atidaromą failą nuskaitymui ir 
+duomenų skaitymą iš nurodyto failo („Duomenys.csv“).
+Vienas taškas skiriamas teisingai perskaitytus visus duomenis 
+(perskaitomos visos iki 1000 eilučių; nėra ribojama atsitiktiniu 
+skaičiumi ar nutraukiama per anksti).
+Vienas taškas skiriamas už teisingą eilučių skaitymą (eilutės skaidomos 
+į atskirus laukus pagal kabliataškį, atsižvelgiama į galimą seniūnijos 
+lauko praleidimą, užtikrinamas korektiškas stulpelių skaitymas.
+4
+2.1 Parašykite funkciją, kuri nuskaito duomenis iš failo.
+
+96
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Sudėtinės duomenų struktūros (struktūrų masyvas 
+(sąrašas), masyvas (sąrašas) struktūroje)
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+Duomenys išsaugomi 
+tinkamu formatu
+Pagrindinis lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias) (B2.3).
+Vienas taškas skiriamas už teisingai išsaugotus nuskaitytus duomenis 
+(duomenys iš failo saugomi pasirinktoje duomenų struktūroje, kurią patogu 
+naudoti tolesniam apdorojimui).
+1
+2.2 Visi duomenys turi būti išsaugomi į pasirinktą duomenų struktūrą.
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Programos skaidymas į paprogrames Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+Panaudota duomenų 
+skaitymo funkcija 
+programoje.
+Pagrindinis lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias) (B2.3).
+Vienas taškas skiriamas už teisingą funkcijos panaudojimą (yra parašytas 
+teisingas kreipinys į duomenų nuskaitymo funkciją).
+1
+2.3 Panaudokite duomenų skaitymo funkciją programoje.
+
+97
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Sumos, sandaugos, kiekio, vidurkio skaičiavimo, mažiausios 
+(didžiausios) reikšmės radimo, tiesinės paieškos algoritmai
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+identifikuojamas 
+gyvūnų skaičiaus 
+laukas ir naudojamas 
+tinkamas tipas.
+2. Gautas teisingas 
+rezultatas.
+Pagrindinis lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias) (B2.3).
+Vienas taškas skiriamas už teisingai nustatytą, kuris duomenų stulpelis 
+nurodo gyvūnų skaičių ir sumavimui naudojamas tinkamas tipas (pavyzdžiui 
+int)
+Teisingai atliekamas sumavimas (pradinė sumos reikšmė, ciklas, sumavimas 
+arba panaudota standartinė sumavimo funkcija)
+2
+3.1 Raskite bendrą visų registre esančių augintinių skaičių.
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rezultatų rašymas į failus Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+atidaromas failas 
+rašymui
+2. Teisingai įrašomas 
+rezultatas
+Slenkstinis lygis. Pasirenka ir naudoja programai reikalingas duomenų 
+struktūras. Naudojasi tekstiniais failais kaip duomenų šaltiniu (B2.1).
+Vienas taškas skiriamas už teisingai atidaromą failą rezultatų rašymui ir 
+rezultatai rašomi į nurodytą failą („Rezultatai.txt“).
+Vienas taškas skiriamas už teisingai į failą įrašomą rezultatą – bendrą visų 
+registre esančių gyvūnų skaičių, be papildomų nereikalingų simbolių, 
+tinkamu formatu.
+2
+3.2 Gautą rezultatą spausdinkite į failą „Rezultatai.txt“.
+
+98
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Sumos, sandaugos, kiekio, vidurkio skaičiavimo, mažiausios 
+(didžiausios) reikšmės radimo, tiesinės paieškos algoritmai
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+panaudojama 
+pasirinkta duomenų 
+struktūra rūšių 
+statistikai saugoti.
+2. Teisingai 
+skaičiuojamas 
+kiekvienos rūšies 
+gyvūnų skaičius.
+3. Sudaromas unikalus 
+rūšių sąrašas.
+Pagrindinis lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias). (B2.3). Apibūdina ir kuria ar parenka 
+reikiamus algoritmus informacijai apdoroti (B3.3)
+Vienas taškas skiriamas už teisingai pasirinktą ir panaudotą duomenų 
+struktūrą rūšių statistikai saugoti.
+Vienas taškas skiriamas už teisingai apskaičiuotą kiekvienos rūšies gyvūnų 
+skaičių (kiekvienos rūšies gyvūnų skaičiai teisingai sumuojami, o ne 
+pakeičiami ar ignoruojami).
+Vienas taškas skiriamas už unikalų rūšių sąrašo sudarymą (kiekviena rūšis 
+sąraše pasirodo tik vieną kartą, be pasikartojimų).
+3
+4.1 Raskite kiekvienos rūšies gyvūnų skaičių.
+
+99
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rikiavimo, reikšmės paieškos nerikiuotame ir rikiuotame masyve, reikšmių 
+šalinimo iš masyvo, masyvo papildymo naujomis reikšmėmis algoritmai
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+rūšiuojama pagal 
+skaičių mažėjančia 
+tvarka.
+2. Teisingai 
+rūšiuojama pagal 
+rūšies pavadinimą, jei 
+skaičiai vienodi.
+Pagrindinis lygis. Apibūdina ir kuria ar parenka reikiamus algoritmus 
+informacijai apdoroti (B3.3)
+Vienas taškas skiriamas už teisingai surūšiuotą rūšių statistikos sąrašą pagal 
+skaičių mažėjančiai.
+Vienas taškas skiriamas už teisingai surūšiuotą sąrašą pagal rūšies 
+pavadinimą abėcėlės tvarka esant vienodam skaičiui
+2
+4.2 Surikiuokite rūšių sąrašą:
+4.2.1 pirmiausia – pagal skaičių mažėjančia tvarka;
+4.2.2 esant vienodam skaičiui – pagal rūšies pavadinimą abėcėlės tvarka.
+
+100
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rezultatų rašymas į failus Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+papildomas rezultatų 
+failas „Rezultatai.txt“ .
+2. Teisingas rezultatų 
+formatas faile.
+3. Į failą įrašomas 
+visas surikiuotas rūšių 
+sąrašas.
+Patenkinamas lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias). (B2.3).
+Vienas taškas skiriamas už teisingai papildytą rezultatų failą (ankstesni 
+rezultatai neištrinami).
+Vienas taškas skiriamas už teisingai pateikiamus rezultatus. Kiekvienoje 
+eilutėje pateikiamas rūšies pavadinimas ir bendras skaičius, atskirti vienu 
+tarpu (pvz., Katinas 12).
+Vienas taškas skiriamas už pateiktą visą surikiuotą sąrašą (įrašomas visas 
+rūšių sąrašas be praleidimų ar pasikartojimų).
+3
+4.3 Papildykite „Rezultatai.txt“ failą šia statistika. Kiekvienoje eilutėje pateikite rūšies pavadinimą ir skaičių, atskirtus vienu tarpu.
+
+101
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rikiavimo, reikšmės paieškos nerikiuotame ir rikiuotame masyve, reikšmių 
+šalinimo iš masyvo, masyvo papildymo naujomis reikšmėmis algoritmai
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Naudojama tinkama 
+duomenų struktūra 
+sąrašui saugoti.
+2. Sukuriamas 
+savivaldybių sąrašas 
+be pasikartojimų.
+3. Teisingai 
+apskaičiuojamas 
+kiekvienos rūšies 
+gyvūnų skaičius 
+konkrečioje 
+savivaldybėje.
+4. Randamos visos 
+rūšys.
+5. Į galutinį sąrašą 
+neįtraukiamos rūšys su 
+0 gyvūnų.
+Aukštesnysis lygis. Kuria, naudoja ir modifikuoja programai reikalingas 
+duomenų struktūras (taip pat ir abstrakčiąsias). Derina įvairius duomenų 
+šaltinius (B2.4). Kuria ir modifikuoja reikiamus algoritmus informacijai 
+apdoroti (B3.4).
+Vienas taškas skiriamas už teisingai pasirinktą duomenų struktūrą(-as) 
+leidžianti patogiai saugoti ir apdoroti informaciją.
+Vienas taškas skiriamas už sukurtą savivaldybių sąrašą (sudaromas visų 
+savivaldybių sąrašas ar rinkinys, užtikrinant, kad kiekviena savivaldybė 
+sąraše pasirodo tik vieną kartą).
+Vienas taškas skiriamas teisingai apskaičiuotą kiekvienos rūšies skaičių 
+konkrečioje savivaldybėje.
+Vienas taškai skiriamas už visų rūšių radimą (iš duomenų išrenkamos visos 
+registruotos rūšys, nepraleidžiant nė vienos).
+Vienas taškas skiriamas už tai, kad į galutinį sąrašą neįtraukiamos tos rūšys, 
+kurių konkrečioje savivaldybėje nėra.
+5
+5.1 Raskite, kiek ir kokių rūšių gyvūnų registruota kiekvienoje savivaldybėje. Sąraše pateikite tik tas rūšis, kurios registruotos konkrečioje savivaldybėje 
+(jei gyvūnų skaičius savivaldybėje lygus nuliui, rūšies sąraše neturi būti).
+
+102
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rikiavimo, reikšmės paieškos nerikiuotame ir rikiuotame masyve, reikšmių 
+šalinimo iš masyvo, masyvo papildymo naujomis reikšmėmis algoritmai
+Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+rūšiuojama pagal 
+savivaldybes abėcėlės 
+tvarka.
+2. Teisingai 
+rūšiuojama rūšių 
+sąrašas kiekvienoje 
+savivaldybėje abėcėlės 
+tvarka.
+Pagrindinis lygis. Apibūdina ir kuria ar parenka reikiamus algoritmus 
+informacijai apdoroti (B3.3)
+Vienas taškas skiriamas už teisingai surūšiuotas savivaldybes abėcėlės 
+tvarka.
+Vienas taškas skiriamas už teisingai surūšiuotą rūšių sąrašą kiekvienoje 
+savivaldybėje abėcėlės tvarka.
+2
+5.2 Sąrašą rikiuokite:
+5.2.1 savivaldybes pateikite abėcėlės tvarka;
+5.2.2 rūšių sąrašą kiekvienoje savivaldybėje taip pat pateikite abėcėlės tvarka.
+
+103
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Rezultatų rašymas į failus Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+1. Teisingai 
+spausdinamos visos 
+savivaldybės.
+2. Po kiekviena 
+savivaldybe teisingai 
+pateikimas rūšių 
+sąrašas.
+3. Į failą įrašomas 
+visas paruoštas 
+sąrašas.
+Patenkinamas lygis. Kuria ir (ar) naudoja programai reikalingas duomenų 
+struktūras (taip pat ir abstrakčiąsias). (B2.3).
+Vienas taškas skiriamas už teisingai pateiktą surikiuotą savivaldybių sąrašą.
+Vienas taškas skiriamas už teisingai pateikiamus rūšių konkrečioje 
+savivaldybėje rezultatus. Kiekvienoje eilutėje nurodoma toje savivaldybė 
+esanti rūšis ir skaičius, atskirti vienu tarpu (pvz., Katinas 34).
+Vienas taškas skiriamas už pateiktą visą surikiuotą sąrašą (į failą įrašomos 
+visos reikalingos eilutės, be praleidimų ar pasikartojimų).
+3
+5.3 Papildykite „Rezultatai.txt“ gautais rezultatais. Kiekvienoje naujoje eilutėje pateikite savivaldybės pavadinimą, po to – rūšies pavadinimą ir skaičių, 
+atskirtus vienu tarpu.
+
+104
+PROJEKTAS
+Užduotis Užduoties tipas Pasiekimų sritis
+Programavimo praktinė užduotis Programos išbaigtumas Algoritmai ir programavimas
+Vertinimo kriterijus Vertinimo kriterijaus paaiškinimas Įvertinimas 
+taškais
+Pastabos
+Laikomasi 
+programavimo 
+kultūros
+Patenkinamas lygis. Apibūdina ir parenka reikiamus algoritmus informacijai apdoroti 
+(B3.1).
+Vienas taškas skiriamas už išlaikytą vientisą kodo stilių, prasmingai pavadintus 
+kintamuosius, programos komentavimą
+1
+6. Programos stilius ir komentarai.
+6.1 Išlaikykite vientisą kodo stilių.
+6.2 Naudokite prasmingus kintamųjų pavadinimus.
+6.3 Komentuokite svarbiausias programos dalis.
+
+105
+PROJEKTAS
+5. Literatūros ir šaltinių sąrašas
+1. Informatikos bendroji programa. https://emokykla.lt/bendrosios-programos/visosbendrosios-programos/3
+2. Informatikos tarpinis patikrinimas 2023 m. (Projektas).
+https://beta.etestavimas.lt/tests/view/3e24c7ee05a4/442
+3. 2024 m. informatikos tarpinis patikrinimas.
+https://beta.etestavimas.lt/tests/view/f55712572ecf/507
+4. 2024 m. Informatikos valstybinio brandos egzamino pirma dalis. Užduoties pavyzdys.
+https://beta.etestavimas.lt/tests/view/4ec5a9b313df/551
+5. 2025 m. informatikos VBE I dalis. Pagrindinė sesija.
+https://beta.etestavimas.lt/tests/view/efb3b5d05e19/594
+6. 2025 m. informatikos VBE I dalis. Pakartotinė sesija.
+https://beta.etestavimas.lt/tests/view/5acc99386bb1/617
+7. 2023 m. Informatikos valstybinio brandos egzamino užduoties pavyzdys. 
+https://www.nsa.smsm.lt/wp-content/uploads/2023/08/2023-08-
+14_Informatikos_BE_uzd_pavyzdys_08-22.pdf
+8. 2024 m. Informatikos valstybinio brandos egzamino antros dalies užduoties pavyzdys 
+https://www.nsa.smsm.lt/wp-content/uploads/2024/09/2-dalis.-Informatikos-VBE-uzduotis_FIN.pdf
+9. Skaitmeninės mokymo priemonės (SMP) https://smp.emokykla.lt/?Dalykai=2131
+10. Oficialios statistikos portalas https://osp.stat.gov.lt/
+
+106
+PROJEKTAS
+Informatikos vertinimo gairių
+1 priedas
+Skaičiuoklės funkcijos
+1. Matematinės funkcijos
+● +, –, *, / – aritmetinės operacijos.
+● SUM – suma.
+● ABS – absoliučioji reikšmė (modulis).
+● SQRT – kvadratinė šaknis.
+● POWER, ^ – kėlimas laipsniu.
+2. Apvalinimo funkcijos
+● ROUND – apvalinimas iki artimiausio sveikojo skaičiaus.
+● ROUNDUP – apvalinimas iki didesnio skaičiaus.
+● ROUNDDOWN – apvalinimas iki mažesnio skaičiaus.
+● TRUNC – trupmeninės dalies atmetimas.
+3. Statistinės funkcijos
+● AVERAGE – skaičiuoja vidurkį.
+● MIN – pateikia mažiausią argumentų sąraše esančią reikšmę.
+● MAX – pateikia didžiausią argumentų sąraše esančią reikšmę.
+● MEDIAN – pateikia nurodytų skaičių medianą.
+● MODE.MULT – pateikia dažniausiai pasikartojančią reikšmę.
+● COUNT – apskaičiuoja, kiek skaičių yra argumentų sąraše.
+● SUBTOTAL – skaičiuoja tarpines sumas, vidurkius ir kt. su galimybe ignoruoti paslėptas eilutes.
+4. Sąlyginės funkcijos
+● IF – vienos sąlygos tikrinimas.
+● IFS – kelių sąlygų tikrinimas.
+● SUMIF – sumos skaičiavimas pagal sąlygą.
+● COUNTIF – skaičiavimas pagal sąlygą.
+● AVERAGEIF – vidurkio skaičiavimas pagal sąlygą.
+● SUMIFS – sumos skaičiavimas pagal kelias sąlygas.
+● COUNTIFS – skaičiavimas pagal kelias sąlygas.
+● AVERAGEIFS – vidurkio skaičiavimas pagal kelias sąlygas.
+● MINIFS – pateikia mažiausią reikšmę, atitinkančią sąlygą.
+● MAXIFS – pateikia didžiausią reikšmę, atitinkančią sąlygą.
+5. Loginės funkcijos
+● AND – loginis „ir“.
+● OR – loginis „arba“.
+● NOT – loginis neiginys.
+6. Datos ir laiko funkcijos
+● TODAY – dabartinė data.
+● DATE – iš duotų skaičių sukuriama data (metai, mėnuo ir diena).
+● DAY – grąžina dieną.
+● DAYS – pateikia dienų skaičių tarp dviejų datų.
+● MONTH – grąžina mėnesį.
+● YEAR – grąžina metus.
+7. Paieškos ir nuorodų funkcijos
+● INDEX – grąžina reikšmę pagal eilutę ir stulpelį.
+● MATCH – ieško reikšmės ir grąžina jos vietą.
+● VLOOKUP – vertikalioji paieška.
+8. Teksto funkcijos
+● LEFT – gražina nurodytą skaičių simbolių, pradedant nuo eilutės kairės.
+● RIGHT – gražina nurodytą skaičių simbolių, pradedant nuo eilutės dešinės.
+
+107
+PROJEKTAS
+● MID – grąžina tam tikrą skaičių simbolių iš teksto eilutės, pradedant nuo nurodytos pozicijos ir 
+remiantis nurodytu simbolių skaičiumi.
+● LEN – teksto eilutėje grąžina simbolių skaičių (eilutės ilgis).
+● TRIM – pašalina iš teksto visus tarpus, išskyrus viengubus tarpus tarp žodžių.
+● UPPER – teksto eilutėje esančias raides keičia didžiosiomis.
+● LOWER – teksto eilutėje esančias raides keičia mažosiomis.
+● PROPER – pirmąją teksto raidę ir kitas raides tekste, einančias po tų simbolių, kurie nėra raidės, 
+pakeičia į didžiąsias, visas kitas raides pakeičia mažosiomis.
+● FIND – ieško nurodytos eilutės kitoje eilutėje.
+● REPLACE – teksto eilutės dalį, nurodytą simbolių skaičiumi, pakeičia kita teksto eilute.
+● TEXT – keičia skaičiaus rodymą, pritaikant formatavimą su formato kodais.
+● VALUE – skaičių vaizduojančią teksto eilutę konvertuoja į skaičių.
+● & – operatorius teksto eilutėms sujungti.
