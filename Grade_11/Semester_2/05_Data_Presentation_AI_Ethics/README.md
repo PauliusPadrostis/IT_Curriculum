@@ -22,17 +22,5 @@
 | 099 | `099_L - Ethical risks (bias, privacy) + regulation/` | 📖 Lesson |
 | 100 | `100_P - Short argument responses (ethicsregulation)/` | 🏃 Practice exam |
 | 101 | `101_A - Analytical extension (VBE 1 style)/` | 📝 Assessment |
-| 102 | `102_L - Collaboration models for hybrid work/` | 📖 Lesson |
-| 103 | `103_L - Roles, responsibilities, and workflow contracts/` | 📖 Lesson |
-| 104 | `104_L - Tool discipline (not tool shopping)/` | 📖 Lesson |
-| 105 | `105_L - Feedback and conflict handling in digital teams/` | 📖 Lesson |
-| 106 | `106_I - Coordination simulation/` | 🔗 Integration practice |
-| 107 | `107_A - Practical coordination check/` | 📝 Assessment |
-| 108 | `108_L - TCPIP model as a reasoning tool (not memorization)/` | 📖 Lesson |
-| 109 | `109_L - IP addressing essentials/` | 📖 Lesson |
-| 110 | `110_L - Protocols + ports (functional mapping)/` | 📖 Lesson |
-| 111 | `111_L - Domain, URL anatomy, DNS resolution path/` | 📖 Lesson |
-| 112 | `112_I - Scenario-based diagnostics mini-lab/` | 🔗 Integration practice |
-| 113 | `113_A - Structured test (VBE 1 style)/` | 📝 Assessment |
 
 ---

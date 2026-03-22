@@ -4,7 +4,7 @@
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 77 of grade year
+**Sequence:** 79 of grade year
 **Parent topic:** P5–P6 (2) — Timed micro-sections: composite structures + key-based operations
 **Status:** 🚧 WIP
 

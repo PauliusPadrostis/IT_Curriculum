@@ -19,5 +19,7 @@
 | 137 | `137_D - Short item packet predict outputs, dry-run/` | 🔁 Diagnostic / redo |
 | 138 | `138_D - Identify failed task archetypes diagnose error/` | 🔁 Diagnostic / redo |
 | 139 | `139_D - Redo failed archetypes with no-repeat error/` | 🔁 Diagnostic / redo |
+| 139b | `139b_D - Mixed theory and data VBE1 packet/` | 🔁 Diagnostic / redo |
+| 139c | `139c_D - Mixed theory and programming VBE1 packet/` | 🔁 Diagnostic / redo |
 
 ---

@@ -1,10 +1,10 @@
-# I38 — File reading and line parsing: tokenization, type conversion, encoding
+# I41 — File reading and line parsing: tokenization, type conversion, encoding
 
 **Type:** 🔗 Integration practice
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 38 of grade year
+**Sequence:** 41 of grade year
 **Parent topic:** I1–I4 (4) – Workflow 1: File → Clean Parse → Basic Aggregates
 **Status:** 🚧 WIP
 

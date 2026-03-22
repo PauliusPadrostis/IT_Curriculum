@@ -1,10 +1,10 @@
-# P42 — Timed drill: file reading and exact-format output (accuracy under speed pressure)
+# P45 — Timed drill: file reading and exact-format output (accuracy under speed pressure)
 
 **Type:** 🏃 Practice exam
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 42 of grade year
+**Sequence:** 45 of grade year
 **Parent topic:** P1–P2 (2) — Timed Micro-Sections: I/O + Parsing Speed
 **Status:** 🚧 WIP
 

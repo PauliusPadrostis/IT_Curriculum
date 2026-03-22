@@ -1,10 +1,10 @@
-# A61 — Practical assessment: composite structure and multi-criteria selection logic
+# A64 — Practical assessment: composite structure and multi-criteria selection logic
 
 **Type:** 📝 Assessment
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 61 of grade year
+**Sequence:** 64 of grade year
 **Parent topic:** A3–A4 (2) — Practical Assessment 2: Records + filter + report output
 **Status:** 🚧 WIP
 

@@ -1,10 +1,10 @@
-# L63 — Sorting algorithms and correctness analysis
+# L66 — Sorting algorithms and correctness analysis
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 63 of grade year
+**Sequence:** 66 of grade year
 **Parent topic:** Sorting/Search Systems + Collection Operations (Algorithm Composition)
 **Status:** WIP
 

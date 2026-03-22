@@ -1,10 +1,10 @@
-# I39 — Data cleaning: strip whitespace, validate types, handle missing values
+# I42 — Data cleaning: strip whitespace, validate types, handle missing values
 
 **Type:** 🔗 Integration practice
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 39 of grade year
+**Sequence:** 42 of grade year
 **Parent topic:** I1–I4 (4) – Workflow 1: File → Clean Parse → Basic Aggregates
 **Status:** 🚧 WIP
 

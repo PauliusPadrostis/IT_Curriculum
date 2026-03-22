@@ -20,6 +20,8 @@
 | 049 | `049_L - Multi-pass logic (derive then use)/` | 📖 Lesson |
 | 050 | `050_L - Trace tables (manual execution as exam skill)/` | 📖 Lesson |
 | 051 | `051_L - 1D arrays disciplined traversal + aggregate/` | 📖 Lesson |
+| 051b | `051b_I - Guided string parsing exercise/` | 🔗 Integration practice |
+| 051c | `051c_I - Array accumulation with conditions/` | 🔗 Integration practice |
 | 052 | `052_I - String parsing pipeline split string/` | 🔗 Integration practice |
 | 053 | `053_I - Array counting and aggregation from parsed/` | 🔗 Integration practice |
 | 054 | `054_I - Mixed composition tasks string → array/` | 🔗 Integration practice |
@@ -27,6 +29,8 @@
 | 056 | `056_P - Output prediction and dry-run table drills/` | 🏃 Practice exam |
 | 057 | `057_P - Error type identification and code tracing/` | 🏃 Practice exam |
 | 058 | `058_A - Practical assessment file-driven algorithm task/` | 📝 Assessment |
+| 058b | `058b_I - Code tracing mixed practice/` | 🔗 Integration practice |
+| 058c | `058c_I - File-driven string and array task/` | 🔗 Integration practice |
 | 059 | `059_L - Linear search vs search in sorted sequence (whenwhy)/` | 📖 Lesson |
 | 060 | `060_L - Sorting by key; stable intuition/` | 📖 Lesson |
 | 061 | `061_L - Correctness reasoning invariants/` | 📖 Lesson |

@@ -23,8 +23,9 @@ They must:
 
 - Identify bug type
 
-- Fix and explain.\
-  \
+- Fix and explain.
+
+- Error classification: distinguishing syntax errors (code won't compile) from logic/semantic errors (code runs but produces wrong results). Students categorize errors they encounter during the sprint.\
 
 ---
 

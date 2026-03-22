@@ -1,10 +1,10 @@
-# P59 — Timed record filtering with deliberate edge cases (correctness first)
+# P62 — Timed record filtering with deliberate edge cases (correctness first)
 
 **Type:** 🏃 Practice exam
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 59 of grade year
+**Sequence:** 62 of grade year
 **Parent topic:** P3–P4 (2) — Timed Micro-Sections: Records + Filtering Logic
 **Status:** 🚧 WIP
 

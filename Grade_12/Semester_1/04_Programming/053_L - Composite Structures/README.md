@@ -1,10 +1,10 @@
-# L50 — Composite Structures (Records + Arrays/Lists of Records) — Part 5
+# L53 — Composite Structures (Records + Arrays/Lists of Records) — Part 5
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 50 of grade year
+**Sequence:** 53 of grade year
 **Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
 **Status:** 🚧 WIP
 

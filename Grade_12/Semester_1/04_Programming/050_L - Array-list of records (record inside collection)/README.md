@@ -1,10 +1,10 @@
-# L47 — Array/list of records; record inside collection; collection inside record (basic nesting)
+# L50 — Array/list of records; record inside collection; collection inside record (basic nesting)
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 47 of grade year
+**Sequence:** 50 of grade year
 **Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
 **Status:** 🚧 WIP
 

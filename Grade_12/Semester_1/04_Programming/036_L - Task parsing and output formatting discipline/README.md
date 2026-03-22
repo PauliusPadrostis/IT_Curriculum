@@ -1,10 +1,10 @@
-# L29 — Task parsing and output formatting discipline
+# L36 — Task parsing and output formatting discipline
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 29 of grade year
+**Sequence:** 36 of grade year
 **Parent topic:** Specification Reading + I/O Discipline (Foundation)
 **Status:** WIP
 

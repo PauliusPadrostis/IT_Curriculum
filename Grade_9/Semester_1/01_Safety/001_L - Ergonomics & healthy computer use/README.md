@@ -71,11 +71,10 @@ Bus papildyta po pirmos pamokos vykdymo.
 
 | Laikas    | Etapas                          | Veikla                                              |
 |-----------|---------------------------------|-----------------------------------------------------|
-| 0–3 min   | Įžanginis atgaminimas           | Žodinis šaltasis kvietimas: patirtis su nugaros / akių skausmu |
-| 3–25 min  | Dėstymas                        | Laikysena, ekrano padėtis, 20-20-20, darbo–poilsio ritmas su supratimo patikrinimais |
-| 25–30 min | Pratimai + apibendrinimas       | Nuovargį šalinantys pratimai (akių, rankų, nugaros) + „3 dalykai namuose" |
-| 30–34 min | Pamokos aprašymas dienynui      | Mokytojas fiksuoja, mokiniai ruošiasi pabaigai       |
-| 34–37 min | Išėjimo atgaminimas             | 3 klausimai žodžiu: laikysena, 20-20-20, pratimai    |
+| 0–3 min   | Pamokos pradžios klausimai      | Žodinis: patirtis su nugaros / akių skausmu          |
+| 3–23 min  | Dėstymas                        | Laikysena, ekrano padėtis, 20-20-20, darbo–poilsio ritmas, nuovargį šalinantys pratimai |
+| 23–31 min | Taikymo užduotis                | Darbo vietos reguliavimas pagal principus + 20-20-20 pratimas |
+| 31–34 min | Pamokos pabaigos klausimai      | 3 klausimai žodžiu: laikysena, 20-20-20, pratimai    |
 
 ---
 

@@ -1,10 +1,10 @@
-# L48 — Selecting field keys for sort/search
+# L51 — Selecting field keys for sort/search
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 48 of grade year
+**Sequence:** 51 of grade year
 **Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
 **Status:** 🚧 WIP
 

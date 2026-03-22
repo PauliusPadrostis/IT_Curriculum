@@ -4,7 +4,7 @@
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 80 of grade year
+**Sequence:** 82 of grade year
 **Parent topic:** P7–P8 (2) — Full practical simulation (shorter than exam)
 **Status:** 🚧 WIP
 

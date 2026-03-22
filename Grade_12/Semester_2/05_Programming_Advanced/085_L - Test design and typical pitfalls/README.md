@@ -1,10 +1,10 @@
-# L83 — Test design and typical pitfalls
+# L85 — Test design and typical pitfalls
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 83 of grade year
+**Sequence:** 85 of grade year
 **Parent topic:** Robustness + Extreme Testing + Program Completeness
 **Status:** WIP
 

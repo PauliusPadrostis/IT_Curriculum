@@ -1,10 +1,10 @@
-# I40 — Aggregate computation: sum, min, max, count, average with edge cases
+# I43 — Aggregate computation: sum, min, max, count, average with edge cases
 
 **Type:** 🔗 Integration practice
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 40 of grade year
+**Sequence:** 43 of grade year
 **Parent topic:** I1–I4 (4) – Workflow 1: File → Clean Parse → Basic Aggregates
 **Status:** 🚧 WIP
 

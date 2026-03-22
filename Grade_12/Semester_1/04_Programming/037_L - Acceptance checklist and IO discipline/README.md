@@ -1,10 +1,10 @@
-# L31 — Acceptance checklist and IO discipline
+# L37 — Acceptance checklist and IO discipline
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 31 of grade year
+**Sequence:** 37 of grade year
 **Parent topic:** Specification Reading + I/O Discipline (Foundation)
 **Status:** WIP
 

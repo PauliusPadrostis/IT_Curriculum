@@ -1,10 +1,10 @@
-# L66 — Sorted sequence search: binary or sequential-sorted — choice and justification
+# L68 — Sorted sequence search: binary or sequential-sorted — choice and justification
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 66 of grade year
+**Sequence:** 68 of grade year
 **Parent topic:** L19–L24 (6) – Sorting/Search Systems + Collection Operations (Algorithm Composition)
 **Status:** 🚧 WIP
 

@@ -1,10 +1,10 @@
-# A45 — Output formatting verification and correctness review
+# A48 — Output formatting verification and correctness review
 
 **Type:** 📝 Assessment
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 45 of grade year
+**Sequence:** 48 of grade year
 **Parent topic:** A1–A2 (2) — Practical Assessment 1: File + aggregates + formatting
 **Status:** 🚧 WIP
 

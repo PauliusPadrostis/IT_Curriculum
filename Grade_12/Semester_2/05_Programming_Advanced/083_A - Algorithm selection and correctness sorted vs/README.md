@@ -4,7 +4,7 @@
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 81 of grade year
+**Sequence:** 83 of grade year
 **Parent topic:** A5–A6 (2) — Practical Assessment 3: Sort/Search + Structured Output
 **Status:** 🚧 WIP
 

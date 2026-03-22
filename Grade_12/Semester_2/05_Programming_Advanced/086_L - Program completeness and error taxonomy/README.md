@@ -1,10 +1,10 @@
-# L85 — Program completeness and error taxonomy
+# L86 — Program completeness and error taxonomy
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 85 of grade year
+**Sequence:** 86 of grade year
 **Parent topic:** Robustness + Extreme Testing + Program Completeness
 **Status:** WIP
 

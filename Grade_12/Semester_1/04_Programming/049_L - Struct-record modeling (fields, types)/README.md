@@ -1,10 +1,10 @@
-# L46 — Struct/record modeling (fields, types)
+# L49 — Struct/record modeling (fields, types)
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 46 of grade year
+**Sequence:** 49 of grade year
 **Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
 **Status:** 🚧 WIP
 

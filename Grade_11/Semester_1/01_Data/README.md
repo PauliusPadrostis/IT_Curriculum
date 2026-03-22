@@ -27,6 +27,8 @@
 | 014 | `014_I - Resolve join mismatches and explain how they/` | 🔗 Integration practice |
 | 015 | `015_P - Query logic drills (structured questions)/` | 🏃 Practice exam |
 | 016 | `016_A - Practical data workflow assessment/` | 📝 Assessment |
+| 016b | `016b_I - Multi-source data comparison task/` | 🔗 Integration practice |
+| 016c | `016c_I - VBE1-style data interpretation drill/` | 🔗 Integration practice |
 | 017 | `017_L - Table, record, field; primary key; relationships/` | 📖 Lesson |
 | 018 | `018_L - Query logic selection/` | 📖 Lesson |
 | 019 | `019_L - Reading query results and explaining what/` | 📖 Lesson |

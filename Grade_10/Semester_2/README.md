@@ -6,8 +6,8 @@
 
 | Module | Topic | Assessment |
 |--------|-------|------------|
-| [03_Programming_Loops_Functions](03_Programming_Loops_Functions/) | while/for loops, aggregation patterns, functions | Three practical assessments + mini-project |
+| [03_Programming_Loops_Functions](03_Programming_Loops_Functions/) | while/for loops, aggregation patterns, functions, file I/O introduction | Three practical assessments + mini-project |
 
 ## Notes
 
-Loops are the hardest conceptual jump in the year. Plan for differentiated support and extra integration practice sessions. The mini-project (lessons 035–036) is the main integrative assessment for the semester.
+Loops are the hardest conceptual jump in the year. Plan for differentiated support and extra integration practice sessions. The module ends with a file I/O introduction (lessons 035-036) where students learn to read data from text files.

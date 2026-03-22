@@ -7,6 +7,8 @@
 
 > **Teacher note:** Debrief every timed task without exception. Error clinics are the highest-value sessions.
 
+> **Spec 3.8 — Theory integration:** This module covers BOTH practical exam skills (data + programming) AND theory exam preparation. The T-type timed lessons and D-type drills should include theory questions from Theory Load packs (GDPR, e-signatures, IoT/5G, troubleshooting, digital empathy) alongside data and programming tasks, mirroring VBE Part 2 Section I structure.
+
 ## Lesson Index
 
 | # | Folder | Type |

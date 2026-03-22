@@ -1,10 +1,10 @@
-# L36 — Designing internal representation from file structure
+# L40 — Designing internal representation from file structure
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 36 of grade year
+**Sequence:** 40 of grade year
 **Parent topic:** L5–L9 (5) – File Input (.txt/.csv) + Robust Parsing
 **Status:** 🚧 WIP
 

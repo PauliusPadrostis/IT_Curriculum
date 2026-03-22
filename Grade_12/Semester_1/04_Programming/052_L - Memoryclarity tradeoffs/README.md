@@ -1,10 +1,10 @@
-# L49 — Memory/clarity tradeoffs (not optimization theatre—practical clarity)
+# L52 — Memory/clarity tradeoffs (not optimization theatre—practical clarity)
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 49 of grade year
+**Sequence:** 52 of grade year
 **Parent topic:** L10–L14 (5) – Composite Structures (Records + Arrays/Lists of Records)
 **Status:** 🚧 WIP
 

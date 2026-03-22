@@ -1,10 +1,10 @@
-# L51 — Decomposing into functions: read(), transform(), compute(), output()
+# L54 — Decomposing into functions: read(), transform(), compute(), output()
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 51 of grade year
+**Sequence:** 54 of grade year
 **Parent topic:** L15–L18 (4) – Modular Architecture (Functions + Parameter Discipline)
 **Status:** 🚧 WIP
 

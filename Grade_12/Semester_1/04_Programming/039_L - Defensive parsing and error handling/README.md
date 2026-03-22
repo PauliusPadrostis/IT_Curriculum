@@ -1,10 +1,10 @@
-# L35 — Defensive parsing and error handling
+# L39 — Defensive parsing and error handling
 
 **Type:** Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 35 of grade year
+**Sequence:** 39 of grade year
 **Parent topic:** File Input (.txt/.csv) + Robust Parsing
 **Status:** WIP
 

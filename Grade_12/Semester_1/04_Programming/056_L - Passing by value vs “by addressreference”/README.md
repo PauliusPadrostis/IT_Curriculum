@@ -1,10 +1,10 @@
-# L53 — Passing by value vs “by address/reference” (as required by spec)
+# L56 — Passing by value vs “by address/reference” (as required by spec)
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 53 of grade year
+**Sequence:** 56 of grade year
 **Parent topic:** L15–L18 (4) – Modular Architecture (Functions + Parameter Discipline)
 **Status:** 🚧 WIP
 

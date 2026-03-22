@@ -1,10 +1,10 @@
-# L67 — Collection operations: insert, delete, update with recomputation of derived metrics
+# L69 — Collection operations: insert, delete, update with recomputation of derived metrics
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 67 of grade year
+**Sequence:** 69 of grade year
 **Parent topic:** L19–L24 (6) – Sorting/Search Systems + Collection Operations (Algorithm Composition)
 **Status:** 🚧 WIP
 

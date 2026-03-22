@@ -1,10 +1,10 @@
-# L68 — Edge cases, invariants, and reliability testing across all algorithm types
+# L70 — Edge cases, invariants, and reliability testing across all algorithm types
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 68 of grade year
+**Sequence:** 70 of grade year
 **Parent topic:** L19–L24 (6) – Sorting/Search Systems + Collection Operations (Algorithm Composition)
 **Status:** 🚧 WIP
 

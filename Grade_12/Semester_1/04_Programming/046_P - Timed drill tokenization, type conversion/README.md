@@ -1,10 +1,10 @@
-# P43 — Timed drill: tokenization, type conversion, edge inputs (parsing speed conditioning)
+# P46 — Timed drill: tokenization, type conversion, edge inputs (parsing speed conditioning)
 
 **Type:** 🏃 Practice exam
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 43 of grade year
+**Sequence:** 46 of grade year
 **Parent topic:** P1–P2 (2) — Timed Micro-Sections: I/O + Parsing Speed
 **Status:** 🚧 WIP
 

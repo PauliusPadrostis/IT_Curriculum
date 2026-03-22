@@ -1,10 +1,10 @@
-# L54 — Unit-level reasoning: what each function guarantees
+# L57 — Unit-level reasoning: what each function guarantees
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 54 of grade year
+**Sequence:** 57 of grade year
 **Parent topic:** L15–L18 (4) – Modular Architecture (Functions + Parameter Discipline)
 **Status:** 🚧 WIP
 

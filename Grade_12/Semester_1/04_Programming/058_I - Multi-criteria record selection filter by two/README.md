@@ -1,10 +1,10 @@
-# I55 — Multi-criteria record selection: filter by two or more field conditions
+# I58 — Multi-criteria record selection: filter by two or more field conditions
 
 **Type:** 🔗 Integration practice
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 55 of grade year
+**Sequence:** 58 of grade year
 **Parent topic:** I5–I8 (4) – Workflow 2: Records-Based Processing (Read → Select/Filter → Report Output) - Function based
 **Status:** 🚧 WIP
 

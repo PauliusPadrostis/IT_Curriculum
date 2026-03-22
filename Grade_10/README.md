@@ -1,14 +1,14 @@
 # Grade 10 – Spreadsheets · Programming Fundamentals
 
-**Year focus:** Structured data handling and first programming — from spreadsheet data operations to writing Python programs with variables, conditions, loops, and functions.
+**Year focus:** Structured data handling and first programming — from spreadsheet data operations to writing C++ programs with variables, conditions, loops, and functions.
 
 ## Modules
 
 | Semester | Module | Topic |
 |----------|--------|-------|
 | 1 | [01_Data](Semester_1/01_Data/) | Spreadsheet data: collection, cleaning, joins, pivot tables |
-| 1 | [02_Programming](Semester_1/02_Programming/) | Python basics: input/output, variables, types, conditions |
-| 2 | [03_Programming_Loops_Functions](Semester_2/03_Programming_Loops_Functions/) | Loops (while/for), aggregation patterns, defining functions |
+| 1 | [02_Programming](Semester_1/02_Programming/) | C++ basics: input/output, variables, types, conditions |
+| 2 | [03_Programming_Loops_Functions](Semester_2/03_Programming_Loops_Functions/) | Loops (while/for), aggregation patterns, defining functions, file I/O introduction |
 
 ## Progression logic
 
@@ -19,4 +19,5 @@ Semester 1 runs two parallel tracks — data skills and early programming — gi
 - Practical data workflow assessment (Module 01)
 - Condition-based programming assessment (Module 02)
 - Three practical assessments across loop and function lessons (Module 03)
-- Mini-project (lessons 035–036)
+- Mini-project (lesson 034)
+- File I/O introduction (lessons 035-036)

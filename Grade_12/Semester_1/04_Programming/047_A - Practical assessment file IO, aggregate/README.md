@@ -1,10 +1,10 @@
-# A44 — Practical assessment: file I/O, aggregate computation, edge case handling
+# A47 — Practical assessment: file I/O, aggregate computation, edge case handling
 
 **Type:** 📝 Assessment
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 44 of grade year
+**Sequence:** 47 of grade year
 **Parent topic:** A1–A2 (2) — Practical Assessment 1: File + aggregates + formatting
 **Status:** 🚧 WIP
 

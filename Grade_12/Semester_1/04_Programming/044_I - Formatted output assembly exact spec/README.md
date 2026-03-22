@@ -1,10 +1,10 @@
-# I41 — Formatted output assembly: exact spec compliance and edge case verification
+# I44 — Formatted output assembly: exact spec compliance and edge case verification
 
 **Type:** 🔗 Integration practice
 **Grade:** Grade 12
 **Module:** Programming – File I/O, Parsing & Records
 **Semester:** Semester 1
-**Sequence:** 41 of grade year
+**Sequence:** 44 of grade year
 **Parent topic:** I1–I4 (4) – Workflow 1: File → Clean Parse → Basic Aggregates
 **Status:** 🚧 WIP
 

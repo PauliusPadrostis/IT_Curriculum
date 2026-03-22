@@ -11,30 +11,27 @@
 
 | # | Folder | Type |
 |---|--------|------|
-| 063 | `063_L - Sorting algorithms selection, insertion/` | 📖 Lesson |
-| 064 | `064_L - Correctness analysis choosing the right sort/` | 📖 Lesson |
-| 065 | `065_L - Linear search implementation, time cost, when to use/` | 📖 Lesson |
-| 066 | `066_L - Sorted sequence search (binary or sequential)/` | 📖 Lesson |
-| 067 | `067_L - Collection operations insert, delete, update/` | 📖 Lesson |
-| 068 | `068_L - Edge cases, invariants, and reliability/` | 📖 Lesson |
-| 069 | `069_I - Key-based sorting single and multi-key, stable/` | 🔗 Integration practice |
-| 070 | `070_I - Search algorithm choice sorted vs unsorted/` | 🔗 Integration practice |
-| 071 | `071_I - Output specification enforcement exact format/` | 🔗 Integration practice |
-| 072 | `072_I - Full workflow correctness compose sort/` | 🔗 Integration practice |
-| 073 | `073_I - Insert logic validate position, insert/` | 🔗 Integration practice |
-| 074 | `074_I - Delete logic locate element, remove, verify/` | 🔗 Integration practice |
-| 075 | `075_I - Update logic find record, apply change/` | 🔗 Integration practice |
-| 076 | `076_I - Full modify-then-report workflow insertdeleteup/` | 🔗 Integration practice |
-| 077 | `077_P - Timed composite structure tasks records, field/` | 🏃 Practice exam |
-| 078 | `078_P - Timed key-based sort and filter operations/` | 🏃 Practice exam |
-| 079 | `079_P - Full end-to-end practical simulation under/` | 🏃 Practice exam |
-| 080 | `080_P - Debrief and targeted error correction based/` | 🏃 Practice exam |
-| 081 | `081_A - Algorithm selection and correctness sorted vs/` | 📝 Assessment |
-| 082 | `082_A - Structured output task exact format compliance/` | 📝 Assessment |
-| 083 | `083_L - Test set design normal + boundary + adversarial/` | 📖 Lesson |
-| 084 | `084_L - Typical pitfalls empty set, single element/` | 📖 Lesson |
-| 085 | `085_L - Program completeness criteria/` | 📖 Lesson |
-| 086 | `086_L - Error taxonomy logic vs parsing vs formatting/` | 📖 Lesson |
+| 066 | `066_L - Sorting algorithms and correctness analysis/` | 📖 Lesson *(was 063+064)* |
+| 067 | `067_L - Linear search implementation, time cost, when to use/` | 📖 Lesson |
+| 068 | `068_L - Sorted sequence search (binary or sequential)/` | 📖 Lesson |
+| 069 | `069_L - Collection operations insert, delete, update/` | 📖 Lesson |
+| 070 | `070_L - Edge cases, invariants, and reliability/` | 📖 Lesson |
+| 071 | `071_I - Key-based sorting single and multi-key, stable/` | 🔗 Integration practice |
+| 072 | `072_I - Search algorithm choice sorted vs unsorted/` | 🔗 Integration practice |
+| 073 | `073_I - Output specification enforcement exact format/` | 🔗 Integration practice |
+| 074 | `074_I - Full workflow correctness compose sort/` | 🔗 Integration practice |
+| 075 | `075_I - Insert logic validate position, insert/` | 🔗 Integration practice |
+| 076 | `076_I - Delete logic locate element, remove, verify/` | 🔗 Integration practice |
+| 077 | `077_I - Update logic find record, apply change/` | 🔗 Integration practice |
+| 078 | `078_I - Full modify-then-report workflow insertdeleteup/` | 🔗 Integration practice |
+| 079 | `079_P - Timed composite structure tasks records, field/` | 🏃 Practice exam |
+| 080 | `080_P - Timed key-based sort and filter operations/` | 🏃 Practice exam |
+| 081 | `081_P - Full end-to-end practical simulation under/` | 🏃 Practice exam |
+| 082 | `082_P - Debrief and targeted error correction based/` | 🏃 Practice exam |
+| 083 | `083_A - Algorithm selection and correctness sorted vs/` | 📝 Assessment |
+| 084 | `084_A - Structured output task exact format compliance/` | 📝 Assessment |
+| 085 | `085_L - Test design and typical pitfalls/` | 📖 Lesson *(was 083+084)* |
+| 086 | `086_L - Program completeness and error taxonomy/` | 📖 Lesson *(was 085+086)* |
 | 087 | `087_I - Problem decomposition plan required functions/` | 🔗 Integration practice |
 | 088 | `088_I - Implement read() and compute() with correct/` | 🔗 Integration practice |
 | 089 | `089_I - Implement output() with required return-value/` | 🔗 Integration practice |

@@ -1,10 +1,10 @@
-# L65 — Linear search: implementation, time cost, when to use
+# L67 — Linear search: implementation, time cost, when to use
 
 **Type:** 📖 Lesson
 **Grade:** Grade 12
 **Module:** Programming – Sort/Search, Modular & Robustness
 **Semester:** Semester 2
-**Sequence:** 65 of grade year
+**Sequence:** 67 of grade year
 **Parent topic:** L19–L24 (6) – Sorting/Search Systems + Collection Operations (Algorithm Composition)
 **Status:** 🚧 WIP
 

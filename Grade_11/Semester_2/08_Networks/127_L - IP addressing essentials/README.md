@@ -6,6 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 127 of grade year
 **Status:** 🚧 WIP
+**Delivery:** 🏠 Theory Load (homework reading + self-check quiz). Not a scheduled classroom lesson.
 
 ---
 

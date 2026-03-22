@@ -7,15 +7,19 @@
 
 > **Teacher note:** Revisits safety in a mature context — legal/ethical, ergonomics as exam skill.
 
+> **Delivery:** L lessons in this module are delivered as Theory Load homework packages. Only I and A lessons are scheduled classroom sessions.
+
 ## Lesson Index
 
-| # | Folder | Type |
-|---|--------|------|
-| 114 | `114_L - Legalethical frame (what’s allowed/` | 📖 Lesson |
-| 115 | `115_L - Accountdevice safety in “real school life”/` | 📖 Lesson |
-| 116 | `116_L - Health & ergonomics/` | 📖 Lesson |
-| 117 | `117_L - Environmental impact + data-based forecasting/` | 📖 Lesson |
-| 118 | `118_I - Case study pack/` | 🔗 Integration practice |
-| 119 | `119_A - Mixed-format assessment/` | 📝 Assessment |
+| # | Folder | Type | Delivery |
+|---|--------|------|----------|
+| 114 | `114_L - Legalethical frame (what’s allowed/` | 📖 Lesson | Theory Load |
+| 115 | `115_L - Accountdevice safety in “real school life”/` | 📖 Lesson | Theory Load |
+| 116 | `116_L - Health & ergonomics/` | 📖 Lesson | Theory Load |
+| 117 | `117_L - Environmental impact + data-based forecasting/` | 📖 Lesson | Theory Load |
+| 117b | `117b_L - Symmetric and asymmetric encryption concepts/` | 📖 Lesson | Theory Load |
+| 117c | `117c_I - Encryption hands-on exercise/` | 🔗 Integration practice | In-class |
+| 118 | `118_I - Case study pack/` | 🔗 Integration practice | In-class |
+| 119 | `119_A - Mixed-format assessment/` | 📝 Assessment | In-class |
 
 ---

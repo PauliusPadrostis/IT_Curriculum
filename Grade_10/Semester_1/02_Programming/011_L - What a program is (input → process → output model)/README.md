@@ -13,6 +13,7 @@
 ## Overview
 
 - What a program is (input → process → output model)
+- Discussion: which real-world problems can be solved by programs, and why some problems are harder to automate than others (ambiguity, complexity).
 
 ## Sub-topics
 

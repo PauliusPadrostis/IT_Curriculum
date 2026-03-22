@@ -8,7 +8,23 @@
       "Bash(grep -oE '_[A-Z]\\( |$\\)')",
       "Bash(grep -E \"Semester_[12]/[0-9]{2}_[A-Z]/README.md$\")",
       "Bash(ls -1d /c/Users/Paulius/Documents/informatika-curriculum/Grade_11/Semester_1/01_Data/020_*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "mcp__obsidian__list-available-vaults",
+      "mcp__obsidian__read-note",
+      "Bash(ls -la \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/001_L - Ergonomics & hygiene norms/\")",
+      "Bash(ls -d \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/\"*/)",
+      "Bash(ls -la \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/001_L - Ergonomics & healthy computer use/\")",
+      "Bash(node -e \":*)",
+      "Bash(python3 -c \":*)",
+      "Bash(xxd)",
+      "Bash(npm ls:*)",
+      "Bash(node _tmp_gen_plan.mjs)",
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(rm _tmp_gen_plan.mjs _tmp_content.json)",
+      "Bash(rm -rf node_modules package.json package-lock.json)",
+      "Bash(rm -f _tmp_gen_plan.mjs _tmp_content.json)",
+      "Bash(\"C:/Users/Paulius/obsidian-brain/10-projects/it-curriculum/decisions.md\":*)"
     ]
   }
 }
