@@ -24,7 +24,18 @@
       "Bash(rm _tmp_gen_plan.mjs _tmp_content.json)",
       "Bash(rm -rf node_modules package.json package-lock.json)",
       "Bash(rm -f _tmp_gen_plan.mjs _tmp_content.json)",
-      "Bash(\"C:/Users/Paulius/obsidian-brain/10-projects/it-curriculum/decisions.md\":*)"
+      "Bash(\"C:/Users/Paulius/obsidian-brain/10-projects/it-curriculum/decisions.md\":*)",
+      "Bash(node:*)",
+      "Bash(npm list:*)",
+      "Bash(npm root:*)",
+      "Bash(grep -E '\\\\.\\(md|docx\\)$')",
+      "Bash(done)",
+      "Bash(grep -iE '\\\\.\\(docx|pdf|doc|xlsx\\)$')",
+      "Bash(cp -r \"C:/Users/Paulius/.claude/skills/lesson-plan-gen\" \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills/lesson-plan-gen\")",
+      "Bash(cp -r \"C:/Users/Paulius/.claude/skills/lesson-readme-gen\" \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills/lesson-readme-gen\")",
+      "Bash(mkdir -p \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills\")",
+      "Bash(cp -r \"C:/Users/Paulius/.claude/skills/cpp-grader\" \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills/cpp-grader\")",
+      "Bash(rm -rf \"C:/Users/Paulius/.claude/skills/cpp-grader\")"
     ]
   }
 }

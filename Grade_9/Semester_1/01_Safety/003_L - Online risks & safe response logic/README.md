@@ -1,4 +1,4 @@
-# 003_L — Internetinės grėsmės ir saugaus reagavimo logika
+# 003_L — Internetinės rizikos ir saugaus reagavimo logika
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
@@ -7,13 +7,15 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 003 iš metų sekos                                 |
-| **Būsena**      | 📋 Šablonas                                       |
+| **Būsena**      | 🚧 WIP                                            |
 
 ---
 
 ## Apžvalga
 
-Mokiniai susipažįsta su dažniausiomis internetinėmis grėsmėmis: sukčiavimo laiškai (phishing), įtartinos nuorodos, patyčios, apgaulingos svetainės. Pamoka moko atpažinti grėsmę ir pasirinkti tinkamą reagavimo veiksmą, o ne reaguoti emociškai.
+Mokiniai susipažįsta su dažniausiomis internetinėmis grėsmėmis: phishing, socialine inžinerija ir melagienų sklaida. Pamokoje mokoma atpažinti tipinius phishing požymius, suprasti manipuliacijos mechanizmus ir taikyti saugaus reagavimo algoritmą: sustoti → patikrinti → pranešti. Analizuojamos konkrečios situacijos, kuriose mokiniai turi priimti sprendimą.
+
+**Programos nuoroda:** Saugus elgesys F3.1–F3.4 — „Budrumas atidarant el. laiškus; interneto rizikos: priekabiavimas, patyčios, privatumo pažeidimas."
 
 ---
 
@@ -21,21 +23,56 @@ Mokiniai susipažįsta su dažniausiomis internetinėmis grėsmėmis: sukčiavim
 
 Pasibaigus pamokai, mokinys gebės:
 
-1. Atpažinti pagrindinius sukčiavimo internete požymius (phishing, apgaulingos nuorodos, netikri pranešimai).
-2. Klasifikuoti skaitmenines grėsmes pagal tipą (sukčiavimas, priekabiavimas, duomenų vagystė).
-3. Pasirinkti tinkamą reagavimo veiksmą konkrečiame grėsmės scenarijuje.
+1. Atpažinti dažniausias internetines grėsmes: phishing, socialinę inžineriją, melagienų sklaidą.
+2. Apibūdinti tipinius phishing žinutės požymius ir paaiškinti, kodėl jie kelia pavojų.
+3. Pritaikyti saugaus reagavimo algoritmą: sustoti → patikrinti → pranešti.
+
+---
+
+## Sėkmės kriterijai
+
+Mokinys pasiekė tikslą, kai:
+
+- Gali įvardinti bent 2 tipinius phishing požymius (skubos spaudimas, netikėtas siuntėjas, prašoma asmeninės info).
+- Gali paaiškinti skirtumą tarp klaidingos informacijos ir dezinformacijos.
+- Gali konkrečioje situacijoje pritaikyti 3 žingsnių algoritmą ir pagrįsti kiekvieną žingsnį.
 
 ---
 
 ## Bloom taksonomijos lygis
 
-**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.
+**Lygis 3 — Taikyti**
+
+Kulminacinis pamokos tikslas — pritaikyti saugaus reagavimo algoritmą naujose situacijose. Mokiniai ne tik prisimena ir supranta grėsmių požymius, bet turi savarankiškai nuspręsti, kaip elgtis konkrečiame scenarijuje.
+
+---
+
+## Pasirengimo vartai
+
+Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
+
+- Supranta, kas yra slaptažodis ir kodėl jis svarbus (iš pamokos 002).
+- Gali atskirti saugų ir nesaugų elgesį su asmeniniais duomenimis (iš pamokos 002).
+
+💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
+mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
 ## Dažniausios klaidos
 
 Bus papildyta po pirmos pamokos vykdymo.
+
+---
+
+## Pamokos eiga (santrauka)
+
+| Laikas    | Etapas                          | Veikla                                                      |
+|-----------|---------------------------------|-------------------------------------------------------------|
+| 0–4 min   | Pamokos pradžios klausimai      | Žodinis: 3 klausimai iš praėjusios pamokos (privatumas)     |
+| 4–24 min  | Dėstymas ir vedama praktika     | Phishing požymiai, socialinė inžinerija, melagienos, SUSTOTI→PATIKRINTI→PRANEŠTI |
+| 24–34 min | Savarankiška užduotis           | 4 situacijos: mokiniai taiko algoritmą ir argumentuoja      |
+| 34–37 min | Pamokos pabaigos klausimai      | Žodinis: phishing požymiai, algoritmo žingsniai, dezinformacija |
 
 ---
 
@@ -53,11 +90,11 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas               | Būsena | Pastaba                                |
-|----------------------|--------|----------------------------------------|
-| Teacher_Plan.docx    | ❌     | Privalomas                             |
-| Visual_Aid.pdf       | ❌     | Grėsmių pavyzdžiai su vizualais        |
-| Student_Task.docx    | ❌     | Scenarijų klasifikavimo lapas          |
+| Failas               | Būsena | Pastaba                                      |
+|----------------------|--------|----------------------------------------------|
+| Teacher_Plan.docx    | ✅     | Privalomas                                   |
+| Visual_Aid.pdf       | ❌     | Phishing pavyzdžiai, algoritmo schema         |
+| Student_Task.docx    | ❌     | Scenarijų analizės lapas                     |
 
 ---
 
