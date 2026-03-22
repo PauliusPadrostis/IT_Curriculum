@@ -13,7 +13,9 @@
 
 ## Apžvalga
 
-Mokiniai susipažįsta su ergonomikos principais dirbant kompiuteriu: taisyklinga sėdėjimo laikysena, ekrano atstumas ir kampas, rankų padėtis, akių poilsio taisyklė (20-20-20) ir darbo–poilsio ritmas. Pamoka pagrindžia, kodėl kiekvienas principas mažina ilgalaikę fizinę įtampą, ir skatina mokinius kritiškai įvertinti savo darbo vietą.
+Mokiniai susipažįsta su ergonomikos principais dirbant kompiuteriu: taisyklinga sėdėjimo laikysena, ekrano atstumas ir kampas, rankų padėtis, akių poilsio taisyklė (20-20-20), nuovargį šalinantys pratimai ir darbo–poilsio ritmas. Pamoka pagrindžia, kodėl kiekvienas principas mažina ilgalaikę fizinę įtampą, ir skatina mokinius kritiškai įvertinti savo darbo vietą.
+
+**Programos nuoroda:** Saugus elgesys F1.1 — „Apibūdina saugaus darbo skaitmeninėmis technologijomis normas."
 
 ---
 
@@ -24,6 +26,7 @@ Pasibaigus pamokai, mokinys gebės:
 1. Įvardinti pagrindinius ergonomikos principus (laikysena, ekrano padėtis, rankų pozicija, pertraukos).
 2. Paaiškinti, kaip kiekvienas principas padeda išvengti ilgalaikių sveikatos problemų.
 3. Pademonstruoti taisyklingą sėdėjimo pozą ir ekrano padėtį savo darbo vietoje.
+4. Atlikti kelis nuovargį šalinančius pratimus (akių, rankų, nugaros).
 
 ---
 
@@ -34,6 +37,7 @@ Mokinys pasiekė tikslą, kai:
 - Gali įvardinti bent 3 ergonomikos principus be pagalbos.
 - Gali paaiškinti 20-20-20 taisyklę ir kodėl ji veikia (ne tik pakartoti formuluotę).
 - Gali parodyti taisyklingą sėdėjimo pozą ir nurodyti, ką reikėtų pakeisti savo darbo vietoje namuose.
+- Gali atlikti bent 2 nuovargį šalinančius pratimus (akių, rankų arba nugaros).
 
 ---
 
@@ -68,10 +72,10 @@ Bus papildyta po pirmos pamokos vykdymo.
 | Laikas    | Etapas                          | Veikla                                              |
 |-----------|---------------------------------|-----------------------------------------------------|
 | 0–3 min   | Įžanginis atgaminimas           | Žodinis šaltasis kvietimas: patirtis su nugaros / akių skausmu |
-| 3–28 min  | Dėstymas                        | Laikysena, ekrano padėtis, 20-20-20, darbo–poilsio ritmas su supratimo patikrinimais |
-| 28–34 min | Apibendrinimas su klase         | „3 dalykai, kuriuos pakeistumėte namuose" — žodinis atsakymas |
-| 34–37 min | Pamokos aprašymas dienynui      | Mokytojas fiksuoja, mokiniai ruošiasi pabaigai       |
-| 37–40 min | Išėjimo atgaminimas             | 3 klausimai žodžiu: laikysena, 20-20-20, pertraukos  |
+| 3–25 min  | Dėstymas                        | Laikysena, ekrano padėtis, 20-20-20, darbo–poilsio ritmas su supratimo patikrinimais |
+| 25–30 min | Pratimai + apibendrinimas       | Nuovargį šalinantys pratimai (akių, rankų, nugaros) + „3 dalykai namuose" |
+| 30–34 min | Pamokos aprašymas dienynui      | Mokytojas fiksuoja, mokiniai ruošiasi pabaigai       |
+| 34–37 min | Išėjimo atgaminimas             | 3 klausimai žodžiu: laikysena, 20-20-20, pratimai    |
 
 ---
 
