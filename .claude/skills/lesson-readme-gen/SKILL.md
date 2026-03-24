@@ -95,6 +95,15 @@ When in doubt, ask.
 
 ---
 
+## Step 0 — Lithuanian QA Setup
+
+Before generating any README content, read `/mnt/skills/user/lt-qa/SKILL.md`
+and run **Phase 1 (PRE-GEN)** — load the mistake library, AI pattern rules,
+and audience calibration. READMEs contain Lithuanian text (overviews, learning
+objectives, section headings) and must meet the same quality standard.
+
+---
+
 ## Step 1 — Gather Context
 
 ### 1a — Infer from path
@@ -399,6 +408,15 @@ Verify that the Būsena value matches actual README state:
 - Šablonas: only if generated in minimal mode
 - WIP: if any required files missing OR any TBD sections (except Dažniausios klaidos)
 - Baigta: only if all type-required files present and no TBDs remain
+
+---
+
+## Step 4b — Lithuanian QA Pass
+
+Before presenting the README, run **Phase 2 (POST-GEN)** from
+`/mnt/skills/user/lt-qa/SKILL.md` on all Lithuanian text in the generated
+README. Focus on: grammar, punctuation (especially em dash elimination),
+VLKK terminology, and naturalness. Fix all issues before proceeding to output.
 
 ---
 

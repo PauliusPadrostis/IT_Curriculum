@@ -36,6 +36,11 @@ when generating would produce an obviously broken plan.
 3. `references/exemplars/` — read the exemplar matching the lesson type being generated
    (L, I, or P). These calibrate tone, density, and type-specific rhythm.
 
+**Lithuanian QA (mandatory):**
+4. Read `/mnt/skills/user/lt-qa/SKILL.md` and run **Phase 1 (PRE-GEN)** — load
+   the mistake library, AI pattern rules, and audience calibration before writing
+   any Lithuanian text.
+
 These files are the skill's operational backbone. Do not generate without them.
 
 ---
@@ -409,6 +414,18 @@ When sources disagree:
 
 If README and curriculum contradict: generate conservatively from README,
 do not expand topic beyond README scope.
+
+---
+
+## Step 6 — Lithuanian QA Pass
+
+After generating the .docx file and before presenting it to the user, run
+**Phase 2 (POST-GEN)** from `/mnt/skills/user/lt-qa/SKILL.md` on all
+Lithuanian text in the generated document. This includes the full 7-step
+checklist: mistake library scan, grammar & morphology check, punctuation
+audit, AI pattern elimination, audience calibration, VLKK terminology
+check, and final natural-read test. Fix all issues found before presenting
+the file.
 
 ---
 
