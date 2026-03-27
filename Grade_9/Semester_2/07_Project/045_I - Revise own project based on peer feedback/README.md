@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 45 of grade year
 **Parent topic:** I4–I5 (2) - Refinement + packaging
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

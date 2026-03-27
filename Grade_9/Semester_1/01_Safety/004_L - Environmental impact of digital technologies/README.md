@@ -93,11 +93,12 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas               | Būsena | Pastaba                                        |
-|----------------------|--------|------------------------------------------------|
-| Teacher_Plan.docx    | ✅     | Privalomas                                     |
-| Visual_Aid.pdf       | ❌     | Infografika: energija, e-atliekos, pėdsakas    |
-| Student_Task.docx    | ❌     | Priežastis → poveikis → sprendimas lapas       |
+| Failas                                       | Būsena | Patikrinta | Pastaba                                     |
+|----------------------------------------------|--------|------------|---------------------------------------------|
+| Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                                  |
+| 004_L_ST_poveikis_aplinkai_Theory_Pack.docx  | ✅     | ❌         | Teorijos medžiaga                           |
+| Student_Task.docx                            | ❌     | ❌         | Priežastis, poveikis, sprendimas lapas      |
+| Visual_Aid.pdf                               | ❌     | ❌         | Infografika: energija, e-atliekos, pėdsakas |
 
 ---
 

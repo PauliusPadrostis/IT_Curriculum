@@ -87,12 +87,12 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas                | Būsena | Pastaba                                  |
-|-----------------------|--------|------------------------------------------|
-| Teacher_Plan.docx     | ✅     | Privalomas                               |
-| Assessment_Task.docx  | ❌     | **Privalomas** — vertinimo užduotis      |
-| Rubric.docx           | ❌     | **Bent vienas privalomas** — vertinimo kriterijai |
-| Answer_Key.docx       | ❌     | Atsakymų raktas                          |
+| Failas                | Būsena | Patikrinta | Pastaba                                           |
+|-----------------------|--------|------------|---------------------------------------------------|
+| Teacher_Plan.docx     | ✅     | ❌         | Privalomas                                        |
+| Assessment_Task.docx  | ❌     | ❌         | **Privalomas** — vertinimo užduotis               |
+| Rubric.docx           | ❌     | ❌         | **Bent vienas privalomas** — vertinimo kriterijai |
+| Answer_Key.docx       | ❌     | ❌         | Atsakymų raktas                                   |
 
 ---
 

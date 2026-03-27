@@ -90,11 +90,12 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas               | Būsena | Pastaba                                      |
-|----------------------|--------|----------------------------------------------|
-| Teacher_Plan.docx    | ✅     | Privalomas                                   |
-| Visual_Aid.pdf       | ❌     | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
-| Student_Task.docx    | ❌     | Scenarijų vertinimo lapas                    |
+| Failas                              | Būsena | Patikrinta | Pastaba                                         |
+|-------------------------------------|--------|------------|-------------------------------------------------|
+| Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                                      |
+| 002_L_Privatumas_Theory_Pack.docx   | ✅     | ❌         | Teorijos medžiaga                               |
+| Student_Task.docx                   | ❌     | ❌         | Scenarijų vertinimo lapas                       |
+| Visual_Aid.pdf                      | ❌     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
 
 ---
 

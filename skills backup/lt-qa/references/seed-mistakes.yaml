@@ -1,0 +1,99 @@
+# Lithuanian QA — Seed Mistake Library
+# This file ships with the skill and contains known, recurring errors.
+# A living copy should be maintained at:
+#   github.com/PauliusPadrostis/IT_Curriculum/lt-qa/lt-mistakes.yaml
+#
+# Format:
+#   - wrong: <incorrect form Claude tends to produce>
+#     correct: <correct Lithuanian form>
+#     category: morphology | calque | spelling | punctuation | register
+#     note: <optional explanation>
+
+# ── Morphology: wrong vowel in suffix ──────────────────────────
+- wrong: "pakėitėte"
+  correct: "pakeitėte"
+  category: morphology
+  note: "ė→ei diphthong error in past tense 2nd person plural"
+
+- wrong: "pasakykėte"
+  correct: "pasakykite"
+  category: morphology
+  note: "ė insertion in imperative 2nd person plural — correct suffix is -ite"
+
+- wrong: "atsįsėskite"
+  correct: "atsisėskite"
+  category: morphology
+  note: "į insertion error — prefix atsi- has no nosinė"
+
+- wrong: "tolimiausą"
+  correct: "tolimiausią"
+  category: morphology
+  note: "missing i before ą in superlative accusative"
+
+- wrong: "atgniažkite"
+  correct: "atgniaužkite"
+  category: morphology
+  note: "missing u in -iaužk- cluster"
+
+# ── Calques / Anglicisms ──────────────────────────────────────
+- wrong: "naturaliai"
+  correct: "natūraliai"
+  category: spelling
+  note: "missing ū — English influence drops the macron"
+
+- wrong: "realizuoti"
+  correct: "suvokti / suprasti"
+  category: calque
+  note: "English 'realize' calque. Use realizuoti only for 'to implement/make real'"
+
+- wrong: "iš esmės"
+  correct: "iš tikrųjų / iš tiesų"
+  category: calque
+  note: "overused as filler; often a calque of 'basically/essentially'"
+
+- wrong: "agresyvus (marketingas)"
+  correct: "aktyvus / intensyvus"
+  category: calque
+  note: "English 'aggressive' calque in non-violent contexts"
+
+- wrong: "adresuoti (problemą)"
+  correct: "spręsti / nagrinėti"
+  category: calque
+  note: "English 'to address (a problem)' calque"
+
+- wrong: "suportinti"
+  correct: "palaikyti / remti"
+  category: calque
+  note: "Direct anglicism from 'support'"
+
+- wrong: "fokusas"
+  correct: "dėmesys / dėmesio centras"
+  category: calque
+  note: "English 'focus' calque — use only in optics context"
+
+# ── Common AI-produced spelling errors ─────────────────────────
+- wrong: "prašom"
+  correct: "prašome"
+  category: spelling
+  note: "truncated imperative — needs final -e"
+
+- wrong: "tačiau,"
+  correct: "tačiau"
+  category: punctuation
+  note: "tačiau does NOT take a comma after it when starting a clause"
+
+- wrong: "kadangi,"
+  correct: "kadangi"
+  category: punctuation
+  note: "kadangi does NOT take a comma after it"
+
+# ── Register / formality errors ────────────────────────────────
+- wrong: "tu"
+  correct: "jūs"
+  category: register
+  note: "student-facing materials must use formal 'jūs' address"
+
+- wrong: "turi padaryti"
+  correct: "turite atlikti"
+  category: register
+  note: "informal 'tu' + colloquial 'padaryti' → formal 'jūs' + neutral 'atlikti'"

@@ -89,10 +89,10 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas                 | Būsena | Pastaba                                   |
-|------------------------|--------|-------------------------------------------|
-| Teacher_Plan.docx      | ✅     | Privalomas                                |
-| Practice_Task_Set.docx | ❌     | Praktikos klausimai vertinimui pasiruošti  |
+| Failas                 | Būsena | Patikrinta | Pastaba                                   |
+|------------------------|--------|------------|-------------------------------------------|
+| Teacher_Plan.docx      | ✅     | ❌         | Privalomas                                |
+| Practice_Task_Set.docx | ❌     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
 
 ---
 

@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 35 of grade year
 **Parent topic:** I1 - I2 (2) - Asset pack creation
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

@@ -5,7 +5,7 @@
 **Module:** Technological Foundations
 **Semester:** Semester 1
 **Sequence:** 12 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

@@ -5,7 +5,7 @@
 **Module:** Specialisation: Website Design
 **Semester:** Semester 2
 **Sequence:** 39 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

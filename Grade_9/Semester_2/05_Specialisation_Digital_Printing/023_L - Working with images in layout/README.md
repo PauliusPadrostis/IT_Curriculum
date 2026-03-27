@@ -5,7 +5,7 @@
 **Module:** Specialisation: Digital Printing
 **Semester:** Semester 2
 **Sequence:** 23 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

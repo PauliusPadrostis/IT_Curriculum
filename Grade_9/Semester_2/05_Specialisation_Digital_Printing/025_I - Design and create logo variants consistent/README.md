@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 25 of grade year
 **Parent topic:** I1-I2 (2) - Asset pack creation (logo + graphic elements)
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

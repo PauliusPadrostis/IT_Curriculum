@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 38 of grade year
 **Parent topic:** I3 - I4 (2) - Single-page site draft
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

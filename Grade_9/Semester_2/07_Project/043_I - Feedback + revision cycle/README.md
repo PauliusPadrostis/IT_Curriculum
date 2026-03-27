@@ -5,7 +5,7 @@
 **Module:** End-of-Year Project
 **Semester:** Semester 2
 **Sequence:** 43 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

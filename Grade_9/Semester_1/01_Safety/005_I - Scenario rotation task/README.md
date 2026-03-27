@@ -92,10 +92,10 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas               | Būsena | Pastaba                                  |
-|----------------------|--------|------------------------------------------|
-| Teacher_Plan.docx    | ✅     | Privalomas                               |
-| Student_Task.docx    | ❌     | Scenarijų kortelės ir sprendimų lapas    |
+| Failas               | Būsena | Patikrinta | Pastaba                                  |
+|----------------------|--------|------------|------------------------------------------|
+| Teacher_Plan.docx    | ✅     | ❌         | Privalomas                               |
+| Student_Task.docx    | ❌     | ❌         | Scenarijų kortelės ir sprendimų lapas    |
 
 ---
 

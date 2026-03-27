@@ -90,11 +90,12 @@ Nėra.
 
 ## 📁 Reikalingi failai
 
-| Failas               | Būsena | Pastaba                                      |
-|----------------------|--------|----------------------------------------------|
-| Teacher_Plan.docx    | ✅     | Privalomas                                   |
-| Visual_Aid.pdf       | ❌     | Phishing pavyzdžiai, algoritmo schema         |
-| Student_Task.docx    | ❌     | Scenarijų analizės lapas                     |
+| Failas                                       | Būsena | Patikrinta | Pastaba                               |
+|----------------------------------------------|--------|------------|---------------------------------------|
+| Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                            |
+| 003_L_Internetines_rizikos_Theory_Pack.docx  | ✅     | ❌         | Teorijos medžiaga                     |
+| Student_Task.docx                            | ❌     | ❌         | Scenarijų analizės lapas              |
+| Visual_Aid.pdf                               | ❌     | ❌         | Phishing pavyzdžiai, algoritmo schema |
 
 ---
 

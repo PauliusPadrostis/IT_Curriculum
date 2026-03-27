@@ -5,7 +5,7 @@
 **Module:** Computer Graphics – Practical
 **Semester:** Semester 2
 **Sequence:** 20 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

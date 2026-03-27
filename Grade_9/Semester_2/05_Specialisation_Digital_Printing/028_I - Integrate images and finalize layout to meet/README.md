@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 28 of grade year
 **Parent topic:** I3-I4 (2) - One-page layout draft (poster/flyer)
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

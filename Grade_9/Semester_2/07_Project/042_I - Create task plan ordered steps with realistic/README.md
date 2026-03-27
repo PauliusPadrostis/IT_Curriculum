@@ -6,7 +6,7 @@
 **Semester:** Semester 2
 **Sequence:** 42 of grade year
 **Parent topic:** I1–I2 (2) - Project build phase 1
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 

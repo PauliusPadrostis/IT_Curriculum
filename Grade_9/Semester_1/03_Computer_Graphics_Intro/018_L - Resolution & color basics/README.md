@@ -5,7 +5,7 @@
 **Module:** Computer Graphics Intro
 **Semester:** Semester 1
 **Sequence:** 18 of grade year
-**Status:** 🚧 WIP
+**Status:** 📋 Šablonas
 
 ---
 
