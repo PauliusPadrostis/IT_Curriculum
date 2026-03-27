@@ -56,6 +56,9 @@ Grade_XX/
         Student_Task.pdf
         Theory_Pack.pdf
         *.cpp (scaffolds, solutions)
+.claude/
+  skills/
+    end-session/SKILL.md         (repo reconciliation on /end-session)
 lt-qa/
   lt-mistakes.yaml               (growing mistake library)
 tasks/
@@ -76,6 +79,19 @@ Tracking files live in `tasks/` within this repo:
 On session start, read `tasks/status.md`, `tasks/decisions.md`, and `tasks/lessons.md`.
 On session end, run `/end-session` skill. Do NOT manually update status.md or decisions.md — the skill handles reconciliation, prompts for decisions/lessons confirmation, and rewrites status.md as a rolling snapshot.
 
+## Lesson Būsena Chain
+
+Status progression for each lesson (first matching condition wins):
+
+| Condition | Būsena |
+|-----------|--------|
+| All files ✅ AND all Patikrinta ✅ | ✅ Baigta |
+| All files ✅ AND some Patikrinta ❌ | ✅ Failai sukurti |
+| At least one content file exists | 🚧 WIP |
+| Only README.md exists | 📋 Šablonas |
+
+The `Patikrinta` column in the Reikalingi failai table is teacher-only. Never flip it without explicit confirmation.
+
 ## Locked Decisions
 
 - C++ only for programming (no Python, no JavaScript for teaching)
@@ -85,6 +101,7 @@ On session end, run `/end-session` skill. Do NOT manually update status.md or de
 - Teacher_Plan stays as DOCX
 - Em dash banned in all generated text
 - Skills handle their own formatting specs — CLAUDE.md does not duplicate them
+- Būsena chain with manual check gate (see above)
 
 ## What NOT To Do
 
