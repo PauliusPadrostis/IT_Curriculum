@@ -171,7 +171,10 @@ Line spacing: 1.5x (360 twips) for all body text
 
 ### 3b. Build 6 slides
 
-Generate exactly 6 pages with explicit page breaks between each.
+Generate exactly 6 pages. Use one section per slide (6 sections total,
+each with identical page properties) instead of explicit page breaks.
+This avoids blank pages caused by full-height elements pushing a
+PageBreak paragraph to the next page.
 
 **Slide 1 (Title):** Full navy (`1A237E`) background. All text white,
 centered horizontally and vertically.
