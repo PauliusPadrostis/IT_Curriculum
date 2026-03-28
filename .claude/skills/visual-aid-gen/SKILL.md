@@ -84,7 +84,8 @@ These files are the skill's operational backbone. Do not generate without them.
 These conditions abort generation with a Lithuanian-language message:
 
 - **Teacher_Plan.docx must exist.** If missing: "Negalima generuoti Visual_Aid
-  be Teacher_Plan.docx. Pirmiausia sugeneruokite pamokos planą."
+  be Teacher_Plan.docx. Pirmiausia sugeneruokite pamokos planą naudodami
+  /lesson-plan-gen."
 - **Lesson type must be L or I.** If other type: "Visual_Aid generuojamas tik
   L ir I pamokoms. Ši pamoka yra {type} tipo."
 - **Both retrieval question phases must exist in the plan.** If missing: "Teacher_Plan
@@ -102,7 +103,9 @@ exact wording.
 Use the concise form. If the plan lists 5+ objectives, select the top 4
 that are most directly tied to the lesson task.
 
-**Slide 4 (task brief):**
+**Slide 4 (task brief):** Write in neutral/descriptive voice, not teacher-directed
+phrasing from the plan. The Teacher_Plan uses teacher voice ("Mokiniai sukuria...",
+"Paaiškinkite..."), but the visual aid is projected to students.
 - **L lessons:** 2-4 sentence summary of the hands-on task from the
   application phase ("Taikymo užduotys" / "Savarankiška užduotis").
 - **I lessons:** If the application phase names a concrete deliverable,
