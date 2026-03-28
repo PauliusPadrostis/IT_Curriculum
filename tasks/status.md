@@ -19,8 +19,8 @@ Last updated: 2026-03-28
 
 ## Active Gaps
 
-- **Lesson 001 (Ergonomics):** All 3 files present (Teacher_Plan.docx, Theory_Pack.pdf, Student_Task.pdf). Awaiting teacher review to mark Baigta.
-- **Module 01 (Safety) lessons 002-004:** Have Teacher_Plan.docx + Theory_Pack.docx but missing Student_Task and Visual_Aid.
+- **Lesson 001 (Ergonomics):** All 4 files present (Teacher_Plan.docx, Theory_Pack.pdf, Student_Task.pdf, Visual_Aid.pdf). Awaiting teacher review to mark Baigta.
+- **Module 01 (Safety) lessons 002-004:** Have Teacher_Plan.docx + Theory_Pack.docx but missing Student_Task, Visual_Aid.
 - **Module 01 (Safety) lessons 005-007:** Only Teacher_Plan.docx exists. Missing student-facing files and assessment materials.
 - **Modules 02-07:** All 39 lessons are Šablonas (README only, no content files generated yet).
 - **Format transition:** Lesson 001 student-facing files converted to PDF. Lessons 002-004 Theory_Pack still .docx. Future generation will produce PDF per updated skills.
@@ -29,6 +29,7 @@ Last updated: 2026-03-28
 
 | Date | Summary |
 |------|---------|
+| 2026-03-28 | Created visual-aid-gen skill (design, spec, SKILL.md), generated first Visual_Aid.pdf for L001 |
 | 2026-03-28 | Fixed L001 text errors, converted student files to PDF, updated format specs with teacher-approved spacing |
 | 2026-03-27 | Created end-session skill, removed Obsidian refs, updated CLAUDE.md + hooks, reconciled all 46 lesson READMEs + 7 module READMEs |
 | 2026-03-25 | Added lesson: format changes don't fix layout problems |

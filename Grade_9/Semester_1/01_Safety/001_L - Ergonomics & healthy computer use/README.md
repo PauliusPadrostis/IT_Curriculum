@@ -97,6 +97,7 @@ Nėra.
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                       |
 | 001_L_Ergonomika_Theory_Pack.pdf    | ✅     | ❌         | Teorijos medžiaga                |
 | Student_Task.pdf                    | ✅     | ❌         | Ergonomikos vertinimo lapas      |
+| Visual_Aid.pdf                      | ✅     | ❌         | Vaizdinė medžiaga projekcijai   |
 
 ---
 
