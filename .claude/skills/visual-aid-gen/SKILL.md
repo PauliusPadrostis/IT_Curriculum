@@ -93,6 +93,15 @@ These conditions abort generation with a Lithuanian-language message:
 - **Objectives must exist in the plan.** If missing: "Teacher_Plan neturi tikslų
   skyriaus. Patikrinkite planą."
 
+### When to stop and ask the teacher
+
+- Retrieval questions exist but are obviously placeholder text ("TODO", "...", single word)
+- Objectives are present but only one vague sentence (not actionable learning goals)
+- Application phase is empty or contains only timing/logistics, no task description
+- The Teacher_Plan structure does not match the expected phase names (custom or legacy format)
+
+In these cases, show the teacher what you found and ask whether to proceed or fix the plan first.
+
 ### Content extraction rules per slide
 
 **Slides 2, 6 (retrieval questions):** Extract verbatim from Teacher_Plan.
@@ -146,8 +155,9 @@ Load Lithuanian language rules before writing any text:
 
 ## Step 3: Generate Visual_Aid.docx
 
-Reference `references/visual_aid_format.md` for exact specs. Follow these
-sub-steps:
+Generate using the docx skill (`/mnt/skills/public/docx/SKILL.md`).
+Reference `references/visual_aid_format.md` for exact visual specs. Follow
+these sub-steps:
 
 ### 3a. Document setup
 
