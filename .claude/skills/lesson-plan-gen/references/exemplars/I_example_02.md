@@ -24,7 +24,7 @@ nepristatoma.
 
 ## Įžanginis atgaminimas — ~4 min.
 
-Žodinis šaltojo kvietimo formatas. Klausimai skaidrėje.
+Žodinis formatas. Klausimai skaidrėje.
 
 1. Kokie trys požymiai rodo, kad el. laiškas gali būti phishing?
 2. Kodėl tas pats slaptažodis keliose paskyrose yra rizika, net jei jis stiprus?
@@ -94,7 +94,7 @@ profilis). Parašykite scenarijų ir idealų atsakymą."
 
 ## Išėjimo atgaminimas — ~4 min.
 
-Žodinis šaltojo kvietimo formatas. Klausimai skaidrėje.
+Žodinis formatas. Klausimai skaidrėje.
 
 1. Kurį scenarijų buvo sunkiausia analizuoti ir kodėl?
 2. Kokį vieną principą iš L pamokų šiandien pritaikei dažniausiai?

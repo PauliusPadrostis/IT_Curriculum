@@ -107,3 +107,27 @@ The following are **not yet decided** and need resolution:
 **Context**: Without a manual gate, lessons could be marked complete purely by file existence, even if the generated content has errors or hasn't been reviewed.
 
 **Rationale**: Automated file detection handles the tedious tracking. The teacher retains final authority over quality. The end-session skill prompts for confirmation when a lesson reaches Failai sukurti status.
+
+## 2026-03-28 — Student-facing files output as PDF
+
+**Decision**: Theory_Pack and Student_Task skills generate .docx internally, convert to PDF via docx2pdf (uses MS Word on Windows), and delete the intermediate .docx. Teacher_Plan remains .docx so teachers can edit.
+
+**Context**: Teacher requested PDF output for student-facing materials. DOCX files risk students accidentally editing content or seeing messy formatting differences across Word versions.
+
+**Rationale**: PDF is the locked distribution format for students. Teachers keep .docx for plans they may need to annotate or adjust before class.
+
+## 2026-03-28 — Format specs include teacher-approved paragraph spacing values
+
+**Decision**: content_format.md and task_format.md now contain exact TWIPs spacing tables extracted from teacher's manually fixed .docx files (e.g., H1: before=360/after=160, body: after=100 for theory packs; H2: before=300/after=120 for student tasks).
+
+**Context**: Generated documents had "poor formatting" per teacher feedback. The specs had correct colors/fonts/sizes but left paragraph spacing vague. Teacher fixed the layout manually in Word and uploaded the corrected files.
+
+**Rationale**: Codifying exact spacing values from the teacher's exemplar files means future generation should match the approved layout without manual fixes.
+
+## 2026-03-28 — Patch .docx XML for text-only fixes instead of regenerating
+
+**Decision**: When only text content needs correction (not formatting/structure), fix errors via XML find-replace inside the .docx zip rather than regenerating from scratch.
+
+**Context**: Teacher manually fixed formatting in all 3 lesson 001 files. Regenerating would have lost those formatting fixes. The only remaining issues were 4 text errors in Teacher_Plan.docx.
+
+**Rationale**: Preserves teacher's manual formatting work. Faster and less error-prone than full regeneration for targeted text corrections.

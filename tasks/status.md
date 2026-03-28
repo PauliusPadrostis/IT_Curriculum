@@ -1,6 +1,6 @@
 # IT Curriculum: Repo Status
 
-Last updated: 2026-03-27
+Last updated: 2026-03-28
 
 ## Current State
 
@@ -15,19 +15,21 @@ Last updated: 2026-03-27
   - 07_Project (6 lessons)
 - **Lesson folders:** 46 total
 - **File completeness:** 11/46 lessons have at least one content file beyond README
-- **Lessons Baigta:** 0 | Failai sukurti: 0 | WIP: 7 | Šablonas: 39
+- **Lessons Baigta:** 0 | Failai sukurti: 1 | WIP: 6 | Šablonas: 39
 
 ## Active Gaps
 
-- **Module 01 (Safety):** All 7 lessons WIP. Teacher_Plan.docx exists for all 7. Theory_Pack exists for 001-004. Student_Task exists only for 001. No Visual_Aid.pdf for any lesson. Assessment files (007) not started.
+- **Lesson 001 (Ergonomics):** All 3 files present (Teacher_Plan.docx, Theory_Pack.pdf, Student_Task.pdf). Awaiting teacher review to mark Baigta.
+- **Module 01 (Safety) lessons 002-004:** Have Teacher_Plan.docx + Theory_Pack.docx but missing Student_Task and Visual_Aid.
+- **Module 01 (Safety) lessons 005-007:** Only Teacher_Plan.docx exists. Missing student-facing files and assessment materials.
 - **Modules 02-07:** All 39 lessons are Šablonas (README only, no content files generated yet).
-- **Skill system:** end-session skill created but untested on a content-generation session. Other skills (lesson-plan-gen, theory-pack-gen, student-task-gen) operational.
-- **Dead code:** ~/.claude/hooks/vault-health-check.ps1 still on disk, no longer referenced.
+- **Format transition:** Lesson 001 student-facing files converted to PDF. Lessons 002-004 Theory_Pack still .docx. Future generation will produce PDF per updated skills.
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
+| 2026-03-28 | Fixed L001 text errors, converted student files to PDF, updated format specs with teacher-approved spacing |
 | 2026-03-27 | Created end-session skill, removed Obsidian refs, updated CLAUDE.md + hooks, reconciled all 46 lesson READMEs + 7 module READMEs |
 | 2026-03-25 | Added lesson: format changes don't fix layout problems |
 | 2026-03-23 | Theory packs 001-002 generated, skill overhauled, UTF-8 rule, spellcheck script |

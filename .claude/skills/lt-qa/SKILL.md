@@ -32,13 +32,12 @@ This skill operates in two modes that work together:
 
 Load these resources into working memory before generating any Lithuanian text:
 
-1. Read `references/seed-mistakes.yaml` — the hardcoded known-error library.
-2. Fetch the live mistake library from GitHub:
+1. Read the mistake library from the repo: `lt-qa/lt-mistakes.yaml` (single source of truth).
+   If the local file is unavailable, fetch from GitHub as fallback:
    ```
    https://raw.githubusercontent.com/PauliusPadrostis/IT_Curriculum/main/lt-qa/lt-mistakes.yaml
    ```
-   If the fetch fails (network error, file doesn't exist yet), fall back to
-   seed-mistakes.yaml only. Do not halt generation.
+   Do not halt generation if both fail.
 3. Read `references/ai-patterns.md` — the AI text pattern elimination rules.
 4. Read `references/audience-calibration.md` — grade-level complexity rules.
 5. Determine the target audience from context (see audience-calibration.md

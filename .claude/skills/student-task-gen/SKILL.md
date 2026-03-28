@@ -1,7 +1,7 @@
 ---
 name: student-task-gen
 description: >
-  Generate Lithuanian-language Student_Task.docx files for L and I lessons in the
+  Generate Lithuanian-language Student_Task.pdf files for L and I lessons in the
   IT Curriculum repo (PauliusPadrostis/IT_Curriculum). Use this skill whenever the
   teacher asks to create, generate, write, or build a student task, student worksheet,
   task sheet, or užduoties lapas. Also triggers on: "sugeneruok užduotį", "padaryk
@@ -248,13 +248,40 @@ All constraints from teacher profile apply:
 
 ---
 
-## Step 6 — Render .docx
+## Step 6 — Render .docx and convert to PDF
 
 Read `references/task_format.md` for formatting specs. Use theory-pack-consistent
 visual identity: navy headings, colored info boxes, grey metadata.
 
+### 6a. Lithuanian text encoding
+
+**Write all Lithuanian text as plain UTF-8 in the generation script.** Never
+use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž).
+Unicode escapes make character-level errors invisible and are the primary root
+cause of Lithuanian spelling errors in generated content.
+
+**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
+opening „ and `\u201C` for closing ") because the closing quote conflicts
+with JavaScript string delimiters.
+
+### 6b. Convert to PDF
+
+After generating the .docx, convert to PDF:
+
+```bash
+python -c "from docx2pdf import convert; convert('input.docx', 'output.pdf')"
+```
+
+This uses Microsoft Word for high-fidelity conversion. After confirming the
+PDF exists and has non-zero size, **delete the intermediate .docx file**.
+The final deliverable is PDF only (per locked decision in CLAUDE.md).
+
+If `docx2pdf` is not installed: `pip install docx2pdf`.
+If conversion fails (Word not available): keep the .docx and inform the
+teacher that PDF conversion requires Microsoft Word.
+
 **Output location:**
-- Single: `/mnt/user-data/outputs/Student_Task.docx` or lesson folder
+- Single: lesson folder as `Student_Task.pdf`
 - Batch: each task to its respective lesson folder
 
 After saving, use `present_files` to share.

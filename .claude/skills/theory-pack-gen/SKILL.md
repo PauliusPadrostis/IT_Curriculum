@@ -1,7 +1,7 @@
 ---
 name: theory-pack-gen
 description: >
-  Generate Lithuanian-language Theory Pack (.docx) study materials for the
+  Generate Lithuanian-language Theory Pack (.pdf) study materials for the
   IT Curriculum repo (PauliusPadrostis/IT_Curriculum). Use this skill whenever
   the teacher asks to create, generate, write, or build a theory pack, study
   guide, study material, or reference material for students. Also triggers on:
@@ -261,9 +261,28 @@ diacritical errors). The remaining categories (wrong stem vowels, dropped
 consonants, hallucinated verb forms) require Step 5c web verification.
 Both safeguards are needed together.
 
+### 6d. Convert to PDF
+
+After generating and spell-checking the .docx, convert to PDF:
+
+```bash
+python -c "from docx2pdf import convert; convert('input.docx', 'output.pdf')"
+```
+
+This uses Microsoft Word for high-fidelity conversion. After confirming the
+PDF exists and has non-zero size, **delete the intermediate .docx file**.
+The final deliverable is PDF only (per locked decision in CLAUDE.md).
+
+If `docx2pdf` is not installed: `pip install docx2pdf`.
+If conversion fails (Word not available): keep the .docx and inform the
+teacher that PDF conversion requires Microsoft Word.
+
 ### File naming
 
-`{NNN}_{T}_{Short_Title}_Theory_Pack.docx`
+`{NNN}_{T}_{Short_Title}_Theory_Pack.pdf`
+
+The generation script creates `.docx` intermediately, but the final output
+file in the lesson folder must be `.pdf`.
 
 ---
 

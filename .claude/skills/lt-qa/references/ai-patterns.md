@@ -102,7 +102,7 @@ AI frequently produces wrong case endings, especially:
 
 ### Verb conjugation errors
 Most common: wrong vowel in 2nd/3rd conjugation past tense and imperative
-forms. The seed-mistakes.yaml contains known examples. Every new one found
+forms. The lt-qa/lt-mistakes.yaml library contains known examples. Every new one found
 must be appended.
 
 ### Word order

@@ -138,16 +138,33 @@ with year.
 |---------|------|
 | Page | A4 (11906 × 16838 DXA), 1" margins (1440 DXA), content width 9026 DXA |
 | Font | Arial throughout |
-| Body | 11pt (size 22), line spacing 1.15 (line 276), color #333333 |
-| H1 | 16pt bold, #1F4E79, `keepNext: true`, `keepLines: true` |
+| Body | 11pt (size 22), color #333333, spacing after=100 |
+| H1 | 16pt bold (size 32), #1F4E79, spacing before=360 after=160, `keepNext: true`, `keepLines: true` |
 | H2 | 13pt bold, #1F4E79 |
-| H3 | 11.5pt bold, #2E75B6, `keepNext: true`, `keepLines: true` |
+| H3 | 11.5pt bold (size 23), #2E75B6, spacing before=240 after=100, `keepNext: true`, `keepLines: true` |
 | Tables | DXA widths only, cell margins 60/100, border #BFBFBF, ShadingType.CLEAR |
-| Term table header | white text on #1F4E79 |
+| Term table header | white text on #1F4E79, borders single sz=4 auto |
 | Term table rows | `cantSplit: true` |
-| Info box (tip) | bg #DEEAF6, left border #2E75B6 (6pt), italic navy text, `cantSplit: true` |
-| Info box (ar žinojai) | bg #E2EFDA, left border #548235 (6pt), italic green text, `cantSplit: true` |
-| Sources | 9pt italic #808080 |
+| Info box (tip) | bg #DEEAF6, left border #2E75B6 (6pt), outer borders none, italic navy text, `cantSplit: true` |
+| Info box (ar žinojai) | bg #E2EFDA, left border #548235 (6pt), outer borders none, italic green text, `cantSplit: true` |
+| Sources | 9pt (size 18) #808080, spacing after=40 |
+
+### Paragraph Spacing (TWIPs)
+
+These exact values produce the teacher-approved layout:
+
+| Element | before | after |
+|---------|--------|-------|
+| Header label (TEORIJOS PAKETAS) | — | 60 |
+| Title (topic name) | — | 60 |
+| Metadata line (grade/module) | — | 80 |
+| Section separator (empty para) | — | 200 |
+| H1 (section headings) | 360 | 160 |
+| H3 (sub-section headings) | 240 | 100 |
+| Body paragraphs | — | 100 |
+| Bullet items | — | 100 |
+| Sources | — | 40 |
+| Šaltiniai section rule | 300 | 120 |
 
 **Length:** No fixed target. 4–10 pages depending on scope. Grade 9 simple:
 4–5 pp. Grade 11 complex: 7–10 pp.

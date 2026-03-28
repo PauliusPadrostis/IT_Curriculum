@@ -97,3 +97,42 @@
   correct: "turite atlikti"
   category: register
   note: "informal 'tu' + colloquial 'padaryti' → formal 'jūs' + neutral 'atlikti'"
+
+# ── Hallucinated verbs / wrong stems ─────────────────────────
+- wrong: "sužimti"
+  correct: "suimti"
+  category: morphology
+  note: "nonexistent verb. Claude merges su- prefix with hallucinated stem žimti. Correct: suimti (to grip/squeeze)"
+  source: "user-flagged"
+  date: "2026-03-27"
+
+- wrong: "nedžiūrėkite"
+  correct: "nežiūrėkite"
+  category: morphology
+  note: "hallucinated dž cluster. žiūrėti negative imperative = nežiūrėkite, not nedžiūrėkite. Claude confuses with džiūti (to dry)"
+  source: "user-flagged"
+  date: "2026-03-27"
+
+# ── Missing diacritical marks ────────────────────────────────
+- wrong: "pasiubuoti"
+  correct: "pasiūbuoti"
+  category: spelling
+  note: "missing macron on ū. siūbuoti (to sway) → pasiūbuoti. Claude drops macron"
+  source: "user-flagged"
+  date: "2026-03-27"
+
+# ── Case government errors ───────────────────────────────────
+- wrong: "ko stebėti"
+  correct: "ką stebėti"
+  category: morphology
+  note: "stebėti governs accusative (ką), not genitive (ko). Common Claude error with interrogative pronouns before infinitives"
+  source: "user-flagged"
+  date: "2026-03-27"
+
+# ── Calque: cold call ────────────────────────────────────────
+- wrong: "šaltasis kvietimas"
+  correct: "klausinėjimas pasirinktinai / tiksliniai klausimai mokiniams"
+  category: calque
+  note: "English 'cold call' calque. Not a natural Lithuanian pedagogical term. Describe the action instead: klausinėjimas pasirinktinai, arba tiesiog 'klausimai mokiniams'"
+  source: "user-flagged"
+  date: "2026-03-27"

@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 001 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                             |
+| **Būsena**      | ✅ Failai sukurti                                   |
 
 ---
 
@@ -95,9 +95,8 @@ Nėra.
 | Failas                              | Būsena | Patikrinta | Pastaba                          |
 |-------------------------------------|--------|------------|----------------------------------|
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                       |
-| 001_L_Ergonomika_Theory_Pack.docx   | ✅     | ❌         | Teorijos medžiaga                |
-| Student_Task.docx                   | ✅     | ❌         | Ergonomikos vertinimo lapas      |
-| Visual_Aid.pdf                      | ❌     | ❌         | Laikysenos diagrama / nuotraukos |
+| 001_L_Ergonomika_Theory_Pack.pdf    | ✅     | ❌         | Teorijos medžiaga                |
+| Student_Task.pdf                    | ✅     | ❌         | Ergonomikos vertinimo lapas      |
 
 ---
 

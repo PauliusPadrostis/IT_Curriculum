@@ -62,7 +62,17 @@
       "Bash(echo \"OK: $f\")",
       "Bash(echo \"MISSING: $f\")",
       "Bash(mkdir -p \"C:/Users/Paulius/.claude/skills/end-session\")",
-      "Bash(cp \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills/end-session/SKILL.md\" \"C:/Users/Paulius/.claude/skills/end-session/SKILL.md\")"
+      "Bash(cp \"C:/Users/Paulius/Documents/informatika-curriculum/.claude/skills/end-session/SKILL.md\" \"C:/Users/Paulius/.claude/skills/end-session/SKILL.md\")",
+      "Bash(where soffice:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(find Grade_* -mindepth 3 -maxdepth 3 -type d)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Bash(find \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/002_L - Privacy & account safety\" -type f -name \"*\")",
+      "Bash(find \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/003_L - Online risks & safe response logic\" -type f -name \"*\")"
     ]
   }
 }

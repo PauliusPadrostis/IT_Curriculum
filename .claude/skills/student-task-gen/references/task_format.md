@@ -271,10 +271,10 @@ Cell padding 120 DXA all sides.
 
 ### Page: A4 (11906 x 16838 DXA), 1" margins (1440 DXA), content width 9026 DXA
 ### Font: Arial throughout
-### Body: 11pt (size 22), line spacing 1.15 (line 276), color #333333
-### H1: 16pt bold, #1F4E79 (task title — centered)
-### H2: 13pt bold, #1F4E79 (section headings: Reikalavimai, Darbo eiga, etc.)
-### H3: 11.5pt bold, #2E75B6 (step/sub-task headings within Darbo eiga)
+### Body: 11pt (size 22), color #333333, spacing after=80
+### H1: 18pt bold (size 36), #1F4E79 (task title — centered)
+### H2: 13pt bold (size 26), #1F4E79, spacing before=300 after=120
+### H3: 11.5pt bold (size 23), #2E75B6, spacing before=240 after=80
 ### Metadata line: 10pt, #808080, centered
 ### Horizontal rule: #1F4E79, 1pt
 
@@ -285,15 +285,31 @@ Cell padding 120 DXA all sides.
 
 ### Tables
 - DXA widths only, cell margins 60/100
-- Border: #BFBFBF
+- Border: single sz=4 auto (requirements table)
 - Header row: white text on #1F4E79
 - ShadingType.CLEAR
 
-### Checklist: ☐ (U+2610) + space, indent 360 DXA
+### Checklist: ☐ (U+2610) + space, spacing after=60
 ### Step headings (L): Bold #2E75B6, "1 ŽINGSNIS: [title]"
 ### Sub-task headings (I): Bold #2E75B6, "1 DALIS: [title]"
-### Hints (L only): Italic, parentheses, indent 720 DXA
-### Success indicators (L only): ✓ + italic, indent 720 DXA
+### Hints (L only): parentheses, spacing after=60
+### Success indicators (L only): ✓ color #2E7D32, spacing after=60
+
+### Paragraph Spacing (TWIPs)
+
+These exact values produce the teacher-approved layout:
+
+| Element | before | after |
+|---------|--------|-------|
+| Header label (UŽDUOTIES LAPAS) | — | 60 |
+| Title (task name) | — | 60 |
+| Metadata line (grade/module) | — | 80 |
+| Section separator (empty para) | — | 200 |
+| H2 (section headings) | 300 | 120 |
+| H3 (step/sub-task headings) | 240 | 80 |
+| Body paragraphs | — | 80 |
+| Hints / verification checks | — | 60 |
+| Checklist items | — | 60 |
 
 ### Length
 - L lesson task: 2-4 pages

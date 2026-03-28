@@ -368,6 +368,17 @@ relevance, use structured questions, data analysis tasks, or programming practic
 Read `references/plan_format.md` for the exact .docx structure, formatting,
 and code to generate the document.
 
+### Lithuanian text encoding
+
+**Write all Lithuanian text as plain UTF-8 in the generation script.** Never
+use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž).
+Unicode escapes make character-level errors invisible and are the primary root
+cause of Lithuanian spelling errors in generated content.
+
+**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
+opening „ and `\u201C` for closing ") because the closing quote conflicts
+with JavaScript string delimiters.
+
 **Output location:**
 - Single plan: save to the lesson folder as `Teacher_Plan.docx`,
   or to `/mnt/user-data/outputs/Teacher_Plan.docx` if folder unknown.
