@@ -28,7 +28,7 @@ Generates answer keys in two modes, auto-detected from lesson type:
 - Does not generate assessments (use `assessment-task-gen`)
 - Does not generate practice tasks (use `student-task-gen` with P type)
 - Does not generate rubrics (produced by `assessment-task-gen`)
-- Does not grade student work (use `cpp-grader` for C++ submissions)
+- Does not grade student work
 
 ---
 
@@ -47,20 +47,37 @@ L/I lesson content (Teacher_Plans, Theory_Packs, Student_Tasks)
   answer-key-gen  <-- THIS SKILL
 ```
 
-Both A and P lessons must have their task file + Rubric generated before this skill can run.
+**Prerequisites:**
+- A lessons: Assessment_Task (.xlsx or .pdf) + Rubric.pdf must exist in the lesson folder.
+- P lessons: Student_Task.pdf must exist in the lesson folder. **Note:** student-task-gen P extension must be implemented before answer-key-gen can serve P lessons. Until then, only A mode is functional.
 
 ---
 
 ## Inputs
 
+### A mode (Grading Key)
+
 | Priority | Source | What to Extract |
 |----------|--------|-----------------|
-| 1 | **Assessment_Task.xlsx/.pdf or Student_Task.pdf** | Questions, point values, task structure |
+| 1 | **Assessment_Task.xlsx/.pdf** | Questions, point values, task structure |
 | 2 | **Rubric.pdf** | Criteria, performance levels, point breakdown, conversion table |
-| 3 | **L/I Teacher_Plans in scope** | Learning objectives, key concepts, common mistakes (for explanations) |
-| 4 | **L/I Theory_Packs in scope** | Actual content taught (for Study Key references and explanations) |
+| 3 | **L/I Teacher_Plans in scope** | Learning objectives, key concepts, common mistakes (for accept/reject decisions) |
+| 4 | **L/I Theory_Packs in scope** | Content details (for alternative phrasing sourcing) |
 | 5 | **lt-mistakes.yaml** | Lithuanian QA pre-generation |
 | 6 | **tasks/lessons.md** | Accumulated corrections |
+
+### P mode (Study Key)
+
+| Priority | Source | What to Extract |
+|----------|--------|-----------------|
+| 1 | **Student_Task.pdf** | Questions, task structure |
+| 2 | **L/I Teacher_Plans in scope** | Learning objectives, key concepts, common mistakes (for misconception explanations) |
+| 3 | **L/I Theory_Packs in scope** | Actual content taught (for explanations and cross-references) |
+| 4 | **Sibling A lesson Rubric.pdf** (if exists) | Point structure context for explanation depth calibration |
+| 5 | **lt-mistakes.yaml** | Lithuanian QA pre-generation |
+| 6 | **tasks/lessons.md** | Accumulated corrections |
+
+**Key difference:** A mode requires Rubric.pdf (grading consistency depends on it). P mode does not require a Rubric (it is a teaching document, not a scoring document). If the sibling A lesson has a Rubric, the Study Key may reference it for calibrating explanation depth, but it is not a hard dependency.
 
 ### Mode auto-detection
 
@@ -71,7 +88,10 @@ Skill reads the lesson folder name, extracts the type letter:
 
 ### Scope rules
 
-Same as assessment-task-gen: an A/P lesson's scope = L/I lessons since the previous A (or since module start if first A). The skill reads these for explanation sourcing, not for question generation.
+- **A lessons:** Same as assessment-task-gen: scope = L/I lessons since the previous A (or since module start if first A).
+- **P lessons:** Scope matches the A lesson the P lesson prepares students for (the next A in sequence). Example: L1-L2-L3-P1-A1 -> P1 scope = L1-L3 (same as A1).
+
+The skill reads scoped lessons for explanation sourcing, not for question generation.
 
 ---
 
@@ -131,7 +151,7 @@ Every answer entry must eliminate interpretation. Two graders reading the same s
 
 **Code Tasks:**
 - Canonical solution in full with inline comments explaining each logical step
-- 1-2 alternative valid approaches shown as complete code (minimal comments on alternatives, code speaks for itself)
+- 1 alternative valid approach shown as complete code when the approach is structurally different enough to be instructive (not every code task gets an alternative)
 - "Kodėl tai veikia" paragraph after each solution: plain Lithuanian explanation of the algorithm logic
 - Common bugs section: 2-3 typical student mistakes shown as broken code snippets with explanation of what goes wrong and how to fix it
 
@@ -166,7 +186,7 @@ Unlike assessment-task-gen, the answer key format is deterministic (dictated by 
 | **No extras** | No answers for questions that don't exist in the source |
 | **Content grounding** | Explanations reference content actually taught in L/I lessons |
 | **Mode consistency** | A mode has no student-facing language; P mode has no grading language |
-| **Code compilation** | All code solutions shown are compilable (mental check or actual compilation for programming tasks) |
+| **Code compilation** | All C++ code solutions must be compiled and verified before inclusion. Warn teacher if compilation cannot be performed. |
 | **Alternative coverage** | For short answer/scenario: at least 2 acceptable alternative phrasings listed |
 | **Reject coverage** | For short answer/scenario: at least 2 common wrong answers listed |
 | **Em dash ban** | No em dashes anywhere |
@@ -178,8 +198,9 @@ Unlike assessment-task-gen, the answer key format is deterministic (dictated by 
 
 | Condition | Action |
 |-----------|--------|
-| No Assessment_Task/Student_Task in folder | **Stop.** "Pirma sugeneruokite vertinimo/praktikos užduotį." |
-| No Rubric in folder | **Stop.** "Nėra vertinimo kriterijų failo." |
+| No Assessment_Task in A lesson folder | **Stop.** "Pirma sugeneruokite vertinimo užduotį." |
+| No Rubric.pdf in A lesson folder | **Stop.** "Nėra vertinimo kriterijų failo." |
+| No Student_Task in P lesson folder | **Stop.** "Pirma sugeneruokite praktikos užduotį (student-task-gen su P tipo palaikymu)." |
 | Lesson type is not A or P | **Stop.** "Atsakymų raktai generuojami tik A ir P pamokoms." |
 | Some L/I Teacher_Plans missing | **Warn and proceed.** Flag which explanations may lack depth due to missing source material. |
 | No Theory_Packs available | **Warn and proceed.** Study Key cross-references will be omitted. |
@@ -188,15 +209,37 @@ Unlike assessment-task-gen, the answer key format is deterministic (dictated by 
 
 ## Reference Files
 
+**Note on paths:** All `references/` paths below are relative to the skill directory (`answer-key-gen/`). External references (lt-mistakes.yaml, tasks/lessons.md, assessment-task-gen refs) use repo-root or absolute paths.
+
 ### New files (to create)
 
 | File | Purpose |
 |------|---------|
-| `references/answer_key_format.md` | Document structure and formatting specs for both modes |
+| `references/answer_key_format.md` | Document structure and formatting specs for both modes (see minimum contents below) |
 | `references/marking_scheme_guide.md` | Rules for accept/reject/partial credit decisions, boundary case handling, code solution evaluation |
 | `references/exemplars/grading_key_safety_example.md` | A-mode key matching the theory_safety_example assessment |
 | `references/exemplars/study_key_safety_example.md` | P-mode key for the same content (shows different treatment of same questions) |
 | `references/exemplars/grading_key_programming_example.md` | A-mode key for code tasks with canonical + alternatives + accept/reject |
+
+### answer_key_format.md minimum contents
+
+This file must be created before implementation begins. It must cover:
+
+**Grading Key (.docx) format:**
+- Heading hierarchy: H1 = document title, H2 = question type section, H3 = individual question
+- Table format for accept/reject lists: columns for Answer Variant, Credit, Reasoning
+- Footer format: "Vidinis dokumentas. Neskelbti mokiniams." on every page
+- Code block formatting: Consolas 10pt, background #F2F2F2
+- No visual identity match required (teacher-internal document)
+
+**Study Key (.pdf) format:**
+- Matches Student_Task visual identity: Arial, navy #1F4E79 accent, same heading/body sizes
+- Header: label line + document title + metadata (same pattern as Student_Task)
+- Correct answer highlight style: bold or colored text (to be specified)
+- Misconception callout box style: background color, border
+- Code block formatting: same as Student_Task (Consolas 10pt, #F2F2F2 background)
+- "Kodėl tai veikia" section styling
+- Common bugs section styling (broken code + explanation)
 
 ### Reused from assessment-task-gen (read at runtime, not copied)
 
