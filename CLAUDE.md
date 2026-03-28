@@ -58,6 +58,7 @@ Grade_XX/
         *.cpp (scaffolds, solutions)
 .claude/
   skills/
+    assessment-task-gen/SKILL.md (generates Assessment_Task.xlsx/.pdf + Rubric.pdf)
     end-session/SKILL.md         (repo reconciliation on /end-session)
 lt-qa/
   lt-mistakes.yaml               (growing mistake library)

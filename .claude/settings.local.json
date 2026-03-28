@@ -72,7 +72,23 @@
       "Bash(for dir:*)",
       "Bash(do echo:*)",
       "Bash(find \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/002_L - Privacy & account safety\" -type f -name \"*\")",
-      "Bash(find \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/003_L - Online risks & safe response logic\" -type f -name \"*\")"
+      "Bash(find \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/003_L - Online risks & safe response logic\" -type f -name \"*\")",
+      "Bash(ls \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/001_L - Ergonomics & healthy computer use/\")",
+      "Read(//mnt/**)",
+      "Bash(ls -la \"C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/001_L - Ergonomics & healthy computer use/Visual_Aid.pdf\")",
+      "Bash(find /c/Users/Paulius/Documents/informatika-curriculum/Grade_* -mindepth 3 -maxdepth 3 -type d)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 -c \":*)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 gen_assessment.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python gen_assessment_v2.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \":*)",
+      "Bash(PYTHONIOENCODING=utf-8 python gen_rubric_v2.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python gen_assessment_v3.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python gen_assessment.py)",
+      "Bash(find . -type d -name \"[0-9][0-9][0-9]_*\" -exec sh -c 'count=$\\(ls -1 \"\"\"\"$1\"\"\"\" 2>/dev/null | grep -v \"\"\"\"README.md\"\"\"\" | wc -l\\); if [ \"\"\"\"$count\"\"\"\" -gt 0 ]; then echo \"\"\"\"$count: $1\"\"\"\"; fi' _ {})",
+      "Bash(for lesson:*)",
+      "Bash(do path=C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/$lesson echo '=== $lesson ===' ls -1 $path)",
+      "Bash(while read:*)",
+      "Bash(/dev/null done:*)"
     ]
   }
 }

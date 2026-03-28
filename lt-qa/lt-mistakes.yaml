@@ -136,3 +136,32 @@
   note: "English 'cold call' calque. Not a natural Lithuanian pedagogical term. Describe the action instead: klausinėjimas pasirinktinai, arba tiesiog 'klausimai mokiniams'"
   source: "user-flagged"
   date: "2026-03-27"
+
+# ── Unnatural MCQ question stems ─────────────────────────────
+- wrong: "Koks rekomenduojamas"
+  correct: "Koks yra rekomenduojamas"
+  category: calque
+  note: "Missing 'yra' in question stem. Lithuanian question stems need the copula. 'Koks rekomenduojamas atstumas' sounds like a translated English 'What recommended distance'. Natural: 'Koks yra rekomenduojamas atstumas'"
+  source: "user-flagged"
+  date: "2026-03-28"
+
+- wrong: "monitoriaus ekranas"
+  correct: "monitorius / ekranas"
+  category: calque
+  note: "Redundancy: monitorius and ekranas are synonyms in Lithuanian computer terminology. Use one or the other, not both. 'Monitoriaus ekranas' literally means 'monitor's screen' which is tautological"
+  source: "user-flagged"
+  date: "2026-03-28"
+
+- wrong: "Kokia taisyklinga sėdėjimo laikysena"
+  correct: "Kaip reikėtų taisyklingai sėdėti"
+  category: calque
+  note: "Nominalized question stem sounds unnatural in Lithuanian. Prefer action-oriented phrasing: 'Kaip reikėtų taisyklingai sėdėti prie kompiuterio?' instead of 'Kokia taisyklinga sėdėjimo laikysena prie kompiuterio?'"
+  source: "user-flagged"
+  date: "2026-03-28"
+
+- wrong: "labiausiai rodo phishing"
+  correct: "yra phishing požymis / rodo galimą phishing ataką"
+  category: calque
+  note: "'Labiausiai rodo phishing' is awkward Lithuanian. Natural alternatives: 'rodo galimą phishing ataką', 'yra phishing požymis', 'kuris iš šių požymių rodo phishing'"
+  source: "user-flagged"
+  date: "2026-03-28"

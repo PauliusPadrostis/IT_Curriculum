@@ -37,3 +37,33 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: Grading rubric was placed inside the same .docx as the student task description (after a page break). If the teacher prints or distributes the file, students see the rubric and scoring criteria.
 - Rule: Rubric and student task are always separate files. Never combine teacher-facing scoring materials with student-facing instructions in one document, even with a page break separator.
 - Applies to: cpp-grader, any assessment or savarankiškas darbas generation
+
+## 2026-03-28 — Testmoz essay variants in pools need blank rows between them
+
+- Problem: Essay variants within a POOL were on consecutive rows without blank rows. Testmoz treated variants 2-5 as "answer options" for variant 1 instead of separate pool questions. The testmoz_format.md reference doc had the same error in its example.
+- Rule: Every variant within a POOL must be followed by a blank row, regardless of question type (MCQ or essay). The `essay()` helper must append a blank row after itself, just like `mcq()` does. The reference doc example must show blank rows between essay variants.
+- Applies to: assessment-task-gen, any Testmoz xlsx generation
+
+## 2026-03-28 — MCQ questions and options must never hint at the answer
+
+- Problem: Multiple MCQ answer-hinting patterns found: (1) Stem defined the concept being tested ("phishing (sukčiavimas internete)"), making the answer obvious. (2) Parenthetical explanations on password options ("(raidės, skaičiai, simbolis)") spelled out the selection criteria. (3) Stem and correct answer shared distinctive words ("patikimą" in stem, "patikimuose" in answer). (4) Some distractors were absurdly wrong (e.g., "internet slows down from long use"), narrowing by elimination.
+- Rule: (1) Stems must not define or explain the concept being tested. (2) Do not add parenthetical explanations that reveal why an option is correct. (3) No shared distinctive words between stem and correct answer that are absent from distractors. (4) Every distractor must be plausible to an unprepared student. After writing MCQs, review each question: "Could a student who hasn't studied pick the correct answer just from how the question is written?" If yes, rewrite.
+- Applies to: assessment-task-gen, any MCQ generation
+
+## 2026-03-28 — MCQ answer length bias and unnatural Lithuanian question stems
+
+- Problem: Nearly every MCQ had the correct answer as the longest option (easy to spot without knowing content). Question stems were translated-from-English constructions ("Koks rekomenduojamas" instead of "Koks yra rekomenduojamas", "monitoriaus ekranas" combining synonyms, "Kokia taisyklinga sėdėjimo laikysena" instead of action-oriented "Kaip reikėtų taisyklingai sėdėti"). lt-qa POST-GEN was not meaningfully run.
+- Rule: (1) After writing all MCQs, scan for length bias: if the correct answer is the longest option in >50% of questions, equalize by adding detail/parentheticals to distractors. (2) Read every question stem aloud. If it sounds like translated English, rephrase. (3) lt-qa POST-GEN Step 7 (natural read test) must actually be performed on the final text, not skipped. (4) Add new patterns to lt-mistakes.yaml when found.
+- Applies to: assessment-task-gen, lt-qa, any Lithuanian MCQ generation
+
+## 2026-03-28 — Testmoz POOL column B is pick count, not pool ID
+
+- Problem: Generation script used an incrementing counter (1, 2, 3... 13) in column B of POOL rows. Testmoz interprets column B as "how many questions to show from this pool." Pool 2 showed 2 questions, pool 3 showed 3, etc. Only pool 1 worked correctly by coincidence.
+- Rule: Column B on POOL rows must always be `1` (show one question per pool). It is NOT a pool identifier or sequence number. Never use an incrementing counter.
+- Applies to: assessment-task-gen, any Testmoz xlsx generation
+
+## 2026-03-28 — Testmoz xlsx must not have a header row
+
+- Problem: Generated Assessment_Task.xlsx included a header row ("Question | Points | Options | Explanation"). Testmoz treated it as a question row and failed import with error: "column B needs to contain a positive number... I got Points".
+- Rule: Never include a header row in Testmoz .xlsx files. Start with the first question immediately on row 1. Testmoz does not skip header rows.
+- Applies to: assessment-task-gen, any Testmoz xlsx generation
