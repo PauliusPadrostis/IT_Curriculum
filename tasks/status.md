@@ -1,11 +1,11 @@
 # IT Curriculum: Repo Status
 
-Last updated: 2026-03-28
+Last updated: 2026-03-29
 
 ## Current State
 
-- **Grades in repo:** Grade 9
-- **Modules:** 7 total
+- **Grades in repo:** Grade 9, Grade 10, Grade 11, Grade 12
+- **Modules:** 7 total (Grade 9 Semester 1)
   - 01_Safety (7 lessons)
   - 02_Technological_Foundations (9 lessons)
   - 03_Computer_Graphics_Intro (2 lessons)
@@ -14,30 +14,42 @@ Last updated: 2026-03-28
   - 06_Specialisation_Website_Design (10 lessons)
   - 07_Project (6 lessons)
 - **Lesson folders:** 46 total
-- **File completeness:** 11/46 lessons have at least one content file beyond README
-- **Lessons Baigta:** 0 | Failai sukurti: 1 | WIP: 6 | Šablonas: 39
+- **File completeness:** 13/46 lessons have at least one content file beyond README
+- **Lessons Baigta:** 0 | Failai sukurti: 3 | WIP: 4 | Šablonas: 39
 
 ## Active Gaps
 
 - **Lesson 001 (Ergonomics):** All 4 files present. Awaiting teacher review to mark Baigta.
+- **Lesson 006 (P type):** All 2 files present (Teacher_Plan.docx, Practice_Task.pdf). Awaiting teacher review to mark Baigta.
+- **Lesson 007 (Assessment):** All 4 files present (Teacher_Plan, Assessment_Task.xlsx, Rubric.pdf, Answer_Key.docx). Awaiting teacher review to mark Baigta.
 - **Lessons 002-004 (L type):** Have Teacher_Plan.docx + Theory_Pack.docx but missing Student_Task and Visual_Aid.
 - **Lesson 005 (I type):** Only Teacher_Plan.docx. Missing Student_Task.
-- **Lesson 006 (P type):** Only Teacher_Plan.docx. Missing Practice_Task_Set.
-- **Lesson 007 (A type):** Teacher_Plan.docx + Assessment_Task.xlsx + Rubric.pdf present. Missing Answer_Key.pdf.
 - **Modules 02-07:** All 39 lessons are Šablonas (README only).
 - **Format transition:** Lesson 001 student files are PDF. Lessons 002-004 Theory_Pack still .docx.
 
 ## Skills Status
 
-- **assessment-task-gen:** Smoke-tested on 007_A. All Testmoz import issues fixed. Skill packaged in both global (~/.claude/skills/) and repo (.claude/skills/) with all 11 files. lt-qa MCQ checks (Step 7) added. question_design.md updated with answer hinting, length bias, stem naturalness rules.
+- **practice-task-gen:** Built and smoke-tested. SKILL.md + 3 references (practice_task_format.md, difficulty_elevation_guide.md, practice_task_example.md). Generated first Practice_Task.pdf for 006_P.
+- **answer-key-gen:** Built and smoke-tested on 007_A. P mode patched to expect Practice_Task.pdf. Study Key mode ready for 006_P.
+- **assessment-task-gen:** Smoke-tested on 007_A. All Testmoz import issues fixed.
+- **student-task-gen:** L and I only. P lessons formally routed to practice-task-gen. Type gate updated.
 - **lt-qa:** Step 7 (MCQ-Specific Checks) added. 4 new entries in lt-mistakes.yaml.
-- **student-task-gen:** Extended to support P lesson type.
 - **lesson-readme-gen:** A lesson file requirements migrated from .docx to .pdf/.xlsx.
+
+## Pending Work
+
+- **answer-key-gen P mode:** Can now generate Study Key for 006_P (Practice_Task.pdf exists).
+- **Next content push:** Generate missing Student_Task + Visual_Aid for lessons 002-004, Student_Task for 005.
+- **Module 02+:** No content generated yet. All 39 lessons are Šablonas.
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
+| 2026-03-29 | Built practice-task-gen skill (SKILL.md + 3 refs), patched answer-key-gen + student-task-gen, generated Practice_Task.pdf for 006_P |
+| 2026-03-29 | Designed practice-task-gen skill: spec + 7-task implementation plan, brainstormed P lesson pedagogy |
+| 2026-03-28 | Smoke-tested answer-key-gen on 007_A, generated Answer_Key.docx, updated README |
+| 2026-03-28 | Built answer-key-gen skill (SKILL.md + 2 refs + 3 exemplars), design spec + plan committed |
 | 2026-03-28 | Smoke-tested assessment-task-gen: generated Assessment_Task.xlsx + Rubric.pdf for 007_A, fixed Testmoz issues, packaged skill to repo |
 | 2026-03-28 | Built assessment-task-gen skill (SKILL.md + 9 refs/exemplars), extended student-task-gen for P type, migrated A file refs to PDF |
 | 2026-03-28 | Designed assessment-task-gen skill: spec + 13-task implementation plan, P lesson extension planned |

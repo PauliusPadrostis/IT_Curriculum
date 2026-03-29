@@ -88,7 +88,9 @@
       "Bash(for lesson:*)",
       "Bash(do path=C:/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/01_Safety/$lesson echo '=== $lesson ===' ls -1 $path)",
       "Bash(while read:*)",
-      "Bash(/dev/null done:*)"
+      "Bash(/dev/null done:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
