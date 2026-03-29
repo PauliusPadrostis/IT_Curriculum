@@ -20,6 +20,10 @@ progresses. It must be:
 - **Minimal** — large text, maximum whitespace, zero decoration noise
 - **Self-pacing** — slide 5 (key concepts) stays up during independent
   work; all others are transitional (30 sec to 5 min each)
+- **One page per slide** — every slide MUST fit on a single landscape A4
+  page. Usable height after margins: ~9638 DXA. Accent bar + spacer
+  consume ~1080 DXA, leaving ~8558 DXA (~14 lines at 28pt). If content
+  overflows, cut items, never reduce font size.
 
 ---
 
@@ -153,14 +157,14 @@ not the full task sheet.
 [term list, each on its own line]
   [term: bold, TEACHING_ACCENT, 28pt] {Term}
   [colon + definition: BODY_TEXT, 24pt]  : {one-line definition}
-  [spacing between terms: 200 twips]
+  [spacing between terms: 160 twips]
 ```
 
 **Content priority (strict order):**
 1. Terms/concepts required to complete the task (highest priority)
 2. Core terms from the teaching phase of Teacher_Plan
 3. Terms from Theory_Pack (if it exists)
-4. Hard cap: 4–5 items maximum
+4. Hard cap: **4 items maximum** (5 overflows the page at 28pt/48pt)
 
 Each item = bold term + one-line definition. Definition must be a single
 sentence, max ~15 words. If the term appears in the Theory_Pack

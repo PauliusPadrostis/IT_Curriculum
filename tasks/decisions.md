@@ -211,3 +211,19 @@ The following are **not yet decided** and need resolution:
 **Context**: student-task-gen was extended for P lessons on 2026-03-28, but P lessons have a fundamentally different pipeline: they depend on the A lesson's Assessment_Task as input, require difficulty elevation logic, and use a different document structure (topic-grouped questions, self-assessment checklist, revision pointers). Forcing this into student-task-gen would bloat it with A-lesson parsing and elevation logic that L/I lessons never need.
 
 **Rationale**: Standalone skill keeps single responsibility. The pedagogical innovation (practice harder than assessment) requires its own pipeline: A-assessment analysis → elevation strategy proposal → teacher approval gate → generation. The workflow chain becomes: assessment-task-gen → practice-task-gen → answer-key-gen (both modes). This supersedes the 2026-03-28 decision "Student-task-gen extended for P lessons."
+
+## 2026-03-29 — Lesson plan format: typography-first, no decorative tables
+
+**Decision**: plan_format.md rewritten from scratch. Phase headers are bold colored paragraphs + horizontal rules (no accent stripe tables). Sub-block headings are bold blue text + whitespace. 5 colors instead of 18. Only 2 tables remain (metadata card, objectives box).
+
+**Context**: The previous spec had 18 colors, accent stripe tables for every phase header, mini accent bar tables for sub-blocks, and complex border configurations. The result was visually busy, hard to maintain, and the teacher found it worse than the original formatting.
+
+**Rationale**: Typography-first approach (spacing, bold, color, rules) is simpler to maintain, renders consistently, and makes section boundaries clear without nested table structures.
+
+## 2026-03-29 — Lesson plans flag extra materials needed
+
+**Decision**: lesson-plan-gen Step 5 now scans for references to visual assets (images, diagrams, illustrations) and appends a "REIKALINGOS PAPILDOMOS MEDŽIAGOS" section listing each item with suggested sources.
+
+**Context**: Lesson plans reference visuals ("parodykite ekrane žmogų, sėdintį netaisyklingai", "parodykite pavyzdžių skalę") but those visuals don't exist in the lesson folder. Without flagging, they get forgotten between plan generation and lesson delivery.
+
+**Rationale**: The skill can't generate photos or complex illustrations. Flagging ensures the teacher knows what to source separately (stock photos, Canva, SVG diagrams) before the lesson.

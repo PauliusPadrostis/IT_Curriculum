@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 002 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                            |
+| **Būsena**      | ✅ Failai sukurti                                  |
 
 ---
 
@@ -93,9 +93,9 @@ Nėra.
 | Failas                              | Būsena | Patikrinta | Pastaba                                         |
 |-------------------------------------|--------|------------|-------------------------------------------------|
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                                      |
-| 002_L_Privatumas_Theory_Pack.docx   | ❌     | ❌         | Teorijos medžiaga                               |
-| Student_Task.docx                   | ❌     | ❌         | Scenarijų vertinimo lapas                       |
-| Visual_Aid.pdf                      | ❌     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
+| 002_L_Privatumas_Theory_Pack.pdf    | ✅     | ❌         | Teorijos medžiaga                               |
+| Student_Task.pdf                    | ✅     | ❌         | Scenarijų vertinimo lapas                       |
+| Visual_Aid.pdf                      | ✅     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
 
 ---
 

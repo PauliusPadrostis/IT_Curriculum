@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 003 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                            |
+| **Būsena**      | ✅ Failai sukurti                                  |
 
 ---
 
@@ -93,9 +93,9 @@ Nėra.
 | Failas                                       | Būsena | Patikrinta | Pastaba                               |
 |----------------------------------------------|--------|------------|---------------------------------------|
 | Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                            |
-| 003_L_Internetines_rizikos_Theory_Pack.docx  | ❌     | ❌         | Teorijos medžiaga                     |
-| Student_Task.docx                            | ❌     | ❌         | Scenarijų analizės lapas              |
-| Visual_Aid.pdf                               | ❌     | ❌         | Phishing pavyzdžiai, algoritmo schema |
+| 003_L_Internetines_rizikos_Theory_Pack.pdf   | ✅     | ❌         | Teorijos medžiaga                     |
+| Student_Task.pdf                             | ✅     | ❌         | Scenarijų analizės lapas              |
+| Visual_Aid.pdf                               | ✅     | ❌         | Phishing požymiai, algoritmo schema   |
 
 ---
 

@@ -91,3 +91,21 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: (1) "Dažna klaida" warning boxes had spacing.before: 80, which collapsed with the preceding paragraph's after: 80, creating no visible gap. (2) "Pamokos aprašymas (dienynui)" label could split from its content across pages because it lacked keepNext.
 - Rule: (1) Warning box paragraphs: spacing.before: 200 (not 80). (2) Diary label paragraph must have keepNext: true in addition to the horizontal rule above it.
 - Applies to: lesson-plan-gen
+
+## 2026-03-29 — Missing diphthong u in gniaužti derivatives
+
+- Problem: Generated "sugniažti–atgniažti" instead of "sugniaužti–atgniaužti". Missing u in the -iaužt- consonant cluster.
+- Rule: gniaužti stem always keeps the u: sugniaužti, atgniaužti. Check all -iaužt- words letter-by-letter. Added to lt-mistakes.yaml.
+- Applies to: all Lithuanian content generation
+
+## 2026-03-29 — "Pertraukėje" is a hallucinated word form
+
+- Problem: Generated "Pertraukėje" as locative of pertrauka. This form doesn't exist. It's a hallucinated blend of pertrauka and pertraukėlė stems.
+- Rule: pertrauka → per pertrauką or pertraukoje. pertraukėlė → pertraukėlėje. Never "pertraukėje". Added to lt-mistakes.yaml.
+- Applies to: all Lithuanian content generation
+
+## 2026-03-29 — Visual Aid slide content must fit one landscape page
+
+- Problem: Slide 5 (Pagrindinės sąvokos) had 5 term items at 28pt/48pt with 200 twip inter-term spacing. Content spilled onto a second page because the vertical budget was never calculated. The skill spec said "4-5 items maximum" without checking whether 5 actually fits.
+- Rule: (1) Every visual aid slide MUST fit on one landscape A4 page. Usable height after margins = ~9638 DXA. Accent bar + spacer = ~1080 DXA. Remaining = ~8558 DXA (~14 content lines at 28pt). (2) Slide 5 hard cap is 4 terms, not 5. (3) Term spacing is 160 twips (not 200). (4) If content overflows, cut items, never reduce font size.
+- Applies to: visual-aid-gen

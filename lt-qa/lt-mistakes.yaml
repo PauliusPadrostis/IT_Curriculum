@@ -180,3 +180,26 @@
   note: "Nominative + nepakanka is English pattern. Lithuanian uses genitive + nepakaks/neužtenka for 'X is not enough'."
   source: "user-flagged"
   date: "2026-03-29"
+
+# ── Missing diphthong u in -iaužt- cluster ───────────────────────
+- wrong: "sugniažti"
+  correct: "sugniaužti"
+  category: morphology
+  note: "Missing u in -iaužt- cluster. gniaužti → sugniaužti, not sugniažti. Same pattern as atgniaužti."
+  source: "user-flagged"
+  date: "2026-03-29"
+
+- wrong: "atgniažti"
+  correct: "atgniaužti"
+  category: morphology
+  note: "Missing u in -iaužt- cluster. gniaužti → atgniaužti, not atgniažti."
+  source: "user-flagged"
+  date: "2026-03-29"
+
+# ── Wrong locative of pertraukėlė ────────────────────────────────
+- wrong: "pertraukėje"
+  correct: "per pertrauką / pertraukėlėje / pertraukoje"
+  category: morphology
+  note: "pertraukėje is not a standard Lithuanian form. If using pertrauka → per pertrauką or pertraukoje. If using pertraukėlė → pertraukėlėje. Claude hallucinated pertraukėje by mixing stems."
+  source: "user-flagged"
+  date: "2026-03-29"

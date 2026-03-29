@@ -127,7 +127,7 @@ phrasing from the plan. The Teacher_Plan uses teacher voice ("Mokiniai sukuria..
 1. Terms/concepts required to complete the task (from Student_Task if available)
 2. Core terms from the teaching phase of Teacher_Plan
 3. Terms from Theory_Pack terminology table (if it exists)
-4. Hard cap: 4-5 items maximum
+4. Hard cap: **4 items maximum** (5 items overflow the landscape page at 28pt/48pt)
 5. Each item: **bold term** + colon + one-line definition (~15 words max)
 
 If no Student_Task or Theory_Pack exists, build entirely from the
@@ -158,6 +158,17 @@ Load Lithuanian language rules before writing any text:
 Generate using the docx skill (`/mnt/skills/public/docx/SKILL.md`).
 Reference `references/visual_aid_format.md` for exact visual specs. Follow
 these sub-steps:
+
+### One-page-per-slide rule (CRITICAL)
+
+Every slide's content MUST fit on a single landscape A4 page. Landscape A4
+usable height = 11906 - 2×1134 = 9638 DXA (~16.9 cm). The accent bar
+consumes ~680 DXA + 300-400 spacer = ~1080 DXA. That leaves ~8558 DXA
+(~15 cm) for content. At 28pt body text with 1.5× line spacing, each
+line is ~600 DXA. Budget: roughly 14 content lines per slide.
+
+If content overflows, cut items (not font size). Slide 5 is the most
+common overflow risk: max 4 terms, spacing after: 160 (not 200).
 
 ### 3a. Document setup
 

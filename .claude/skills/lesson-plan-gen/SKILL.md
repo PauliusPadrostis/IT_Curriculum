@@ -409,8 +409,32 @@ Before finalizing, verify:
 | I-lesson activity rotation | For consecutive I lessons: activity format differs from the previous I lesson in the module. |
 | I-lesson exit retrieval | For I lessons: exit questions are metacognitive/reflective, not factual recall. |
 
+| Extra materials needed | Plan references images, diagrams, illustrations, or other visual assets not yet in the lesson folder. Flag each one. |
+
 If a check fails, fix it before outputting. Do not output plans that fail timing
 or completeness checks.
+
+### Extra materials flagging
+
+After generating the plan, scan ALL content for references to visual materials
+that the teacher would need to source or create. Look for patterns like:
+
+- "parodykite ekrane / skaidrėje [image/picture/diagram]"
+- "parodykite pavyzdžių skalę / schemą / diagramą"
+- "parodykite paveikslėlį / nuotrauką / iliustraciją"
+- Any instruction that implies showing a visual that is NOT just text or questions on a slide
+
+For each found reference, append a flagged item to the output after the plan:
+
+```
+--- REIKALINGOS PAPILDOMOS MEDŽIAGOS ---
+1. [Fazė: Dėstymas, ~2 min.] Paveikslėlis: žmogus, sėdintis netaisyklingai prie kompiuterio.
+   → Šaltinis: nuotrauka (Pixabay/Pexels) arba iliustracija (Canva).
+2. [Fazė: Dėstymas, Jautrūs duomenys] Diagrama: duomenų jautrumo skalė (vardas → adresas → asmens kodas → banko duomenys).
+   → Šaltinis: galima sugeneruoti kaip SVG diagramą Visual Aid skaidrėje.
+```
+
+This ensures visuals don't get forgotten between plan generation and lesson delivery.
 
 ---
 
