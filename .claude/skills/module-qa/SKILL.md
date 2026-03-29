@@ -94,7 +94,7 @@ For each eligible lesson, dispatch a subagent using the Agent tool:
   - `{module_readme_summary}` — the module-level context (2-3 sentences)
   - `{grade_level}`, `{grade_number}`
   - `{file_list_with_paths}` — every file in the lesson folder, with full paths
-  - `{pedagogical_checks_path}` — full path to `references/pedagogical_checks.md`
+  - `{pedagogical_checks_content}` — the full content of `references/pedagogical_checks.md` (inline, so subagent doesn't need to read it)
   - `{lt_mistakes_yaml_content}` — the full content of `lt-qa/lt-mistakes.yaml` (inline, so subagent doesn't need to read it)
   - `{lessons_md_content}` — the full content of `tasks/lessons.md` (inline)
 

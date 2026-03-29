@@ -25,7 +25,10 @@ Read ALL files listed above. For .docx files, use the docx reading tool. For .pd
 ## Checks to perform
 
 ### Content & Pedagogical Coherence (Dimension 2)
-Read `{pedagogical_checks_path}` for detailed guidance. In summary:
+Detailed guidance:
+{pedagogical_checks_content}
+
+In summary:
 - **Topic completeness:** Does the content actually cover the lesson's stated topic fully? Are obvious subtopics missing?
 - **Cross-document alignment:** Do objectives in README, Teacher_Plan, and student materials match? Does theory prepare students for the task?
 - **Scope realism:** Can a Grade {grade_number} student do this in 37 minutes? Is it trying to cover too much?
