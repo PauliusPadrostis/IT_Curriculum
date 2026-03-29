@@ -29,7 +29,8 @@ Last updated: 2026-03-29
 
 ## Skills Status
 
-- **practice-task-gen:** Built and smoke-tested. SKILL.md + 3 references (practice_task_format.md, difficulty_elevation_guide.md, practice_task_example.md). Generated first Practice_Task.pdf for 006_P.
+- **module-qa:** Design spec + 8-task implementation plan committed. Not yet built. Coordinator + parallel subagent architecture. Audits completed modules across 3 dimensions (structure, content/pedagogy, Lithuanian language). Output: `tasks/qa-report-{module}.md`.
+- **practice-task-gen:** Built and smoke-tested. SKILL.md + 3 references. Generated first Practice_Task.pdf for 006_P.
 - **answer-key-gen:** Built and smoke-tested on 007_A. P mode patched to expect Practice_Task.pdf. Study Key mode ready for 006_P.
 - **assessment-task-gen:** Smoke-tested on 007_A. All Testmoz import issues fixed.
 - **student-task-gen:** L and I only. P lessons formally routed to practice-task-gen. Type gate updated.
@@ -38,14 +39,17 @@ Last updated: 2026-03-29
 
 ## Pending Work
 
+- **module-qa implementation:** 8 tasks in plan (5 reference files + SKILL.md + smoke test + iteration). Ready to build.
 - **answer-key-gen P mode:** Can now generate Study Key for 006_P (Practice_Task.pdf exists).
 - **Next content push:** Generate missing Student_Task + Visual_Aid for lessons 002-004, Student_Task for 005.
 - **Module 02+:** No content generated yet. All 39 lessons are Šablonas.
+- **Repo health skill:** Brainstormed concept (satellite view across whole repo). Design not started.
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
+| 2026-03-29 | Designed module-qa skill: spec + 8-task implementation plan, parallel subagent architecture |
 | 2026-03-29 | Built practice-task-gen skill (SKILL.md + 3 refs), patched answer-key-gen + student-task-gen, generated Practice_Task.pdf for 006_P |
 | 2026-03-29 | Designed practice-task-gen skill: spec + 7-task implementation plan, brainstormed P lesson pedagogy |
 | 2026-03-28 | Smoke-tested answer-key-gen on 007_A, generated Answer_Key.docx, updated README |
