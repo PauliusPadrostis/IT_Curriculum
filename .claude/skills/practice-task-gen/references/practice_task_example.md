@@ -57,10 +57,10 @@ Saugos praktikos užduotys
      on a couch, requiring the student to transfer the same ergonomic rules. -->
 1\. Jūsų šeimos narys kasdien dirba namuose su nešiojamu kompiuteriu, padėtu ant sofos. Kuris teiginys geriausiai apibūdina, kodėl toks darbo būdas yra kenksmingas?
 
-   A. Nešiojamas kompiuteris greičiau perkaista ant minkšto paviršiaus ir sugenda
-   B. Sėdint ant sofos neįmanoma išlaikyti taisyklingos nugaros, kaklo ir rankų padėties
-   C. Sofos apšvietimas visada yra per silpnas ekranui matyti
-   D. Nešiojamo kompiuterio ekranas yra per mažas ilgalaikiam darbui
+   A. Sėdint ant sofos neįmanoma išlaikyti taisyklingos nugaros, kaklo ir rankų padėties <!-- CORRECT -->
+   B. Nešiojamas kompiuteris greičiau perkaista ant minkšto paviršiaus ir gali staiga išsijungti
+   C. Ant minkšto paviršiaus dirbant ekrano ryškumas automatiškai sumažėja ir akys greičiau pavargsta
+   D. Nešiojamo kompiuterio klaviatūra ant sofos yra per toli nuo ekrano ir apsunkina rašymą
 
 <!-- Elevation: Technique 2 (Added Complexity). A version asked to name the 20-20-20
      rule. P version requires explaining WHY the rule works, not just WHAT it is.
@@ -75,8 +75,8 @@ Saugos praktikos užduotys
 3\. Kuris iš šių slaptažodžių yra saugiausias?
 
    A. Vilnius2024
-   B. kL9#mzQp2!xR
-   C. ManoSunisPuskas123
+   B. ManoSunisPuskas123
+   C. kL9#mzQp2!xR <!-- CORRECT -->
    D. qwertyuiop2025
 
 <!-- Elevation: Technique 1 (Bloom's +1, Understand → Apply). A version asked to
@@ -96,10 +96,10 @@ Saugos praktikos užduotys
      distractor (D) that describes a real but less reliable indicator. -->
 6\. Gaunate el. laišką su tema „Skubus pranešimas: jūsų paskyra bus užblokuota per 24 val." Kuris iš šių požymių yra patikimiausias phishing atakos rodiklis?
 
-   A. Laiške yra rašybos klaidų ir neaiškių sakinių
-   B. Siuntėjo adresas neatitinka oficialaus domeno (pvz., security@acc0unt-check.xyz)
-   C. Laiškas atsiųstas ne darbo metu
-   D. Laiške prašoma paspausti nuorodą ir „patvirtinti duomenis"
+   A. Laiške yra rašybos klaidų ir neaiškiai suformuluotų sakinių
+   B. Laiškas atsiųstas ne įprastu darbo metu, pavyzdžiui, nakties valandą
+   C. Laiške prašoma paspausti nuorodą ir „patvirtinti savo duomenis"
+   D. Siuntėjo adresas neatitinka oficialaus domeno (pvz., security@acc0unt-check.xyz) <!-- CORRECT -->
 
 <!-- Elevation: Technique 3 (Composite). Merges two A objectives: (1) recognize
      phishing message signs and (2) apply the stop→check→report response algorithm.
@@ -113,10 +113,10 @@ Saugos praktikos užduotys
      actions, requiring personal context application. -->
 8\. Kuris kasdieninis veiksmas sunaudoja daugiausiai energijos duomenų centruose?
 
-   A. Vienos tekstinės žinutės išsiuntimas
-   B. Valandos trukmės vaizdo įrašo žiūrėjimas aukšta raiška internete
-   C. Paveikslėlio parsisiuntimas iš el. pašto
-   D. Pusvalandžio naršymas tekstiniame tinklalapyje
+   A. Vienos trumpos tekstinės žinutės išsiuntimas el. paštu
+   B. Vieno paveikslėlio parsisiuntimas iš el. pašto priedo
+   C. Valandos trukmės vaizdo įrašo žiūrėjimas aukšta raiška internete <!-- CORRECT -->
+   D. Pusvalandžio naršymas tekstiniame tinklalapyje be paveikslėlių
 
 <!-- Elevation: Technique 1 (Bloom's +1, Understand → Apply). A version asked to
      explain what a digital footprint is. P version asks the student to propose
