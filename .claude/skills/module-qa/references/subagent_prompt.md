@@ -20,7 +20,7 @@ Read every content file in this lesson folder and produce:
 ## Files to read
 {file_list_with_paths}
 
-Read ALL files listed above. For .docx files, use the docx reading tool. For .pdf files, use the pdf reading tool. For .xlsx files, use the xlsx reading tool. For .md files, use the Read tool.
+Read ALL files listed above. For .docx files, invoke the Skill tool with skill "anthropic-skills:docx" to read content. For .pdf files, invoke the Skill tool with skill "anthropic-skills:pdf" to read content. For .xlsx files, invoke the Skill tool with skill "anthropic-skills:xlsx" to read content. For .md files, use the Read tool directly.
 
 ## Checks to perform
 
