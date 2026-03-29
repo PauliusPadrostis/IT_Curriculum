@@ -227,3 +227,19 @@ The following are **not yet decided** and need resolution:
 **Context**: Lesson plans reference visuals ("parodykite ekrane žmogų, sėdintį netaisyklingai", "parodykite pavyzdžių skalę") but those visuals don't exist in the lesson folder. Without flagging, they get forgotten between plan generation and lesson delivery.
 
 **Rationale**: The skill can't generate photos or complex illustrations. Flagging ensures the teacher knows what to source separately (stock photos, Canva, SVG diagrams) before the lesson.
+
+## 2026-03-30 — No generation scripts in repo
+
+**Decision**: Generation scripts (JS files that build .docx programmatically) are not stored in the repo. They are ephemeral session artifacts. The `scripts/` folder, `package.json`, `generate_teacher_plans.js`, and `docs/superpowers/` were deleted.
+
+**Context**: Over multiple sessions, JS generation scripts and npm dependencies accumulated in the repo without explicit approval. 16 scripts (~220KB), package.json, node_modules, and a docs/ folder with design specs were committed as if they were part of the curriculum.
+
+**Rationale**: This is a curriculum content repo, not a build system. Only output files (.docx, .pdf, .md) belong here. If a session uses a JS script to generate a .docx, the script is disposable and only the output gets committed.
+
+## 2026-03-30 — Docx template library (deferred)
+
+**Decision**: A JS library encoding the stable Teacher_Plan formatting skeleton (colors, fonts, phase headers, metadata cards) is planned but deferred. The LLM would generate a content data object (~2-4KB) instead of full docx builder code (~8-20KB). Tracked in TODO.md at repo root.
+
+**Context**: Token cost analysis showed ~60-75% output token reduction per document if formatting is separated from content. But the Teacher_Plan format is still being iterated (plan_format.md and teacher_profile.md were modified this week).
+
+**Rationale**: Building the template now would require rebuilding it after every format change. The trigger to start is ~5-7 Teacher_Plans generated without format spec modifications.
