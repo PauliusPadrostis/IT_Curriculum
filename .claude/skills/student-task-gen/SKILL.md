@@ -9,10 +9,10 @@ description: >
   "make a worksheet for this lesson", "build student tasks for module", or any mention
   of generating Student_Task files for lesson folders. This skill handles both single
   task generation and batch generation for entire modules or grades. Only generates for
-  L (learning) and I (integration) lesson types — other types (P, A, D, T, MOCK, G)
-  require separate skills. Do NOT use for lesson plans (use lesson-plan-gen), READMEs
-  (use lesson-readme-gen), theory packs (use theory-pack-gen), visual aids, or
-  assessment files.
+  L (learning) and I (integration) lesson types. P lessons use practice-task-gen,
+  A lessons use assessment-task-gen. Do NOT use for lesson plans (use lesson-plan-gen),
+  READMEs (use lesson-readme-gen), theory packs (use theory-pack-gen), visual aids,
+  or assessment files.
 ---
 
 # Student Task Generator
@@ -81,10 +81,10 @@ These files are the skill's operational backbone. Do not generate without them.
 
 ### Type gate
 
-**Only generate for L and I lessons.** If lesson type is P, A, D, T, MOCK, or G:
-- Inform the teacher that this skill covers L and I only.
-- Suggest the appropriate file type for that lesson.
-- Stop.
+**Only generate for L and I lessons.** If lesson type is:
+- **P:** Stop. "P pamokoms naudokite /practice-task-gen."
+- **A:** Stop. "A pamokoms naudokite /assessment-task-gen."
+- **D, T, MOCK, G:** Stop. Inform the teacher this skill covers L and I only.
 
 ---
 
