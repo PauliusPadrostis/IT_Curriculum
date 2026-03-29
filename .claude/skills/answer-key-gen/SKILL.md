@@ -80,7 +80,7 @@ Read from lesson folder:
 ### Input files (P mode)
 
 Read from lesson folder:
-1. Student_Task.pdf — questions and structure
+1. Practice_Task.pdf — questions and structure
 2. Sibling A lesson Rubric.pdf (if exists) — optional, for explanation depth calibration
 
 ### Teaching context (both modes)
@@ -221,7 +221,7 @@ Verify: open generated file, confirm key content at known positions (first quest
 |-----------|--------|
 | No Assessment_Task in A lesson folder | **Stop.** "Pirma sugeneruokite vertinimo užduotį." |
 | No Rubric.pdf in A lesson folder | **Stop.** "Nėra vertinimo kriterijų failo." |
-| No Student_Task in P lesson folder | **Stop.** "Pirma sugeneruokite praktikos užduotį (student-task-gen su P tipo palaikymu)." |
+| No Practice_Task in P lesson folder | **Stop.** "Pirma sugeneruokite praktikos užduotį naudodami /practice-task-gen." |
 | Lesson type is not A or P | **Stop.** "Atsakymų raktai generuojami tik A ir P pamokoms." |
 | Some L/I Teacher_Plans missing | **Warn and proceed.** Flag which explanations may lack depth due to missing source material. |
 | No Theory_Packs available | **Warn and proceed.** Study Key cross-references will be omitted. |
@@ -233,7 +233,7 @@ Verify: open generated file, confirm key content at known positions (first quest
 When sources disagree:
 
 1. **Rubric** — point values and criteria are authoritative
-2. **Assessment_Task / Student_Task** — question content as written
+2. **Assessment_Task / Practice_Task** — question content as written
 3. **L/I Teacher_Plans** — learning objectives, common mistakes
 4. **L/I Theory_Packs** — content details for explanations
 5. **Skill reference docs** — format and marking scheme rules
