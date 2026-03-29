@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 006 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                   |
+| **Būsena**      | 🚧 WIP                                            |
 
 ---
 
@@ -92,7 +92,7 @@ Nėra.
 | Failas                 | Būsena | Patikrinta | Pastaba                                   |
 |------------------------|--------|------------|-------------------------------------------|
 | Teacher_Plan.docx      | ✅     | ❌         | Privalomas                                |
-| Practice_Task.pdf      | ✅     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
+| Practice_Task.pdf      | ❌     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
 
 ---
 

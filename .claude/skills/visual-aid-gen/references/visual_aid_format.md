@@ -27,7 +27,9 @@ progresses. It must be:
 
 ```
 Orientation:  Landscape A4
-Page size:    16838 × 11906 DXA (width × height)
+Page size:    A4 landscape. CRITICAL: pass PORTRAIT dimensions to docx-js
+              (width: 11906, height: 16838) with orientation: LANDSCAPE.
+              docx-js swaps internally. Visible: 16838 × 11906 DXA.
 Margins:      2 cm all sides (1134 DXA)
 Font:         Arial throughout
 Line spacing: 1.5× (360 twips) for all body text

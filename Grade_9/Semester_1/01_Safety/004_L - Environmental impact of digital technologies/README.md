@@ -96,7 +96,7 @@ Nėra.
 | Failas                                       | Būsena | Patikrinta | Pastaba                                     |
 |----------------------------------------------|--------|------------|---------------------------------------------|
 | Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                                  |
-| 004_L_ST_poveikis_aplinkai_Theory_Pack.docx  | ✅     | ❌         | Teorijos medžiaga                           |
+| 004_L_ST_poveikis_aplinkai_Theory_Pack.docx  | ❌     | ❌         | Teorijos medžiaga                           |
 | Student_Task.docx                            | ❌     | ❌         | Priežastis, poveikis, sprendimas lapas      |
 | Visual_Aid.pdf                               | ❌     | ❌         | Infografika: energija, e-atliekos, pėdsakas |
 

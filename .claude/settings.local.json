@@ -90,7 +90,22 @@
       "Bash(while read:*)",
       "Bash(/dev/null done:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(pandoc Teacher_Plan.docx -o /tmp/teacher_plan.md)",
+      "Bash(where pandoc:*)",
+      "Bash(where pdftotext:*)",
+      "Bash(pdftotext -layout \"001_L_Ergonomika_Theory_Pack.pdf\" /tmp/theory_pack.txt)",
+      "Bash(pdftotext -layout \"Student_Task.pdf\" /tmp/student_task.txt)",
+      "Bash(pdftotext -layout \"Visual_Aid.pdf\" /tmp/visual_aid.txt)",
+      "Bash(pdftotext -layout \"001_L_Ergonomika_Theory_Pack.pdf\" \"$TEMP/theory_pack.txt\")",
+      "Bash(pdftotext -layout \"Student_Task.pdf\" \"$TEMP/student_task.txt\")",
+      "Bash(pdftotext -layout \"Visual_Aid.pdf\" \"$TEMP/visual_aid.txt\")",
+      "Bash(echo \"$TEMP\")",
+      "Bash(pdftotext -layout \"001_L_Ergonomika_Theory_Pack.pdf\" \"C:/Users/Paulius/AppData/Local/Temp/theory_pack.txt\")",
+      "Bash(pdftotext -layout \"Student_Task.pdf\" \"C:/Users/Paulius/AppData/Local/Temp/student_task.txt\")",
+      "Bash(pdftotext -layout \"Visual_Aid.pdf\" \"C:/Users/Paulius/AppData/Local/Temp/visual_aid.txt\")",
+      "Bash(ls -d /c/Users/Paulius/Documents/informatika-curriculum/Grade_9/Semester_1/*/)",
+      "Bash(find /c/Users/Paulius/Documents/informatika-curriculum -path */Grade_*/Semester_*/* -maxdepth 5 -mindepth 5 -type d)"
     ]
   }
 }

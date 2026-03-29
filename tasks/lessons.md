@@ -67,3 +67,27 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: Generated Assessment_Task.xlsx included a header row ("Question | Points | Options | Explanation"). Testmoz treated it as a question row and failed import with error: "column B needs to contain a positive number... I got Points".
 - Rule: Never include a header row in Testmoz .xlsx files. Start with the first question immediately on row 1. Testmoz does not skip header rows.
 - Applies to: assessment-task-gen, any Testmoz xlsx generation
+
+## 2026-03-29 — Condition-last word order is an English calque
+
+- Problem: Generated "Net taisyklinga poza nepakanka, jei sėdite valandų valandas be pertraukos." This is a direct calque of English "Even X isn't enough if Y" — condition at the end, nominative + nepakanka construction. Natural Lithuanian puts the condition first and uses genitive-negative: "Jei sėdėsite valandų valandas be pertraukos, taisyklingos pozos nepakaks."
+- Rule: (1) Place "jei" clauses first in Lithuanian, not at the end as in English. (2) "X nepakanka" with nominative subject is an English pattern. Use genitive + nepakaks/neužtenka instead. Both patterns added to lt-mistakes.yaml and lt-qa/references/ai-patterns.md.
+- Applies to: theory-pack-gen, lt-qa, any Lithuanian content generation
+
+## 2026-03-29 — Visual Aid landscape: pass portrait dimensions to docx-js
+
+- Problem: Visual Aid rendered as portrait instead of landscape. The script passed landscape dimensions (width: 16838, height: 11906) with LANDSCAPE orientation. docx-js swaps dimensions internally, so the swap produced portrait.
+- Rule: When generating landscape documents with docx-js, pass PORTRAIT dimensions (width: short edge, height: long edge) and set orientation: PageOrientation.LANDSCAPE. docx-js swaps them internally. For A4 landscape: width=11906, height=16838.
+- Applies to: visual-aid-gen, any landscape docx generation
+
+## 2026-03-29 — Student Task formatting: step spacing, hint colors, checklist keepNext
+
+- Problem: (1) Step gaps too small (before: 240). (2) Hints (Užuomina) and success checks (✓) same color as body text, no visual differentiation. (3) Checklist section split across pages. (4) Title "vertinimo lapas" implied assessment when it's just a task sheet. (5) Running header repeated the misleading title.
+- Rule: (1) Step headings: spacing.before: 360. (2) Hints: color #808080 grey, spacing.before: 120. (3) Success checks: color #2E7D32 green, spacing.before: 120. (4) All checklist items except last: keepNext: true. (5) Student tasks don't get running headers. (6) Don't call student tasks "vertinimo lapas" unless they're actual assessments.
+- Applies to: student-task-gen
+
+## 2026-03-29 — Teacher Plan: warning box spacing and diary page integrity
+
+- Problem: (1) "Dažna klaida" warning boxes had spacing.before: 80, which collapsed with the preceding paragraph's after: 80, creating no visible gap. (2) "Pamokos aprašymas (dienynui)" label could split from its content across pages because it lacked keepNext.
+- Rule: (1) Warning box paragraphs: spacing.before: 200 (not 80). (2) Diary label paragraph must have keepNext: true in addition to the horizontal rule above it.
+- Applies to: lesson-plan-gen
