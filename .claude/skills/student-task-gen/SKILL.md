@@ -248,6 +248,39 @@ All constraints from teacher profile apply:
 
 ---
 
+## Step 5b — Cross-file Coherence Check
+
+Before rendering, verify alignment with sibling lesson files. This step
+prevents scenario mismatches, modality drift, and terminology gaps between
+the Student_Task and other lesson materials.
+
+### What to check:
+
+1. **Teacher_Plan.docx (mandatory — already read in Step 1):**
+   - Every scenario, activity name, and task modality (digital/verbal/written)
+     in the Student_Task must match what the Teacher_Plan describes in its
+     taikymo užduotys / savarankiška užduotis section.
+   - If the plan says students use Excel but the task says Word → fix the task.
+   - If the plan describes 3 sub-tasks but the task has 5 → reconcile.
+
+2. **Theory_Pack.pdf (if it exists on disk):**
+   - Every technical term used in the Student_Task should appear in the
+     Theory_Pack. If a term is missing from the theory pack, either remove
+     it from the task or flag it for the teacher.
+
+3. **Visual_Aid.pdf (if it exists on disk):**
+   - Slide 5 key concepts should cover the terms the Student_Task relies on.
+     If a critical task term is absent from the visual aid, flag it.
+
+### On mismatch:
+
+- Fix the Student_Task content to align with the Teacher_Plan (plan is
+  authoritative for task design).
+- For Theory_Pack/Visual_Aid mismatches: flag to the teacher rather than
+  silently modifying the task, since those files may need updating instead.
+
+---
+
 ## Step 6 — Render .docx and convert to PDF
 
 Read `references/task_format.md` for formatting specs. Use theory-pack-consistent
@@ -264,9 +297,34 @@ cause of Lithuanian spelling errors in generated content.
 opening „ and `\u201C` for closing ") because the closing quote conflicts
 with JavaScript string delimiters.
 
-### 6b. Convert to PDF
+### 6b. Em dash post-processing
 
-After generating the .docx, convert to PDF:
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```javascript
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
+### 6c. Write plain-text sidecar
+
+After building the .docx but before PDF conversion, write all Lithuanian
+text to `Student_Task_text.txt` in the same lesson folder. This sidecar
+enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md "Plain-Text
+Sidecar Protocol"). Collect every paragraph, heading, table cell, and list
+item text during generation and write as plain UTF-8, one paragraph per line.
+
+After lt-qa POST-GEN passes (Step 7 or equivalent), delete the sidecar file.
+If POST-GEN finds issues, fix them in the .docx, regenerate the sidecar,
+and re-run POST-GEN.
+
+### 6d. Convert to PDF
+
+After generating the .docx and writing the sidecar, convert to PDF:
 
 ```bash
 python -c "from docx2pdf import convert; convert('input.docx', 'output.pdf')"

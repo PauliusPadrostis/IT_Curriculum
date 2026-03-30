@@ -221,18 +221,81 @@ use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū,
 opening „ and `\u201C` for closing ") because the closing quote conflicts
 with JavaScript string delimiters.
 
-### 3d. Output
+### 3d. Em dash post-processing
+
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```javascript
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
+### 3e. Output
 
 Use `Packer.toBuffer()` to write the file as `Visual_Aid.docx` to the
 lesson folder.
 
 ---
 
+## Step 3f — Cross-file Coherence Check
+
+After generating the Visual_Aid.docx and before Lithuanian QA, verify
+alignment between the visual aid content and sibling lesson files.
+
+### What to check:
+
+1. **Slide 5 terms vs. Theory_Pack.pdf (if it exists):**
+   - Every term on slide 5 must appear in the Theory_Pack's terminology
+     table. If a slide 5 term contradicts the Theory_Pack definition →
+     use the Theory_Pack definition (it is the authoritative reference).
+   - If slide 5 uses a term the Theory_Pack doesn't cover → flag it.
+
+2. **Slide 4 task brief vs. Student_Task.pdf (if it exists):**
+   - The task brief must describe the same activity as the Student_Task.
+     Same scenario name, same deliverable, same tools.
+   - If they diverge → align slide 4 to match the Student_Task.
+
+3. **Slides 2, 6 retrieval questions vs. Teacher_Plan.docx (mandatory):**
+   - Already required to be verbatim extractions. This step explicitly
+     verifies: re-read the Teacher_Plan retrieval questions and confirm
+     slides 2 and 6 are exact matches. Fix any drift.
+
+4. **Slide 3 objectives vs. Teacher_Plan.docx:**
+   - Objectives must match the plan's objectives section. If the plan
+     was updated after the visual aid was started → use the plan's
+     current objectives.
+
+### On mismatch:
+
+- Visual Aid adapts to match Teacher_Plan (authoritative for questions
+  and objectives) and Student_Task (authoritative for task description).
+- Theory_Pack is authoritative for term definitions.
+- Flag unresolvable contradictions to the teacher.
+
+---
+
+## Step 3f: Write Plain-Text Sidecar
+
+After generating the .docx (Step 3e) and passing the coherence check (Step 3f),
+write all Lithuanian text to `Visual_Aid_text.txt` in the same lesson folder.
+This sidecar enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md
+"Plain-Text Sidecar Protocol"). Collect all slide text (titles, questions,
+objectives, task brief, term definitions) as plain UTF-8, one paragraph per
+line, with `## Slide N` headers separating slides.
+
+Delete the sidecar after POST-GEN passes in Step 4.
+
+---
+
 ## Step 4: Lithuanian QA (POST-GEN)
 
-After generating the .docx, perform a structured review:
+After generating the .docx and writing the sidecar, perform a structured review:
 
-1. **Extract text** from the generated Visual_Aid.docx.
+1. **Read the sidecar** `Visual_Aid_text.txt` as the canonical text to check.
 2. **Mistake library scan:** Compare all text against `lt-qa/lt-mistakes.yaml`.
    Focus on slide 5 definitions and slide 4 task brief (these contain
    generated/summarized text, not verbatim extractions).

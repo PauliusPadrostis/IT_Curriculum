@@ -136,6 +136,43 @@ illustrations.
 
 ---
 
+## Step 3b — Cross-file Coherence Check
+
+Before the terminology pass, verify alignment with sibling lesson files.
+This prevents concept gaps where the Student_Task tests knowledge the
+Theory_Pack never covers.
+
+### What to check:
+
+1. **Student_Task.pdf (if it exists on disk):**
+   - Read it. For every concept, term, or skill the Student_Task requires
+     the student to know or apply, verify it appears in the theory pack's
+     main content sections.
+   - For every self-check question in the theory pack's "Pasitikrink save"
+     section, verify the answer is findable within the theory pack text.
+   - Flag any concept in the Student_Task that the theory pack doesn't cover.
+     Either add coverage or flag to the teacher.
+
+2. **Teacher_Plan.docx (if it exists on disk):**
+   - Verify the teaching phase terminology matches the theory pack's
+     "Pagrindinės sąvokos" term table. If the plan introduces a term
+     the theory pack omits → add it to the term table.
+   - Verify the plan's scope aligns with the theory pack's scope. If the
+     plan covers less than the theory pack → the extra content should be
+     in "Ar žinojai?" boxes, not main text.
+
+3. **Visual_Aid.pdf (if it exists on disk):**
+   - Slide 5 key concepts should match theory pack terms. Flag mismatches.
+
+### On mismatch:
+
+- Add missing concepts to the theory pack (within README scope).
+- If the Student_Task requires knowledge beyond README scope → flag to
+  the teacher as a potential Student_Task issue.
+- Never silently drop coverage that sibling files depend on.
+
+---
+
 ## Step 4 — Terminology Pass
 
 Separate pass after content is written.
@@ -158,11 +195,19 @@ uncertain, flag: `[TERMINIJA: "suggested term" — patikrinti vertimą]`
 
 Third separate pass. Full procedure in quality_checklist.md.
 
-**Additionally, run Phase 2 (POST-GEN) from `/mnt/skills/user/lt-qa/SKILL.md`.**
-This adds: mistake library scan, AI pattern elimination, audience calibration,
-and VLKK terminology enforcement on top of the quality_checklist.md checks.
-The lt-qa checklist catches patterns that quality_checklist.md does not cover
-(em dashes, structural AI tells, grade-level sentence complexity).
+**Before running QA, write a plain-text sidecar:** Write all Lithuanian text
+to `Theory_Pack_text.txt` in the same lesson folder (see lt-qa SKILL.md
+"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table cell,
+info box, and list item text as plain UTF-8, one paragraph per line.
+
+**Run Phase 2 (POST-GEN) from `/mnt/skills/user/lt-qa/SKILL.md`, reading
+from the `Theory_Pack_text.txt` sidecar.** This adds: mistake library scan,
+AI pattern elimination, audience calibration, and VLKK terminology
+enforcement on top of the quality_checklist.md checks. The lt-qa checklist
+catches patterns that quality_checklist.md does not cover (em dashes,
+structural AI tells, grade-level sentence complexity).
+
+**After POST-GEN passes, delete the sidecar file.**
 
 ### 5a. Mechanical grammar check
 
@@ -234,7 +279,20 @@ cause of Lithuanian spelling errors in generated content.
 opening „ and `\u201c` for closing ") because the closing quote conflicts
 with JavaScript string delimiters.
 
-### 6b. Page breaks
+### 6b. Em dash post-processing
+
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```javascript
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
+### 6c. Page breaks
 
 Use `keepNext: true` and `keepLines: true` on all H1 and H3 paragraphs to
 prevent orphaned headings. Use `cantSplit: true` on info box and term table
@@ -245,7 +303,7 @@ content will land on the page. Explicit page breaks almost always create
 large empty gaps (30–50% of a page). Let Word's layout engine handle
 pagination naturally via keepNext/keepLines.
 
-### 6c. Post-generation spell-check
+### 6d. Post-generation spell-check
 
 After generating the .docx, run the Lithuanian spell-checker:
 
@@ -261,7 +319,7 @@ diacritical errors). The remaining categories (wrong stem vowels, dropped
 consonants, hallucinated verb forms) require Step 5c web verification.
 Both safeguards are needed together.
 
-### 6d. Convert to PDF
+### 6e. Convert to PDF
 
 After generating and spell-checking the .docx, convert to PDF:
 

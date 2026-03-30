@@ -306,6 +306,26 @@ Before outputting, verify every item:
 - Rubric → PDF (student-facing, shared before assessment)
 - Input data files → .txt or .csv
 
+### Em dash post-processing
+
+Every generation script (JS or Python) MUST include a mechanical em dash
+removal step. Add the appropriate helper and apply it to every text string
+before inserting into the document:
+
+```javascript
+// For JS (docx-js) scripts:
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+```python
+# For Python (openpyxl) scripts:
+def no_em_dash(s):
+    return s.replace('\u2014', ':')
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
 ### Document generation
 
 Use the docx skill for .docx creation, then convert to PDF via docx2pdf.
@@ -316,7 +336,15 @@ Follow assessment_format.md for exact document structure and visual identity.
 
 ## Step 7 — Lithuanian QA Pass
 
-After generating all files and before presenting to the teacher, run Phase 2 (POST-GEN) from the lt-qa skill on all Lithuanian text. Fix all issues before presenting.
+**Before running QA, write plain-text sidecars:** For each generated .docx
+file (Rubric.docx), write all Lithuanian text to a `_text.txt` sidecar in
+the same lesson folder (e.g., `Rubric_text.txt`). See lt-qa SKILL.md
+"Plain-Text Sidecar Protocol". For .xlsx files (Assessment_Task.xlsx),
+extract all question text, options, and explanations to
+`Assessment_Task_text.txt`. Delete sidecars after POST-GEN passes.
+
+After writing sidecars, run Phase 2 (POST-GEN) from the lt-qa skill,
+reading from the sidecar files. Fix all issues before presenting.
 
 ---
 

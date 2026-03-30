@@ -203,3 +203,32 @@
   note: "pertraukėje is not a standard Lithuanian form. If using pertrauka → per pertrauką or pertraukoje. If using pertraukėlė → pertraukėlėje. Claude hallucinated pertraukėje by mixing stems."
   source: "user-flagged"
   date: "2026-03-29"
+
+# ── QA root-cause P2 additions (2026-03-30) ────────────────────────
+- wrong: "prisistatoma"
+  correct: "prisistato"
+  category: morphology
+  note: "Wrong passive form. 'Prisistatoma' (impersonal passive of prisistatyti) used where reflexive 'prisistato' (presents itself / appears) is needed. Context: describing symptoms or phenomena."
+  source: "auto-detected"
+  date: "2026-03-30"
+
+- wrong: "Kas yra skirtumas tarp"
+  correct: "Kuo skiriasi X nuo Y"
+  category: calque
+  note: "English calque of 'What is the difference between'. Lithuanian uses verb-based phrasing: 'Kuo skiriasi X nuo Y?' or 'Koks skirtumas tarp X ir Y?'"
+  source: "auto-detected"
+  date: "2026-03-30"
+
+- wrong: " ,"
+  correct: ","
+  category: punctuation
+  note: "Space before comma (or other punctuation mark). Common AI generation artifact. Also check for space before period, colon, semicolon, question mark, exclamation mark. Pattern: /\\s+[,\\.;:?!]/g"
+  source: "auto-detected"
+  date: "2026-03-30"
+
+- wrong: "[Terminas], tai [apibrėžimas]"
+  correct: "[Terminas] – [apibrėžimas] / vary structure"
+  category: calque
+  note: "Repetitive definition template where every term is introduced with '[Term], tai [definition]'. This is an AI text pattern. Vary structure: use 'reiškia', 'vadinamas', dash, or integrate the definition into a sentence. Max 2 consecutive definitions using the same structure."
+  source: "auto-detected"
+  date: "2026-03-30"

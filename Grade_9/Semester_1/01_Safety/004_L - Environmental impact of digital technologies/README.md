@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 004 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                            |
+| **Būsena**      | ✅ Failai sukurti                                  |
 
 ---
 
@@ -96,9 +96,9 @@ Nėra.
 | Failas                                       | Būsena | Patikrinta | Pastaba                                     |
 |----------------------------------------------|--------|------------|---------------------------------------------|
 | Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                                  |
-| 004_L_ST_poveikis_aplinkai_Theory_Pack.docx  | ❌     | ❌         | Teorijos medžiaga                           |
-| Student_Task.docx                            | ❌     | ❌         | Priežastis, poveikis, sprendimas lapas      |
-| Visual_Aid.pdf                               | ❌     | ❌         | Infografika: energija, e-atliekos, pėdsakas |
+| 004_L_ST_poveikis_aplinkai_Theory_Pack.pdf   | ✅     | ❌         | Teorijos medžiaga                           |
+| Student_Task.pdf                             | ✅     | ❌         | Priežastis, poveikis, sprendimas lapas      |
+| Visual_Aid.pdf                               | ✅     | ❌         | Projekcinė medžiaga (6 skaidrės)            |
 
 ---
 

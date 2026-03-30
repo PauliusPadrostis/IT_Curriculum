@@ -243,3 +243,35 @@ The following are **not yet decided** and need resolution:
 **Context**: Token cost analysis showed ~60-75% output token reduction per document if formatting is separated from content. But the Teacher_Plan format is still being iterated (plan_format.md and teacher_profile.md were modified this week).
 
 **Rationale**: Building the template now would require rebuilding it after every format change. The trigger to start is ~5-7 Teacher_Plans generated without format spec modifications.
+
+## 2026-03-30 — Plain-text sidecar protocol for Lithuanian QA
+
+**Decision**: Every generation skill now writes a `_text.txt` sidecar file alongside the .docx before PDF conversion. lt-qa POST-GEN reads from this sidecar instead of relying on in-memory text. Sidecar naming: `Teacher_Plan_text.txt`, `Student_Task_text.txt`, etc. Sidecar is deleted after QA passes. Format is plain UTF-8, one paragraph per line.
+
+**Context**: QA report on 01_Safety found 4+ language errors that slipped through POST-GEN (issues m-10, m-12, m-15, m-16). Root cause: lt-qa POST-GEN was checking text from LLM memory (unreliable after long generation), not from the actual generated document. Binary .docx files cannot be re-read reliably for text review.
+
+**Rationale**: The sidecar gives POST-GEN a concrete, readable text file to check. It's written at generation time (when all text is in scope), persists through the QA pass, and is cleaned up after. This decouples QA from LLM memory reliability without requiring binary .docx parsing.
+
+## 2026-03-30 — Cross-file coherence checks in generation skills
+
+**Decision**: All 5 content generation skills (student-task-gen, lesson-plan-gen, theory-pack-gen, visual-aid-gen, lesson-readme-gen) now have a mandatory step that reads existing sibling lesson files and verifies alignment before finalizing output. Each skill has a clear authority hierarchy for resolving mismatches: Teacher_Plan is authoritative for questions/objectives, Student_Task for what students see, Theory_Pack for definitions, README for scope.
+
+**Context**: QA report on 01_Safety found cross-file coherence issues (C-01, M-05, M-07, m-11, m-14): Teacher_Plan scenarios didn't match Student_Task, README timing didn't match Teacher_Plan, Theory_Pack concepts weren't reflected in Student_Task answers. Each skill generated files in isolation with no awareness of sibling files.
+
+**Rationale**: Generation order should not determine file coherence. The coherence check is conditional on sibling files existing on disk, so it doesn't break forward generation (when files don't exist yet). When sibling files do exist, mismatches are caught and resolved before output.
+
+## 2026-03-30 — Module design document required before content generation
+
+**Decision**: Before generating content for a new module, a `Module_Design.md` must be created in the module folder. Template at `.claude/skills/module-qa/references/module_design_template.md`. lesson-plan-gen (Step 0.5) and lesson-readme-gen (Step 0.5) now check for this file and warn the teacher if it's missing. The document covers: Bloom progression (must be non-decreasing or justified), prerequisite chain (every assumption traceable to a prior lesson or grade baseline), independent work time (≥5 min for every task-bearing lesson), and P-A compatibility (practice harder than assessment, same format).
+
+**Context**: QA report on 01_Safety found design-level issues that per-lesson generation couldn't catch: Bloom regression from lesson 003 to 004 (X-01), prerequisite "internet = physical infrastructure" not taught in any prior lesson (X-02), Student_Task with 0 min allocated lesson time (m-13), and P-A comparison impossible due to incomplete files (X-03). These are planning failures, not generation failures.
+
+**Rationale**: Per-lesson skills optimize individual outputs but cannot reason about module-wide coherence. A pre-generation design document forces the teacher (with Claude's help) to make explicit decisions about progression, prerequisites, and assessment alignment before any content is generated. The gate is soft (warn, don't block) because rigid enforcement would slow down exploratory work on early modules.
+
+## 2026-03-30 — end-session file verification uses canonical requirements
+
+**Decision**: The end-session skill now reads `.claude/skills/end-session/references/file_requirements.md` (Step 1d) as the source of truth for lesson completeness. Būsena can only reach "✅ Failai sukurti" when all canonically required files exist on disk, not just when the README table has no ❌ rows.
+
+**Context**: When new required file types were added in 2026-03-28 (Visual_Aid for L/I, Answer_Key for P/A), existing lesson READMEs were not retroactively updated. The end-session skill trusted README table claims and left lessons at "✅ Failai sukurti" with files actually missing.
+
+**Rationale**: README tables are claims, not facts. File existence on disk is the only reliable signal. Decoupling status calculation from README state means adding new required file types to `file_requirements.md` is sufficient — no manual README audit needed.

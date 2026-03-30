@@ -7,34 +7,36 @@ Last updated: 2026-03-30
 - **Grades in repo:** Grade 9, Grade 10, Grade 11, Grade 12
 - **Modules:** 39 total across all grades
 - **Lesson folders:** 351 total
-- **Content files:** ~14 non-README files across 7 lessons (all in Grade 9 Semester 1 01_Safety)
-- **Lessons with content:** Failai sukurti: 3 (001, 002, 003) | WIP: 4 (004-007) | Sablonas: 344
+- **File completeness:** 23/26 required files exist (88%) — based on `file_requirements.md`, not README tables
+- **Lessons Baigta:** 0 | Failai sukurti: 4 (001-004) | WIP: 3 (005, 006, 007) | Sablonas: 344
 
 ## Active Gaps
 
-- **Lesson 001 (Ergonomics):** All 4 files present. Awaiting teacher review.
-- **Lesson 002 (Privacy):** All 4 files present. Awaiting teacher review.
-- **Lesson 003 (Online risks):** All 4 files present. Awaiting teacher review.
-- **Lesson 004 (Environment):** Only Teacher_Plan.docx. Missing Theory_Pack, Student_Task, Visual_Aid. (Theory_Pack.docx was deleted in commit 857c2f0.)
-- **Lesson 005 (Integration):** Only Teacher_Plan.docx. Missing Student_Task.
-- **Lesson 006 (Practice):** Only Teacher_Plan.docx. Missing Practice_Task.pdf. (Was deleted in commit 857c2f0.)
-- **Lesson 007 (Assessment):** Only Teacher_Plan.docx. Missing Assessment_Task.xlsx, Rubric.pdf, Answer_Key.docx. (All three deleted in commit 857c2f0.)
-- **004/005 READMEs:** Reference .docx for student files, but convention is .pdf. Needs correction when generating those files.
+- **Lesson 005_I:** Missing Visual_Aid.pdf (required for I-type lessons).
+- **Lesson 006_P:** Missing Answer_Key.pdf (required for P-type lessons).
+- **Lesson 007_A:** Missing Answer_Key.docx. Rubric.docx intermediate file on disk.
+- **Lessons 001-004:** All present files awaiting teacher review (Patikrinta ❌).
+- **QA report:** 24 issues found (1 Critical, 7 Major, 16 Minor). See tasks/qa-report-01_Safety.md.
+- **TODO.md:** P1-P4 done. 2 remaining QA root-cause fixes (P5-P6) + 1 deferred docx template library.
+- **001/002 lock files:** ~$acher_Plan.docx temp files in lesson folders.
 - **All other modules (344 lessons):** Sablonas (README only).
-- **TODO.md created at repo root:** Docx template library planned after format stabilization.
-
-## Pending Work
-
-- **Next content push:** Regenerate missing files for 004-007
-- **Teacher review:** 001, 002, and 003 have all files but none reviewed (Patikrinta ❌)
-- **All modules beyond 01_Safety:** 344 lessons with no content
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
-| 2026-03-30 | Deleted scripts/ folder, removed build artifacts (package.json, generate_teacher_plans.js, docs/). Created TODO.md. Analyzed token-saving workflows. |
-| 2026-03-29 | Generated all L003 materials. Fixed slide 5 overflow in visual-aid-gen. Updated SKILL.md + visual_aid_format.md. |
+| 2026-03-30 | P4 done: end-session skill now cross-checks files against file_requirements.md |
+| 2026-03-30 | P3 done: module design document template + gate in lesson-plan-gen, lesson-readme-gen |
+| 2026-03-30 | P2 done: plain-text sidecar mechanism added to lt-qa and 6 generation skills |
+| 2026-03-30 | P1 done: added cross-file coherence check to 5 generation skills (TODO.md) |
+| 2026-03-30 | Analyzed QA report root causes, added 6 fix items to TODO.md. Fixed status for 005/006. |
+| 2026-03-30 | Ran module-qa on 01_Safety: 24 issues (1C/7M/16m). Report at tasks/qa-report-01_Safety.md. |
+| 2026-03-30 | Generated Practice_Task.pdf for 006_P. Module now 6/7 complete. |
+| 2026-03-30 | Generated Assessment_Task.xlsx + Rubric.pdf for 007_A (Testmoz, 14 pools, 20 pts). |
+| 2026-03-30 | Generated Student_Task.pdf for 005_I (scenario rotation). Module now 5/7 complete. |
+| 2026-03-30 | Generated Theory_Pack, Student_Task, Visual_Aid for lesson 004 (environmental impact). |
+| 2026-03-30 | Deleted scripts/ folder, removed build artifacts. Created TODO.md. Analyzed token-saving workflows. |
+| 2026-03-29 | Generated all L003 materials. Fixed slide 5 overflow in visual-aid-gen. |
 | 2026-03-29 | Generated all L002 materials. Rewrote lesson-plan-gen format spec. Regenerated Teacher_Plans for L001/L002. |
 | 2026-03-29 | Generated all 001_L materials, fixed formatting issues, patched 5 skills |
 | 2026-03-29 | Built module-qa skill, smoke-tested on 01_Safety, found 16 issues |
@@ -43,13 +45,3 @@ Last updated: 2026-03-30
 | 2026-03-29 | Designed practice-task-gen skill: spec + 7-task plan |
 | 2026-03-28 | Smoke-tested answer-key-gen on 007_A, generated Answer_Key.docx |
 | 2026-03-28 | Built answer-key-gen skill (SKILL.md + 2 refs + 3 exemplars) |
-| 2026-03-28 | Smoke-tested assessment-task-gen: generated Assessment_Task.xlsx + Rubric.pdf for 007_A |
-| 2026-03-28 | Built assessment-task-gen skill (SKILL.md + 9 refs/exemplars) |
-| 2026-03-28 | Designed assessment-task-gen skill: spec + 13-task plan |
-| 2026-03-28 | Created visual-aid-gen skill, generated first Visual_Aid.pdf for L001 |
-| 2026-03-28 | Fixed L001 text errors, converted student files to PDF, updated format specs |
-| 2026-03-27 | Created end-session skill, removed Obsidian refs, reconciled all READMEs |
-| 2026-03-25 | Added lesson: format changes don't fix layout problems |
-| 2026-03-23 | Theory packs 001-002 generated, skill overhauled, UTF-8 rule |
-| 2026-03-22 | I-lesson generation overhaul in lesson-plan-gen skill |
-| 2026-03-22 | Bulk generation Safety 002-007 READMEs + Teacher Plans, curriculum reference created |

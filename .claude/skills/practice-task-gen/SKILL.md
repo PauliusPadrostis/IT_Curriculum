@@ -239,7 +239,13 @@ Before outputting, verify every item against these checks:
 
 ## Step 6 — Lithuanian QA Phase 2 (POST-GEN)
 
-After generating all text and before rendering, run the 7-step checklist:
+**Before running QA, write a plain-text sidecar:** Write all Lithuanian text
+to `Practice_Task_text.txt` in the same lesson folder (see lt-qa SKILL.md
+"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table cell,
+checklist item, and hint text as plain UTF-8, one paragraph per line. Delete
+the sidecar after POST-GEN passes and the .docx is converted to PDF.
+
+After writing the sidecar, run the 7-step checklist on it:
 
 1. **Mistake library scan** — check every sentence against `lt-qa/lt-mistakes.yaml`. Fix all matches.
 2. **Grammar and morphology** — verify noun cases, verb conjugations, agreement. Lithuanian morphology is complex; double-check instrumental case, genitive plurals, and reflexive verbs.
@@ -255,7 +261,21 @@ Fix all issues before proceeding to Step 7.
 
 ## Step 7 — Render
 
-### 7.1 Generate .docx
+### 7.1 Em dash post-processing
+
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```python
+def no_em_dash(s):
+    return s.replace('\u2014', ':')
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
+### 7.2 Generate .docx
 
 Use python-docx to build Practice_Task.docx following the formatting specs in `practice_task_format.md`:
 - Page: A4, 1" margins
@@ -264,20 +284,20 @@ Use python-docx to build Practice_Task.docx following the formatting specs in `p
 - Tables with navy header rows
 - Checklist items with U+2610 character
 
-### 7.2 Convert to PDF
+### 7.3 Convert to PDF
 
 ```python
 from docx2pdf import convert
 convert('Practice_Task.docx', 'Practice_Task.pdf')
 ```
 
-### 7.3 Verify
+### 7.4 Verify
 
 - Confirm Practice_Task.pdf exists
 - Confirm file size is non-zero
 - Spot-check: open and verify key content renders correctly
 
-### 7.4 Clean up
+### 7.5 Clean up
 
 Delete the intermediate Practice_Task.docx after successful PDF conversion.
 

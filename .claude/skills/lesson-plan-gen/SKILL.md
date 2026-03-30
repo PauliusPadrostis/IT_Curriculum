@@ -45,6 +45,32 @@ These files are the skill's operational backbone. Do not generate without them.
 
 ---
 
+## Step 0.5 — Module Design Gate
+
+Before generating a plan for the **first lesson of a new module** (no content files
+exist in any sibling lesson folder yet), check whether `Module_Design.md` exists in
+the module folder.
+
+- **If it exists:** read it and use it as context for Bloom level, prerequisites,
+  independent work allocation, and P-A compatibility decisions throughout generation.
+- **If it does not exist:** warn the teacher:
+  > "Šiam moduliui dar nėra Module_Design.md. Prieš generuojant turinį,
+  > rekomenduoju sukurti modulio dizaino dokumentą, kad Bloom lygiai,
+  > prielaidos ir P-A suderinamumas būtų suplanuoti iš anksto.
+  > Šablonas: `.claude/skills/module-qa/references/module_design_template.md`
+  > Ar norite, kad padėčiau jį užpildyti?"
+  If the teacher says yes, help fill the template. If they say skip, proceed but
+  flag this in the plan's header as a known gap.
+
+**When generating in batch mode** (entire module): read `Module_Design.md` once
+at the start. Use it to validate each lesson's Bloom level and prerequisites as
+you process the sequence.
+
+This step is a no-op when `Module_Design.md` already exists and has been read,
+or when generating a single lesson for an already-populated module.
+
+---
+
 ## Step 1 — Gather Context
 
 ### What to read, in order:
@@ -363,6 +389,43 @@ relevance, use structured questions, data analysis tasks, or programming practic
 
 ---
 
+## Step 3b — Cross-file Coherence Check
+
+Before rendering, verify alignment with sibling lesson files that already
+exist on disk. This step prevents scenario mismatches between the plan and
+other lesson materials.
+
+### What to check:
+
+1. **Student_Task.pdf (if it exists on disk):**
+   - Read it. The plan's taikymo užduotys / savarankiška užduotis section
+     must describe the same task the Student_Task contains: same scenario
+     names, same tool references, same deliverable description.
+   - If the plan's task section diverges from the Student_Task → align the
+     plan to match, since the Student_Task is what students actually see.
+   - If Student_Task does not exist yet (common in forward generation) →
+     skip this check.
+
+2. **Theory_Pack.pdf (if it exists on disk):**
+   - Verify the plan's teaching phase covers the same core concepts that
+     the Theory_Pack presents. If the theory pack introduces a term the
+     plan never mentions → add it to the teaching phase or retrieval.
+   - If Theory_Pack does not exist yet → skip this check.
+
+3. **Visual_Aid.pdf (if it exists on disk):**
+   - If the visual aid's slide 5 (key concepts) contains terms not in the
+     plan's teaching phase → flag the discrepancy.
+
+### On mismatch:
+
+- The plan adapts to match existing student-facing materials (Student_Task
+  and Theory_Pack are authoritative for what students see).
+- README remains authoritative for scope — do not expand the plan beyond
+  README boundaries even if a sibling file covers more.
+- Flag unresolvable contradictions to the teacher.
+
+---
+
 ## Step 4 — Render .docx
 
 Read `references/plan_format.md` for the exact .docx structure, formatting,
@@ -378,6 +441,19 @@ cause of Lithuanian spelling errors in generated content.
 **Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
 opening „ and `\u201C` for closing ") because the closing quote conflicts
 with JavaScript string delimiters.
+
+### Em dash post-processing
+
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```javascript
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
 
 **Output location:**
 - Single plan: save to the lesson folder as `Teacher_Plan.docx`,
@@ -452,15 +528,26 @@ do not expand topic beyond README scope.
 
 ---
 
+## Step 5 — Write Plain-Text Sidecar
+
+After generating the .docx (Step 4) and before the QA pass, write all
+Lithuanian text to `Teacher_Plan_text.txt` in the same lesson folder.
+This sidecar enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md
+"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table
+cell, and list item text from the generated document and write as plain
+UTF-8, one paragraph per line. Delete the sidecar after POST-GEN passes.
+
+---
+
 ## Step 6 — Lithuanian QA Pass
 
-After generating the .docx file and before presenting it to the user, run
-**Phase 2 (POST-GEN)** from `/mnt/skills/user/lt-qa/SKILL.md` on all
-Lithuanian text in the generated document. This includes the full 7-step
-checklist: mistake library scan, grammar & morphology check, punctuation
-audit, AI pattern elimination, audience calibration, VLKK terminology
-check, and final natural-read test. Fix all issues found before presenting
-the file.
+After generating the .docx file and writing the sidecar, run **Phase 2
+(POST-GEN)** from `/mnt/skills/user/lt-qa/SKILL.md`, reading from the
+`Teacher_Plan_text.txt` sidecar. This includes the full checklist: mistake
+library scan, grammar & morphology check, punctuation audit, AI pattern
+elimination, audience calibration, VLKK terminology check, and final
+natural-read test. Fix all issues found. Delete the sidecar after POST-GEN
+passes. Present the .docx to the user.
 
 ---
 

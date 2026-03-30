@@ -48,16 +48,62 @@ This is preventive: the model knows its own weak spots and steers around them.
 
 ---
 
+## Plain-Text Sidecar Protocol
+
+Generation skills produce binary .docx files that cannot be reliably
+re-read for QA. To solve this, every generation script MUST write a
+plain-text sidecar file alongside the .docx before PDF conversion.
+
+### How it works:
+
+1. **Generation script writes sidecar:** After building the .docx content
+   but before PDF conversion, the script writes all Lithuanian text to a
+   `_text.txt` file in the same folder. Naming convention:
+   - `Teacher_Plan.docx` → `Teacher_Plan_text.txt`
+   - `Student_Task.docx` → `Student_Task_text.txt`
+   - `Theory_Pack.docx` → `Theory_Pack_text.txt`
+   - `Visual_Aid.docx` → `Visual_Aid_text.txt`
+   - `Practice_Task.docx` → `Practice_Task_text.txt`
+   - `Rubric.docx` → `Rubric_text.txt`
+
+2. **POST-GEN reads sidecar:** Phase 2 (below) reads the `_text.txt` file
+   instead of relying on in-memory text. This is the canonical text to check.
+
+3. **Sidecar cleanup:** After POST-GEN passes with no remaining issues,
+   delete the `_text.txt` file. If the generation script also deletes the
+   intermediate .docx (after PDF conversion), the sidecar is deleted first.
+
+4. **Sidecar content format:** Plain UTF-8, one paragraph per line, section
+   headers prefixed with `## `. No formatting markup. Include all text that
+   appears in the final document, including table cell contents.
+
+### Implementation in generation scripts:
+
+```javascript
+// After building all paragraphs/tables but before Packer.toBuffer():
+const allText = []; // collect all Lithuanian text strings during generation
+// ... push each paragraph text, table cell text, heading text to allText ...
+const sidecarPath = path.join(folder, 'OutputName_text.txt');
+fs.writeFileSync(sidecarPath, allText.join('\n'), 'utf8');
+```
+
+Each generation skill's SKILL.md specifies where this step fits in its workflow.
+
+---
+
 ## Phase 2: POST-GEN (After Writing)
 
-After the Lithuanian text is complete (whether in a .docx, .md, or plain
-text), perform a structured review pass. This is a mandatory checklist, not
-optional self-reflection.
+After the Lithuanian text is complete, perform a structured review pass.
+This is a mandatory checklist, not optional self-reflection.
+
+**Step 0: Load the sidecar text.** Read the `_text.txt` file from the
+lesson folder. This is the text you will check in Steps 1-7. If no sidecar
+exists (e.g., standalone mode or .md output), use the provided text directly.
 
 ### Step 1: Mistake Library Scan
 
-Compare every word and phrase in the generated text against the loaded mistake
-library (both seed and GitHub-fetched). For each match:
+Compare every word and phrase in the sidecar text against the loaded mistake
+library. For each match:
 - Fix it silently in the output.
 - Log the fix (for later library update if it was a new pattern).
 
@@ -221,11 +267,13 @@ Before generating Lithuanian text, read the lt-qa skill:
 Follow Phase 1 (PRE-GEN) to load the mistake library and rules.
 ```
 
-**After generation is complete (add as final step):**
+**After generation, write sidecar and run POST-GEN:**
 ```
-After generating the Lithuanian .docx file, run Phase 2 (POST-GEN)
-from the lt-qa skill on the generated content. Fix all issues found
-before presenting the file to the user.
+After generating the .docx, write all Lithuanian text to a _text.txt
+sidecar file (see "Plain-Text Sidecar Protocol" in lt-qa SKILL.md).
+Then run Phase 2 (POST-GEN) from the lt-qa skill, reading from the
+sidecar. Fix all issues found before presenting the file to the user.
+Delete the _text.txt sidecar after POST-GEN passes.
 ```
 
 Skills that need this integration:

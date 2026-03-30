@@ -104,6 +104,23 @@ objectives, section headings) and must meet the same quality standard.
 
 ---
 
+## Step 0.5 — Module Design Gate
+
+When generating READMEs in **full** or **batch** mode for a new module (no content
+files exist in sibling lesson folders yet), check whether `Module_Design.md` exists
+in the module folder.
+
+- **If it exists:** read it. Use Bloom levels for the Bloom taksonomijos section,
+  prerequisites for Pasirengimo vartai, and timing constraints for Pamokos eiga.
+- **If it does not exist:** warn the teacher and offer to help create one using the
+  template at `.claude/skills/module-qa/references/module_design_template.md`.
+  Proceed only after teacher confirms to skip or after the design doc is created.
+
+This step is a no-op for `minimal` mode, `update` mode, or when the module already
+has content files in other lesson folders (indicating the design phase is past).
+
+---
+
 ## Step 1 — Gather Context
 
 ### 1a — Infer from path
@@ -275,6 +292,13 @@ Do not fabricate common mistakes from topic descriptions.
 
 **Pamokos eiga** (`full` only): 3–4 rows. Time blocks should sum to the lesson duration
 (default 40 min, adjustable). This is a summary — detailed plan lives in Teacher_Plan.docx.
+
+**Cross-file coherence rule (MANDATORY):** If Teacher_Plan.docx exists and is
+readable, extract phase names and time estimates directly from the plan. Use
+those values in the Pamokos eiga table — never invent timing independently.
+If the plan has 5 phases, summarize into 3–4 rows by grouping related phases,
+but preserve the plan's total time. If Teacher_Plan.docx does not exist, use
+generic placeholders and add a note: `*Laikas bus patikslintas pagal Teacher_Plan.*`
 
 **Terminology for lesson phases:**
 - Use "Pamokos pradžios klausimai" (NOT "Įžanginis atgaminimas") for entry retrieval.

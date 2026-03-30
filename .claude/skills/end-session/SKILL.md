@@ -23,6 +23,7 @@ Before doing anything, read these files to understand current state:
 1. `tasks/status.md`
 2. `tasks/decisions.md`
 3. `tasks/lessons.md`
+4. `.claude/skills/end-session/references/file_requirements.md` (canonical required files per lesson type)
 
 ---
 
@@ -57,23 +58,39 @@ The table format is:
 | Student_Task.docx    | ❌     | ❌         | Dar nesugeneruotas               |
 ```
 
-### 1d. Recalculate lesson Busena
+### 1d. Cross-check against canonical file requirements
 
-Apply this chain — the FIRST matching condition wins:
+Extract the lesson type from the folder name (the letter after `NNN_` — e.g., `004_L` → type L).
+Look up the required files for that type in `file_requirements.md`.
+
+- **Required file missing from disk** → ensure the file has a row in the table with Busena ❌.
+  Add the row if it doesn't exist.
+- **File on disk but NOT in canonical list** → keep it in the table (it's a bonus file), don't remove.
+- **Type not in file_requirements.md (D, T, MOCK, G)** → skip this check, log:
+  "No file checklist available for type {X}. Structural file checks skipped."
+
+This step is the **source of truth** for completeness. The README table alone is not authoritative
+because it may not have been updated when new required files were added to the canonical list.
+
+### 1e. Recalculate lesson Busena
+
+Apply this chain — the FIRST matching condition wins.
+**Important:** "All required files present" means all files from `file_requirements.md` for this
+lesson type exist on disk, not just that the README table has no ❌ rows.
 
 | Condition | Busena |
 |-----------|--------|
-| All `Busena` = ✅ AND all `Patikrinta` = ✅ | ✅ Baigta |
-| All `Busena` = ✅ AND some `Patikrinta` = ❌ | ✅ Failai sukurti |
-| At least one `Busena` = ✅ (besides README) | 🚧 WIP |
+| All required files present on disk AND all `Patikrinta` = ✅ | ✅ Baigta |
+| All required files present on disk AND some `Patikrinta` = ❌ | ✅ Failai sukurti |
+| At least one content file exists (besides README) | 🚧 WIP |
 | Only README.md exists | 📋 Sablonas |
 
-### 1e. Write updated README
+### 1f. Write updated README
 
 Replace the `Busena` field value and the `Reikalingi failai` table in the README.
 Do NOT touch any other section of the README. Preserve all content exactly.
 
-### 1f. Prompt for manual check (if applicable)
+### 1g. Prompt for manual check (if applicable)
 
 If a lesson just transitioned to **✅ Failai sukurti** (all files present, not yet checked):
 
@@ -140,7 +157,7 @@ Last updated: YYYY-MM-DD
 - **Grades in repo:** [list]
 - **Modules:** N total (list with lesson counts)
 - **Lesson folders:** N total
-- **File completeness:** N/M required files exist (X%)
+- **File completeness:** N/M required files exist (X%) — based on `file_requirements.md`, not README tables
 - **Lessons Baigta:** N | Failai sukurti: N | WIP: N | Sablonas: N
 
 ## Active Gaps

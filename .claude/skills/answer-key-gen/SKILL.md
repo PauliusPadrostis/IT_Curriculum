@@ -194,6 +194,21 @@ After generating all content and before rendering, run Phase 2 (POST-GEN) from t
 
 ## Step 6 — Render Document
 
+### Em dash post-processing
+
+The generation script MUST include a mechanical em dash removal step.
+Add this helper and apply it to every text string before inserting into
+the document:
+
+```javascript
+const noEmDash = (s) => s.replace(/\u2014/g, ':');
+```
+
+LLMs naturally produce em dashes regardless of prompt instructions.
+Automated code-level replacement is the only reliable fix.
+
+### Document rendering
+
 Use the docx skill to create Answer_Key.docx following `answer_key_format.md` specs.
 
 - **A mode:** Save as .docx in lesson folder. Done.
