@@ -234,6 +234,7 @@ Before outputting, verify every item against these checks:
 | **No point values** | Zero point values visible anywhere in the document |
 | **Code task ceiling** | Code tasks do not exceed the grade's allowed level (Grade 9: Level 1 only, Grade 10: up to Level 3, Grade 11+: up to Level 4) |
 | **No A leakage** | Practice questions are elevated versions, not copies of A questions |
+| **No answer leakage** | Self-assessment items and hints must not narrow the answer space for any question. If a checklist item reveals whether the student's answer is correct, rephrase to check process, not outcome. |
 
 ---
 

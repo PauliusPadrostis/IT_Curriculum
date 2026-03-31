@@ -1,76 +1,72 @@
 # QA Report: Sauga (Safety)
-Generated: 2026-03-30 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 4 of 7
+Generated: 2026-03-31 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 7 of 7
 
 ## Summary
-- Issues found: 24
-- Critical: 1 | Major: 7 | Minor: 16
-- By dimension: Structure (5) | Content (10) | Language (9)
-- Lessons skipped (incomplete): 005_I, 006_P, 007_A
-
----
-
-## Critical Issues
-> Content is incorrect, misleading, or has major gaps. Fix before using in classroom.
-
-### [C-01] Lesson 003 — Online risks: Student_Task omits "klaidinga informacija" as valid answer option
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `003_L - Online risks & safe response logic/Student_Task.pdf` (page 1, Reikalavimai section)
-- **Problem:** The requirements tell students threat types are "phishing, socialinė inžinerija arba dezinformacija." The Theory_Pack teaches "klaidinga informacija" (misinformation) as a distinct concept from "dezinformacija" (disinformation). Situation 3 in the task is a misinformation scenario. A student who correctly identifies it as "klaidinga informacija" will think they chose wrong because that option isn't listed. The Visual_Aid key concepts slide also omits "klaidinga informacija."
-- **Suggested action:** Re-run student-task-gen for lesson 003. Add "klaidinga informacija" to the valid answer options. Also update Visual_Aid slide 5 to include it via visual-aid-gen.
-- **Status:** ☐ Open
+- Issues found: 27
+- Critical: 0 | Major: 8 | Minor: 19
+- By dimension: Structure (3) | Content (14) | Language (10)
+- Lessons skipped (incomplete): none
+- **Comparison to previous report (2026-03-30):** 23 of 24 original issues confirmed fixed. 1 still open (m-04). 4 regressions found. 22 new issues found (mostly in lessons 005–007 which were not deeply audited last time).
 
 ---
 
 ## Major Issues
 > Weakens quality — misalignment, bad sequencing, scope issues. Should fix before teacher review.
 
-### [M-01] Lesson 005 — Scenario rotation: Missing Visual_Aid.pdf
-- **Dimension:** Structure & Metadata
-- **Location:** `005_I - Scenario rotation task/`
-- **Problem:** I-type lessons require Visual_Aid.pdf per canonical file requirements (decision 2026-03-28). File does not exist on disk. README file table doesn't list it either, and claims "✅ Failai sukurti" status, which is inaccurate.
-- **Suggested action:** Generate Visual_Aid.pdf using visual-aid-gen for lesson 005. Update lesson README file table to include it. Update Būsena to 🚧 WIP until generated.
-- **Status:** ☐ Open
-
-### [M-02] Lesson 006 — Practice exam: Missing Answer_Key.pdf
-- **Dimension:** Structure & Metadata
-- **Location:** `006_P - Safety checklist rehearsal + common mistake review/`
-- **Problem:** P-type lessons require Answer_Key.pdf per canonical file requirements. File does not exist. README file table doesn't list it and claims "✅ Failai sukurti."
-- **Suggested action:** Generate Answer_Key.pdf using answer-key-gen for lesson 006. Update lesson README. Update Būsena to 🚧 WIP until generated.
-- **Status:** ☐ Open
-
-### [M-03] Lesson 007 — Assessment: Missing Answer_Key.docx
-- **Dimension:** Structure & Metadata
-- **Location:** `007_A - Safety structured assessment/`
-- **Problem:** A-type lessons require Answer_Key.docx per canonical file requirements. File does not exist. README already shows ❌ for this file and correctly claims 🚧 WIP status.
-- **Suggested action:** Generate Answer_Key.docx using answer-key-gen for lesson 007.
-- **Status:** ☐ Open
-
-### [M-04] Module README — Rollup status inaccurate
-- **Dimension:** Structure & Metadata
-- **Location:** `01_Safety/README.md` (line 10)
-- **Problem:** Module README claims "6/7 ✅ Failai sukurti, 1/7 🚧 WIP." Per canonical file requirements, lessons 005 and 006 are also incomplete (missing Visual_Aid.pdf and Answer_Key.pdf respectively). Accurate rollup: 4/7 ✅ Failai sukurti, 3/7 🚧 WIP.
-- **Suggested action:** Update module README rollup line to "4/7 ✅ Failai sukurti, 3/7 🚧 WIP" after updating individual lesson READMEs.
-- **Status:** ☐ Open
-
-### [M-05] Lesson 002 — Privacy: Teacher_Plan scenarios differ from Student_Task scenarios
+### [M-01] Lesson 001 — Ergonomics: Teacher_Plan mixes imperial and metric units
 - **Dimension:** Content & Pedagogical Coherence
-- **Location:** `002_L - Privacy & account safety/Teacher_Plan.docx` (Savarankiška užduotis section) vs `Student_Task.pdf`
-- **Problem:** Teacher_Plan lists 5 oral scenarios (Netflix password sharing, birth date for game, stranger asks which school, store asks for address, classmate asks for password). Student_Task.pdf lists 5 different scenarios (same password everywhere, stranger asks phone for gift code, turning on 2FA, friend asks for password, game forum asks for address). A teacher following the plan while students hold the task sheet will work on completely different examples.
-- **Suggested action:** Align Teacher_Plan scenarios to match the Student_Task. Re-run lesson-plan-gen for lesson 002, using the Student_Task scenarios as the canonical set.
+- **Location:** `001_L - Ergonomics & healthy computer use/Teacher_Plan.docx` (Dėstymas, 20-20-20 section)
+- **Problem:** Teacher_Plan says "20 pėdų (~6 m)" mixing imperial and metric. All other documents (Theory_Pack, Student_Task) use only metric (6 metrų). "Pėda" is not a standard Lithuanian unit and will confuse Grade 9 students.
+- **Suggested action:** Replace "20 pėdų (~6 m)" with "~6 metrų" in Teacher_Plan.docx. Re-run lesson-plan-gen or edit manually.
 - **Status:** ☐ Open
 
-### [M-06] Lesson 003 — Online risks: Self-check reveals answer to situation 3
+### [M-02] Lesson 003 — Online risks: Visual_Aid missing phishing example and algorithm slides
 - **Dimension:** Content & Pedagogical Coherence
-- **Location:** `003_L - Online risks & safe response logic/Student_Task.pdf` (page 3, self-check list)
-- **Problem:** Checklist item says "Ar 3 situacijos atsakymas skiriasi nuo 1 ir 4? (Tai kitas grėsmės tipas.)" This reveals that situation 3 has a different threat type from 1 and 4. Since 1 and 4 are obviously phishing, this tells students situation 3 is NOT phishing, undermining independent reasoning.
-- **Suggested action:** Re-run student-task-gen for lesson 003. Replace the hint with a generic checklist item: "Ar kiekvienai situacijai nurodžiau skirtingą grėsmės tipą ten, kur jis skiriasi?"
+- **Location:** `003_L - Online risks & safe response logic/Visual_Aid.pdf`
+- **Problem:** Teacher_Plan contains two explicit projection instructions: (1) "Parodykite skaidrėje phishing laiško pavyzdį" and (2) "Parodykite algoritmo schemą skaidrėje." Visual_Aid has neither — only 6 generic slides (title, retrieval, objectives, task brief, concepts, closing). The teacher must improvise visuals for the two core teaching moments. For Grade 9 students who have never seen phishing, a visual example is important.
+- **Suggested action:** Regenerate Visual_Aid.pdf with visual-aid-gen to include: (a) mock phishing email with 5 signs highlighted, (b) SUSTOTI→PATIKRINTI→PRANEŠTI algorithm as a visual schema.
 - **Status:** ☐ Open
 
-### [M-07] Lesson 004 — Environmental impact: README timing doesn't match Teacher_Plan
+### [M-03] Lesson 004 — Environmental impact: Theory_Pack PDF is stale
+- **Dimension:** Structure & Metadata
+- **Location:** `004_L - Environmental impact of digital technologies/`
+- **Problem:** Theory_Pack.docx (dated 2026-03-31) contains the m-16 fix (varied definition patterns), but Theory_Pack.pdf (dated 2026-03-30) still has the old formulaic ", tai" patterns. Students receive the PDF, so the fix is not effectively deployed. Additionally, the .docx is an orphaned source file.
+- **Suggested action:** Convert .docx to PDF to replace the stale PDF. Delete the .docx after conversion. Requires LibreOffice or manual conversion.
+- **Status:** ☐ Open
+
+### [M-04] Lesson 005 — Integration: Teacher_Plan typo "nušiotojo"
+- **Dimension:** Lithuanian Language
+- **Location:** `005_I - Scenario rotation task/Teacher_Plan.docx` (Scenarijų rotacija, scenario 5)
+- **Problem:** Text says "nušiotojo telefono laimikis" instead of "nešiojamojo telefono laimikis". A factual text corruption that would confuse the teacher reading aloud. Student_Task.pdf has the correct version.
+- **Suggested action:** Replace "nušiotojo" with "nešiojamojo" in Teacher_Plan.docx.
+- **Status:** ☐ Open
+
+### [M-05] Lesson 005 — Integration: Teacher_Plan scenario 6 text mismatch
 - **Dimension:** Content & Pedagogical Coherence
-- **Location:** `004_L - Environmental impact of digital technologies/README.md` (Pamokos eiga table)
-- **Problem:** README allocates 22 min to negative impact, 5 min to positive impact. Teacher_Plan allocates 18 min and 8 min respectively (60% difference on positive impact). A teacher consulting the README will prepare differently than one reading the Teacher_Plan.
-- **Suggested action:** Update README lesson flow table to match Teacher_Plan: 4 min warm-up, 18 min negative impact, 8 min positive impact, 4 min reflection, 3 min closing. Run lesson-readme-gen or edit manually.
+- **Location:** `005_I - Scenario rotation task/Teacher_Plan.docx` (Scenarijų rotacija, scenario 6)
+- **Problem:** Teacher_Plan says "Mokinys keičia senus nešiojamąjį ir telefoną į naujus kasmet" — grammatically broken and missing "kompiuterį". Student_Task.pdf says "Mokinys keičia nešiojamąjį kompiuterį ir telefoną į naujus kasmet". Teacher reading aloud from the plan will deliver garbled text.
+- **Suggested action:** Align Teacher_Plan scenario 6 text to Student_Task.pdf wording.
+- **Status:** ☐ Open
+
+### [M-06] Lesson 006 — Practice: Unclear relationship between Teacher_Plan questions and Practice_Task
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `006_P - Safety checklist rehearsal + common mistake review/Teacher_Plan.docx` vs `Practice_Task.pdf`
+- **Problem:** Teacher_Plan contains its own 6 short questions + 3 scenarios. Practice_Task.pdf contains a completely different set of 10 questions. There is no instruction in the Teacher_Plan about when or how Practice_Task is used. The 34-min timeline doesn't account for Practice_Task at all. A teacher has two separate question sets with no guidance on their relationship.
+- **Suggested action:** Add a clear note in Teacher_Plan explaining Practice_Task.pdf's role (e.g., post-class self-study, or replace the in-class questions). Integrate Practice_Task into the timeline if it's meant for in-class use.
+- **Status:** ☐ Open
+
+### [M-07] Lesson 007 — Assessment: Answer_Key grammatical error
+- **Dimension:** Lithuanian Language
+- **Location:** `007_A - Safety structured assessment/Answer_Key.docx` (question 3)
+- **Problem:** "Apgaulingą žinutė" uses wrong case — should be "Apgaulinga žinutė" (nominative). Appears in both the answer line and grading table. Assessment_Task.xlsx has the correct form, so the Answer_Key is inconsistent with the test.
+- **Suggested action:** Fix "Apgaulingą žinutė" to "Apgaulinga žinutė" in both occurrences in Answer_Key.docx.
+- **Status:** ☐ Open
+
+### [M-08] Lesson 007 — Assessment: Em dashes in Teacher_Plan (regression)
+- **Dimension:** Lithuanian Language
+- **Location:** `007_A - Safety structured assessment/Teacher_Plan.docx` (lines 3, 18, 28)
+- **Problem:** Three em dashes found: "A — Vertinimo pamoka", "Trumpas paaiškinimas — ~2 min.", "Vertinimo užduotis — ~35 min." Em dash is banned. Previous report m-01 marked this as fixed for lessons 001–004, but lesson 007 was not covered then.
+- **Suggested action:** Replace all three em dashes with colons. Re-run lesson-plan-gen for 007 or edit manually.
 - **Status:** ☐ Open
 
 ---
@@ -78,116 +74,137 @@ Generated: 2026-03-30 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 ## Minor Issues
 > Cosmetic, terminological, or style issues. Fix when convenient.
 
-### [m-01] Lessons 001-004 — Em dashes throughout Teacher_Plan files
+### [m-01] Lessons 002, 003, 004 — Em dashes in README files (regression)
 - **Dimension:** Lithuanian Language
-- **Location:** `001_L/Teacher_Plan.docx` (~20 instances), `002_L/Teacher_Plan.docx` (~10), `003_L/Teacher_Plan.docx` (~12)
-- **Problem:** Em dash (—) is banned per project rules. Used pervasively in section headers, timing labels, definitions, and inline text across all audited Teacher_Plans.
-- **Suggested action:** When regenerating any Teacher_Plan (e.g., for M-05), ensure lesson-plan-gen replaces all em dashes with colons, commas, or restructured sentences.
+- **Location:** `002_L/README.md` (1 instance in Apžvalga), `003_L/README.md` (6 instances), `004_L/README.md` (title)
+- **Problem:** Previous report m-03 marked em dash removal from all lesson READMEs as fixed. Current scan shows em dashes have returned or persisted in at least 3 lesson READMEs. Likely caused by README regeneration after the fix.
+- **Suggested action:** Run a search-and-replace across all lesson READMEs for "—" and replace with appropriate punctuation.
 - **Status:** ☐ Open
 
-### [m-02] Lesson 003 — Em dashes in Theory_Pack
-- **Dimension:** Lithuanian Language
-- **Location:** `003_L/003_L_Internetines_rizikos_Theory_Pack.pdf` (pages 1-4, 6 instances)
-- **Problem:** Em dashes in definitions: "Phishing — tai bandymas", "inžinerija — tai manipuliacija", etc.
-- **Suggested action:** When regenerating Theory_Pack, replace with colons or restructured sentences.
-- **Status:** ☐ Open
-
-### [m-03] Lessons 001-004 — Em dashes in README files
-- **Dimension:** Lithuanian Language
-- **Location:** All lesson README.md files (type field "L — Mokymosi pamoka", Bloom headings, etc.)
-- **Problem:** Em dashes used in metadata fields and headings across all lesson READMEs.
-- **Suggested action:** Edit READMEs to replace em dashes. In type field: "L: Mokymosi pamoka". In Bloom heading: "Lygis 2: Suprasti".
-- **Status:** ☐ Open
-
-### [m-04] Lessons 001-004 — Theory_Pack naming deviates from canonical
+### [m-02] Lessons 001–003 — Theory_Pack naming non-canonical (carried forward)
 - **Dimension:** Structure & Metadata
 - **Location:** All L-type lesson folders
-- **Problem:** Theory_Pack files use custom names (e.g., `001_L_Ergonomika_Theory_Pack.pdf`) instead of the canonical `Theory_Pack.pdf` from file_requirements.md. Lesson READMEs reference the custom names, so there's no broken-link issue, but it's inconsistent with the standard.
-- **Suggested action:** Low priority. If regenerating Theory_Packs for other reasons, use the canonical name `Theory_Pack.pdf`. Update README file tables to match.
-- **Status:** ☐ Open
+- **Problem:** Theory_Pack files use custom names (e.g., `001_L_Ergonomika_Theory_Pack.pdf`) instead of canonical `Theory_Pack.pdf`. Same as previous report m-04.
+- **Suggested action:** Low priority. Rename when regenerating Theory_Packs for other reasons.
+- **Status:** ☐ Open (carried forward)
 
-### [m-05] Lessons 001, 002 — Orphaned Word temp files
+### [m-03] Lesson 005 — Visual_Aid format is .docx not .pdf
 - **Dimension:** Structure & Metadata
-- **Location:** `001_L/~$acher_Plan.docx`, `002_L/~$acher_Plan.docx`
-- **Problem:** Word lock/temp files left on disk. These are artifacts of Teacher_Plan.docx being open in Word. They should not be committed to the repo.
-- **Suggested action:** Delete both `~$acher_Plan.docx` files. Add `~$*` to .gitignore if not already present.
+- **Location:** `005_I - Scenario rotation task/Visual_Aid.docx`
+- **Problem:** I-type canonical requirement is Visual_Aid.pdf. Only .docx exists (no LibreOffice for conversion). README correctly reflects .docx. Functionally usable but format non-compliant.
+- **Suggested action:** Convert to PDF when LibreOffice becomes available.
+- **Status:** ☐ Open (known limitation)
+
+### [m-04] Lesson 001 — Visual_Aid space before colon on slide 5
+- **Dimension:** Lithuanian Language
+- **Location:** `001_L - Ergonomics & healthy computer use/Visual_Aid.pdf` (slide 5, Pagrindinės sąvokos)
+- **Problem:** Definitions use "Ergonomika : darbo vietos..." with a space before the colon. Previous report m-15 fixed this for lesson 004 but lesson 001 was not checked.
+- **Suggested action:** Regenerate Visual_Aid.pdf with visual-aid-gen, removing spaces before colons.
 - **Status:** ☐ Open
 
-### [m-06] Lesson 007 — Orphaned Rubric.docx
+### [m-05] Lessons 001, 002 — Theory_Pack informal register in section headers
+- **Dimension:** Lithuanian Language
+- **Location:** `001_L/Theory_Pack.pdf` and `002_L/Theory_Pack.pdf` ("Pasitikrink save", "Sužinok daugiau", "Ar žinojai?")
+- **Problem:** Section headers use informal "tu" register while body text uses formal "jūs". Student materials must use formal address throughout.
+- **Suggested action:** Change to "Pasitikrinkite save", "Sužinokite daugiau", "Ar žinojote?" when regenerating Theory Packs.
+- **Status:** ☐ Open
+
+### [m-06] Lesson 001 — Theory_Pack straight quotes around HN 32:2004
+- **Dimension:** Lithuanian Language
+- **Location:** `001_L/Theory_Pack.pdf` (page 4, Sužinok daugiau)
+- **Problem:** Uses straight double quotes "Darbas su displėjais" instead of Lithuanian „..." quotation marks.
+- **Suggested action:** Replace with „Darbas su displėjais" when regenerating.
+- **Status:** ☐ Open
+
+### [m-07] Lesson 001 — Break interval inconsistency
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `001_L/Teacher_Plan.docx` vs `001_L/Theory_Pack.pdf`
+- **Problem:** Teacher_Plan: "po 45–50 min." Theory_Pack references HN 32:2004: "po kiekvienos valandos." Close but not identical.
+- **Suggested action:** Align Teacher_Plan to Theory_Pack's HN 32:2004 wording when next editing.
+- **Status:** ☐ Open
+
+### [m-08] Lesson 001 — "Vaizduoklis" vs "ekranas" terminology split
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `001_L/Theory_Pack.pdf` (vocabulary table) vs `Student_Task.pdf` and `Visual_Aid.pdf`
+- **Problem:** Theory_Pack introduces "Vaizduoklis" as a key term, but Student_Task and Visual_Aid use "ekranas" exclusively. Minor terminology inconsistency.
+- **Suggested action:** Pick one term and use consistently. "Ekranas" is more natural for Grade 9.
+- **Status:** ☐ Open
+
+### [m-09] Lesson 002 — Visual_Aid closing question differs from Teacher_Plan
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `002_L/Visual_Aid.pdf` (slide 6) vs `Teacher_Plan.docx` (closing questions)
+- **Problem:** Visual_Aid Q3 asks about publishing birthday + school name on social media. Teacher_Plan Q3 asks about publishing name + surname. Different questions for the same closing moment.
+- **Suggested action:** Align to the Visual_Aid version (more specific, uses sensitivity concepts from lesson).
+- **Status:** ☐ Open
+
+### [m-10] Lesson 002 — README Pastaba uses "vertinimo lapas"
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `002_L/README.md` (Reikalingi failai table, Student_Task.pdf row)
+- **Problem:** Pastaba column says "Scenarijų vertinimo lapas". Per lessons.md rule, student tasks should not be called "vertinimo lapas" unless actual assessments.
+- **Suggested action:** Change to "Scenarijų užduoties lapas" or "Situacijų vertinimas".
+- **Status:** ☐ Open
+
+### [m-11] Lesson 002 — Theory_Pack condition-last calque
+- **Dimension:** Lithuanian Language
+- **Location:** `002_L/Theory_Pack.pdf` (page 2, Svarbu box)
+- **Problem:** "Vienas stiprus slaptažodis visoms paskyroms nepadės. Jei jis nutekės, pažeidžiamos visos jūsų paskyros." Condition ("Jei") comes after main clause — English calque per lessons.md rule (2026-03-29).
+- **Suggested action:** Restructure to condition-first: "Jei turėsite tik vieną slaptažodį ir jis nutekės, bus pažeistos visos jūsų paskyros."
+- **Status:** ☐ Open
+
+### [m-12] Lesson 003 — ENISA 2025 statistic may be unverifiable
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `003_L/Theory_Pack.pdf` (page 2, callout box)
+- **Problem:** Claims "2025 m. daugiau nei 80 % phishing laiškų pasaulyje buvo sukurti naudojant dirbtinį intelektą (ENISA, 2025)." This may be a fabricated statistic. If unverifiable, it undermines Theory_Pack credibility.
+- **Suggested action:** Verify the ENISA 2025 statistic. If unconfirmable, replace with a verifiable figure from NKSC or remove the callout.
+- **Status:** ☐ Open
+
+### [m-13] Lesson 004 — Student_Task hint gives away answer
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `004_L/Student_Task.pdf` (page 2, step 4, Svarbu box)
+- **Problem:** Hint provides a model answer: "Viena valanda HD vaizdo įrašo sukuria apie 36–100 g CO₂..." This gives away the digital footprint row, undermining independent reasoning.
+- **Suggested action:** Soften to a structural hint: "Nurodykite konkretų veiksmą, kiek CO₂ jis sukuria ir kodėl."
+- **Status:** ☐ Open
+
+### [m-14] Lesson 005 — Visual_Aid missing scenario texts for projection
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `005_I - Scenario rotation task/Visual_Aid.docx`
+- **Problem:** Teacher_Plan says "Scenarijai rodomi skaidrėse po vieną" but the Visual_Aid contains only structural slides (title, objectives, concepts, closing) — no scenario texts. Teacher must read scenarios aloud or project from Student_Task.
+- **Suggested action:** Add 6 scenario slides to Visual_Aid when regenerating.
+- **Status:** ☐ Open
+
+### [m-15] Lesson 006 — README Bloom level understated
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `006_P/README.md` (Bloom taksonomijos lygis)
+- **Problem:** README declares Level 2 (Suprasti). Practice_Task open questions (Q2, Q5, Q7, Q9, Q10) require application-level thinking — scenario analysis with problem→rule→action structure. Actual Bloom level is 3 (Taikyti).
+- **Suggested action:** Update README Bloom level to "Lygis 3 — Taikyti". This also correctly aligns practice with assessment (007_A is also Level 3).
+- **Status:** ☐ Open
+
+### [m-16] Lesson 006 — Break interval inconsistency across lessons
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `006_P/Teacher_Plan.docx` (scenario B) vs `006_P/Answer_Key.pdf` (Q2)
+- **Problem:** Teacher_Plan scenario says breaks every "45–60 min." Answer_Key says "30–45 min." Lesson 001 Theory_Pack says "kas valandą" per HN 32:2004. Three different ranges for the same concept.
+- **Suggested action:** Standardize all break interval references to match the HN 32:2004 source used in lesson 001.
+- **Status:** ☐ Open
+
+### [m-17] Lesson 007 — Answer_Key typos
+- **Dimension:** Lithuanian Language
+- **Location:** `007_A/Answer_Key.docx`
+- **Problem:** Two typos found: (1) "retųž žemių" → "retųjų žemių" (question 14), (2) "nesuprasėtų" → "nesuprastėtų" (question 5).
+- **Suggested action:** Fix both typos in Answer_Key.docx.
+- **Status:** ☐ Open
+
+### [m-18] Lesson 007 — Assessment scenario references untaught concept (public Wi-Fi)
+- **Dimension:** Content & Pedagogical Coherence
+- **Location:** `007_A/Assessment_Task.xlsx` (Part III, Pool 13, variant 3)
+- **Problem:** Scenario includes "viešame Wi-Fi tinkle prisijungia prie savo banko paskyros." Public Wi-Fi risks were not taught in any L lesson. A student who only studied the module content wouldn't know why this is specifically dangerous.
+- **Suggested action:** Teacher decision: either accept as general knowledge or replace with a taught risk (e.g., clicking a suspicious link). The scenario's other elements (short password, no breaks) are sufficient for a full answer, so this is low impact.
+- **Status:** ☐ Open
+
+### [m-19] Lesson 007 — Testmoz section header rows
 - **Dimension:** Structure & Metadata
-- **Location:** `007_A - Safety structured assessment/Rubric.docx`
-- **Problem:** Rubric.docx exists but is not in the canonical file list for A-type lessons (Rubric.pdf is). This is likely the source file used to generate Rubric.pdf.
-- **Suggested action:** If Rubric.docx is the editable source, consider keeping it but noting it as a source file. If not needed, delete it.
-- **Status:** ☐ Open
-
-### [m-07] Lesson 001 — Teacher_Plan references image not provided
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `001_L/Teacher_Plan.docx` (Dėstymas section)
-- **Problem:** Plan says "parodykite ekrane žmogų, sėdintį netaisyklingai prie kompiuterio" (show image of incorrect posture) but no such image is in the Visual_Aid or any other material.
-- **Suggested action:** Either add an incorrect-posture example to Visual_Aid, or change the Teacher_Plan instruction to describe the scenario verbally.
-- **Status:** ☐ Open
-
-### [m-08] Lesson 001 — Informal "tu" in Teacher_Plan scripted question
-- **Dimension:** Lithuanian Language
-- **Location:** `001_L/Teacher_Plan.docx` (opening question 1)
-- **Problem:** "Ar tau kartais skauda nugarą..." uses informal singular. Student-facing text should use formal "jūs". This is a scripted question the teacher reads aloud.
-- **Suggested action:** Change to "Ar jums kartais skauda nugarą..." when regenerating. Accept as-is if the teacher deliberately uses informal register in spoken interaction.
-- **Status:** ☐ Open
-
-### [m-09] Lesson 002 — Visual_Aid key concepts split across two slides
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `002_L/Visual_Aid.pdf` (slides 5-6)
-- **Problem:** 5 concept definitions split across 2 slides, with just "Slaptažodžių valdyklė" alone on slide 6. Awkward projection flow.
-- **Suggested action:** Consolidate to 4 terms on one slide (per lessons.md hard cap of 4 terms per slide). Cut or combine one term.
-- **Status:** ☐ Open
-
-### [m-10] Lesson 003 — Grammatical error "prisistatoma"
-- **Dimension:** Lithuanian Language
-- **Location:** `003_L/003_L_Internetines_rizikos_Theory_Pack.pdf` (page 3, socialinė inžinerija section)
-- **Problem:** "sukčius prisistatoma IT darbuotoju" uses impersonal passive. Should be "sukčius prisistato IT darbuotoju" (masculine singular active).
-- **Suggested action:** Fix to "sukčius prisistato IT darbuotoju" when regenerating Theory Pack.
-- **Status:** ☐ Open
-
-### [m-11] Lesson 003 — Oral/written modality mismatch
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `003_L/Teacher_Plan.docx` (savarankiška užduotis) vs `Student_Task.pdf`
-- **Problem:** Teacher_Plan says students answer "žodžiu" (orally). Student_Task says "Atsakinėsite žodžiu arba rašysite šiame lape." Teacher_Plan doesn't mention the written option.
-- **Suggested action:** Update Teacher_Plan to mention both modalities.
-- **Status:** ☐ Open
-
-### [m-12] Lesson 004 — Calque "Kas yra skirtumas tarp X ir Y"
-- **Dimension:** Lithuanian Language
-- **Location:** `004_L/Teacher_Plan.docx` (warm-up question 2)
-- **Problem:** "Kas yra skirtumas tarp klaidingos informacijos ir dezinformacijos?" is an English calque of "What is the difference between X and Y?" The Visual_Aid correctly uses "Kuo skiriasi X nuo Y?"
-- **Suggested action:** Replace with "Kuo skiriasi klaidinga informacija nuo dezinformacijos?" to match Visual_Aid.
-- **Status:** ☐ Open
-
-### [m-13] Lesson 004 — Student_Task has no allocated lesson time
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `004_L/Teacher_Plan.docx` and `Student_Task.pdf`
-- **Problem:** The lesson is ~80/20 teacher-led lecture with no independent writing phase. The Student_Task (fill a 4-row table) has no time allocated. README says no homework. Unclear when students complete it.
-- **Suggested action:** Add a note in Teacher_Plan: Student_Task is an optional reinforcement sheet. Or carve out 5-8 min of lesson time for at least one row.
-- **Status:** ☐ Open
-
-### [m-14] Lesson 004 — Statistics inconsistency between Teacher_Plan and Theory_Pack
-- **Dimension:** Content & Pedagogical Coherence
-- **Location:** `004_L/Teacher_Plan.docx` vs `Theory_Pack`
-- **Problem:** Teacher_Plan: "~60 mln. tonų, ~20 %." Theory_Pack: "62 mln. tonų, ~22 %." Close but not identical.
-- **Suggested action:** Align Teacher_Plan to Theory_Pack's figures (62 mln. t, 22 %), or mark Teacher_Plan values as rounded.
-- **Status:** ☐ Open
-
-### [m-15] Lesson 004 — Space before colon in Visual_Aid
-- **Dimension:** Lithuanian Language
-- **Location:** `004_L/Visual_Aid.pdf` (slide 5, all 4 concept definitions)
-- **Problem:** "Duomenų centras : pastatas..." has a space before colon. Lithuanian punctuation requires no space before colon.
-- **Suggested action:** Remove space before colon in all 4 definitions when regenerating.
-- **Status:** ☐ Open
-
-### [m-16] Lesson 004 — Formulaic definitional pattern in Theory_Pack
-- **Dimension:** Lithuanian Language
-- **Location:** `004_L/004_L_ST_poveikis_aplinkai_Theory_Pack.pdf` (pages 2-3)
-- **Problem:** Repeated "[Term], tai [definition]" pattern for multiple definitions. This is a detectable AI text pattern.
-- **Suggested action:** Vary phrasing when regenerating: "E-atliekomis vadinami...", "Kas yra skaitmeninis pėdsakas? Tai...", etc.
+- **Location:** `007_A/Assessment_Task.xlsx` (rows 1, 158, 200)
+- **Problem:** Section headers ("I DALIS. Uždari klausimai...") are non-standard Testmoz rows. May be ignored on import or may cause errors depending on parser version.
+- **Suggested action:** Test Testmoz import. If headers cause issues, remove them from the import file.
 - **Status:** ☐ Open
 
 ---
@@ -195,23 +212,46 @@ Generated: 2026-03-30 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 ## Cross-Lesson Findings
 > Issues that span multiple lessons (Bloom progression, prerequisite gaps, etc.)
 
-### [X-01] Bloom regression from lesson 003 to 004
+### [X-01] Bloom regression from lesson 003 to 004 (carried forward)
 - **Dimension:** Content & Pedagogical Coherence
-- **Lessons involved:** 003, 004
-- **Problem:** Lesson 003 reaches Bloom level 3 (Apply: students apply the safe response algorithm to new scenarios). Lesson 004 drops back to level 2 (Understand: students explain cause-effect relationships). While the topic change (online risks → environmental impact) can justify a reset, the downward progression within the same module is worth noting. The integration lesson (005) and assessment (007) both operate at Apply level, so the module's arc is: Understand → Understand → Apply → Understand → Apply → Understand → Apply. The mid-module dip in 004 breaks the upward trend.
-- **Suggested action:** Consider whether lesson 004 could include an Apply-level component (e.g., students evaluate their own digital footprint or propose a reduction plan rather than just explaining concepts). This is a design decision, not a defect.
+- **Lessons involved:** 003 (Apply), 004 (Understand)
+- **Problem:** Same as previous report. Lesson 003 reaches Bloom 3 (Apply), lesson 004 drops to Bloom 2 (Understand). The module arc is: Understand → Understand → Apply → Understand → Apply → Apply → Apply. The mid-module dip at 004 is a design choice, not a defect.
+- **Suggested action:** Design decision for teacher. Consider adding an Apply-level component to lesson 004 (e.g., evaluate own digital footprint).
+- **Status:** ☐ Open (carried forward, design decision)
+
+### [X-02] Break interval terminology inconsistent across module
+- **Dimension:** Content & Pedagogical Coherence
+- **Lessons involved:** 001, 006
+- **Problem:** Lesson 001 Theory_Pack cites HN 32:2004: "po kiekvienos valandos." Lesson 001 Teacher_Plan says "45–50 min." Lesson 006 Teacher_Plan says "45–60 min." Lesson 006 Answer_Key says "30–45 min." A student comparing materials across lessons gets four different break intervals for the same safety rule.
+- **Suggested action:** Pick one authoritative figure (HN 32:2004: "kas valandą" = 60 min) and standardize across all documents.
 - **Status:** ☐ Open
 
-### [X-02] Lesson 004 prerequisite not taught in prior lessons
-- **Dimension:** Content & Pedagogical Coherence
-- **Lessons involved:** 001, 002, 003, 004
-- **Problem:** Lesson 004 README lists as prerequisite: "Supranta, kad internetas naudoja fizinę infrastruktūrą (serverius, laidus), o ne tik 'debesis'." This concept is not explicitly taught in lessons 001-003. It's labeled as "bendra patirtis" (general experience), which may be a stretch for Grade 9 students who are assumed to have never touched a computer.
-- **Suggested action:** Either add a brief mention of internet infrastructure to lesson 003 (e.g., in the phishing section: "phishing emails travel through physical servers"), or add a 2-minute primer to lesson 004's warm-up. Alternatively, accept as-is if the teacher handles it verbally.
-- **Status:** ☐ Open
-
-### [X-03] Practice-vs-assessment comparison not possible
+### [X-03] Practice-vs-assessment Bloom parity instead of progression
 - **Dimension:** Content & Pedagogical Coherence
 - **Lessons involved:** 006, 007
-- **Problem:** Both the practice lesson (006_P) and assessment lesson (007_A) are incomplete per canonical file requirements. Content audit was skipped for both. Cannot verify whether practice is harder than assessment, whether assessment only tests taught material, or whether there is proper scaffolding between the two.
-- **Suggested action:** Complete missing files for lessons 006 and 007, then re-run module QA or manually verify practice-harder-than-assessment principle.
-- **Status:** ☐ Open
+- **Problem:** Previous report (X-03) found practice=L2 and assessment=L3. New audit reveals practice actually reaches L3 (Apply) through its scenario questions. This means practice and assessment are at the same Bloom level, not practice-harder-than-assessment. The practice does have more scaffolding (sub-parts, hints) which makes it easier in execution, so the effective difficulty progression is acceptable.
+- **Suggested action:** No action required. Bloom levels are equal but practice is more scaffolded, creating appropriate difficulty progression. Informational only.
+- **Status:** ☐ Closed (acceptable)
+
+---
+
+## Previous Report Comparison
+
+### Fixed and confirmed (23 issues)
+All 23 issues marked as fixed in the 2026-03-30 report are confirmed fixed in the current files: C-01, M-01 through M-07, m-01 through m-03, m-05 through m-16, X-02, X-03.
+
+### Regressions (4 issues)
+| Previous ID | Description | What happened |
+|-------------|-------------|---------------|
+| m-01/m-03 | Em dashes in READMEs | Fixed for 001-004, but 002, 003, 004 READMEs now have them again (likely regenerated after fix) |
+| m-16 | Formulaic ", tai" patterns in 004 Theory_Pack | Fixed in .docx but PDF not regenerated — students get stale version |
+| (new scope) | Em dashes in 007 Teacher_Plan | Was not in previous audit scope (only L1-L4 were audited) |
+
+### Still open (2 issues, carried forward)
+| Previous ID | Current ID | Description |
+|-------------|------------|-------------|
+| m-04 | m-02 | Theory_Pack naming non-canonical |
+| X-01 | X-01 | Bloom regression 003→004 (design decision) |
+
+### New issues (22)
+8 Major + 14 Minor new issues found, primarily in lessons 005–007 which were not deeply content-audited in the previous report.

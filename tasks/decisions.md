@@ -268,6 +268,14 @@ The following are **not yet decided** and need resolution:
 
 **Rationale**: Per-lesson skills optimize individual outputs but cannot reason about module-wide coherence. A pre-generation design document forces the teacher (with Claude's help) to make explicit decisions about progression, prerequisites, and assessment alignment before any content is generated. The gate is soft (warn, don't block) because rigid enforcement would slow down exploratory work on early modules.
 
+## 2026-03-30 — Em dash removed at code level, not by prompt
+
+**Decision**: All 7 generation skills (lesson-plan-gen, student-task-gen, theory-pack-gen, visual-aid-gen, practice-task-gen, assessment-task-gen, answer-key-gen) require a mechanical `noEmDash` / `no_em_dash` helper in every generation script. The helper strips U+2014 (em dash) from all text strings before document insertion. JS: `const noEmDash = (s) => s.replace(/\u2014/g, ':');`. Python: `def no_em_dash(s): return s.replace('\u2014', ':')`.
+
+**Context**: Em dash appeared repeatedly in generated documents despite being banned in CLAUDE.md, lt-mistakes.yaml, and lessons.md. QA report on 01_Safety confirmed the ban was ineffective (issues m-01, m-02, m-03). LLMs produce em dashes naturally regardless of prompt-level rules.
+
+**Rationale**: Automated code-level replacement is the only reliable fix. Prompt instructions and QA checklists both depend on LLM compliance, which cannot be guaranteed. A one-line string replace in the script is deterministic and costs nothing.
+
 ## 2026-03-30 — end-session file verification uses canonical requirements
 
 **Decision**: The end-session skill now reads `.claude/skills/end-session/references/file_requirements.md` (Step 1d) as the source of truth for lesson completeness. Būsena can only reach "✅ Failai sukurti" when all canonically required files exist on disk, not just when the README table has no ❌ rows.

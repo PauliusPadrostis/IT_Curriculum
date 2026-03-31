@@ -72,9 +72,9 @@ Bus papildyta po pirmos pamokos vykdymo.
 | Laikas    | Etapas                          | Veikla                                                       |
 |-----------|---------------------------------|--------------------------------------------------------------|
 | 0–4 min   | Pamokos pradžios klausimai      | Žodinis: 3 klausimai iš praėjusios pamokos (internetinės rizikos) |
-| 4–26 min  | Dėstymas (neigiamas poveikis)   | Energijos suvartojimas, e-atliekos, individualus pėdsakas     |
-| 26–31 min | Dėstymas (teigiamas poveikis)   | ST kaip aplinkosaugos įrankis: monitoringas, žemėlapiai, duomenų analizė |
-| 31–34 min | Trumpa refleksija               | Žodinis: mokiniai įvardina po 1 veiksmą šiai savaitei         |
+| 4–22 min  | Dėstymas (neigiamas poveikis)   | Energijos suvartojimas, e-atliekos, individualus pėdsakas     |
+| 22–30 min | Dėstymas (teigiamas poveikis)   | ST kaip aplinkosaugos įrankis: monitoringas, žemėlapiai, duomenų analizė |
+| 30–34 min | Trumpa refleksija               | Žodinis: mokiniai įvardina po 1 veiksmą šiai savaitei         |
 | 34–37 min | Pamokos pabaigos klausimai      | Žodinis: energija vs tekstas, e-atliekos, ST nauda aplinkai   |
 
 ---

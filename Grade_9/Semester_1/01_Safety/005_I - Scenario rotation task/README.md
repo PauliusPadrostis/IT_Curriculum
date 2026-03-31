@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 005 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                             |
+| **Būsena**      | ✅ Failai sukurti                                   |
 
 ---
 
@@ -96,7 +96,7 @@ Nėra.
 |----------------------|--------|------------|------------------------------------------|
 | Teacher_Plan.docx    | ✅     | ❌         | Privalomas                               |
 | Student_Task.pdf     | ✅     | ❌         | Scenarijų kortelės ir sprendimų lapas    |
-| Visual_Aid.pdf       | ❌     | ❌         | Trūksta (privalomas I tipo pamokoms)     |
+| Visual_Aid.docx      | ✅     | ❌         | 6 skaidrės (privalomas I tipo pamokoms)  |
 
 ---
 

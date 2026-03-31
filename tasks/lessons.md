@@ -48,7 +48,7 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 
 - Problem: Multiple MCQ answer-hinting patterns found: (1) Stem defined the concept being tested ("phishing (sukčiavimas internete)"), making the answer obvious. (2) Parenthetical explanations on password options ("(raidės, skaičiai, simbolis)") spelled out the selection criteria. (3) Stem and correct answer shared distinctive words ("patikimą" in stem, "patikimuose" in answer). (4) Some distractors were absurdly wrong (e.g., "internet slows down from long use"), narrowing by elimination.
 - Rule: (1) Stems must not define or explain the concept being tested. (2) Do not add parenthetical explanations that reveal why an option is correct. (3) No shared distinctive words between stem and correct answer that are absent from distractors. (4) Every distractor must be plausible to an unprepared student. After writing MCQs, review each question: "Could a student who hasn't studied pick the correct answer just from how the question is written?" If yes, rewrite.
-- Applies to: assessment-task-gen, any MCQ generation
+- Applies to: assessment-task-gen, student-task-gen, practice-task-gen, theory-pack-gen, any student-facing material with questions or self-check items
 
 ## 2026-03-28 — MCQ answer length bias and unnatural Lithuanian question stems
 
@@ -109,3 +109,9 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: Slide 5 (Pagrindinės sąvokos) had 5 term items at 28pt/48pt with 200 twip inter-term spacing. Content spilled onto a second page because the vertical budget was never calculated. The skill spec said "4-5 items maximum" without checking whether 5 actually fits.
 - Rule: (1) Every visual aid slide MUST fit on one landscape A4 page. Usable height after margins = ~9638 DXA. Accent bar + spacer = ~1080 DXA. Remaining = ~8558 DXA (~14 content lines at 28pt). (2) Slide 5 hard cap is 4 terms, not 5. (3) Term spacing is 160 twips (not 200). (4) If content overflows, cut items, never reduce font size.
 - Applies to: visual-aid-gen
+
+## 2026-03-31 — Do not create scripts/ or package.json in the repo
+
+- Problem: Created scripts/gen_004L_theory_pack.js and scripts/gen_005I_visual_aid.js in the repo, plus added mammoth to package.json. This directly violates the 2026-03-30 decision "No generation scripts in repo." The decisions file was read at session start but the rule was not followed.
+- Rule: Generation scripts are ephemeral. Run them in-session, keep the output (.docx/.pdf), discard the script. Never write JS files to the repo. Never create or modify package.json. If npm packages are needed for a one-off generation, install them, use them, and clean up before session end.
+- Applies to: all content generation, any session that uses Node.js scripts

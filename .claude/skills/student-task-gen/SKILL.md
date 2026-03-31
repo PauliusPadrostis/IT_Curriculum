@@ -359,6 +359,7 @@ After saving, use `present_files` to share.
 | Stuck? boxes | L only, 1-3 per doc, at genuine high-risk points |
 | Extension | I has Papildoma užduotis. L usually does not (exception: grade 11-12). |
 | Self-check | Simple ☐ checklist, no explanations |
+| Answer leakage | Every self-check question must not narrow the answer space for any task step or scenario. If a checklist item reveals whether the student's work is correct, rephrase to check process, not outcome. |
 | Domain | Code/formula examples match lesson's actual tools |
 | Scope | Requirements don't exceed README/plan scope |
 | Tools | Only approved software |

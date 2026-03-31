@@ -78,7 +78,7 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 
 **Paveikti issues:** m-01, m-02, m-03
 
-### P6 — Atsakymų nutekėjimo taisyklę taikyti visiems student-facing failams
+### ~~P6 — Atsakymų nutekėjimo taisyklę taikyti visiems student-facing failams~~ DONE (2026-03-30)
 
 **Problema:** Student_Task savikontrolės klausimas tiesiogiai atskleidė 3 situacijos atsakymą. 2026-03-28 MCQ hinting taisyklė taikoma tik assessment-task-gen, bet principas universalus.
 

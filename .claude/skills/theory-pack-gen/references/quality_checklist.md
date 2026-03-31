@@ -136,6 +136,7 @@ Use it liberally.
 - [ ] All document sections present (Įvadas through Šaltiniai)
 - [ ] Term table: 5–10 entries, bilingual format
 - [ ] Self-check: 7–8 questions, graduated difficulty
+- [ ] Self-check questions do not leak answers to Student_Task scenarios or exercises (check process, not outcome)
 - [ ] "Sužinok daugiau" has 2–4 current-topic resources (free, accessible)
 - [ ] Spell-checker passes with no issues
 

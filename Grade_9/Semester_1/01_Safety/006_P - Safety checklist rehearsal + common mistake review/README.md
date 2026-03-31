@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 006 iš metų sekos                                 |
-| **Būsena**      | 🚧 WIP                                             |
+| **Būsena**      | ✅ Failai sukurti                                   |
 
 ---
 
@@ -93,7 +93,7 @@ Nėra.
 |------------------------|--------|------------|-------------------------------------------|
 | Teacher_Plan.docx      | ✅     | ❌         | Privalomas                                |
 | Practice_Task.pdf      | ✅     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
-| Answer_Key.pdf         | ❌     | ❌         | Trūksta (privalomas P tipo pamokoms)      |
+| Answer_Key.pdf         | ✅     | ❌         | Atsakymai su paaiškinimais (mokiniams)     |
 
 ---
 
