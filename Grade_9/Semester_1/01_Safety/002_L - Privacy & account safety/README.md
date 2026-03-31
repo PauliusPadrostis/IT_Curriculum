@@ -1,8 +1,8 @@
-# 002_L — Privatumas ir paskyrų sauga
+# 002_L: Privatumas ir paskyrų sauga
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Tipas**       | 📖 L: Mokymosi pamoka                            |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -13,9 +13,9 @@
 
 ## Apžvalga
 
-Mokiniai susipažįsta su skaitmeninės paskyrų saugos pagrindais: stiprių slaptažodžių kūrimo kriterijais, dviejų veiksnių autentifikacijos (2FA) veikimo principu ir jautrių asmeninių duomenų atpažinimu. Pamokoje analizuojamos konkrečios kasdienės situacijos — mokiniai vertina, ar elgesys su duomenimis yra saugus, ir mokosi argumentuoti savo sprendimą.
+Mokiniai susipažįsta su skaitmeninės paskyrų saugos pagrindais: stiprių slaptažodžių kūrimo kriterijais, dviejų veiksnių autentifikacijos (2FA) veikimo principu ir jautrių asmeninių duomenų atpažinimu. Pamokoje analizuojamos konkrečios kasdienės situacijos, mokiniai vertina, ar elgesys su duomenimis yra saugus, ir mokosi argumentuoti savo sprendimą.
 
-**Programos nuoroda:** Saugus elgesys F3.1–F3.4 — „Virtualiųjų aplinkų saugumo nuostatai: stiprus slaptažodis, dviejų faktorių autentifikavimas, privatumo nustatymai."
+**Programos nuoroda:** Saugus elgesys F3.1–F3.4: „Virtualiųjų aplinkų saugumo nuostatai: stiprus slaptažodis, dviejų faktorių autentifikavimas, privatumo nustatymai."
 
 ---
 
@@ -41,9 +41,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 2 — Suprasti**
+**Lygis 2: Suprasti**
 
-Dominuojanti kognityvinė pakopa — paaiškinimas ir interpretavimas: mokiniai aiškina slaptažodžio stiprumo kriterijus, 2FA veikimo principą ir vertina duomenų jautrumo lygį konkrečiose situacijose. Visi tikslai telpa supratimo lygyje.
+Dominuojanti kognityvinė pakopa: paaiškinimas ir interpretavimas. Mokiniai aiškina slaptažodžio stiprumo kriterijus, 2FA veikimo principą ir vertina duomenų jautrumo lygį konkrečiose situacijose. Visi tikslai telpa supratimo lygyje.
 
 ---
 
@@ -55,7 +55,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Supranta, kad internete pateikiama asmeninė informacija gali būti matoma kitiems.
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -93,7 +93,7 @@ Nėra.
 | Failas                              | Būsena | Patikrinta | Pastaba                                         |
 |-------------------------------------|--------|------------|-------------------------------------------------|
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                                      |
-| 002_L_Privatumas_Theory_Pack.pdf    | ✅     | ❌         | Teorijos medžiaga                               |
+| Theory_Pack.pdf                     | ✅     | ❌         | Teorijos medžiaga                               |
 | Student_Task.pdf                    | ✅     | ❌         | Scenarijų vertinimo lapas                       |
 | Visual_Aid.pdf                      | ✅     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
 

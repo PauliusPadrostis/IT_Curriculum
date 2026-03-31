@@ -5,7 +5,7 @@
 
 ---
 
-> **Teacher note:** Pairs well with Tech Foundations — consider co-scheduling the assessment.
+> **Teacher note:** Pairs well with Tech Foundations, consider co-scheduling the assessment.
 
 **Modulio būsena:** 7/7 ✅ Failai sukurti (laukia patikros)
 

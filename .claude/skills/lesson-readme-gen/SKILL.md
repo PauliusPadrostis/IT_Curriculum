@@ -267,7 +267,7 @@ check each criterion during or after the lesson. Avoid vague formulations like "
 supranta" — use "mokinys gali parodyti / paaiškinti / atlikti / atskirti."
 
 **Bloom taksonomijos lygis:**
-- In `minimal` mode: `**TBD** — bus nustatyta, kai pamokos turinys bus parengtas.`
+- In `minimal` mode: `**TBD**: bus nustatyta, kai pamokos turinys bus parengtas.`
 - In `full` mode: infer from available evidence using this hierarchy:
   1. Existing README with justified Bloom level → preserve
   2. Readable lesson content (Teacher_Plan text, task descriptions) that clearly shows
@@ -441,6 +441,15 @@ Before presenting the README, run **Phase 2 (POST-GEN)** from
 `/mnt/skills/user/lt-qa/SKILL.md` on all Lithuanian text in the generated
 README. Focus on: grammar, punctuation (especially em dash elimination),
 VLKK terminology, and naturalness. Fix all issues before proceeding to output.
+
+### 4b-extra — Em dash hard gate
+
+After QA, scan the entire generated README for the em dash character (U+2014: —).
+If ANY em dash is found, replace it before proceeding. Use colon for
+label:value patterns (headings, Bloom level, type field), comma or sentence
+restructuring for inline separators. This check is mandatory and non-skippable.
+The template and all boilerplate strings in this skill are em-dash-free; if one
+appears, it was introduced during generation and must be caught here.
 
 ---
 

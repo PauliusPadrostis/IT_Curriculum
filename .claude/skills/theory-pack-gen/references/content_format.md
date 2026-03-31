@@ -49,7 +49,7 @@ self-contained.
 
 For important tips or research findings. Max 3–4 per document.
 
-### Info Box: "Ar žinojai?" (light green #E2EFDA, left border #548235)
+### Info Box: "Ar žinojote?" (light green #E2EFDA, left border #548235)
 
 For extra-curricular interesting content. NOT assessed. 2–4 sentences each.
 
@@ -69,7 +69,7 @@ social/collaborative tip.
 
 ---
 
-## Section N+2: Pasitikrink save
+## Section N+2: Pasitikrinkite save
 
 7–8 numbered questions spanning achievement levels:
 
@@ -84,7 +84,7 @@ Progress easy to hard. Don't label levels. All answerable from the document.
 
 ---
 
-## Section N+3: Sužinok daugiau
+## Section N+3: Sužinokite daugiau
 
 **Purpose:** Guide students who want to go deeper into the CURRENT topic.
 This is NOT about the next lesson — it is about extending understanding
@@ -105,9 +105,9 @@ of what was just covered.
 **Format:**
 
 ```
-Sužinok daugiau
+Sužinokite daugiau
 
-Jei nori giliau suprasti šią temą:
+Jei norite giliau suprasti šią temą:
 • [resource description + link or search term]
 • [resource description + link or search term]
 • [optional: interesting sub-topic to explore]
@@ -146,7 +146,7 @@ with year.
 | Term table header | white text on #1F4E79, borders single sz=4 auto |
 | Term table rows | `cantSplit: true` |
 | Info box (tip) | bg #DEEAF6, left border #2E75B6 (6pt), outer borders none, italic navy text, `cantSplit: true` |
-| Info box (ar žinojai) | bg #E2EFDA, left border #548235 (6pt), outer borders none, italic green text, `cantSplit: true` |
+| Info box (ar žinojote) | bg #E2EFDA, left border #548235 (6pt), outer borders none, italic green text, `cantSplit: true` |
 | Sources | 9pt (size 18) #808080, spacing after=40 |
 
 ### Paragraph Spacing (TWIPs)

@@ -1,8 +1,8 @@
-# 003_L — Internetinės rizikos ir saugaus reagavimo logika
+# 003_L: Internetinės rizikos ir saugaus reagavimo logika
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Tipas**       | 📖 L: Mokymosi pamoka                            |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -15,7 +15,7 @@
 
 Mokiniai susipažįsta su dažniausiomis internetinėmis grėsmėmis: phishing, socialine inžinerija ir melagienų sklaida. Pamokoje mokoma atpažinti tipinius phishing požymius, suprasti manipuliacijos mechanizmus ir taikyti saugaus reagavimo algoritmą: sustoti → patikrinti → pranešti. Analizuojamos konkrečios situacijos, kuriose mokiniai turi priimti sprendimą.
 
-**Programos nuoroda:** Saugus elgesys F3.1–F3.4 — „Budrumas atidarant el. laiškus; interneto rizikos: priekabiavimas, patyčios, privatumo pažeidimas."
+**Programos nuoroda:** Saugus elgesys F3.1–F3.4: „Budrumas atidarant el. laiškus; interneto rizikos: priekabiavimas, patyčios, privatumo pažeidimas."
 
 ---
 
@@ -41,9 +41,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 3 — Taikyti**
+**Lygis 3: Taikyti**
 
-Kulminacinis pamokos tikslas — pritaikyti saugaus reagavimo algoritmą naujose situacijose. Mokiniai ne tik prisimena ir supranta grėsmių požymius, bet turi savarankiškai nuspręsti, kaip elgtis konkrečiame scenarijuje.
+Kulminacinis pamokos tikslas: pritaikyti saugaus reagavimo algoritmą naujose situacijose. Mokiniai ne tik prisimena ir supranta grėsmių požymius, bet turi savarankiškai nuspręsti, kaip elgtis konkrečiame scenarijuje.
 
 ---
 
@@ -55,7 +55,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Gali atskirti saugų ir nesaugų elgesį su asmeniniais duomenimis (iš pamokos 002).
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -93,7 +93,7 @@ Nėra.
 | Failas                                       | Būsena | Patikrinta | Pastaba                               |
 |----------------------------------------------|--------|------------|---------------------------------------|
 | Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                            |
-| 003_L_Internetines_rizikos_Theory_Pack.pdf   | ✅     | ❌         | Teorijos medžiaga                     |
+| Theory_Pack.pdf                              | ✅     | ❌         | Teorijos medžiaga                     |
 | Student_Task.pdf                             | ✅     | ❌         | Scenarijų analizės lapas              |
 | Visual_Aid.pdf                               | ✅     | ❌         | Phishing požymiai, algoritmo schema   |
 
@@ -102,3 +102,12 @@ Nėra.
 ## Papildomi ištekliai
 
 Nėra.
+
+---
+
+## Trūkstamos vaizdinės medžiagos
+
+Šios vaizdinės priemonės nurodytos Teacher_Plan.docx, bet dar nesukurtos:
+
+1. **Phishing laiško pavyzdys** (fazė: Dėstymas): pavyzdinis phishing el. laiškas su pažymėtais 5 požymiais (netikėtas siuntėjas, skubus tonas, klaidos, įtartina nuoroda, prašymas pateikti duomenis). Šaltinis: sukurti Canva arba parengti ekrano kopiją.
+2. **Algoritmo schema SUSTOTI→PATIKRINTI→PRANEŠTI** (fazė: Dėstymas): vizuali schema su 3 žingsniais ir trumpais paaiškinimais. Šaltinis: sukurti Canva arba SVG diagrama.

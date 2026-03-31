@@ -115,3 +115,33 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: Created scripts/gen_004L_theory_pack.js and scripts/gen_005I_visual_aid.js in the repo, plus added mammoth to package.json. This directly violates the 2026-03-30 decision "No generation scripts in repo." The decisions file was read at session start but the rule was not followed.
 - Rule: Generation scripts are ephemeral. Run them in-session, keep the output (.docx/.pdf), discard the script. Never write JS files to the repo. Never create or modify package.json. If npm packages are needed for a one-off generation, install them, use them, and clean up before session end.
 - Applies to: all content generation, any session that uses Node.js scripts
+
+## 2026-03-31 — "Nešiojamas telefonas" is outdated; use "mobilusis telefonas"
+
+- Problem: Generated "nešiojamojo telefono" in a phishing scenario. All phones are portable now; "nešiojamas telefonas" is an outdated term that sounds like a literal translation.
+- Rule: Use "mobilusis telefonas" or just "telefonas" in all generated content. Never "nešiojamas telefonas" or "nešiojamasis telefonas" when referring to a mobile phone. Added to lt-mistakes.yaml.
+- Applies to: all Lithuanian content generation
+
+## 2026-03-31 — Practice_Task must be referenced in Teacher_Plan for P lessons
+
+- Problem: 006_P Teacher_Plan ran a full 34-min oral session with its own 6 questions + 3 scenarios. Practice_Task.pdf (10 completely different questions) existed in the folder but was never mentioned in the plan. Teacher had two disconnected question sets with no guidance on their relationship.
+- Rule: When generating a P lesson Teacher_Plan where Practice_Task already exists, the plan MUST reference Practice_Task.pdf and explain its role (in-class handout, homework, or self-study). The timeline must account for Practice_Task distribution. Similarly, when practice-task-gen creates a task, it should flag if the Teacher_Plan doesn't reference it.
+- Applies to: lesson-plan-gen, practice-task-gen
+
+## 2026-03-31 — Patching .docx requires PDF reconversion
+
+- Problem: 004 Theory_Pack.docx was patched with text fixes but the PDF was not regenerated. Students receive PDF, so the fix was not effectively deployed. The .docx sat orphaned for a day.
+- Rule: After patching a student-facing .docx, always reconvert to PDF immediately. Delete the .docx if it's supposed to be PDF-only. Add this as a checklist item in the patch workflow.
+- Applies to: any text-only patch to student-facing documents (Theory_Pack, Student_Task, Practice_Task, Answer_Key)
+
+## 2026-03-31 — Em dashes in README template caused recurring regressions
+
+- Problem: The lesson-readme-gen template (assets/readme_template.md) contained em dashes in 3 structural patterns: heading (`# NNN_TYPE — Title`), Bloom level (`**Lygis N — Name**`), and readiness gate boilerplate. Every README generated from this template inherited em dashes. Previous fix sessions did search-and-replace on generated files, but the next regeneration reintroduced them because the template was never patched. The SKILL.md also had one Lithuanian string with an em dash (`**TBD** — bus nustatyta...`) that got copied into generated content.
+- Rule: (1) When fixing a recurring issue in generated content, always check the template/source that generates it, not just the output files. Fixing outputs without fixing the source guarantees regression on next generation. (2) The readme_template.md and all Lithuanian strings in SKILL.md must be em-dash-free. (3) The lesson-readme-gen skill now has a mandatory em dash hard gate (Step 4b-extra) that scans the entire generated README for U+2014 before output.
+- Applies to: lesson-readme-gen, any skill with templates or boilerplate strings that get copied into generated content
+
+## 2026-03-31 — Repo naming conventions must never appear in generated content
+
+- Problem: Four skills leaked internal repo naming into student-facing and teacher-facing materials. practice-task-gen put lesson codes (001_L), type codes (tipas "P"), and file categories (Theory_Pack) into Practice_Task.pdf text and help tables. theory-pack-gen used non-canonical filenames ({NNN}_{T}_{Title}_Theory_Pack.pdf) that exposed lesson codes to students via the filename. answer-key-gen used "Theory_Pack section" in student study key cross-references. lesson-plan-gen referenced "Practice_Task.pdf" by filename in generated teacher plan text. Skills were written from a developer mental model where these names felt natural, but students and teachers should never see repo internals.
+- Rule: (1) Generated content must never contain lesson codes (001_L, 007_A), file category names (Theory_Pack, Student_Task, Practice_Task), or type codes (tipas "P", L tipas). Use descriptive Lithuanian: topic names, "teorijos santrauka", "praktikos užduotis". (2) File outputs use canonical names only (Theory_Pack.pdf, not 001_L_Ergonomika_Theory_Pack.pdf). (3) This rule is now in CLAUDE.md under Content Generation Rules. (4) When writing skill templates or exemplars, always ask: "Would a student understand this text without knowing how the repo is organized?" If no, rewrite.
+- Applies to: practice-task-gen, theory-pack-gen, answer-key-gen, lesson-plan-gen, all content generation skills

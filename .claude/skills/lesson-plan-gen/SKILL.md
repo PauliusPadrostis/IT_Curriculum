@@ -416,6 +416,18 @@ other lesson materials.
    - If the visual aid's slide 5 (key concepts) contains terms not in the
      plan's teaching phase → flag the discrepancy.
 
+4. **Practice_Task.pdf (if it exists on disk, P lessons only):**
+   - Read it. The plan's main activity phase MUST reference the practice task
+     (use "praktikos užduotis" in generated text, not the filename "Practice_Task.pdf"):
+     when it is distributed, how students work with it, and how much time is allocated.
+   - The plan's in-class questions/scenarios MUST match Practice_Task content.
+     Do not create a parallel question set that covers the same topics with
+     different questions. The plan previews and facilitates the Practice_Task,
+     not competes with it.
+   - If the plan has its own questions, they must be warm-up/preview versions
+     of Practice_Task questions, not independent content.
+   - If Practice_Task does not exist yet → skip this check.
+
 ### On mismatch:
 
 - The plan adapts to match existing student-facing materials (Student_Task
@@ -525,6 +537,52 @@ When sources disagree:
 
 If README and curriculum contradict: generate conservatively from README,
 do not expand topic beyond README scope.
+
+---
+
+## Step 4b — Mechanical Em Dash Strip (mandatory, non-skippable)
+
+After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
+run this standalone post-processing step. This is NOT part of the generation
+script — it runs on the saved .docx file as a separate operation.
+
+```python
+import zipfile, os, shutil, tempfile
+
+def strip_em_dashes_from_docx(docx_path):
+    """Strip all em dashes from a .docx file. Runs on the saved file."""
+    tmpdir = tempfile.mkdtemp()
+    with zipfile.ZipFile(docx_path, 'r') as z:
+        z.extractall(tmpdir)
+    docxml = os.path.join(tmpdir, 'word', 'document.xml')
+    with open(docxml, 'rb') as f:
+        data = f.read()
+    em = '\u2014'.encode('utf-8')
+    count = data.count(em)
+    if count > 0:
+        data = data.replace(em, ':'.encode('utf-8'))
+        with open(docxml, 'wb') as f:
+            f.write(data)
+        outfile = docx_path + '.tmp'
+        with zipfile.ZipFile(outfile, 'w', zipfile.ZIP_DEFLATED) as zout:
+            for root, dirs, files in os.walk(tmpdir):
+                for fn in files:
+                    fpath = os.path.join(root, fn)
+                    arcname = os.path.relpath(fpath, tmpdir)
+                    zout.write(fpath, arcname)
+        os.remove(docx_path)
+        shutil.move(outfile, docx_path)
+    shutil.rmtree(tmpdir)
+    return count
+
+# Usage: count = strip_em_dashes_from_docx('Teacher_Plan.docx')
+```
+
+This step is SEPARATE from the noEmDash helper in the generation script.
+The generation script should still use noEmDash as a first line of defense,
+but this post-processing step catches any em dashes the LLM produces despite
+the helper. Both layers must exist. This step must run even if the generation
+script claims to have handled em dashes.
 
 ---
 

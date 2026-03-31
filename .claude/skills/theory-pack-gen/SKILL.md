@@ -70,7 +70,7 @@ at the relevant grade level. Extract:
 - Scope boundary: what students ARE and ARE NOT expected to know
 
 This is the **content boundary**: inside it = main text, interesting extras =
-"Ar žinojai?" boxes, irrelevant = excluded.
+"Ar žinojote?" boxes, irrelevant = excluded.
 
 ### 1c. Grade-level calibration
 
@@ -117,15 +117,15 @@ example-driven, Lithuanian-contextual.
 3. **Core content sections** (2–5) — curriculum sub-topics with info boxes,
    practical examples, simple embedded diagrams where helpful
 4. **Praktiniai patarimai** — 5–8 actionable tips
-5. **Pasitikrink save** — 7–8 self-check questions spanning all achievement levels
-6. **Sužinok daugiau** — resources for deeper exploration of the current topic
+5. **Pasitikrinkite save** — 7–8 self-check questions spanning all achievement levels
+6. **Sužinokite daugiau** — resources for deeper exploration of the current topic
 7. **Šaltiniai** — sources
 
 ### Content depth rules
 
 - Curriculum-required: full explanation, no shortcuts
 - Directly supporting: include if helps understanding
-- Interesting tangential: "Ar žinojai?" boxes only
+- Interesting tangential: "Ar žinojote?" boxes only
 - Unrelated: excluded
 
 ### Diagrams
@@ -148,7 +148,7 @@ Theory_Pack never covers.
    - Read it. For every concept, term, or skill the Student_Task requires
      the student to know or apply, verify it appears in the theory pack's
      main content sections.
-   - For every self-check question in the theory pack's "Pasitikrink save"
+   - For every self-check question in the theory pack's "Pasitikrinkite save"
      section, verify the answer is findable within the theory pack text.
    - Flag any concept in the Student_Task that the theory pack doesn't cover.
      Either add coverage or flag to the teacher.
@@ -159,7 +159,7 @@ Theory_Pack never covers.
      the theory pack omits → add it to the term table.
    - Verify the plan's scope aligns with the theory pack's scope. If the
      plan covers less than the theory pack → the extra content should be
-     in "Ar žinojai?" boxes, not main text.
+     in "Ar žinojote?" boxes, not main text.
 
 3. **Visual_Aid.pdf (if it exists on disk):**
    - Slide 5 key concepts should match theory pack terms. Flag mismatches.
@@ -292,6 +292,46 @@ const noEmDash = (s) => s.replace(/\u2014/g, ':');
 LLMs naturally produce em dashes regardless of prompt instructions.
 Automated code-level replacement is the only reliable fix.
 
+### 6b-ii. Mechanical Em Dash Strip (mandatory, non-skippable)
+
+After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
+run this standalone post-processing step. This is NOT part of the generation
+script — it runs on the saved .docx file as a separate operation.
+
+```python
+import zipfile, os, shutil, tempfile
+
+def strip_em_dashes_from_docx(docx_path):
+    """Strip all em dashes from a .docx file. Runs on the saved file."""
+    tmpdir = tempfile.mkdtemp()
+    with zipfile.ZipFile(docx_path, 'r') as z:
+        z.extractall(tmpdir)
+    docxml = os.path.join(tmpdir, 'word', 'document.xml')
+    with open(docxml, 'rb') as f:
+        data = f.read()
+    em = '\u2014'.encode('utf-8')
+    count = data.count(em)
+    if count > 0:
+        data = data.replace(em, ':'.encode('utf-8'))
+        with open(docxml, 'wb') as f:
+            f.write(data)
+        outfile = docx_path + '.tmp'
+        with zipfile.ZipFile(outfile, 'w', zipfile.ZIP_DEFLATED) as zout:
+            for root, dirs, files in os.walk(tmpdir):
+                for fn in files:
+                    fpath = os.path.join(root, fn)
+                    arcname = os.path.relpath(fpath, tmpdir)
+                    zout.write(fpath, arcname)
+        os.remove(docx_path)
+        shutil.move(outfile, docx_path)
+    shutil.rmtree(tmpdir)
+    return count
+```
+
+This step is SEPARATE from the noEmDash helper in the generation script.
+Both layers must exist. This step must run even if the generation script claims to
+have handled em dashes.
+
 ### 6c. Page breaks
 
 Use `keepNext: true` and `keepLines: true` on all H1 and H3 paragraphs to
@@ -337,10 +377,12 @@ teacher that PDF conversion requires Microsoft Word.
 
 ### File naming
 
-`{NNN}_{T}_{Short_Title}_Theory_Pack.pdf`
+`Theory_Pack.pdf`
 
-The generation script creates `.docx` intermediately, but the final output
-file in the lesson folder must be `.pdf`.
+Always use the canonical name. Do not prefix with lesson codes or titles
+(e.g., never `001_L_Ergonomika_Theory_Pack.pdf`). The generation script
+creates `.docx` intermediately, but the final output file in the lesson
+folder must be `.pdf`.
 
 ---
 

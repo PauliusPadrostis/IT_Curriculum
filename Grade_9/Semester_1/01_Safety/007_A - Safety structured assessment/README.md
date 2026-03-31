@@ -1,8 +1,8 @@
-# 007_A — Saugos struktūrinis vertinimas
+# 007_A: Saugos struktūrinis vertinimas
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📊 A — Vertinimas                                 |
+| **Tipas**       | 📊 A: Vertinimas                                 |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -15,7 +15,7 @@
 
 Formalus struktūrinis vertinimas, apimantis visą saugos modulį: ergonomiką, privatumą ir paskyrų saugą, internetines rizikas ir skaitmeninių technologijų poveikį aplinkai. Testas vykdomas Testmoz platformoje ir apima uždarus klausimus, trumpus atvirus atsakymus bei scenarijų analizę. Rezultatas fiksuojamas kaip pažymys.
 
-**Programos nuoroda:** Saugus elgesys F1.1–F1.4, F2.1–F2.4, F3.1–F3.4 — visų saugos sričių vertinimas.
+**Programos nuoroda:** Saugus elgesys F1.1–F1.4, F2.1–F2.4, F3.1–F3.4: visų saugos sričių vertinimas.
 
 ---
 
@@ -40,7 +40,7 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 3 — Taikyti**
+**Lygis 3: Taikyti**
 
 Vertinime mokiniai ne tik atkuria žinias, bet turi pritaikyti taisykles naujose situacijose (scenarijų analizė). Uždari klausimai tikrina prisimintinimą ir supratimą, tačiau scenarijų dalis kelia kognityvinę paklausą iki taikymo lygio.
 
@@ -90,8 +90,8 @@ Nėra.
 | Failas                | Būsena | Patikrinta | Pastaba                                           |
 |-----------------------|--------|------------|---------------------------------------------------|
 | Teacher_Plan.docx     | ✅     | ❌         | Privalomas                                        |
-| Assessment_Task.xlsx  | ✅     | ❌         | **Privalomas** — Testmoz importo failas           |
-| Rubric.pdf            | ✅     | ❌         | **Bent vienas privalomas** — vertinimo kriterijai |
+| Assessment_Task.xlsx  | ✅     | ❌         | **Privalomas**, Testmoz importo failas           |
+| Rubric.pdf            | ✅     | ❌         | **Bent vienas privalomas**, vertinimo kriterijai |
 | Answer_Key.docx       | ✅     | ❌         | Atsakymų raktas (mokytojo vidinis dokumentas)      |
 
 ---

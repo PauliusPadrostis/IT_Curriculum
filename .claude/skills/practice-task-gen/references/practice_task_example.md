@@ -40,13 +40,13 @@
 [HEADER]
 PRAKTINĖS UŽDUOTYS
 Saugos praktikos užduotys
-9 klasė  •  Sauga  •  tipas „P"
+9 klasė  •  Sauga
 ───────────────────────────────
 ```
 
 ## Ką padarysite
 
-Šiomis užduotimis pasiruošite saugos modulio atsiskaitomajam darbui (007_A). Pasitikrinsite, ką prisimenate iš ergonomikos, privatumo, internetinių grėsmių ir aplinkos poveikio pamokų (001_L, 002_L, 003_L, 004_L). Jei kai kurių atsakymų neprisimenat, skyriuje „Ką daryti, jei sunku" rasite nuorodas į konkrečias temas.
+Šiomis užduotimis pasiruošite saugos modulio atsiskaitomajam darbui. Pasitikrinsite, ką prisimenate iš ergonomikos, privatumo, internetinių grėsmių ir aplinkos poveikio pamokų. Jei kai kurių atsakymų neprisimenat, skyriuje „Ką daryti, jei sunku" rasite nuorodas į konkrečias temas.
 
 ## Užduotys
 
@@ -143,7 +143,7 @@ Saugos praktikos užduotys
 
 | Tema | Kur peržiūrėti |
 |------|----------------|
-| Ergonomika | 001_L, Theory_Pack: sėdėjimo laikysena, ekrano padėtis, 20-20-20 taisyklė |
-| Privatumas ir paskyrų sauga | 002_L, Theory_Pack: stiprus slaptažodis, 2FA, saugus elgesys su duomenimis |
-| Internetinės grėsmės | 003_L, Theory_Pack: phishing požymiai, socialinė inžinerija, sustoti-patikrinti-pranešti |
-| Skaitmeninių technologijų poveikis aplinkai | 004_L, Theory_Pack: energijos suvartojimas, e-atliekos, skaitmeninis pėdsakas |
+| Ergonomika | Teorijos santrauka: sėdėjimo laikysena, ekrano padėtis, 20-20-20 taisyklė |
+| Privatumas ir paskyrų sauga | Teorijos santrauka: stiprus slaptažodis, 2FA, saugus elgesys su duomenimis |
+| Internetinės grėsmės | Teorijos santrauka: phishing požymiai, socialinė inžinerija, sustoti-patikrinti-pranešti |
+| Skaitmeninių technologijų poveikis aplinkai | Teorijos santrauka: energijos suvartojimas, e-atliekos, skaitmeninis pėdsakas |

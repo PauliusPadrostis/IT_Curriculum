@@ -156,7 +156,7 @@ not the full task sheet.
 [spacing: 400 twips]
 [term list, each on its own line]
   [term: bold, TEACHING_ACCENT, 28pt] {Term}
-  [colon + definition: BODY_TEXT, 24pt]  : {one-line definition}
+  [colon + definition: BODY_TEXT, 24pt]: {one-line definition}
   [spacing between terms: 160 twips]
 ```
 

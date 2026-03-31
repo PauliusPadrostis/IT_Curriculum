@@ -7,6 +7,7 @@ Generated: 2026-03-31 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 - By dimension: Structure (3) | Content (14) | Language (10)
 - Lessons skipped (incomplete): none
 - **Comparison to previous report (2026-03-30):** 23 of 24 original issues confirmed fixed. 1 still open (m-04). 4 regressions found. 22 new issues found (mostly in lessons 005–007 which were not deeply audited last time).
+- **Fix pass (2026-03-31):** All 8 Major issues resolved (7 fixed, 1 partial). Root cause fixes applied to 7 generation skills (em dash strip, Practice_Task cross-reference). 4 entries added to lt-mistakes.yaml. 3 rules added to lessons.md.
 
 ---
 
@@ -17,57 +18,57 @@ Generated: 2026-03-31 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `001_L - Ergonomics & healthy computer use/Teacher_Plan.docx` (Dėstymas, 20-20-20 section)
 - **Problem:** Teacher_Plan says "20 pėdų (~6 m)" mixing imperial and metric. All other documents (Theory_Pack, Student_Task) use only metric (6 metrų). "Pėda" is not a standard Lithuanian unit and will confuse Grade 9 students.
-- **Suggested action:** Replace "20 pėdų (~6 m)" with "~6 metrų" in Teacher_Plan.docx. Re-run lesson-plan-gen or edit manually.
-- **Status:** ☐ Open
+- **Suggested action:** Replace "20 pėdų (~6 m)" with "6 m (20 pėdų)" in Teacher_Plan.docx. Lithuanian measurement standards take priority.
+- **Status:** ☑ Fixed (2026-03-31: patched "20 pėdų (~6 m)" → "6 m (20 pėdų)" via XML patch)
 
 ### [M-02] Lesson 003 — Online risks: Visual_Aid missing phishing example and algorithm slides
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `003_L - Online risks & safe response logic/Visual_Aid.pdf`
 - **Problem:** Teacher_Plan contains two explicit projection instructions: (1) "Parodykite skaidrėje phishing laiško pavyzdį" and (2) "Parodykite algoritmo schemą skaidrėje." Visual_Aid has neither — only 6 generic slides (title, retrieval, objectives, task brief, concepts, closing). The teacher must improvise visuals for the two core teaching moments. For Grade 9 students who have never seen phishing, a visual example is important.
-- **Suggested action:** Regenerate Visual_Aid.pdf with visual-aid-gen to include: (a) mock phishing email with 5 signs highlighted, (b) SUSTOTI→PATIKRINTI→PRANEŠTI algorithm as a visual schema.
-- **Status:** ☐ Open
+- **Suggested action:** Teacher will generate additional visuals manually. Missing visuals should be marked in lesson README (convention TBD).
+- **Status:** ☑ Partial (2026-03-31: missing visuals marked in lesson README. Teacher will create visuals manually.)
 
 ### [M-03] Lesson 004 — Environmental impact: Theory_Pack PDF is stale
 - **Dimension:** Structure & Metadata
 - **Location:** `004_L - Environmental impact of digital technologies/`
 - **Problem:** Theory_Pack.docx (dated 2026-03-31) contains the m-16 fix (varied definition patterns), but Theory_Pack.pdf (dated 2026-03-30) still has the old formulaic ", tai" patterns. Students receive the PDF, so the fix is not effectively deployed. Additionally, the .docx is an orphaned source file.
-- **Suggested action:** Convert .docx to PDF to replace the stale PDF. Delete the .docx after conversion. Requires LibreOffice or manual conversion.
-- **Status:** ☐ Open
+- **Suggested action:** Convert .docx to PDF to replace the stale PDF. Delete the .docx after conversion.
+- **Status:** ☑ Fixed (2026-03-31: docx2pdf converted, .docx deleted)
 
 ### [M-04] Lesson 005 — Integration: Teacher_Plan typo "nušiotojo"
 - **Dimension:** Lithuanian Language
 - **Location:** `005_I - Scenario rotation task/Teacher_Plan.docx` (Scenarijų rotacija, scenario 5)
-- **Problem:** Text says "nušiotojo telefono laimikis" instead of "nešiojamojo telefono laimikis". A factual text corruption that would confuse the teacher reading aloud. Student_Task.pdf has the correct version.
-- **Suggested action:** Replace "nušiotojo" with "nešiojamojo" in Teacher_Plan.docx.
-- **Status:** ☐ Open
+- **Problem:** Text says "nušiotojo telefono laimikis" — two errors: (1) "nušiotojo" is corrupted text, (2) should be "mobiliojo telefono laikiklis" not "nešiojamojo telefono laimikis". "Nešiojamas telefonas" is outdated (all phones are portable). "Laimikis" (prize) should be "laikiklis" (holder).
+- **Suggested action:** Replace with "mobiliojo telefono laikiklis" in Teacher_Plan.docx.
+- **Status:** ☑ Fixed (2026-03-31: patched "nušiotojo telefono laimikis" → "mobiliojo telefono laikiklis" via XML patch)
 
 ### [M-05] Lesson 005 — Integration: Teacher_Plan scenario 6 text mismatch
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `005_I - Scenario rotation task/Teacher_Plan.docx` (Scenarijų rotacija, scenario 6)
 - **Problem:** Teacher_Plan says "Mokinys keičia senus nešiojamąjį ir telefoną į naujus kasmet" — grammatically broken and missing "kompiuterį". Student_Task.pdf says "Mokinys keičia nešiojamąjį kompiuterį ir telefoną į naujus kasmet". Teacher reading aloud from the plan will deliver garbled text.
 - **Suggested action:** Align Teacher_Plan scenario 6 text to Student_Task.pdf wording.
-- **Status:** ☐ Open
+- **Status:** ☑ Fixed (2026-03-31: patched "senus nešiojamąjį ir telefoną" → "nešiojamąjį kompiuterį ir telefoną")
 
 ### [M-06] Lesson 006 — Practice: Unclear relationship between Teacher_Plan questions and Practice_Task
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `006_P - Safety checklist rehearsal + common mistake review/Teacher_Plan.docx` vs `Practice_Task.pdf`
 - **Problem:** Teacher_Plan contains its own 6 short questions + 3 scenarios. Practice_Task.pdf contains a completely different set of 10 questions. There is no instruction in the Teacher_Plan about when or how Practice_Task is used. The 34-min timeline doesn't account for Practice_Task at all. A teacher has two separate question sets with no guidance on their relationship.
-- **Suggested action:** Add a clear note in Teacher_Plan explaining Practice_Task.pdf's role (e.g., post-class self-study, or replace the in-class questions). Integrate Practice_Task into the timeline if it's meant for in-class use.
-- **Status:** ☐ Open
+- **Suggested action:** Add a clear note in Teacher_Plan explaining Practice_Task.pdf's role. Integrate Practice_Task into the timeline if it's meant for in-class use.
+- **Status:** ☑ Fixed (2026-03-31: rewrote Phase 3 to match Practice_Task.pdf questions. 6 oral + 3 scenarios replaced with Practice_Task Q1-Q10 structure. Also fixed 6 em dashes.)
 
 ### [M-07] Lesson 007 — Assessment: Answer_Key grammatical error
 - **Dimension:** Lithuanian Language
 - **Location:** `007_A - Safety structured assessment/Answer_Key.docx` (question 3)
 - **Problem:** "Apgaulingą žinutė" uses wrong case — should be "Apgaulinga žinutė" (nominative). Appears in both the answer line and grading table. Assessment_Task.xlsx has the correct form, so the Answer_Key is inconsistent with the test.
 - **Suggested action:** Fix "Apgaulingą žinutė" to "Apgaulinga žinutė" in both occurrences in Answer_Key.docx.
-- **Status:** ☐ Open
+- **Status:** ☑ Fixed (2026-03-31: patched 3 errors — Apgaulingą→Apgaulinga ×2, retųž→retųjų, nesuprasėtų→nesuprastų. Added to lt-mistakes.yaml)
 
 ### [M-08] Lesson 007 — Assessment: Em dashes in Teacher_Plan (regression)
 - **Dimension:** Lithuanian Language
 - **Location:** `007_A - Safety structured assessment/Teacher_Plan.docx` (lines 3, 18, 28)
 - **Problem:** Three em dashes found: "A — Vertinimo pamoka", "Trumpas paaiškinimas — ~2 min.", "Vertinimo užduotis — ~35 min." Em dash is banned. Previous report m-01 marked this as fixed for lessons 001–004, but lesson 007 was not covered then.
-- **Suggested action:** Replace all three em dashes with colons. Re-run lesson-plan-gen for 007 or edit manually.
-- **Status:** ☐ Open
+- **Suggested action:** Replace all three em dashes with colons.
+- **Status:** ☑ Fixed (2026-03-31: 3 em dashes replaced with colons via XML patch)
 
 ---
 
@@ -79,56 +80,62 @@ Generated: 2026-03-31 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 - **Location:** `002_L/README.md` (1 instance in Apžvalga), `003_L/README.md` (6 instances), `004_L/README.md` (title)
 - **Problem:** Previous report m-03 marked em dash removal from all lesson READMEs as fixed. Current scan shows em dashes have returned or persisted in at least 3 lesson READMEs. Likely caused by README regeneration after the fix.
 - **Suggested action:** Run a search-and-replace across all lesson READMEs for "—" and replace with appropriate punctuation.
-- **Status:** ☐ Open
+- **Status:** ☑ Fixed (2026-03-31: Root cause: readme_template.md and SKILL.md contained em dashes in structural patterns. Patched template (3 em dashes), SKILL.md (1 Lithuanian string), added em dash hard gate to Step 4b-extra, and fixed all 8 READMEs in module (49 em dashes total). Rule added to lessons.md.)
 
 ### [m-02] Lessons 001–003 — Theory_Pack naming non-canonical (carried forward)
 - **Dimension:** Structure & Metadata
 - **Location:** All L-type lesson folders
 - **Problem:** Theory_Pack files use custom names (e.g., `001_L_Ergonomika_Theory_Pack.pdf`) instead of canonical `Theory_Pack.pdf`. Same as previous report m-04.
 - **Suggested action:** Low priority. Rename when regenerating Theory_Packs for other reasons.
-- **Status:** ☐ Open (carried forward)
+- **Status:** ☑ Fixed (2026-03-31: Renamed 3 files to canonical Theory_Pack.pdf. Patched theory-pack-gen filename pattern. Updated 4 READMEs.)
 
 ### [m-03] Lesson 005 — Visual_Aid format is .docx not .pdf
 - **Dimension:** Structure & Metadata
 - **Location:** `005_I - Scenario rotation task/Visual_Aid.docx`
 - **Problem:** I-type canonical requirement is Visual_Aid.pdf. Only .docx exists (no LibreOffice for conversion). README correctly reflects .docx. Functionally usable but format non-compliant.
 - **Suggested action:** Convert to PDF when LibreOffice becomes available.
-- **Status:** ☐ Open (known limitation)
+- **Status:** ☑ Fixed (2026-03-31: converted .docx→.pdf via docx2pdf, deleted .docx, updated README)
 
 ### [m-04] Lesson 001 — Visual_Aid space before colon on slide 5
 - **Dimension:** Lithuanian Language
 - **Location:** `001_L - Ergonomics & healthy computer use/Visual_Aid.pdf` (slide 5, Pagrindinės sąvokos)
 - **Problem:** Definitions use "Ergonomika : darbo vietos..." with a space before the colon. Previous report m-15 fixed this for lesson 004 but lesson 001 was not checked.
 - **Suggested action:** Regenerate Visual_Aid.pdf with visual-aid-gen, removing spaces before colons.
-- **Status:** ☐ Open
+- **Root cause:** visual_aid_format.md line 159 had `" : {definition}"` with space before colon since first commit. Previous m-15 fix patched lesson 004 output but never fixed the source template. Same pattern as m-01 em dash regression.
+- **Status:** ☑ Fixed (2026-03-31: patched visual_aid_format.md template, regenerated lesson 001 Visual_Aid.pdf via agent)
 
 ### [m-05] Lessons 001, 002 — Theory_Pack informal register in section headers
 - **Dimension:** Lithuanian Language
 - **Location:** `001_L/Theory_Pack.pdf` and `002_L/Theory_Pack.pdf` ("Pasitikrink save", "Sužinok daugiau", "Ar žinojai?")
 - **Problem:** Section headers use informal "tu" register while body text uses formal "jūs". Student materials must use formal address throughout.
 - **Suggested action:** Change to "Pasitikrinkite save", "Sužinokite daugiau", "Ar žinojote?" when regenerating Theory Packs.
-- **Status:** ☐ Open
+- **Root cause:** Skill reference files (content_format.md, quality_checklist.md) were written with informal "tu" headers and quality_checklist.md explicitly sanctioned it as "intentional," contradicting CLAUDE.md's global "jūs" rule. Skill author made an unauthorized design call.
+- **Status:** ☑ Fixed (2026-03-31: patched content_format.md, quality_checklist.md, and SKILL.md to use formal "jūs" throughout. Existing Theory_Pack PDFs for 001/002 still have old headers; will be fixed on next regeneration.)
 
 ### [m-06] Lesson 001 — Theory_Pack straight quotes around HN 32:2004
 - **Dimension:** Lithuanian Language
 - **Location:** `001_L/Theory_Pack.pdf` (page 4, Sužinok daugiau)
 - **Problem:** Uses straight double quotes "Darbas su displėjais" instead of Lithuanian „..." quotation marks.
 - **Suggested action:** Replace with „Darbas su displėjais" when regenerating.
-- **Status:** ☐ Open
+- **Status:** ☑ Closed (2026-03-31: teacher decision — Lithuanian lower-upper quotes not required. Any quote style acceptable. CLAUDE.md updated. Non-issue.)
 
 ### [m-07] Lesson 001 — Break interval inconsistency
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `001_L/Teacher_Plan.docx` vs `001_L/Theory_Pack.pdf`
 - **Problem:** Teacher_Plan: "po 45–50 min." Theory_Pack references HN 32:2004: "po kiekvienos valandos." Close but not identical.
 - **Suggested action:** Align Teacher_Plan to Theory_Pack's HN 32:2004 wording when next editing.
-- **Status:** ☐ Open
+- **Root cause:** Documents generated at different times with no reconciliation. Teacher_Plan used "45–50 min" from general knowledge. Theory_Pack later found HN 32:2004 ("kas valandą") but nobody went back to update the plan. Skills have forward-only cross-checks, no backward reconciliation.
+- **Systemic fix:** CLAUDE.md rule 6 added — reconcile all lesson files when the last file is generated (README table all ✅). The actual content fix (aligning this specific value) deferred to next lesson 001 regeneration or reconciliation pass.
+- **Status:** ☐ Open (content fix pending; systemic fix in place)
 
 ### [m-08] Lesson 001 — "Vaizduoklis" vs "ekranas" terminology split
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `001_L/Theory_Pack.pdf` (vocabulary table) vs `Student_Task.pdf` and `Visual_Aid.pdf`
 - **Problem:** Theory_Pack introduces "Vaizduoklis" as a key term, but Student_Task and Visual_Aid use "ekranas" exclusively. Minor terminology inconsistency.
 - **Suggested action:** Pick one term and use consistently. "Ekranas" is more natural for Grade 9.
-- **Status:** ☐ Open
+- **Root cause:** Same as m-07 — documents generated at different times without reconciliation. Theory_Pack used formal VLKK term "vaizduoklis", other files used colloquial "ekranas."
+- **Systemic fix:** CLAUDE.md rule 6 (reconcile on lesson completion) + automated QA pipeline logged in TODO.md for post-module-2.
+- **Status:** ☐ Open (content fix pending reconciliation pass on lesson 001)
 
 ### [m-09] Lesson 002 — Visual_Aid closing question differs from Teacher_Plan
 - **Dimension:** Content & Pedagogical Coherence

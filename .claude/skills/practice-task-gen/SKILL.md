@@ -172,13 +172,13 @@ Build the document following `practice_task_format.md` structure.
 ```
 [centered, grey #808080, 9pt, allcaps] PRAKTINES UZDUOTYS
 [centered, navy #1F4E79, 18pt bold] {Practice task title in Lithuanian}
-[centered, grey #808080, 10pt] {Grade} klase  *  {Module name}  *  tipas "P"
+[centered, grey #808080, 10pt] {Grade} klase  *  {Module name}
 [navy #1F4E79 horizontal rule, 1pt]
 ```
 
 #### 2. KA PADARYSITE
 
-2-3 sentences linking this practice to the upcoming A lesson. Explains what the student is preparing for. References the A lesson code and the L/I lessons covered.
+2-3 sentences linking this practice to the upcoming assessment. Explains what the student is preparing for. References topics by name (e.g., "ergonomikos, privatumo, internetinių grėsmių pamokų"), never by lesson codes or file category names.
 
 - Second person formal ("jus" form)
 - No motivational fluff. Plain statement of purpose.
@@ -206,7 +206,7 @@ Revision pointers table. One row per topic group.
 
 | Tema | Kur perziureti |
 |------|----------------|
-| {Topic} | {Lesson number}, Theory_Pack: {section reference} |
+| {Topic} | Teorijos santrauka: {section reference} |
 
 ### Grade scaffolding
 
@@ -217,6 +217,17 @@ Revision pointers table. One row per topic group.
 ### Text encoding
 
 Plain UTF-8 for all Lithuanian text. No `\u` unicode escapes except typographic quotes (`\u201E` and `\u201C`) if needed in string context.
+
+---
+
+### Teacher_Plan coherence warning
+
+After generating Practice_Task, check if the paired P lesson's Teacher_Plan.docx
+exists. If it does, warn the teacher:
+
+"Practice_Task.pdf sukurtas. Teacher_Plan.docx šioje pamokoje jau egzistuoja,
+bet gali neatspindėti Practice_Task turinio. Rekomenduojama peržiūrėti ir
+atnaujinti Teacher_Plan, kad jis nukreiptų mokinius į Practice_Task.pdf."
 
 ---
 
@@ -275,6 +286,46 @@ def no_em_dash(s):
 
 LLMs naturally produce em dashes regardless of prompt instructions.
 Automated code-level replacement is the only reliable fix.
+
+### 7b — Mechanical Em Dash Strip (mandatory, non-skippable)
+
+After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
+run this standalone post-processing step. This is NOT part of the generation
+script — it runs on the saved .docx file as a separate operation.
+
+```python
+import zipfile, os, shutil, tempfile
+
+def strip_em_dashes_from_docx(docx_path):
+    """Strip all em dashes from a .docx file. Runs on the saved file."""
+    tmpdir = tempfile.mkdtemp()
+    with zipfile.ZipFile(docx_path, 'r') as z:
+        z.extractall(tmpdir)
+    docxml = os.path.join(tmpdir, 'word', 'document.xml')
+    with open(docxml, 'rb') as f:
+        data = f.read()
+    em = '\u2014'.encode('utf-8')
+    count = data.count(em)
+    if count > 0:
+        data = data.replace(em, ':'.encode('utf-8'))
+        with open(docxml, 'wb') as f:
+            f.write(data)
+        outfile = docx_path + '.tmp'
+        with zipfile.ZipFile(outfile, 'w', zipfile.ZIP_DEFLATED) as zout:
+            for root, dirs, files in os.walk(tmpdir):
+                for fn in files:
+                    fpath = os.path.join(root, fn)
+                    arcname = os.path.relpath(fpath, tmpdir)
+                    zout.write(fpath, arcname)
+        os.remove(docx_path)
+        shutil.move(outfile, docx_path)
+    shutil.rmtree(tmpdir)
+    return count
+```
+
+This step is SEPARATE from the no_em_dash helper in the generation script.
+Both layers must exist. This step must run even if the generation script claims to
+have handled em dashes.
 
 ### 7.2 Generate .docx
 

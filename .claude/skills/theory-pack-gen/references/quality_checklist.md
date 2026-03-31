@@ -53,8 +53,8 @@ Run this AFTER content is fully drafted. This is a separate pass.
 ### Register consistency
 
 - Main body uses **"jūs"** (formal/plural) throughout
-- "Sužinok daugiau" section uses **"tu"** (informal) — this is
-  intentional (inviting, personal tone for optional exploration)
+- All sections use **"jūs"** (formal/plural), including section headers
+  ("Pasitikrinkite save", "Sužinokite daugiau", "Ar žinojote?")
 - **Never mix registers within the same section.** If a section starts
   with "jūs", every verb in that section must be "jūs" form.
 
@@ -137,7 +137,7 @@ Use it liberally.
 - [ ] Term table: 5–10 entries, bilingual format
 - [ ] Self-check: 7–8 questions, graduated difficulty
 - [ ] Self-check questions do not leak answers to Student_Task scenarios or exercises (check process, not outcome)
-- [ ] "Sužinok daugiau" has 2–4 current-topic resources (free, accessible)
+- [ ] "Sužinokite daugiau" has 2–4 current-topic resources (free, accessible)
 - [ ] Spell-checker passes with no issues
 
 ---
@@ -149,7 +149,7 @@ Use it liberally.
 Šaltiniai: X iš Y lietuviški
 Terminologija: [OK | Neaiškių terminų — žr. sąrašą]
 Gramatika: [OK | Pataisyta N vietų]
-Papildomas turinys: [N "Ar žinojai?" intarpų]
+Papildomas turinys: [N "Ar žinojote?" intarpų]
 Diagramos: [Įdėta N | N vietos žymeklių]
 Pastabos mokytojui: [jei yra]
 ```

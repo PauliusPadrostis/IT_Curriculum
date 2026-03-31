@@ -1,8 +1,8 @@
-# 006_P — Saugos kontrolinis sąrašas ir dažnų klaidų peržiūra
+# 006_P: Saugos kontrolinis sąrašas ir dažnų klaidų peržiūra
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📝 P — Pasiruošimas vertinimui                    |
+| **Tipas**       | 📝 P: Pasiruošimas vertinimui                    |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -13,9 +13,9 @@
 
 ## Apžvalga
 
-Pasiruošimo vertinimui pamokoje mokiniai pakartoja visų keturių saugos temų pagrindines sąvokas, atlieka vertinimo formatui artimas užduotis ir išnagrinėja dažniausias klaidas. Pamoka skirta aiškumo dėl vertinimo lūkesčių suteikimui ir likusių spragų identifikavimui prieš kitą pamoką — vertinimą.
+Pasiruošimo vertinimui pamokoje mokiniai pakartoja visų keturių saugos temų pagrindines sąvokas, atlieka vertinimo formatui artimas užduotis ir išnagrinėja dažniausias klaidas. Pamoka skirta aiškumo dėl vertinimo lūkesčių suteikimui ir likusių spragų identifikavimui prieš kitą pamoką, vertinimą.
 
-**Programos nuoroda:** Saugus elgesys F1–F3 (kartojimas) — visų saugos sričių konsolidacija prieš vertinimą.
+**Programos nuoroda:** Saugus elgesys F1–F3 (kartojimas): visų saugos sričių konsolidacija prieš vertinimą.
 
 ---
 
@@ -41,9 +41,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 2 — Suprasti**
+**Lygis 2: Suprasti**
 
-Pamokos esmė — pakartojimas ir supratimo patikrinimas. Mokiniai aiškina sąvokas, atsako į klausimus ir analizuoja tipines klaidas. Nors kai kurios užduotys siekia taikymo (scenarijų analizė), dominuojanti pakopa — supratimo konsolidacija.
+Pamokos esmė: pakartojimas ir supratimo patikrinimas. Mokiniai aiškina sąvokas, atsako į klausimus ir analizuoja tipines klaidas. Nors kai kurios užduotys siekia taikymo (scenarijų analizė), dominuojanti pakopa: supratimo konsolidacija.
 
 ---
 
@@ -55,7 +55,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Gali bent fragmentiškai prisiminti pagrindines sąvokas iš kiekvienos temos.
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -71,7 +71,7 @@ Bus papildyta po pirmos pamokos vykdymo.
 |-----------|---------------------------------|-----------------------------------------------------------|
 | 0–4 min   | Pamokos pradžios klausimai      | Žodinis: greitas kartojimas iš visų temų                   |
 | 4–32 min  | Kartojimas ir reprezentacinės užduotys | Trumpas kartojimas, vertinimo formato klausimai, klaidų analizė |
-| 32–35 min | Pamokos pabaigos klausimai      | Žodinis: įsivertinimas — kas sunkiausia, ką kartoti        |
+| 32–35 min | Pamokos pabaigos klausimai      | Žodinis: įsivertinimas, kas sunkiausia, ką kartoti        |
 
 ---
 

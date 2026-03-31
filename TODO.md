@@ -87,3 +87,24 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 2. student-task-gen kokybės checklist: „Ar kiekvienas savikontrolės klausimas nesusiaurina atsakymų erdvės?"
 
 **Paveikti issues:** M-06
+
+---
+
+## Automated QA pipeline (po 2 modulio turinio generavimo)
+
+**Kada:** kai 2 modulio turinys sugeneruotas ir paruoštas QA.
+
+**Kas:** Pilnas QA pipeline iš skilų:
+
+1. **Detect** (lesson-qa + module-qa) — randa problemas, rašo reportą
+2. **Diagnose** — skaito reportą, leidžia lygiagrečius agentus root cause analizei, atnaujina reportą su radiniais
+3. **Validate** — tikrina ar root cause tikrai teisingas, konsoliduoja jei keli bugai turi tą patį sprendimą
+4. **Fix** — lygiagrečiai agentai taiso problemas, atnaujina reportą
+5. **Archive** — reportas keliauja į `qa/` aplanką repo viduje kaip nuolatinė nuoroda
+
+**Kodėl:**
+- Dabartinis procesas (rankinis QA su mokytoju) veikia, bet nemastelėjamas 12 modulių.
+- 1 modulio QA sesija užtruko ~2 sesijas rankinio darbo. 12 modulių = 24 sesijos vien QA.
+- Pipeline automatizuoja detect→diagnose→fix ciklą, mokytojas tik tvirtina kritinius sprendimus.
+
+**Priklausomybės:** Baigtas 1 modulio rankinis QA (šablonas), sugeneruotas 2 modulio turinys (test case).

@@ -1,4 +1,4 @@
-# [NNN_[TYPE] — Pamokos pavadinimas]
+# [NNN_[TYPE]: Pamokos pavadinimas]
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
@@ -40,7 +40,7 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis [N] — [Pavadinimas]**
+**Lygis [N]: [Pavadinimas]**
 
 [Vienas sakinys: kodėl šis lygis — turi derėti su mokymosi tikslais ir pasirengimo vartais.]
 
@@ -54,7 +54,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - [...]
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 

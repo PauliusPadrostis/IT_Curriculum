@@ -1,8 +1,8 @@
-# 005_I — Scenarijų rotacijos užduotis
+# 005_I: Scenarijų rotacijos užduotis
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 🔧 I — Integravimo pamoka                         |
+| **Tipas**       | 🔧 I: Integravimo pamoka                         |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -13,9 +13,9 @@
 
 ## Apžvalga
 
-Integravimo pamokoje mokiniai pritaiko visų keturių saugos temų žinias (ergonomika, privatumas, internetinės rizikos, aplinkos poveikis) analizuodami naujus, nematytus scenarijus. Kiekvienoje situacijoje reikia identifikuoti problemą, prisiminti atitinkamą taisyklę ir pasiūlyti konkretų veiksmą. Naujos teorijos nėra — mokiniai veikia savarankiškai.
+Integravimo pamokoje mokiniai pritaiko visų keturių saugos temų žinias (ergonomika, privatumas, internetinės rizikos, aplinkos poveikis) analizuodami naujus, nematytus scenarijus. Kiekvienoje situacijoje reikia identifikuoti problemą, prisiminti atitinkamą taisyklę ir pasiūlyti konkretų veiksmą. Naujos teorijos nėra, mokiniai veikia savarankiškai.
 
-**Programos nuoroda:** Saugus elgesys F1–F3 (integracija) — visų saugos sričių žinių pritaikymas naujuose scenarijuose.
+**Programos nuoroda:** Saugus elgesys F1–F3 (integracija): visų saugos sričių žinių pritaikymas naujuose scenarijuose.
 
 ---
 
@@ -41,9 +41,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 3 — Taikyti**
+**Lygis 3: Taikyti**
 
-Mokiniai pritaiko anksčiau išmoktas taisykles ir algoritmus naujose, nematytose situacijose. Nereikia kurti naujų sprendimų — pakanka teisingai atpažinti ir pritaikyti esamą žinių bazę.
+Mokiniai pritaiko anksčiau išmoktas taisykles ir algoritmus naujose, nematytose situacijose. Nereikia kurti naujų sprendimų, pakanka teisingai atpažinti ir pritaikyti esamą žinių bazę.
 
 ---
 
@@ -57,7 +57,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Gali paaiškinti skaitmeninių technologijų poveikį aplinkai (iš pamokos 004).
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -96,7 +96,7 @@ Nėra.
 |----------------------|--------|------------|------------------------------------------|
 | Teacher_Plan.docx    | ✅     | ❌         | Privalomas                               |
 | Student_Task.pdf     | ✅     | ❌         | Scenarijų kortelės ir sprendimų lapas    |
-| Visual_Aid.docx      | ✅     | ❌         | 6 skaidrės (privalomas I tipo pamokoms)  |
+| Visual_Aid.pdf       | ✅     | ❌         | 6 skaidrės (privalomas I tipo pamokoms)  |
 
 ---
 

@@ -1,8 +1,8 @@
-# 004_L — Skaitmeninių technologijų poveikis aplinkai
+# 004_L: Skaitmeninių technologijų poveikis aplinkai
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Tipas**       | 📖 L: Mokymosi pamoka                            |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -15,7 +15,7 @@
 
 Mokiniai nagrinėja skaitmeninių technologijų ir aplinkos ryšį iš dviejų pusių: kaip ST veikia aplinką (energijos suvartojimas, e-atliekos, skaitmeninis pėdsakas) ir kaip ST padeda spręsti aplinkosaugos problemas (monitoringas, duomenų analizė, interaktyvūs žemėlapiai). Pamokoje siejamas kasdienis skaitmeninis elgesys su konkrečiomis pasekmėmis ir aptariami veiksmai poveikiui mažinti.
 
-**Programos nuoroda:** Saugus elgesys F2.1–F2.4 — „Aplinkosaugos problemos ir jų sprendimai: kaip ST padeda spręsti gamtosaugos problemas ir kaip mažinti neigiamą poveikį."
+**Programos nuoroda:** Saugus elgesys F2.1–F2.4: „Aplinkosaugos problemos ir jų sprendimai: kaip ST padeda spręsti gamtosaugos problemas ir kaip mažinti neigiamą poveikį."
 
 ---
 
@@ -43,9 +43,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 2 — Suprasti**
+**Lygis 2: Suprasti**
 
-Dominuojanti kognityvinė pakopa — paaiškinimas: mokiniai aiškina priežasties–pasekmės ryšius tarp skaitmeninio elgesio ir aplinkos poveikio. Trečiasis tikslas (įvardinti veiksmus) remiasi pamokoje aptartais pavyzdžiais, ne savarankišku kūrimu.
+Dominuojanti kognityvinė pakopa: paaiškinimas. Mokiniai aiškina priežasties–pasekmės ryšius tarp skaitmeninio elgesio ir aplinkos poveikio. Trečiasis tikslas (įvardinti veiksmus) remiasi pamokoje aptartais pavyzdžiais, ne savarankišku kūrimu.
 
 ---
 
@@ -57,7 +57,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Gali paaiškinti, kas yra phishing ir kaip saugiai reaguoti (iš pamokos 003).
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -96,7 +96,7 @@ Nėra.
 | Failas                                       | Būsena | Patikrinta | Pastaba                                     |
 |----------------------------------------------|--------|------------|---------------------------------------------|
 | Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                                  |
-| 004_L_ST_poveikis_aplinkai_Theory_Pack.pdf   | ✅     | ❌         | Teorijos medžiaga                           |
+| Theory_Pack.pdf                              | ✅     | ❌         | Teorijos medžiaga                           |
 | Student_Task.pdf                             | ✅     | ❌         | Priežastis, poveikis, sprendimas lapas      |
 | Visual_Aid.pdf                               | ✅     | ❌         | Projekcinė medžiaga (6 skaidrės)            |
 

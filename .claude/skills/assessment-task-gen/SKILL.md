@@ -326,6 +326,46 @@ def no_em_dash(s):
 LLMs naturally produce em dashes regardless of prompt instructions.
 Automated code-level replacement is the only reliable fix.
 
+### Mechanical Em Dash Strip (mandatory, non-skippable)
+
+After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
+run this standalone post-processing step. This is NOT part of the generation
+script — it runs on the saved .docx file as a separate operation.
+
+```python
+import zipfile, os, shutil, tempfile
+
+def strip_em_dashes_from_docx(docx_path):
+    """Strip all em dashes from a .docx file. Runs on the saved file."""
+    tmpdir = tempfile.mkdtemp()
+    with zipfile.ZipFile(docx_path, 'r') as z:
+        z.extractall(tmpdir)
+    docxml = os.path.join(tmpdir, 'word', 'document.xml')
+    with open(docxml, 'rb') as f:
+        data = f.read()
+    em = '\u2014'.encode('utf-8')
+    count = data.count(em)
+    if count > 0:
+        data = data.replace(em, ':'.encode('utf-8'))
+        with open(docxml, 'wb') as f:
+            f.write(data)
+        outfile = docx_path + '.tmp'
+        with zipfile.ZipFile(outfile, 'w', zipfile.ZIP_DEFLATED) as zout:
+            for root, dirs, files in os.walk(tmpdir):
+                for fn in files:
+                    fpath = os.path.join(root, fn)
+                    arcname = os.path.relpath(fpath, tmpdir)
+                    zout.write(fpath, arcname)
+        os.remove(docx_path)
+        shutil.move(outfile, docx_path)
+    shutil.rmtree(tmpdir)
+    return count
+```
+
+This step is SEPARATE from the noEmDash/no_em_dash helper in the generation script.
+Both layers must exist. This step must run even if the generation script claims to
+have handled em dashes.
+
 ### Document generation
 
 Use the docx skill for .docx creation, then convert to PDF via docx2pdf.

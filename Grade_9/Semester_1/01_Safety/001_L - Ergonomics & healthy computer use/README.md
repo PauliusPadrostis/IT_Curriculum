@@ -1,8 +1,8 @@
-# 001_L — Ergonomika ir sveikas kompiuterio naudojimas
+# 001_L: Ergonomika ir sveikas kompiuterio naudojimas
 
 | Laukas          | Reikšmė                                          |
 |-----------------|---------------------------------------------------|
-| **Tipas**       | 📖 L — Mokymosi pamoka                            |
+| **Tipas**       | 📖 L: Mokymosi pamoka                            |
 | **Klasė**       | 9                                                 |
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
@@ -15,7 +15,7 @@
 
 Mokiniai susipažįsta su ergonomikos principais dirbant kompiuteriu: taisyklinga sėdėjimo laikysena, ekrano atstumas ir kampas, rankų padėtis, akių poilsio taisyklė (20-20-20), nuovargį šalinantys pratimai ir darbo–poilsio ritmas. Pamoka pagrindžia, kodėl kiekvienas principas mažina ilgalaikę fizinę įtampą, ir skatina mokinius kritiškai įvertinti savo darbo vietą.
 
-**Programos nuoroda:** Saugus elgesys F1.1 — „Apibūdina saugaus darbo skaitmeninėmis technologijomis normas."
+**Programos nuoroda:** Saugus elgesys F1.1: „Apibūdina saugaus darbo skaitmeninėmis technologijomis normas."
 
 ---
 
@@ -43,9 +43,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 2 — Suprasti**
+**Lygis 2: Suprasti**
 
-Dominuojanti kognityvinė pakopa — paaiškinimas: mokiniai aiškina principų veikimo mechanizmą (kodėl 20-20-20 veikia, kodėl pertraukos reikalingos). Vienas tikslas siekia taikymo (pademonstruoti), tačiau bendra pamokos pakopa — supratimas.
+Dominuojanti kognityvinė pakopa: paaiškinimas. Mokiniai aiškina principų veikimo mechanizmą (kodėl 20-20-20 veikia, kodėl pertraukos reikalingos). Vienas tikslas siekia taikymo (pademonstruoti), tačiau bendra pamokos pakopa: supratimas.
 
 ---
 
@@ -57,7 +57,7 @@ Rekomenduojamos pradinės kompetencijos prieš šią pamoką:
 - Supranta, kad ilgalaikis fizinis veiksnys gali turėti sveikatos pasekmių (bendra patirtis).
 
 💡 Šie teiginiai padeda mokytojui įvertinti mokinių pasirengimą. Jei dalis
-mokinių neatitinka — apsvarstyti papildomą palaikymą arba diferenciaciją.
+mokinių neatitinka, apsvarstyti papildomą palaikymą arba diferenciaciją.
 
 ---
 
@@ -95,7 +95,7 @@ Nėra.
 | Failas                              | Būsena | Patikrinta | Pastaba                          |
 |-------------------------------------|--------|------------|----------------------------------|
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                       |
-| 001_L_Ergonomika_Theory_Pack.pdf    | ✅     | ❌         | Teorijos medžiaga                |
+| Theory_Pack.pdf                     | ✅     | ❌         | Teorijos medžiaga                |
 | Student_Task.pdf                    | ✅     | ❌         | Ergonomikos užduotis             |
 | Visual_Aid.pdf                      | ✅     | ❌         | Vaizdinė medžiaga projekcijai   |
 
