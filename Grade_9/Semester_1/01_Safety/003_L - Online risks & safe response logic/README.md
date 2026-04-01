@@ -103,11 +103,3 @@ Nėra.
 
 Nėra.
 
----
-
-## Trūkstamos vaizdinės medžiagos
-
-Šios vaizdinės priemonės nurodytos Teacher_Plan.docx, bet dar nesukurtos:
-
-1. **Phishing laiško pavyzdys** (fazė: Dėstymas): pavyzdinis phishing el. laiškas su pažymėtais 5 požymiais (netikėtas siuntėjas, skubus tonas, klaidos, įtartina nuoroda, prašymas pateikti duomenis). Šaltinis: sukurti Canva arba parengti ekrano kopiją.
-2. **Algoritmo schema SUSTOTI→PATIKRINTI→PRANEŠTI** (fazė: Dėstymas): vizuali schema su 3 žingsniais ir trumpais paaiškinimais. Šaltinis: sukurti Canva arba SVG diagrama.

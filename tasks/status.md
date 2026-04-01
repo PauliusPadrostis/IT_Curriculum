@@ -6,28 +6,31 @@ Last updated: 2026-04-01
 
 - **Grades in repo:** Grade 9, Grade 10, Grade 11, Grade 12
 - **Modules:** 26 total (Grade 9: 7, Grade 10: 3, Grade 11: 10, Grade 12: 6)
-- **Lesson folders:** 351 total
-- **File completeness:** 0/351 required content files exist (0%) — all folders contain README.md only
-- **Lessons Baigta:** 0 | Failai sukurti: 0 | WIP: 0 | Sablonas: 351
+- **Lesson folders:** 341 total (L: 137, I: 96, P: 30, A: 40, D: 8, T: 12, M: 9, G: 9)
+- **File completeness:** 0/1086 required content files exist (0%) — based on file_requirements.md (L: 4 files, I: 3 files, P: 3 files, A: 4 files; D/T/M/G: no canonical list)
+- **Lessons Baigta:** 0 | Failai sukurti: 0 | WIP: 0 | Sablonas: 341
 
 ## Active Gaps
 
-- **All 351 lessons:** Sablonas (README only). No content generation started for any module.
-- **01_Safety (Grade 9):** 7 lessons ready for regeneration. Skills patched and canonical format locked (DOCX). Must create Module_Design.md before generating (2026-03-30 decision).
-- **003_L missing visuals:** Phishing example and algorithm schema still needed (teacher-created). Tracked in lesson README.
-- **All other modules (344 lessons):** No content generation started.
+- **All 341 lessons:** Sablonas (README only). No content files generated in any module.
+- **01_Safety (Grade 9):** 7 lessons ready for content generation. Module_Design.md created this session. 3 design decisions resolved. 003_L README updated with accurate file table.
+- **Visual_Aid.pdf for 003_L:** Phishing example and algorithm schema still needed (teacher-created). Tracked in lesson README Pastaba column.
+- **All other modules (334 lessons):** No content generation started.
+- **D, T, M, G lesson types (37 lessons):** No canonical file requirements defined. File checks skipped for these types.
 
 ## Structural Notes
 
 - **Output format:** DOCX for all documents except Visual_Aid (PDF) and Assessment_Task (XLSX).
 - **lt-mistakes.yaml:** Lives in _references/. All skill path references updated.
-- **Module READMEs:** All module-level READMEs now have Busena column and summary line (updated this session for Grade 10, 11, 12).
+- **Module READMEs:** All 26 module-level READMEs have Busena column and summary line.
 - **_Theory_Load folders:** Grade 11 (6 packs) and Grade 12 (7 packs). Non-standard folder naming (TL01_ prefix); no lesson README scan applies.
+- **Module_Design.md:** Created in Grade_9/Semester_1/01_Safety/. Not a lesson folder; not subject to lesson file checks.
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
+| 2026-04-01 | Safety module: Module_Design.md created, 3 design decisions resolved, 003_L README updated |
 | 2026-04-01 | end-session skill: Phase 1/2 split implemented; 22 sim tests; 13 patches |
 | 2026-04-01 | Prep session for Safety module regeneration. DOCX canonical format decision. Patched 22 skill/reference files. Deleted 26 stale content files, 17 banned scripts, 24 stale backups, seed-mistakes.yaml, package.json + node_modules. Moved lt-mistakes.yaml to _references/. Updated 45 path refs. Added 2 lessons learned. All 7 Safety lessons reset to Sablonas. |
 | 2026-04-01 | Systemic: deleted 9 stale global skills, fixed skill resolution (personal>project). |
@@ -47,4 +50,3 @@ Last updated: 2026-04-01
 | 2026-03-30 | Generated Answer_Key.pdf (006_P) and Answer_Key.docx (007_A). |
 | 2026-03-30 | Analyzed QA root causes, added 6 TODO items. Multiple fix passes. |
 | 2026-03-30 | Ran module-qa on 01_Safety: 24 issues (1C/7M/16m). |
-| 2026-03-29 | First generation pass: all 7 Safety lesson content files. |

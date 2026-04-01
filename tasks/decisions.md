@@ -406,3 +406,19 @@ The following are **not yet decided** and need resolution:
 **Context**: The previous design dispatched all 5 steps to a single agent. Step 4 (propose decisions/lessons) requires knowing what the teacher said, what was corrected, what format choices were made — context the agent never had. Passing a session summary to the agent is lossy and expensive; the orchestrator already has the full context for free.
 
 **Rationale**: Mechanical steps benefit from clean context (no attention degradation on repetitive file scanning). Judgment steps require session context (decisions and lessons can only be identified from the conversation, not from disk state). Splitting on this boundary gives each phase the right executor for its work type. Three enforcement layers ensure the agent cannot accidentally execute Phase 2 steps.
+
+## 2026-04-01 — Module content generation order: file-type-first with batched agents
+
+**Decision**: When generating a full module, produce all files of the same type across all lessons before moving to the next type. Order: (1) Theory_Packs for all L lessons, (2) Student_Tasks + Visual_Aids in parallel agents, (3) Teacher_Plans for all L/I lessons, (4) remaining lesson files in lesson order (I → P → A). Each batch runs in one agent (3-4 files, same skill). Do not generate lesson-by-lesson (all files for lesson 001, then 002, etc.).
+
+**Context**: Planning session for 01_Safety module (2026-04-01). Two alternatives were considered: lesson-by-lesson and 1-agent-per-file. File-type-first won on both cost and quality grounds.
+
+**Rationale**: (1) Theory_Packs establish canonical factual content — generating them first lets Student_Tasks and Teacher_Plans coherence-check against real files, not just READMEs. (2) Teacher_Plans generated last can reference all existing lesson materials for accuracy. (3) Batching by file type amortizes skill loading cost: one skill loaded once per batch instead of once per file. (4) Lesson-by-lesson would generate Teacher_Plan for 001 before Theory_Packs for 002-004 exist, making cross-lesson references blind.
+
+## 2026-04-01 — 01_Safety module design decisions (locked in Module_Design.md)
+
+**Decision**: Three design choices locked for the Safety module: (1) 004_L Teacher_Plan opens with a 2-minute infrastructure primer ("Internetas nėra debesis — jis veikia per serverius ir duomenų centrus, kurie naudoja elektrą") before the regular review questions, bridging the prerequisite gap for the environmental impact topic. (2) 004_L verbal reflection (30-34 min) replaced with a written independent task: students write 2 concrete actions to reduce their digital footprint. (3) 006_P gains a 10-minute scenario analysis block (22-32 min, no scaffolding, assessment format); Bloom level raised from 2 to 3 to match the assessment ceiling.
+
+**Context**: Module_Design.md sign-off revealed three gaps: 004_L assumed infrastructure knowledge not in Grade 9 baseline; 004_L had Student_Task.docx required but 0 minutes allocated for it; 006_P Bloom level (2) was lower than 007_A Bloom level (3), meaning practice was easier than the test.
+
+**Rationale**: (1) Infrastructure primer costs 2 minutes and removes a prerequisite assumption not safe for Grade 9. (2) Written tasks engage more students than verbal reflection — teacher noted verbal discussions are weak with low participation. (3) Practice must be at least as demanding as assessment; a scenario analysis block directly mirrors the assessment format.

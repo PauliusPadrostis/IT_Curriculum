@@ -41,9 +41,9 @@ Mokinys pasiekė tikslą, kai:
 
 ## Bloom taksonomijos lygis
 
-**Lygis 2: Suprasti**
+**Lygis 3: Taikyti**
 
-Pamokos esmė: pakartojimas ir supratimo patikrinimas. Mokiniai aiškina sąvokas, atsako į klausimus ir analizuoja tipines klaidas. Nors kai kurios užduotys siekia taikymo (scenarijų analizė), dominuojanti pakopa: supratimo konsolidacija.
+Pamokos esmė: pakartojimas, supratimo patikrinimas ir scenarijų analizė. Pirmoji dalis konsoliduoja sąvokas (Bloom 2), paskutiniai 10 min -- savarankiška scenarijų analizė be pagrindų (Bloom 3). Formatas atitinka vertinimą.
 
 ---
 
@@ -70,7 +70,8 @@ Bus papildyta po pirmos pamokos vykdymo.
 | Laikas    | Etapas                          | Veikla                                                    |
 |-----------|---------------------------------|-----------------------------------------------------------|
 | 0–4 min   | Pamokos pradžios klausimai      | Žodinis: greitas kartojimas iš visų temų                   |
-| 4–32 min  | Kartojimas ir reprezentacinės užduotys | Trumpas kartojimas, vertinimo formato klausimai, klaidų analizė |
+| 4–22 min  | Kartojimas ir reprezentacinės užduotys | Trumpas kartojimas, vertinimo formato klausimai, klaidų analizė |
+| 22–32 min | Savarankiška scenarijų analizė  | 2-3 vertinimo formato scenarijai be pagrindų, individualus darbas |
 | 32–35 min | Pamokos pabaigos klausimai      | Žodinis: įsivertinimas, kas sunkiausia, ką kartoti        |
 
 ---
