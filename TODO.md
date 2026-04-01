@@ -108,3 +108,17 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 - Pipeline automatizuoja detect→diagnose→fix ciklą, mokytojas tik tvirtina kritinius sprendimus.
 
 **Priklausomybės:** Baigtas 1 modulio rankinis QA (šablonas), sugeneruotas 2 modulio turinys (test case).
+
+---
+
+## end-session skill revision: split mechanical vs judgment steps
+
+**Kada:** kai bus laisva sesija skill priežiūrai.
+
+**Kas:** end-session skill dabar deleguoja visus 5 žingsnius vienam agentui su švariu kontekstu. Problema: agentas neturi sesijos konteksto, todėl Step 4 (sprendimų/pamokų siūlymas) yra neefektyvus — orkestratoriui reikia iš anksto susiūti visą sesijos santrauką ir perduoti agentui, o agentas vis tiek negali pasiūlyti to, ko nepastebėjo.
+
+**Siūlomas pakeitimas:**
+- Steps 1-3 (folderių skenavimas, README atnaujinimas, status.md perrašymas) — deleguoti agentui (mechaniniai, naudoja švarų kontekstą).
+- Steps 4-5 (sprendimai, pamokos, todo valymas) — vykdyti orkestruojančioje sesijoje, kuri turi pilną sesijos kontekstą.
+
+**Kodėl:** Mechaniniai žingsniai naudojasi švariu kontekstu (nėra attention degradation). Sprendimų žingsniai reikalauja sesijos konteksto (ką mokytojas koregavo, kokios klaidos buvo). Dabartinis dizainas priverčia orkestratoriui dubliuoti kontekstą kaip prompt — tai ir brangiau, ir mažiau patikima.
