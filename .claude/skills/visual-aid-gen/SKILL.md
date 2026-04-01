@@ -33,7 +33,7 @@ sections (retrieval questions, objectives).
 ## Core Concept
 
 A Visual_Aid is **not** generated from scratch. It is a **structured extraction**
-from Teacher_Plan.docx, optionally enriched by Student_Task.pdf and Theory_Pack.pdf.
+from Teacher_Plan.docx, optionally enriched by Student_Task.docx and Theory_Pack.docx.
 
 The 6 slides map directly to the lesson flow:
 
@@ -63,6 +63,9 @@ student work so students can reference key terms without asking the teacher.
 3. `/mnt/skills/user/lesson-plan-gen/references/teacher_profile.md`: teaching
    style, constraints, approved software. Sections 9, 10, and 11 are critical.
 
+**Accumulated corrections (mandatory):**
+4. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
+
 These files are the skill's operational backbone. Do not generate without them.
 
 ---
@@ -76,8 +79,8 @@ These files are the skill's operational backbone. Do not generate without them.
 | 1 | **Teacher_Plan.docx** | Retrieval questions (start + end), objectives, application phase task description, teaching phase content and terminology |
 | 2 | **Lesson README** | Title (Pavadinimas), type (must be L or I), grade, module name |
 | 3 | **Module README** | Module name (for title slide), lesson position in sequence |
-| 4 | **Student_Task.pdf** (optional) | Task requirements, used to prioritize key concepts on slide 5 |
-| 5 | **Theory_Pack.pdf** (optional) | Terminology table, provides definitions for slide 5 |
+| 4 | **Student_Task.docx** (optional) | Task requirements, used to prioritize key concepts on slide 5 |
+| 5 | **Theory_Pack.docx** (optional) | Terminology table, provides definitions for slide 5 |
 
 ### Hard gates
 
@@ -137,19 +140,19 @@ Teacher_Plan teaching phase content.
 
 ## Step 2: Lithuanian QA (PRE-GEN)
 
-Load Lithuanian language rules before writing any text:
+**Lithuanian mistake prevention (mandatory):**
+Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
-1. Read the mistake library: `lt-qa/lt-mistakes.yaml`
-2. Read `/mnt/skills/user/lt-qa/SKILL.md` Phase 1 (PRE-GEN) and follow all
-   loading instructions.
-3. Hard rules that apply to Visual_Aid content:
-   - No em dashes anywhere. Replace with comma, period, colon, or restructure.
-   - Lithuanian „..." quotation marks only (lower-upper).
-   - Formal "jūs" address in any student-facing text.
-   - No AI text patterns (formulaic openings, triad structures, hedging).
-4. **Primary risk areas:** slide 5 term definitions (generated text, not
-   verbatim extraction) and slide 4 task brief (summarized, not verbatim).
-   These require the most careful Lithuanian.
+Hard rules that apply to Visual_Aid content:
+- No em dashes anywhere. Replace with comma, period, colon, or restructure.
+- Straight double quotes "..." only. No Lithuanian „..." required.
+- Formal "jūs" address in any student-facing text.
+- No AI text patterns (formulaic openings, triad structures, hedging).
+
+**Primary risk areas:** slide 5 term definitions (generated text, not
+verbatim extraction) and slide 4 task brief (summarized, not verbatim).
+These require the most careful Lithuanian.
 
 ---
 
@@ -216,10 +219,7 @@ centered horizontally and vertically.
 
 Write all Lithuanian text as plain UTF-8 in the generation script. Never
 use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž).
-
-**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
-opening „ and `\u201C` for closing ") because the closing quote conflicts
-with JavaScript string delimiters.
+Use straight double quotes "..." only. No escapes needed for quotes.
 
 ### 3d. Em dash post-processing
 
@@ -288,13 +288,13 @@ alignment between the visual aid content and sibling lesson files.
 
 ### What to check:
 
-1. **Slide 5 terms vs. Theory_Pack.pdf (if it exists):**
+1. **Slide 5 terms vs. Theory_Pack.docx (if it exists):**
    - Every term on slide 5 must appear in the Theory_Pack's terminology
      table. If a slide 5 term contradicts the Theory_Pack definition →
      use the Theory_Pack definition (it is the authoritative reference).
    - If slide 5 uses a term the Theory_Pack doesn't cover → flag it.
 
-2. **Slide 4 task brief vs. Student_Task.pdf (if it exists):**
+2. **Slide 4 task brief vs. Student_Task.docx (if it exists):**
    - The task brief must describe the same activity as the Student_Task.
      Same scenario name, same deliverable, same tools.
    - If they diverge → align slide 4 to match the Student_Task.
@@ -322,10 +322,9 @@ alignment between the visual aid content and sibling lesson files.
 
 After generating the .docx (Step 3e) and passing the coherence check (Step 3f),
 write all Lithuanian text to `Visual_Aid_text.txt` in the same lesson folder.
-This sidecar enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md
-"Plain-Text Sidecar Protocol"). Collect all slide text (titles, questions,
-objectives, task brief, term definitions) as plain UTF-8, one paragraph per
-line, with `## Slide N` headers separating slides.
+Collect all slide text (titles, questions, objectives, task brief, term
+definitions) as plain UTF-8, one paragraph per line, with `## Slide N`
+headers separating slides.
 
 Delete the sidecar after POST-GEN passes in Step 4.
 
@@ -344,8 +343,8 @@ After generating the .docx and writing the sidecar, perform a structured review:
    assumed correct and skipped.
 4. **Em dash scan:** Search for any em dash in the entire document.
    Zero tolerance. Replace every instance.
-5. **Quote format check:** Verify all quotation marks use the Lithuanian
-   „..." format (lower-upper). No straight quotes, no guillemets.
+5. **Quote format check:** Verify all quotation marks use straight double
+   quotes "..." only. No Lithuanian „...", no guillemets.
 6. **Fix and regenerate** if any issues are found. Do not present a
    document with known errors.
 
@@ -397,7 +396,7 @@ When the teacher requests visual aids for a module or multiple lessons:
    Skip lessons without a plan (do not abort the entire batch).
 4. **Process in sequence order** for consistent terminology.
 5. **Run Steps 1-5 per lesson.**
-6. **Warn on missing optional files** (Student_Task.pdf, Theory_Pack.pdf)
+6. **Warn on missing optional files** (Student_Task.docx, Theory_Pack.docx)
    but continue generation using Teacher_Plan content alone.
 7. **Report a summary table** after completion:
 
@@ -418,8 +417,8 @@ When sources disagree or overlap:
 1. **Teacher_Plan.docx**: retrieval questions, objectives, task content, teaching phase
 2. **Lesson README**: lesson scope, title, type, grade
 3. **Teacher profile**: style constraints, classroom reality
-4. **Student_Task.pdf**: concept priority for slide 5
-5. **Theory_Pack.pdf**: definitions for slide 5
+4. **Student_Task.docx**: concept priority for slide 5
+5. **Theory_Pack.docx**: definitions for slide 5
 6. **General defaults**: only when above sources say nothing
 
 ---

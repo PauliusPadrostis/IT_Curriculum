@@ -15,8 +15,8 @@ description: >
 # Assessment Task Generator
 
 Generates assessment materials for A (Assessment) lessons in the IT Curriculum
-repo. Produces Assessment_Task.pdf (practical) or .xlsx (Testmoz), plus
-Rubric.pdf. All generated content is in **Lithuanian**. Respond to the teacher
+repo. Produces Assessment_Task.docx (practical) or .xlsx (Testmoz), plus
+Rubric.docx. All generated content is in **Lithuanian**. Respond to the teacher
 in whatever language they use.
 
 **Design principle:** Backward design. The assessment anchors the learning arc.
@@ -38,8 +38,9 @@ reasoning, wait for teacher approval, then generate.
 6. If Testmoz format: `references/testmoz_format.md` — import file specification AND `references/testmoz_import_template.xlsx` — official Testmoz template (open and study before generating)
 7. Relevant exemplar from `references/exemplars/`
 
-**Lithuanian QA (mandatory):**
-8. Read the lt-qa skill and run Phase 1 (PRE-GEN) before writing any Lithuanian text.
+**Lithuanian mistake prevention (mandatory):**
+8. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+   Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 **Lessons learned (mandatory):**
 9. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
@@ -62,7 +63,7 @@ reasoning, wait for teacher approval, then generate.
 | 6 | **Curriculum reference** (`_references/informatika_programa.md`) | National competency expectations |
 | 7 | **VBE reference files** (grades 11-12 only) | Exam format alignment |
 | 8 | **Skill reference docs** | Assessment design rules, grading policy |
-| 9 | **lt-mistakes.yaml** | Lithuanian QA pre-generation |
+| 9 | **lt-qa/lt-mistakes.yaml** (CRITICAL section for PRE-GEN, full file for POST-GEN) | Lithuanian QA |
 
 ### Path parsing
 
@@ -284,15 +285,54 @@ Before outputting, verify every item:
 
 ---
 
+## Step 5b — Cross-file Coherence Check
+
+After generating assessment items and passing the validity self-check,
+verify alignment with sibling lesson files before proceeding to output.
+
+### What to check:
+
+1. **Coverage of L/I lesson objectives:**
+   - Re-read all L/I lesson READMEs in scope. Every learning objective
+     listed in those READMEs must be tested by at least one assessment
+     item. If an objective is missing from the coverage matrix → add an
+     item or flag the gap to the teacher.
+   - No assessment item may test content outside the scope of the L/I
+     lessons that precede this A lesson (per the scope rules in Step 1).
+
+2. **Terminology alignment with Theory_Pack (if it exists on disk):**
+   - Read Theory_Pack.docx from each L/I lesson in scope.
+   - Every technical term used in assessment questions, answer options,
+     and rubric descriptors must match the Theory_Pack's definition and
+     spelling. If the assessment uses a term differently from the
+     Theory_Pack → use the Theory_Pack definition (it is the authoritative
+     reference for terminology).
+   - If an assessment question introduces a term not covered in any
+     Theory_Pack → flag it to the teacher.
+
+3. **Scenario consistency with Student_Task (if it exists on disk):**
+   - If Student_Task.docx exists in any L/I lesson folder in scope, verify
+     that assessment scenarios do not reuse the exact same scenarios from
+     student tasks. Assessment should test the same competencies but with
+     fresh contexts.
+
+### On mismatch:
+
+- Assessment adapts to match Theory_Pack (authoritative for definitions)
+  and L/I READMEs (authoritative for learning objectives).
+- Flag unresolvable contradictions to the teacher.
+
+---
+
 ## Step 6 — Output Files
 
 ### Assessment pattern → output mapping
 
 | Pattern | Assessment_Task | Rubric | Additional |
 |---------|----------------|--------|------------|
-| **Testmoz test** | .xlsx (import file with question banks) | Rubric.pdf (percentage-to-grade + per-question point map) | None |
-| **Practical task** | Assessment_Task.pdf (task instructions) | Rubric.pdf (per-criterion scoring rubric) | Input data files if needed (.txt, .csv) |
-| **Mixed format** | Assessment_Task.pdf + .xlsx (if applicable) | Rubric.pdf (combined rubric) | Input data files if needed |
+| **Testmoz test** | .xlsx (import file with question banks) | Rubric.docx (percentage-to-grade + per-question point map) | None |
+| **Practical task** | Assessment_Task.docx (task instructions) | Rubric.docx (per-criterion scoring rubric) | Input data files if needed (.txt, .csv) |
+| **Mixed format** | Assessment_Task.docx + .xlsx (if applicable) | Rubric.docx (combined rubric) | Input data files if needed |
 
 ### Output location
 
@@ -301,9 +341,9 @@ Before outputting, verify every item:
 
 ### File format rules
 
-- Student-facing documents → PDF (docx-to-PDF pipeline)
+- Student-facing documents → DOCX
 - Testmoz import files → .xlsx (teacher uploads)
-- Rubric → PDF (student-facing, shared before assessment)
+- Rubric → DOCX (student-facing, shared before assessment)
 - Input data files → .txt or .csv
 
 ### Em dash post-processing
@@ -368,7 +408,7 @@ have handled em dashes.
 
 ### Document generation
 
-Use the docx skill for .docx creation, then convert to PDF via docx2pdf.
+Use the docx skill for .docx creation (Assessment_Task.docx and Rubric.docx).
 Use openpyxl for Testmoz .xlsx generation.
 Follow assessment_format.md for exact document structure and visual identity.
 
@@ -378,13 +418,19 @@ Follow assessment_format.md for exact document structure and visual identity.
 
 **Before running QA, write plain-text sidecars:** For each generated .docx
 file (Rubric.docx), write all Lithuanian text to a `_text.txt` sidecar in
-the same lesson folder (e.g., `Rubric_text.txt`). See lt-qa SKILL.md
-"Plain-Text Sidecar Protocol". For .xlsx files (Assessment_Task.xlsx),
-extract all question text, options, and explanations to
-`Assessment_Task_text.txt`. Delete sidecars after POST-GEN passes.
+the same lesson folder (e.g., `Rubric_text.txt`). For .xlsx files
+(Assessment_Task.xlsx), extract all question text, options, and explanations
+to `Assessment_Task_text.txt`. Delete sidecars after POST-GEN passes.
 
-After writing sidecars, run Phase 2 (POST-GEN) from the lt-qa skill,
-reading from the sidecar files. Fix all issues before presenting.
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
+
+Fix all issues before presenting.
 
 ---
 
@@ -411,7 +457,7 @@ Read before every generation:
 - `references/grading_policy.md` — Žemynos gimnazija percentage scale, difficulty distribution, assessment rules
 - `references/question_design.md` — MCQ rules, short answer rules, rubric design, code task hierarchy, variant generation
 - `references/cs_assessment_progression.md` — Grade-appropriate question types and code task ceiling per grade
-- `references/assessment_format.md` — Assessment_Task.pdf and Rubric.pdf document structure and formatting
+- `references/assessment_format.md` — Assessment_Task.docx and Rubric.docx document structure and formatting
 - `references/testmoz_format.md` — Testmoz .xlsx import specification and pool structure
 - `references/testmoz_import_template.xlsx` — Official Testmoz template file. Open and study before generating any .xlsx.
 

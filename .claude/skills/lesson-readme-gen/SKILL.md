@@ -97,10 +97,14 @@ When in doubt, ask.
 
 ## Step 0 — Lithuanian QA Setup
 
-Before generating any README content, read `/mnt/skills/user/lt-qa/SKILL.md`
-and run **Phase 1 (PRE-GEN)** — load the mistake library, AI pattern rules,
-and audience calibration. READMEs contain Lithuanian text (overviews, learning
-objectives, section headings) and must meet the same quality standard.
+**Lithuanian mistake prevention (mandatory):**
+Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
+READMEs contain Lithuanian text (overviews, learning objectives, section headings) and must
+meet the same quality standard.
+
+**Accumulated corrections (mandatory):**
+Read `tasks/lessons.md` from the repo root. Follow every rule in it.
 
 ---
 
@@ -245,6 +249,7 @@ Read the template from `assets/readme_template.md`. Fill sections according to m
 | Namų darbas              | "Nėra" or brief  | ✅ Generate        | Keep or improve  |
 | Reikalingi failai        | ✅ From type ref  | ✅ From scan+type  | ✅ Rescan         |
 | Papildomi ištekliai      | "Nėra"           | ✅ Generate        | Keep or improve  |
+| Trūkstamos vaizdinės medžiagos | ❌ Omit    | ✅ Scan & generate | ✅ Rescan         |
 
 ¹ Placeholder text: `Bus papildyta po pirmos pamokos vykdymo.`
 
@@ -342,6 +347,35 @@ section with a placeholder for format and questions.
 
 **Papildomi ištekliai:** Brief descriptions with links, or "Nėra."
 
+**Trūkstamos vaizdinės medžiagos** (`full` and `update` modes only):
+
+If Teacher_Plan.docx exists and is readable, scan its text for references to
+visual assets: look for keywords "parodykite", "diagrama", "iliustracija",
+"paveikslėlis", "nuotrauka", "schema", "infografikas", "plakatas", "pavyzdys
+ekrane". For each match, check whether a corresponding image file exists in
+the lesson folder (common extensions: .png, .jpg, .jpeg, .svg, .gif, .webp).
+
+If any referenced visuals are missing as files, generate the section:
+
+```markdown
+## Trūkstamos vaizdinės medžiagos
+
+| Vaizdinė medžiaga | Etapas | Siūlomas šaltinis |
+|--------------------|--------|-------------------|
+| [descriptive name from context] | [phase name from Teacher_Plan] | [Canva / Pixabay / SVG / Inkscape] |
+```
+
+Source suggestion logic:
+- Diagrams, schemas, flowcharts → SVG or Inkscape
+- Photos, realistic images → Pixabay
+- Infographics, posters, stylized visuals → Canva
+- Simple icons or symbols → SVG
+
+If no visual references are found in the Teacher_Plan, or all referenced
+visuals exist as files, omit this section entirely.
+
+In `minimal` mode, skip this section (Teacher_Plan typically does not exist yet).
+
 ---
 
 ## File Categories
@@ -354,14 +388,14 @@ be code files, notebooks, spreadsheets, or other technical formats.
 |------------------------|-------------|---------------------------|--------------------|------------------------------------|
 | Teacher_Plan           | .docx       | .md                       | All                | Timed lesson plan (privalomas)       |
 | Visual_Aid             | .pdf        | .pptx                     | L, I, P, D         | Slides / visual materials            |
-| Student_Task           | .docx       | .md, .pdf                 | L, I, P            | Task sheet / activity instructions   |
+| Student_Task           | .docx       | .md                       | L, I, P            | Task sheet / activity instructions   |
 | Project_Brief          | .docx       | .md, .pdf                 | I                  | Multi-step project description       |
 | Homework               | .docx       | .md, .pdf                 | L, I               | Homework instructions                |
-| Answer_Key             | .docx       | .md, .pdf, .py, .xlsx     | P, A, D, T, MOCK   | Answers / exemplar solutions         |
-| Rubric                 | .docx       | .md, .pdf, .xlsx          | A                  | Grading criteria                     |
+| Answer_Key             | .docx       | .md, .py, .xlsx           | P, A, D, T, MOCK   | Answers / exemplar solutions         |
+| Rubric                 | .docx       | .md, .xlsx                | A                  | Grading criteria                     |
 | Marking_Guide          | .docx       | .md, .pdf, .xlsx          | A, T, MOCK          | Marking scheme                       |
 | Assessment_Task        | .docx       | .md, .pdf, .py, .html     | A                  | The assessment itself                |
-| Practice_Task_Set      | .docx       | .md, .pdf, .py            | P                  | Practice problems                    |
+| Practice_Task_Set      | .docx       | .md, .py                  | P                  | Practice problems                    |
 | Drill_Task_Set         | .docx       | .md, .pdf, .py            | D                  | Exam-style drill problems            |
 | Timed_Task_Set         | .docx       | .md, .pdf                 | T                  | Timed exam-section task              |
 | Mock_Paper             | .docx       | .pdf                      | MOCK               | Full/partial mock exam               |
@@ -437,9 +471,15 @@ Verify that the Būsena value matches actual README state:
 
 ## Step 4b — Lithuanian QA Pass
 
-Before presenting the README, run **Phase 2 (POST-GEN)** from
-`/mnt/skills/user/lt-qa/SKILL.md` on all Lithuanian text in the generated
-README. Focus on: grammar, punctuation (especially em dash elimination),
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
+
+Focus on: grammar, punctuation (especially em dash elimination),
 VLKK terminology, and naturalness. Fix all issues before proceeding to output.
 
 ### 4b-extra — Em dash hard gate

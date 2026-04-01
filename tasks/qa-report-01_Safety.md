@@ -135,21 +135,22 @@ Generated: 2026-03-31 | Module: Grade_9/Semester_1/01_Safety | Lessons audited: 
 - **Suggested action:** Pick one term and use consistently. "Ekranas" is more natural for Grade 9.
 - **Root cause:** Same as m-07 — documents generated at different times without reconciliation. Theory_Pack used formal VLKK term "vaizduoklis", other files used colloquial "ekranas."
 - **Systemic fix:** CLAUDE.md rule 6 (reconcile on lesson completion) + automated QA pipeline logged in TODO.md for post-module-2.
-- **Status:** ☐ Open (content fix pending reconciliation pass on lesson 001)
+- **Status:** ☑ Closed (2026-04-01: decision — "ekranas" in running text, "vaizduoklis" only in vocab tables. Theory_Pack vocab table already bridges terms. Running text "vaizduoklio" in HN 32:2004 reference acceptable in regulatory context. Source file informatika_programa.md annotated with "(ekrano)" to prevent recurrence. Decision logged.)
 
 ### [m-09] Lesson 002 — Visual_Aid closing question differs from Teacher_Plan
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `002_L/Visual_Aid.pdf` (slide 6) vs `Teacher_Plan.docx` (closing questions)
 - **Problem:** Visual_Aid Q3 asks about publishing birthday + school name on social media. Teacher_Plan Q3 asks about publishing name + surname. Different questions for the same closing moment.
 - **Suggested action:** Align to the Visual_Aid version (more specific, uses sensitivity concepts from lesson).
-- **Status:** ☐ Open
+- **Status:** ☑ Fixed (2026-04-01: patched Teacher_Plan Q3 to match Visual_Aid version. Systemic fix already in place: visual-aid-gen enforces verbatim extraction from Teacher_Plan since 2026-03-30.)
 
 ### [m-10] Lesson 002 — README Pastaba uses "vertinimo lapas"
 - **Dimension:** Content & Pedagogical Coherence
 - **Location:** `002_L/README.md` (Reikalingi failai table, Student_Task.pdf row)
 - **Problem:** Pastaba column says "Scenarijų vertinimo lapas". Per lessons.md rule, student tasks should not be called "vertinimo lapas" unless actual assessments.
 - **Suggested action:** Change to "Scenarijų užduoties lapas" or "Situacijų vertinimas".
-- **Status:** ☐ Open
+- **Root cause:** lesson-readme-gen had no Pastaba content guidance AND didn't read tasks/lessons.md where the rule lived. Both gaps now fixed: all 8 skills read lessons.md; lesson-readme-gen now reads it at Step 0.
+- **Status:** ☑ Fixed (2026-04-01: changed to "Situacijų vertinimo užduotis". Systemic fix: all 5 missing skills now read tasks/lessons.md.)
 
 ### [m-11] Lesson 002 — Theory_Pack condition-last calque
 - **Dimension:** Lithuanian Language

@@ -1,6 +1,6 @@
 # Practice Task Format Reference
 
-Defines the exact structure and formatting of Practice_Task.pdf output.
+Defines the exact structure and formatting of Practice_Task.docx output.
 
 ---
 
@@ -237,10 +237,8 @@ scenario texts, or split into two separate practice documents.
 ## .docx Generation Notes
 
 - Use **python-docx** (not docx-js).
-- Generate intermediate `.docx`, then convert to PDF via **docx2pdf**.
-- Delete the intermediate `.docx` after successful PDF conversion.
-- Verify PDF file size is non-zero before reporting success.
+- Output is `.docx` directly (no PDF conversion).
+- Verify .docx file size is non-zero before reporting success.
 - All Lithuanian text as plain UTF-8 strings. No `\u` unicode escapes for
-  Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž). Exception: typographic quotes
-  `\u201E` and `\u201C` if needed in string context.
+  Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž). Use straight double quotes "..." only.
 - Run lt-qa POST-GEN check on all Lithuanian text before finalizing.

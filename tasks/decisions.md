@@ -331,3 +331,54 @@ The following are **not yet decided** and need resolution:
 **Context**: QA issue m-06 — Theory_Pack had straight quotes instead of Lithuanian „..." format. Root cause: no mechanical quote replacement existed (unlike em dashes), and the LLM defaults to straight quotes. The `\u201E`/`\u201C` escape requirement added complexity to every generation skill's encoding rules for zero pedagogical benefit.
 
 **Rationale**: Straight quotes are what LLMs produce naturally. Requiring Lithuanian quotes created a failure mode with no upside — no student or teacher would notice or care about quote style. Eliminating the requirement removes escape complexity from all generation skills and closes an entire category of QA findings.
+
+## 2026-04-01 — "Ekranas" as default term, "vaizduoklis" only in vocabulary tables
+
+**Decision**: Generated content uses "ekranas" (and its declensions) in all running text. "Vaizduoklis" appears only in vocabulary/glossary tables where formal VLKK terms are introduced alongside the natural equivalent. The curriculum reference file (`informatika_programa.md`) is annotated with "(ekrano)" next to "vaizduoklio" so generation skills see both terms at the source.
+
+**Context**: QA issue m-08 — Theory_Pack introduced "Vaizduoklis" as a key term and used "vaizduoklio" in running text (HN 32:2004 reference). Student_Task and Visual_Aid used "ekranas" exclusively. Root cause: each skill independently chose terms based on whatever source it read. The curriculum reference used the formal term, so theory-pack-gen adopted it; other skills used natural language.
+
+**Rationale**: Grade 9 students need to recognize "vaizduoklis" (it may appear on exams) but shouldn't be forced to use it in daily materials. The vocabulary table already bridges the terms ("Vaizduoklis — Kompiuterio ekranas, kuriame rodomas vaizdas"). Annotating the source file is zero-cost prevention — no per-generation overhead, no glossary files, no mechanical replacement. Module-qa catches recurrence if it happens.
+
+## 2026-04-01 — End-session propagates decisions/lessons to affected skills via agents
+
+**Decision**: end-session Step 4d added. After confirming decisions and lessons, the skill identifies affected generation skills and dispatches two agents: (1) Updater agent — reads each affected skill, encodes the new rule, removes contradictory old rules; (2) Verifier agent — checks every affected skill and its reference files, confirms the rule is present and no contradictions remain. The orchestrator reviews the verifier report and fixes stragglers. If agents fail, pending updates are logged in status.md for the next session.
+
+**Context**: Audit on 2026-04-01 found that 5 of 8 generation skills didn't read tasks/lessons.md, the straight quotes decision (2026-03-31) was contradicted by 7 skills + 2 reference files, and module-qa's subagent would flag the correct behavior as an error. Root cause: decisions were logged but never propagated to affected skills. There was no step in the workflow that said "after confirming a rule, go update the skills."
+
+**Rationale**: Agents with fresh context windows reliably execute mechanical tasks (proven by em dash strip, file generation). The updater-verifier pattern catches mistakes the updater makes. The orchestrator's role is review, not execution — avoiding the attention degradation that caused the problem in the first place. Fallback to status.md ensures nothing is silently lost if agents fail.
+
+## 2026-04-01 — Project-specific skills live only in repo, not global
+
+**Decision**: All IT curriculum skills removed from `~/.claude/skills/` (global/personal). They now exist only in `.claude/skills/` (project/repo). Only truly cross-project skills (like context7-mcp) remain in global. Supersedes the 2026-03-28 decision "Assessment-task-gen skill packaged in repo" which said both locations should be kept in sync.
+
+**Context**: Claude Code skill resolution: personal (`~/.claude/skills/`) beats project (`.claude/skills/`). For 10+ days, every skill update made to the repo copy was silently ignored — Claude Code loaded the stale global copies instead. 8 of 9 shared skills had diverged, student-task-gen by 803 lines. All improvements (lessons.md reading, quote rule fix, coherence checks, em dash strips, module design gate) were in project files that were never loaded.
+
+**Rationale**: (1) These skills are useless outside this repo — they reference repo-specific paths. (2) The repo copy is version-controlled and maintained; the global copy was never updated after initial creation. (3) Keeping both in sync was stated as a requirement but never actually done. (4) One source of truth eliminates the sync problem entirely.
+
+## 2026-04-01 — lt-qa demoted from dependency skill to standalone tool
+
+**Decision**: lt-qa is no longer invoked by other skills. It was a checklist pretending to be a skill — its only function was telling the LLM "read these files." All 8 generation skills now read `lt-qa/lt-mistakes.yaml` directly: CRITICAL section (top ~15 entries) at Step 0 before generation, full file at POST-GEN for sidecar verification. lt-qa survives as a standalone text review tool (triggered by "patikrink lietuviškai" etc.).
+
+**Context**: lt-qa had a two-hop dependency chain: skill says "run lt-qa Phase 1" → LLM reads lt-qa SKILL.md → lt-qa says "read lt-mistakes.yaml." Under attention pressure, hop 2 got skipped — the LLM "ran Phase 1" from memory without actually reading the yaml. The yaml is also restructured: CRITICAL section at top (~15 high-frequency patterns, cheap to load), FULL LIBRARY below (complete archive, used only in POST-GEN verification).
+
+**Rationale**: (1) No skill should call another skill just to read a file — that's indirection with no benefit. (2) Direct file reads are one hop instead of two. (3) The CRITICAL/FULL split keeps PRE-GEN context cost low (~15 entries vs 266 lines). (4) POST-GEN scans the full file against the sidecar text, where context cost doesn't matter. (5) Standalone mode preserved for ad-hoc text review — that's a legitimate use case.
+
+## 2026-04-01 — DOCX as canonical output for all editable documents (reverses 2026-03-28 PDF decision)
+
+**Decision**: All document outputs are now DOCX. Only Visual_Aid stays PDF (projection-only, no manual edits needed). Assessment_Task stays XLSX (Testmoz import format). This reverses the 2026-03-28 decision "Student-facing files output as PDF" and the 2026-03-28 decision "Assessment files output as PDF + XLSX" (for Rubric and Answer_Key).
+
+| File type | Old format | New format |
+|-----------|-----------|------------|
+| Student_Task | .pdf | .docx |
+| Theory_Pack | .pdf | .docx |
+| Practice_Task | .pdf | .docx |
+| Answer_Key | .pdf | .docx |
+| Rubric | .pdf | .docx |
+| Visual_Aid | .pdf | .pdf (unchanged) |
+| Teacher_Plan | .docx | .docx (unchanged) |
+| Assessment_Task | .xlsx | .xlsx (unchanged) |
+
+**Context**: Teacher found that PDF output creates a costly maintenance loop: any minor mistake or preference change requires a full token-burning regeneration cycle, which risks introducing new errors. DOCX files can be edited manually in Word in seconds.
+
+**Rationale**: The original PDF rationale (students can't edit, consistent rendering) doesn't outweigh the maintenance cost. Teachers distribute materials via Google Classroom where file editing is controlled by sharing permissions, not file format. The third format change in 10 days, but this time the reasoning addresses the actual pain point (editability for corrections) rather than aesthetics.

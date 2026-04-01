@@ -8,7 +8,7 @@ description: >
   atsakymų raktą", "sukurk answer key", "generate answer key", "paruošk
   atsakymus", "sukurk vertinimo schemą".
   Two modes auto-detected: A lessons produce teacher-facing Grading Key (.docx),
-  P lessons produce student-facing Study Key (.pdf).
+  P lessons produce student-facing Study Key (.docx).
   Only generates for A and P lesson types. Do NOT use for assessments (use
   assessment-task-gen), student tasks (use student-task-gen), theory packs (use
   theory-pack-gen), or visual aids (use visual-aid-gen).
@@ -22,7 +22,7 @@ Curriculum repo. Two modes auto-detected from lesson folder name:
 | Mode | Lesson Type | Audience | Output | Purpose |
 |------|------------|----------|--------|---------|
 | **Grading Key** | A | Teacher | `Answer_Key.docx` | Exhaustive marking scheme for grading consistency |
-| **Study Key** | P | Student | `Answer_Key.pdf` | Teaching document explaining correct/incorrect answers |
+| **Study Key** | P | Student | `Answer_Key.docx` | Teaching document explaining correct/incorrect answers |
 
 All generated content is in **Lithuanian**. Respond to the teacher in whatever
 language they use.
@@ -45,8 +45,9 @@ follow mode-specific rules.
 4. `.claude/skills/assessment-task-gen/references/grading_policy.md` — percentage scale (cross-skill read)
 5. `.claude/skills/assessment-task-gen/references/cs_assessment_progression.md` — grade expectations (cross-skill read)
 
-**Lithuanian QA (mandatory):**
-6. Read the lt-qa skill and run Phase 1 (PRE-GEN) before writing any Lithuanian text.
+**Lithuanian mistake prevention (mandatory):**
+6. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+   Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 **Lessons learned (mandatory):**
 7. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
@@ -68,20 +69,20 @@ Extract from the lesson folder path:
 ### Mode detection
 
 - `NNN_A` → Grading Key mode (teacher-facing .docx)
-- `NNN_P` → Study Key mode (student-facing .pdf)
+- `NNN_P` → Study Key mode (student-facing .docx)
 - Any other type → abort: "Atsakymų raktai generuojami tik A ir P pamokoms."
 
 ### Input files (A mode)
 
 Read from lesson folder:
 1. Assessment_Task (.xlsx or .pdf) — questions and structure
-2. Rubric.pdf — criteria, point breakdown, conversion table
+2. Rubric.docx — criteria, point breakdown, conversion table
 
 ### Input files (P mode)
 
 Read from lesson folder:
-1. Practice_Task.pdf — questions and structure
-2. Sibling A lesson Rubric.pdf (if exists) — optional, for explanation depth calibration
+1. Practice_Task.docx — questions and structure
+2. Sibling A lesson Rubric.docx (if exists) — optional, for explanation depth calibration
 
 ### Teaching context (both modes)
 
@@ -186,9 +187,68 @@ Tone: teaching, not judging. Formal "jūs". No point values or grading language.
 
 ---
 
+## Step 4b — Cross-file Coherence Check
+
+After generating answer content and passing the validity self-check,
+verify alignment between the answer key and its source document before
+proceeding to Lithuanian QA.
+
+### What to check (A mode, Grading Key):
+
+1. **Answer-to-question alignment:**
+   - Re-read Assessment_Task (.xlsx or .pdf). Verify that every answer
+     key entry references the correct question number and that the model
+     answer actually answers the question as written. If the question was
+     updated after answer key generation started → the answer key must
+     reflect the current question text.
+
+2. **Rubric point alignment:**
+   - Re-read Rubric.docx. Verify that point values in the answer key match
+     the rubric exactly. Partial credit thresholds must be consistent
+     between the two documents.
+
+3. **Terminology alignment with Theory_Pack (if it exists on disk):**
+   - Read Theory_Pack.docx from L/I lessons in scope. Verify that
+     explanations and model answers use the same terminology as the
+     Theory_Pack. If the answer key uses a term differently → use the
+     Theory_Pack definition (authoritative for terminology).
+
+### What to check (P mode, Study Key):
+
+1. **Answer-to-question alignment:**
+   - Re-read Practice_Task.docx. Verify that every study key entry
+     references the correct question number and that the model answer
+     actually answers the question as written. If Practice_Task was
+     updated after answer key generation started → the answer key must
+     reflect the current question text.
+
+2. **Explanation grounding:**
+   - Verify that "Kodėl tai veikia" explanations and "Dažna klaida"
+     callouts reference content actually taught in L/I lessons. Do not
+     explain using concepts that were never covered in scope.
+
+3. **Terminology alignment with Theory_Pack (if it exists on disk):**
+   - Same rule as A mode: Theory_Pack definitions are authoritative.
+
+### On mismatch:
+
+- Answer key adapts to match the source document (Assessment_Task or
+  Practice_Task) and Theory_Pack (authoritative for definitions).
+- Flag unresolvable contradictions to the teacher.
+
+---
+
 ## Step 5 — Lithuanian QA
 
-After generating all content and before rendering, run Phase 2 (POST-GEN) from the lt-qa skill on all Lithuanian text. Fix all issues before rendering.
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
+
+Fix all issues before rendering.
 
 ---
 
@@ -252,7 +312,7 @@ have handled em dashes.
 Use the docx skill to create Answer_Key.docx following `answer_key_format.md` specs.
 
 - **A mode:** Save as .docx in lesson folder. Done.
-- **P mode:** Convert to PDF via docx2pdf, delete intermediate .docx. Save Answer_Key.pdf in lesson folder.
+- **P mode:** Save Answer_Key.docx in lesson folder.
 
 Verify: open generated file, confirm key content at known positions (first question answer, last question answer, footer text for A mode).
 
@@ -275,7 +335,7 @@ Verify: open generated file, confirm key content at known positions (first quest
 | Condition | Action |
 |-----------|--------|
 | No Assessment_Task in A lesson folder | **Stop.** "Pirma sugeneruokite vertinimo užduotį." |
-| No Rubric.pdf in A lesson folder | **Stop.** "Nėra vertinimo kriterijų failo." |
+| No Rubric.docx in A lesson folder | **Stop.** "Nėra vertinimo kriterijų failo." |
 | No Practice_Task in P lesson folder | **Stop.** "Pirma sugeneruokite praktikos užduotį naudodami /practice-task-gen." |
 | Lesson type is not A or P | **Stop.** "Atsakymų raktai generuojami tik A ir P pamokoms." |
 | Some L/I Teacher_Plans missing | **Warn and proceed.** Flag which explanations may lack depth due to missing source material. |

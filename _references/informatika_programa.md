@@ -97,7 +97,7 @@ Pasiekimai aprašomi 4 lygiais:
 | Pagrindinis | F1.3 | Apibūdina higienos, ergonomines, technines saugaus darbo ST normas ir jų laikosi |
 | Aukštesnysis | F1.4 | Įsivertina darbą ST higienos, ergonominių ir saugumo normų atžvilgiu; siūlo, kaip reikia keisti neatitikimus |
 
-**Mokymo(si) turinys:** Higienos, ergonominės ir techninės saugaus darbo skaitmeninėmis technologijomis normos. Aptariami darbo ir elgesio kompiuterių klasėje ypatumai. Aiškinamasi, kaip taisyklingai sėdėti prie kompiuterio, kokia turi būti rankų, kojų padėtis, koks akių nuotolis nuo vaizduoklio. Parodoma ir išbandoma, kaip atlikti nuovargį šalinančius pratimus. Aptariamas racionalus darbo ir poilsio režimas.
+**Mokymo(si) turinys:** Higienos, ergonominės ir techninės saugaus darbo skaitmeninėmis technologijomis normos. Aptariami darbo ir elgesio kompiuterių klasėje ypatumai. Aiškinamasi, kaip taisyklingai sėdėti prie kompiuterio, kokia turi būti rankų, kojų padėtis, koks akių nuotolis nuo vaizduoklio (ekrano). Parodoma ir išbandoma, kaip atlikti nuovargį šalinančius pratimus. Aptariamas racionalus darbo ir poilsio režimas.
 
 ### F2. Saugo aplinką
 

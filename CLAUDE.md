@@ -7,7 +7,7 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 ## Workflow
 
 1. **Plan before generating.** For any task touching 2+ files or lessons, write the plan to tasks/todo.md first. Get confirmation before executing.
-2. **One task per session.** Don't mix grading with content generation with skill editing. Start fresh sessions for different task types.
+2. **One task per session.** Don't mix grading with content generation with skill editing. Start fresh sessions for different task types. If you find that you need to mix tasks, warn the user.
 3. **Verify before done.** Open generated .docx/.pdf files and confirm they render. Compile .cpp files. Never mark complete without proof.
 4. **Include the artifact.** When the teacher references work from another AI or a prior session, ask for the actual file or paste — don't reconstruct from description.
 5. **Always delegate multi-step generation to agents.** Each file that requires a multi-step pipeline (generate, convert, verify) must be dispatched to a dedicated agent. The orchestrating session handles sequencing and decisions; agents handle complete single-file pipelines. Reason: instruction-following degrades over long sessions with accumulated context. An agent with one job and a clean context window has no reason to skip steps. Adding "mandatory" labels to skill steps does not fix attention degradation — only isolation does.
@@ -15,7 +15,7 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 
 ## Content Generation Rules
 
-- Output formats: Teacher_Plan → .docx. Student_Task → .pdf. Theory_Pack → .pdf. README → .md.
+- Output formats: Teacher_Plan → .docx. Student_Task → .docx. Theory_Pack → .docx. Practice_Task → .docx. Answer_Key → .docx. Rubric → .docx. Visual_Aid → .pdf. Assessment_Task → .xlsx. README → .md.
 - Approved software ONLY: Code::Blocks, Excel, Word, Inkscape, Canva, Google Classroom, Testmoz.
 - No phones. No Python. C++ only for programming.
 - No paper/notebooks — students don't carry them.
@@ -56,12 +56,12 @@ Grade_XX/
       NNN_T - Lesson_Title/      (T = L|I|P|A|D|T|MOCK|G)
         README.md
         Teacher_Plan.docx
-        Student_Task.pdf
-        Theory_Pack.pdf
+        Student_Task.docx
+        Theory_Pack.docx
         *.cpp (scaffolds, solutions)
 .claude/
   skills/
-    assessment-task-gen/SKILL.md (generates Assessment_Task.xlsx/.pdf + Rubric.pdf)
+    assessment-task-gen/SKILL.md (generates Assessment_Task.xlsx + Rubric.docx)
     end-session/SKILL.md         (repo reconciliation on /end-session)
 lt-qa/
   lt-mistakes.yaml               (growing mistake library)
@@ -101,8 +101,8 @@ The `Patikrinta` column in the Reikalingi failai table is teacher-only. Never fl
 - C++ only for programming (no Python, no JavaScript for teaching)
 - 1–10 grading scale (1 = no work, 2 = everything bad, 3–10 proportional)
 - No student PII in repo (BDAR/GDPR)
-- Student_Task and Theory_Pack output as PDF, not DOCX
-- Teacher_Plan stays as DOCX
+- All document outputs as DOCX except Visual_Aid (PDF) and Assessment_Task (XLSX)
+- Teacher can manually edit any DOCX; Visual_Aid stays PDF (projection-only, no manual edits needed)
 - Em dash banned in all generated text
 - Skills handle their own formatting specs — CLAUDE.md does not duplicate them
 - Būsena chain with manual check gate (see above)

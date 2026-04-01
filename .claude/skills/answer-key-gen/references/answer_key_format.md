@@ -1,6 +1,6 @@
 # Answer Key Document Format Specification
 
-Two output modes with distinct formatting. Both generated as .docx, Study Key converted to .pdf before delivery.
+Two output modes with distinct formatting. Both generated and delivered as .docx.
 
 ---
 
@@ -66,7 +66,7 @@ Never use explicit page breaks. Control flow with keepNext, keepLines, and cantS
 
 ---
 
-## Study Key (.pdf)
+## Study Key (.docx)
 
 Student-facing document. Matches Student_Task visual identity exactly (same fonts, colors, sizes).
 

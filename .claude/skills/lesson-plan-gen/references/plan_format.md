@@ -208,4 +208,4 @@ new Document({
 
 No HeadingLevel styles. No headers/footers. No page numbers.
 All shading uses `ShadingType.CLEAR`, never SOLID.
-Lithuanian text as plain UTF-8, never `\u` escapes (except `\u201E`/`\u201C` for quotes).
+Lithuanian text as plain UTF-8, never `\u` escapes. Use straight double quotes "..." only.

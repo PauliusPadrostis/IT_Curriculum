@@ -1,13 +1,102 @@
-# Lithuanian QA — Seed Mistake Library
-# This file ships with the skill and contains known, recurring errors.
-# A living copy should be maintained at:
-#   github.com/PauliusPadrostis/IT_Curriculum/lt-qa/lt-mistakes.yaml
+# Lithuanian QA Mistake Library
+# Source of truth for Lithuanian language errors in generated content.
 #
-# Format:
+# STRUCTURE:
+#   CRITICAL section (top) — read by every generation skill BEFORE writing.
+#     These are the most common LLM failures. ~15 entries, kept small.
+#   FULL LIBRARY section (bottom) — used in POST-GEN verification only.
+#     Scanned against generated text after writing. Can grow freely.
+#
+# Format per entry:
 #   - wrong: <incorrect form Claude tends to produce>
 #     correct: <correct Lithuanian form>
 #     category: morphology | calque | spelling | punctuation | register
-#     note: <optional explanation>
+#     note: <explanation>
+
+# ═══════════════════════════════════════════════════════════════════
+# CRITICAL — read before every generation. Stop at FULL LIBRARY marker.
+# ═══════════════════════════════════════════════════════════════════
+
+# ── Register ─────────────────────────────────────────────────────
+- wrong: "tu / turi padaryti"
+  correct: "jūs / turite atlikti"
+  category: register
+  note: "Student-facing materials must use formal 'jūs'. Informal 'tu' + colloquial 'padaryti' is banned."
+
+# ── Condition-last calque ────────────────────────────────────────
+- wrong: "net [X] nepakanka, jei [Y]"
+  correct: "jei [Y], [kilmininkas] nepakaks"
+  category: calque
+  note: "English 'Even X isn't enough if Y'. Lithuanian: condition first, genitive-negative. 'Jei sėdėsite be pertraukos, taisyklingos pozos nepakaks.'"
+
+- wrong: "[nominative] nepakanka"
+  correct: "[genitive] nepakaks / neužtenka"
+  category: calque
+  note: "Nominative + nepakanka is English pattern. Lithuanian uses genitive + nepakaks/neužtenka."
+
+# ── Punctuation ──────────────────────────────────────────────────
+- wrong: "tačiau,"
+  correct: "tačiau"
+  category: punctuation
+  note: "tačiau does NOT take a comma after it when starting a clause."
+
+- wrong: "kadangi,"
+  correct: "kadangi"
+  category: punctuation
+  note: "kadangi does NOT take a comma after it."
+
+- wrong: " ,"
+  correct: ","
+  category: punctuation
+  note: "Space before punctuation. AI generation artifact. Check: /\\s+[,\\.;:?!]/g"
+
+# ── Terminology ──────────────────────────────────────────────────
+- wrong: "nešiojamas telefonas"
+  correct: "mobilusis telefonas"
+  category: calque
+  note: "Outdated. All phones are portable. Use 'mobilusis telefonas' or just 'telefonas'."
+
+- wrong: "monitoriaus ekranas"
+  correct: "monitorius / ekranas"
+  category: calque
+  note: "Redundancy: monitorius and ekranas are synonyms. Use one, not both."
+
+# ── Calques / anglicisms ────────────────────────────────────────
+- wrong: "šaltasis kvietimas"
+  correct: "klausinėjimas pasirinktinai"
+  category: calque
+  note: "English 'cold call' calque. Describe the action instead."
+
+- wrong: "Kokia taisyklinga sėdėjimo laikysena"
+  correct: "Kaip reikėtų taisyklingai sėdėti"
+  category: calque
+  note: "Nominalized question stem. Prefer action-oriented phrasing."
+
+- wrong: "Koks rekomenduojamas"
+  correct: "Koks yra rekomenduojamas"
+  category: calque
+  note: "Missing 'yra' in question stem. Lithuanian needs the copula."
+
+# ── AI text patterns ─────────────────────────────────────────────
+- wrong: "[Terminas], tai [apibrėžimas]"
+  correct: "vary: reiškia / vadinamas / dash / integrate"
+  category: calque
+  note: "Repetitive ', tai' definition pattern. Max 2 consecutive same-structure definitions."
+
+# ── Hallucinated forms ───────────────────────────────────────────
+- wrong: "pertraukėje"
+  correct: "per pertrauką / pertraukoje / pertraukėlėje"
+  category: morphology
+  note: "Not a real word. pertrauka → pertraukoje. pertraukėlė → pertraukėlėje."
+
+- wrong: "naturaliai"
+  correct: "natūraliai"
+  category: spelling
+  note: "Missing ū macron. English influence."
+
+# ═══════════════════════════════════════════════════════════════════
+# FULL LIBRARY — POST-GEN verification only. Scan sidecar against these.
+# ═══════════════════════════════════════════════════════════════════
 
 # ── Morphology: wrong vowel in suffix ──────────────────────────
 - wrong: "pakėitėte"
@@ -36,11 +125,6 @@
   note: "missing u in -iaužk- cluster"
 
 # ── Calques / Anglicisms ──────────────────────────────────────
-- wrong: "naturaliai"
-  correct: "natūraliai"
-  category: spelling
-  note: "missing ū — English influence drops the macron"
-
 - wrong: "realizuoti"
   correct: "suvokti / suprasti"
   category: calque
@@ -77,39 +161,18 @@
   category: spelling
   note: "truncated imperative — needs final -e"
 
-- wrong: "tačiau,"
-  correct: "tačiau"
-  category: punctuation
-  note: "tačiau does NOT take a comma after it when starting a clause"
-
-- wrong: "kadangi,"
-  correct: "kadangi"
-  category: punctuation
-  note: "kadangi does NOT take a comma after it"
-
-# ── Register / formality errors ────────────────────────────────
-- wrong: "tu"
-  correct: "jūs"
-  category: register
-  note: "student-facing materials must use formal 'jūs' address"
-
-- wrong: "turi padaryti"
-  correct: "turite atlikti"
-  category: register
-  note: "informal 'tu' + colloquial 'padaryti' → formal 'jūs' + neutral 'atlikti'"
-
 # ── Hallucinated verbs / wrong stems ─────────────────────────
 - wrong: "sužimti"
   correct: "suimti"
   category: morphology
-  note: "nonexistent verb. Claude merges su- prefix with hallucinated stem žimti. Correct: suimti (to grip/squeeze)"
+  note: "nonexistent verb. Claude merges su- prefix with hallucinated stem žimti"
   source: "user-flagged"
   date: "2026-03-27"
 
 - wrong: "nedžiūrėkite"
   correct: "nežiūrėkite"
   category: morphology
-  note: "hallucinated dž cluster. žiūrėti negative imperative = nežiūrėkite, not nedžiūrėkite. Claude confuses with džiūti (to dry)"
+  note: "hallucinated dž cluster. žiūrėti negative imperative = nežiūrėkite"
   source: "user-flagged"
   date: "2026-03-27"
 
@@ -117,7 +180,7 @@
 - wrong: "pasiubuoti"
   correct: "pasiūbuoti"
   category: spelling
-  note: "missing macron on ū. siūbuoti (to sway) → pasiūbuoti. Claude drops macron"
+  note: "missing macron on ū. siūbuoti (to sway) → pasiūbuoti"
   source: "user-flagged"
   date: "2026-03-27"
 
@@ -125,142 +188,67 @@
 - wrong: "ko stebėti"
   correct: "ką stebėti"
   category: morphology
-  note: "stebėti governs accusative (ką), not genitive (ko). Common Claude error with interrogative pronouns before infinitives"
+  note: "stebėti governs accusative (ką), not genitive (ko)"
   source: "user-flagged"
   date: "2026-03-27"
 
-# ── Calque: cold call ────────────────────────────────────────
-- wrong: "šaltasis kvietimas"
-  correct: "klausinėjimas pasirinktinai / tiksliniai klausimai mokiniams"
-  category: calque
-  note: "English 'cold call' calque. Not a natural Lithuanian pedagogical term. Describe the action instead: klausinėjimas pasirinktinai, arba tiesiog 'klausimai mokiniams'"
-  source: "user-flagged"
-  date: "2026-03-27"
-
-# ── Unnatural MCQ question stems ─────────────────────────────
-- wrong: "Koks rekomenduojamas"
-  correct: "Koks yra rekomenduojamas"
-  category: calque
-  note: "Missing 'yra' in question stem. Lithuanian question stems need the copula. 'Koks rekomenduojamas atstumas' sounds like a translated English 'What recommended distance'. Natural: 'Koks yra rekomenduojamas atstumas'"
-  source: "user-flagged"
-  date: "2026-03-28"
-
-- wrong: "monitoriaus ekranas"
-  correct: "monitorius / ekranas"
-  category: calque
-  note: "Redundancy: monitorius and ekranas are synonyms in Lithuanian computer terminology. Use one or the other, not both. 'Monitoriaus ekranas' literally means 'monitor's screen' which is tautological"
-  source: "user-flagged"
-  date: "2026-03-28"
-
-- wrong: "Kokia taisyklinga sėdėjimo laikysena"
-  correct: "Kaip reikėtų taisyklingai sėdėti"
-  category: calque
-  note: "Nominalized question stem sounds unnatural in Lithuanian. Prefer action-oriented phrasing: 'Kaip reikėtų taisyklingai sėdėti prie kompiuterio?' instead of 'Kokia taisyklinga sėdėjimo laikysena prie kompiuterio?'"
-  source: "user-flagged"
-  date: "2026-03-28"
-
+# ── MCQ stem patterns ────────────────────────────────────────
 - wrong: "labiausiai rodo phishing"
   correct: "yra phishing požymis / rodo galimą phishing ataką"
   category: calque
-  note: "'Labiausiai rodo phishing' is awkward Lithuanian. Natural alternatives: 'rodo galimą phishing ataką', 'yra phishing požymis', 'kuris iš šių požymių rodo phishing'"
+  note: "'Labiausiai rodo phishing' is awkward. Use: 'rodo galimą phishing ataką'"
   source: "user-flagged"
   date: "2026-03-28"
 
-# ── Condition-last calque ────────────────────────────────────────
-- wrong: "net [daiktavardis] nepakanka, jei"
-  correct: "jei [sąlyga], [kilmininkas] nepakaks"
-  category: calque
-  note: "English 'Even X isn't enough if Y' calque. Lithuanian prefers condition-first with genitive-negative: 'Jei sėdėsite be pertraukos, taisyklingos pozos nepakaks.'"
-  source: "user-flagged"
-  date: "2026-03-29"
-
-- wrong: "net taisyklinga poza nepakanka"
-  correct: "taisyklingos pozos nepakaks / neužtenka"
-  category: calque
-  note: "Nominative + nepakanka is English pattern. Lithuanian uses genitive + nepakaks/neužtenka for 'X is not enough'."
-  source: "user-flagged"
-  date: "2026-03-29"
-
-# ── Missing diphthong u in -iaužt- cluster ───────────────────────
+# ── Missing diphthong u in -iaužt- cluster ───────────────────
 - wrong: "sugniažti"
   correct: "sugniaužti"
   category: morphology
-  note: "Missing u in -iaužt- cluster. gniaužti → sugniaužti, not sugniažti. Same pattern as atgniaužti."
+  note: "Missing u in -iaužt- cluster. gniaužti → sugniaužti"
   source: "user-flagged"
   date: "2026-03-29"
 
 - wrong: "atgniažti"
   correct: "atgniaužti"
   category: morphology
-  note: "Missing u in -iaužt- cluster. gniaužti → atgniaužti, not atgniažti."
+  note: "Missing u in -iaužt- cluster. gniaužti → atgniaužti"
   source: "user-flagged"
   date: "2026-03-29"
 
-# ── Wrong locative of pertraukėlė ────────────────────────────────
-- wrong: "pertraukėje"
-  correct: "per pertrauką / pertraukėlėje / pertraukoje"
-  category: morphology
-  note: "pertraukėje is not a standard Lithuanian form. If using pertrauka → per pertrauką or pertraukoje. If using pertraukėlė → pertraukėlėje. Claude hallucinated pertraukėje by mixing stems."
-  source: "user-flagged"
-  date: "2026-03-29"
-
-# ── QA root-cause P2 additions (2026-03-30) ────────────────────────
+# ── QA root-cause additions ──────────────────────────────────
 - wrong: "prisistatoma"
   correct: "prisistato"
   category: morphology
-  note: "Wrong passive form. 'Prisistatoma' (impersonal passive of prisistatyti) used where reflexive 'prisistato' (presents itself / appears) is needed. Context: describing symptoms or phenomena."
+  note: "Wrong passive form where reflexive is needed"
   source: "auto-detected"
   date: "2026-03-30"
 
 - wrong: "Kas yra skirtumas tarp"
   correct: "Kuo skiriasi X nuo Y"
   category: calque
-  note: "English calque of 'What is the difference between'. Lithuanian uses verb-based phrasing: 'Kuo skiriasi X nuo Y?' or 'Koks skirtumas tarp X ir Y?'"
+  note: "English 'What is the difference between' calque"
   source: "auto-detected"
   date: "2026-03-30"
 
-- wrong: " ,"
-  correct: ","
-  category: punctuation
-  note: "Space before comma (or other punctuation mark). Common AI generation artifact. Also check for space before period, colon, semicolon, question mark, exclamation mark. Pattern: /\\s+[,\\.;:?!]/g"
-  source: "auto-detected"
-  date: "2026-03-30"
-
-- wrong: "[Terminas], tai [apibrėžimas]"
-  correct: "[Terminas] – [apibrėžimas] / vary structure"
-  category: calque
-  note: "Repetitive definition template where every term is introduced with '[Term], tai [definition]'. This is an AI text pattern. Vary structure: use 'reiškia', 'vadinamas', dash, or integrate the definition into a sentence. Max 2 consecutive definitions using the same structure."
-  source: "auto-detected"
-  date: "2026-03-30"
-
-# ── Outdated terminology: nešiojamas telefonas ──────────────────
-- wrong: "nešiojamas telefonas"
-  correct: "mobilusis telefonas"
-  category: calque
-  note: "All phones are portable now. 'Nešiojamas telefonas' (portable phone) is an outdated calque. Use 'mobilusis telefonas' or just 'telefonas'. Also: 'nešiojamasis telefonas' is equally wrong in this context."
-  source: "user-flagged"
-  date: "2026-03-31"
-
-# ── Adjective-noun case agreement errors ─────────────────────────
+# ── Adjective-noun case agreement ────────────────────────────
 - wrong: "Apgaulingą žinutė"
   correct: "Apgaulinga žinutė"
   category: morphology
-  note: "Accusative adjective (Apgaulingą) with nominative noun (žinutė). When the noun is nominative, the adjective must also be nominative. Claude sometimes generates accusative adjectives from prior sentence context."
+  note: "Accusative adjective with nominative noun. Both must agree."
   source: "module-qa"
   date: "2026-03-31"
 
-# ── Typo: stuck consonant in retųjų ─────────────────────────────
+# ── Typo patterns ────────────────────────────────────────────
 - wrong: "retųž žemių"
   correct: "retųjų žemių"
   category: spelling
-  note: "Truncated genitive plural. 'retųjų' lost its 'jų' ending and gained a stray 'ž'. Likely a generation artifact where the next word's initial consonant merged with the previous word's ending."
+  note: "Truncated genitive plural. Generation artifact."
   source: "module-qa"
   date: "2026-03-31"
 
-# ── Wrong conditional form of suprasti ───────────────────────────
 - wrong: "nesuprasėtų"
   correct: "nesuprastų"
   category: morphology
-  note: "Hallucinated conditional form. suprasti conditional = suprastų, not suprasėtų. The -ėtų ending does not exist for this verb. Claude may confuse with -ėti verb class conditionals."
+  note: "Hallucinated conditional. suprasti → suprastų, not suprasėtų."
   source: "module-qa"
   date: "2026-03-31"

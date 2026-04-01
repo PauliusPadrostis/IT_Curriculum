@@ -1,12 +1,12 @@
 # Assessment Output Format Reference
 
-Defines the document structure for Assessment_Task.pdf and Rubric.pdf. Matches the visual identity of Student_Task and Theory_Pack.
+Defines the document structure for Assessment_Task.docx and Rubric.docx. Matches the visual identity of Student_Task and Theory_Pack.
 
 **Note:** For Testmoz-based assessments, Assessment_Task is an .xlsx file (see `testmoz_format.md`). This format spec applies only to practical/mixed assessments that produce a PDF.
 
 ---
 
-## Assessment_Task.pdf Structure
+## Assessment_Task.docx Structure
 
 ### Header
 
@@ -42,7 +42,7 @@ Code blocks: Consolas 10pt, background #F2F2F2, 4pt padding.
 
 ---
 
-## Rubric.pdf Structure
+## Rubric.docx Structure
 
 ### Header
 

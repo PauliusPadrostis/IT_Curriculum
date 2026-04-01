@@ -94,7 +94,7 @@ Nėra.
 |-------------------------------------|--------|------------|-------------------------------------------------|
 | Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                                      |
 | Theory_Pack.pdf                     | ✅     | ❌         | Teorijos medžiaga                               |
-| Student_Task.pdf                    | ✅     | ❌         | Scenarijų vertinimo lapas                       |
+| Student_Task.pdf                    | ✅     | ❌         | Situacijų vertinimo užduotis                    |
 | Visual_Aid.pdf                      | ✅     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
 
 ---

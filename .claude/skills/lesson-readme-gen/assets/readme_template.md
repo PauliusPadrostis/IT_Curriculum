@@ -100,3 +100,14 @@ Baigta būsenoje rodomi tik esami failai.]
 ## Papildomi ištekliai
 
 [Trumpi aprašymai su nuorodomis — arba „Nėra".]
+
+---
+
+## Trūkstamos vaizdinės medžiagos
+
+[Generuojama tik kai Teacher_Plan nurodo vaizdinę medžiagą, kurios failų nėra pamokos aplanke.
+Jei viskas yra arba nėra nuorodų, šis skyrius praleidžiamas.]
+
+| Vaizdinė medžiaga | Etapas | Siūlomas šaltinis |
+|--------------------|--------|-------------------|
+| [Aprašymas]        | [Etapas iš Teacher_Plan] | [Canva / Pixabay / SVG / Inkscape] |

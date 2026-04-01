@@ -1,7 +1,7 @@
 ---
 name: theory-pack-gen
 description: >
-  Generate Lithuanian-language Theory Pack (.pdf) study materials for the
+  Generate Lithuanian-language Theory Pack (.docx) study materials for the
   IT Curriculum repo (PauliusPadrostis/IT_Curriculum). Use this skill whenever
   the teacher asks to create, generate, write, or build a theory pack, study
   guide, study material, or reference material for students. Also triggers on:
@@ -38,10 +38,13 @@ approves each before moving to the next.
    terminology conventions, grammar pitfalls, QA pass procedure, source evaluation
    criteria, curriculum alignment checks.
 
-**Lithuanian QA (mandatory):**
-3. Read `/mnt/skills/user/lt-qa/SKILL.md` and run **Phase 1 (PRE-GEN)** — load
-   the mistake library, AI pattern rules, and audience calibration before writing
-   any Lithuanian text. This supplements (not replaces) the quality_checklist.md.
+**Lithuanian mistake prevention (mandatory):**
+3. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+   Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
+   This supplements (not replaces) the quality_checklist.md.
+
+**Accumulated corrections (mandatory):**
+4. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
 
 Read all fully before proceeding.
 
@@ -144,7 +147,7 @@ Theory_Pack never covers.
 
 ### What to check:
 
-1. **Student_Task.pdf (if it exists on disk):**
+1. **Student_Task.docx (if it exists on disk):**
    - Read it. For every concept, term, or skill the Student_Task requires
      the student to know or apply, verify it appears in the theory pack's
      main content sections.
@@ -196,16 +199,20 @@ uncertain, flag: `[TERMINIJA: "suggested term" — patikrinti vertimą]`
 Third separate pass. Full procedure in quality_checklist.md.
 
 **Before running QA, write a plain-text sidecar:** Write all Lithuanian text
-to `Theory_Pack_text.txt` in the same lesson folder (see lt-qa SKILL.md
-"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table cell,
-info box, and list item text as plain UTF-8, one paragraph per line.
+to `Theory_Pack_text.txt` in the same lesson folder. Collect every paragraph,
+heading, table cell, info box, and list item text as plain UTF-8, one
+paragraph per line.
 
-**Run Phase 2 (POST-GEN) from `/mnt/skills/user/lt-qa/SKILL.md`, reading
-from the `Theory_Pack_text.txt` sidecar.** This adds: mistake library scan,
-AI pattern elimination, audience calibration, and VLKK terminology
-enforcement on top of the quality_checklist.md checks. The lt-qa checklist
-catches patterns that quality_checklist.md does not cover (em dashes,
-structural AI tells, grade-level sentence complexity).
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
+
+This adds mistake library scan, AI pattern elimination, audience calibration,
+and VLKK terminology enforcement on top of the quality_checklist.md checks.
 
 **After POST-GEN passes, delete the sidecar file.**
 
@@ -275,9 +282,7 @@ use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū,
 Unicode escapes make character-level errors invisible and are the primary root
 cause of Lithuanian spelling errors in generated content.
 
-**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
-opening „ and `\u201c` for closing ") because the closing quote conflicts
-with JavaScript string delimiters.
+Use straight double quotes "..." only. No escapes needed for quotes.
 
 ### 6b. Em dash post-processing
 
@@ -359,30 +364,12 @@ diacritical errors). The remaining categories (wrong stem vowels, dropped
 consonants, hallucinated verb forms) require Step 5c web verification.
 Both safeguards are needed together.
 
-### 6e. Convert to PDF
-
-After generating and spell-checking the .docx, convert to PDF:
-
-```bash
-python -c "from docx2pdf import convert; convert('input.docx', 'output.pdf')"
-```
-
-This uses Microsoft Word for high-fidelity conversion. After confirming the
-PDF exists and has non-zero size, **delete the intermediate .docx file**.
-The final deliverable is PDF only (per locked decision in CLAUDE.md).
-
-If `docx2pdf` is not installed: `pip install docx2pdf`.
-If conversion fails (Word not available): keep the .docx and inform the
-teacher that PDF conversion requires Microsoft Word.
-
 ### File naming
 
-`Theory_Pack.pdf`
+`Theory_Pack.docx`
 
 Always use the canonical name. Do not prefix with lesson codes or titles
-(e.g., never `001_L_Ergonomika_Theory_Pack.pdf`). The generation script
-creates `.docx` intermediately, but the final output file in the lesson
-folder must be `.pdf`.
+(e.g., never `001_L_Ergonomika_Theory_Pack.docx`).
 
 ---
 

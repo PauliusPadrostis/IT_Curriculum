@@ -16,6 +16,33 @@ and prompts the teacher for manual confirmations. Runs 5 steps in strict order.
 
 ---
 
+## Execution Model
+
+When the teacher triggers /end-session, the orchestrating session MUST dispatch the
+entire end-session process to a dedicated agent with a fresh context window.
+
+The orchestrating session does NOT run Steps 0-5 itself. Instead:
+
+1. Acknowledge the teacher's request: "Paleidziu end-session agenta su svariu kontekstu."
+2. Dispatch an agent with this full SKILL.md as its prompt, plus:
+   - The repo root path
+   - The current date
+   - A brief summary of what was done this session (for the changelog)
+3. The agent runs Steps 0-5 autonomously and returns results
+4. The orchestrator presents the agent's proposals (decisions, lessons) to the teacher
+5. Teacher confirms/rejects each proposal
+6. The orchestrator (or a second agent) applies confirmed changes
+
+**Why:** End-session runs when context is most depleted. The skill has 5 steps requiring
+careful attention (folder scanning, README updates, status rewrite, decision proposals,
+skill propagation). An agent with one job and a fresh context window has no reason to
+skip steps. This follows CLAUDE.md rule 5 (delegate multi-step pipelines to agents).
+
+**Exception:** If the session was trivial (no file changes, no decisions), the
+orchestrator may skip agent dispatch and just say "Nieko naujo sioje sesijoje."
+
+---
+
 ## Step 0: Read context files
 
 Before doing anything, read these files to understand current state:
@@ -55,7 +82,7 @@ The table format is:
 |----------------------|--------|------------|----------------------------------|
 | Teacher_Plan.docx    | ✅     | ❌         | Privalomas                       |
 | Theory_Pack.docx     | ✅     | ❌         |                                  |
-| Student_Task.docx    | ❌     | ❌         | Dar nesugeneruotas               |
+| Student_Task.docx    | ❌     | ❌         | Dar nesugeneruota                |
 ```
 
 ### 1d. Cross-check against canonical file requirements
@@ -231,6 +258,67 @@ Only append confirmed lessons. Use the existing format.
 ### 4c. If nothing to propose
 
 Say so. Don't fabricate decisions or lessons to seem productive.
+
+### 4d. Check lt-mistakes.yaml section placement
+
+If `lt-qa/lt-mistakes.yaml` was modified during this session (new entries added),
+check whether each new entry is in the correct section:
+
+- **CRITICAL** (top) — patterns the LLM produces frequently. Read before every generation.
+- **FULL LIBRARY** (bottom) — rarer patterns. Used in POST-GEN verification only.
+
+For each new entry, ask the teacher:
+
+> "Naujas lt-mistakes.yaml įrašas: [wrong → correct]. Ar tai CRITICAL (skaityti prieš
+> kiekvieną generavimą) ar FULL LIBRARY (tik POST-GEN patikrai)?"
+
+Move the entry to the correct section if needed. Skip this step if the yaml was not modified.
+
+### 4e. Propagate confirmed entries to affected skills
+
+**Important:** The end-session agent identifies what needs propagation and returns this
+information to the orchestrating session. The orchestrating session then dispatches the
+updater and verifier agents below. The end-session agent does NOT dispatch sub-agents itself.
+
+After ALL decisions and lessons are confirmed and appended, check whether any of them
+affect content generation skills. A decision/lesson affects a skill if it changes:
+
+- What text the skill should or should not produce (terminology, formatting, register)
+- How the skill structures its output (sections, file naming, quote style)
+- What the skill should check or validate (QA rules, coherence checks)
+- What inputs the skill should read
+
+**Skip this step if:** no decisions or lessons were confirmed, OR all confirmed entries
+are purely architectural (repo structure, workflow process) with no skill-level impact.
+
+**Identify affected skills:** For each confirmed entry, list which of the 8 generation
+skills (lesson-plan-gen, student-task-gen, theory-pack-gen, visual-aid-gen,
+lesson-readme-gen, practice-task-gen, assessment-task-gen, answer-key-gen) plus
+lt-qa and module-qa need updating. Also check their reference files.
+
+**Dispatch Agent 1 (Updater):** Launch an agent with:
+- The exact text of each confirmed decision/lesson
+- The list of affected skill SKILL.md files and their reference files
+- Instruction: for each affected skill, read it, find where the rule should be encoded
+  (or where an old contradictory rule exists), and make the edit. If the rule is already
+  present, skip that skill. Report every change made.
+
+**Dispatch Agent 2 (Verifier):** After the updater finishes, launch a second agent with:
+- The same rule text and affected skill list
+- Instruction: for each affected skill, verify the new rule is present and no
+  contradictory old rule remains. Check SKILL.md AND all files under references/.
+  Report: (a) skills correctly updated, (b) skills still missing the rule,
+  (c) reference files with contradictory content.
+
+**Orchestrator action:** Review the verifier report. If any skills were missed,
+fix them directly (small targeted edits). Do NOT re-dispatch agents for stragglers.
+
+**If the updater or verifier fails:** Note the pending updates in status.md under
+"Active Gaps" so the next session can pick them up:
+
+```markdown
+- **Pending skill update:** [rule summary] affects [skill list]. Not yet encoded.
+```
 
 ---
 

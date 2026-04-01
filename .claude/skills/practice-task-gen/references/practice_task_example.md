@@ -33,7 +33,7 @@
 
 <!--
   Everything below this line is the actual Lithuanian student-facing content
-  that would appear in the generated Practice_Task.pdf.
+  that would appear in the generated Practice_Task.docx.
 -->
 
 ```

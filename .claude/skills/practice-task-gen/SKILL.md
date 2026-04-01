@@ -1,7 +1,7 @@
 ---
 name: practice-task-gen
 description: >
-  Generate Practice_Task.pdf for P lessons in the IT Curriculum repo
+  Generate Practice_Task.docx for P lessons in the IT Curriculum repo
   (PauliusPadrostis/IT_Curriculum). Use this skill whenever the teacher asks
   to create, generate, write, or build a practice task, practice set,
   praktikos užduotis, or P lesson practice materials. Also triggers on:
@@ -14,7 +14,7 @@ description: >
 
 # Practice Task Generator
 
-Generates Practice_Task.pdf for P (Practice) lessons in the IT Curriculum
+Generates Practice_Task.docx for P (Practice) lessons in the IT Curriculum
 repo. The practice document is student-facing, with questions cognitively
 harder than the upcoming A (Assessment) lesson. All generated content is in
 **Lithuanian**. Respond to the teacher in whatever language they use.
@@ -30,7 +30,7 @@ must exist. If no A lesson follows the P lesson in the module sequence, abort.
 
 ---
 
-## Step 0 — Load References & Lithuanian QA Phase 1 (PRE-GEN)
+## Step 0 — Load References & Lithuanian Mistake Prevention
 
 **Before generating any practice task, always read these files:**
 
@@ -46,12 +46,11 @@ must exist. If no A lesson follows the P lesson in the module sequence, abort.
 5. `.claude/skills/assessment-task-gen/references/testmoz_format.md` — Testmoz .xlsx import specification and pool structure
 6. `.claude/skills/student-task-gen/references/task_format.md` — student-facing document formatting baseline
 
-### Lithuanian QA Phase 1 (PRE-GEN)
+### Lithuanian mistake prevention (mandatory)
 
-7. `lt-qa/lt-mistakes.yaml` — growing mistake library
-8. `.claude/skills/lt-qa/references/ai-patterns.md` — AI text pattern detection
-9. `.claude/skills/lt-qa/references/audience-calibration.md` — grade-appropriate language calibration
-10. Determine target audience from the P lesson README (grade, prior knowledge assumptions)
+7. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+   Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
+8. Determine target audience from the P lesson README (grade, prior knowledge assumptions)
 
 ### Lessons learned (mandatory)
 
@@ -119,9 +118,9 @@ Read the Assessment_Task.xlsx with openpyxl. Walk rows:
 - Extract per question: text, type (MCQ/short answer/scenario), correct answer, distractors, points, pool membership
 - Use one variant per pool (first variant is sufficient for analysis)
 
-### .pdf format
+### .docx format
 
-Read the PDF text. Extract sections by headings. Identify question types from format cues (lettered options = MCQ, "Atsakykite N sakiniais" = short answer, scenario descriptions = scenario, code blocks = code task). Cross-reference Rubric.pdf if present in the A lesson folder.
+Read the document text. Extract sections by headings. Identify question types from format cues (lettered options = MCQ, "Atsakykite N sakiniais" = short answer, scenario descriptions = scenario, code blocks = code task). Cross-reference Rubric.docx if present in the A lesson folder.
 
 ### Build content inventory table
 
@@ -216,7 +215,7 @@ Revision pointers table. One row per topic group.
 
 ### Text encoding
 
-Plain UTF-8 for all Lithuanian text. No `\u` unicode escapes except typographic quotes (`\u201E` and `\u201C`) if needed in string context.
+Plain UTF-8 for all Lithuanian text. No `\u` unicode escapes. Use straight double quotes "..." only.
 
 ---
 
@@ -225,9 +224,9 @@ Plain UTF-8 for all Lithuanian text. No `\u` unicode escapes except typographic 
 After generating Practice_Task, check if the paired P lesson's Teacher_Plan.docx
 exists. If it does, warn the teacher:
 
-"Practice_Task.pdf sukurtas. Teacher_Plan.docx šioje pamokoje jau egzistuoja,
+"Practice_Task.docx sukurtas. Teacher_Plan.docx šioje pamokoje jau egzistuoja,
 bet gali neatspindėti Practice_Task turinio. Rekomenduojama peržiūrėti ir
-atnaujinti Teacher_Plan, kad jis nukreiptų mokinius į Practice_Task.pdf."
+atnaujinti Teacher_Plan, kad jis nukreiptų mokinius į Practice_Task.docx."
 
 ---
 
@@ -249,23 +248,60 @@ Before outputting, verify every item against these checks:
 
 ---
 
-## Step 6 — Lithuanian QA Phase 2 (POST-GEN)
+## Step 5b — Cross-file Coherence Check
+
+After generating the Practice_Task content and passing the quality self-check,
+verify alignment with sibling lesson files before proceeding to Lithuanian QA.
+
+### What to check:
+
+1. **No verbatim leakage from Assessment_Task:**
+   - Compare every practice question against the paired A lesson's
+     Assessment_Task (already read in Step 2). No practice question may
+     reuse verbatim question stems, scenarios, or answer options from the
+     assessment. Elevated versions must change wording, context, or structure,
+     not just swap numbers.
+   - If a practice question is too close to its A counterpart (same stem
+     with only cosmetic changes) → rewrite the practice question to use a
+     different scenario or formulation while preserving the elevated
+     cognitive demand.
+
+2. **Terminology alignment with Theory_Pack (if it exists on disk):**
+   - Read Theory_Pack.docx from any L/I lesson in the P lesson's scope.
+   - Every technical term used in practice questions must match the
+     Theory_Pack's definition and spelling. If a practice question uses a
+     term differently from the Theory_Pack → use the Theory_Pack definition
+     (it is the authoritative reference for terminology).
+   - If a practice question introduces a term not covered in any
+     Theory_Pack → flag it to the teacher.
+
+3. **Objective coverage vs. L/I lesson READMEs:**
+   - Verify that practice questions collectively cover the learning
+     objectives from the L/I lessons in scope. If an objective has no
+     corresponding practice question → flag the gap.
+
+### On mismatch:
+
+- Practice_Task adapts to match Theory_Pack (authoritative for definitions)
+  and Assessment_Task (authoritative for what must NOT be duplicated).
+- Flag unresolvable contradictions to the teacher.
+
+---
+
+## Step 6 — Lithuanian POST-GEN Verification
 
 **Before running QA, write a plain-text sidecar:** Write all Lithuanian text
-to `Practice_Task_text.txt` in the same lesson folder (see lt-qa SKILL.md
-"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table cell,
-checklist item, and hint text as plain UTF-8, one paragraph per line. Delete
-the sidecar after POST-GEN passes and the .docx is converted to PDF.
+to `Practice_Task_text.txt` in the same lesson folder. Collect every paragraph,
+heading, table cell, checklist item, and hint text as plain UTF-8, one
+paragraph per line. Delete the sidecar after POST-GEN passes.
 
-After writing the sidecar, run the 7-step checklist on it:
-
-1. **Mistake library scan** — check every sentence against `lt-qa/lt-mistakes.yaml`. Fix all matches.
-2. **Grammar and morphology** — verify noun cases, verb conjugations, agreement. Lithuanian morphology is complex; double-check instrumental case, genitive plurals, and reflexive verbs.
-3. **Punctuation audit** — em dash (---) banned everywhere (replace with comma, period, colon, or restructure). Quotation marks: lower-upper only.
-4. **AI pattern elimination** — scan against `ai-patterns.md`. Remove formulaic openings, triad structures, transition stuffing, hedging language.
-5. **Audience calibration** — verify language matches the target grade per `audience-calibration.md`. Grade 9 = simplest vocabulary. Grade 11-12 = technical precision.
-6. **VLKK terminology** — use VLKK-approved Lithuanian IT terms as baseline. Teacher overrides from lt-mistakes.yaml take precedence.
-7. **Final natural-read test** — read the full document aloud mentally. Every sentence must sound like a Lithuanian teacher wrote it, not a machine.
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
 
 Fix all issues before proceeding to Step 7.
 
@@ -336,22 +372,11 @@ Use python-docx to build Practice_Task.docx following the formatting specs in `p
 - Tables with navy header rows
 - Checklist items with U+2610 character
 
-### 7.3 Convert to PDF
+### 7.3 Verify
 
-```python
-from docx2pdf import convert
-convert('Practice_Task.docx', 'Practice_Task.pdf')
-```
-
-### 7.4 Verify
-
-- Confirm Practice_Task.pdf exists
+- Confirm Practice_Task.docx exists
 - Confirm file size is non-zero
 - Spot-check: open and verify key content renders correctly
-
-### 7.5 Clean up
-
-Delete the intermediate Practice_Task.docx after successful PDF conversion.
 
 ---
 
@@ -362,7 +387,7 @@ Delete the intermediate Practice_Task.docx after successful PDF conversion.
 | A lesson Assessment_Task missing | **Abort.** "Pirmiausia sugeneruokite atsiskaitomąjį darbą naudodami /assessment-task-gen." |
 | No A lesson follows P in module | **Abort.** "Modulyje po šios P pamokos nėra A pamokos. Patikrinkite modulio struktūrą." |
 | P lesson README missing or has no objectives | **Abort.** "P pamokos README nerastas arba neturi mokymosi tikslų." |
-| A lesson Rubric missing | **Degrade.** Proceed with Assessment_Task alone. Warn teacher: "A pamokos Rubric.pdf nerastas. Generuojama tik pagal Assessment_Task." |
+| A lesson Rubric missing | **Degrade.** Proceed with Assessment_Task alone. Warn teacher: "A pamokos Rubric.docx nerastas. Generuojama tik pagal Assessment_Task." |
 | No L/I Teacher_Plans in module | **Degrade.** Generate without common-mistakes context. Warn teacher: "Modulyje nerasta L/I pamokų planų. Generuojama be dažniausių klaidų konteksto." |
 | No Theory_Packs available | **Degrade.** Omit KĄ DARYTI, JEI SUNKU section. Warn teacher: "Theory_Pack failų nerasta. Praleidžiamas skyrius 'Ką daryti, jei sunku'." |
 | Module README missing | **Degrade.** Proceed without module context. Warn teacher: "Modulio README nerastas. Generuojama be modulio konteksto." |
@@ -397,9 +422,7 @@ Read before every generation:
 - `.claude/skills/student-task-gen/references/task_format.md` — student-facing document formatting baseline
 
 ### Lithuanian QA references
-- `lt-qa/lt-mistakes.yaml` — growing mistake library
-- `.claude/skills/lt-qa/references/ai-patterns.md` — AI text pattern detection rules
-- `.claude/skills/lt-qa/references/audience-calibration.md` — grade-appropriate language calibration
+- `lt-qa/lt-mistakes.yaml` (CRITICAL section for PRE-GEN, full file for POST-GEN)
 
 ### Repo context
 - `tasks/lessons.md` — accumulated corrections (mandatory read)
@@ -410,9 +433,9 @@ Read before every generation:
 
 1. **Lithuanian only** — all student-facing content in Lithuanian, formal "jus" address, no motivational fluff
 2. **Em dash banned** — no em dashes anywhere. Replace with comma, period, colon, or restructure.
-3. **Quotation marks** — lower-upper only
+3. **Quotation marks** — straight double quotes "..." only
 4. **No AI text patterns** — no formulaic openings, no triad structures, no transition stuffing, no hedging
-5. **Plain UTF-8** — no `\u` unicode escapes except typographic quotes
+5. **Plain UTF-8** — no `\u` unicode escapes
 6. **C++ only** — for all programming content (no Python, no JavaScript, no pseudocode)
 7. **Approved software only** — Code::Blocks, Excel, Word, Inkscape, Canva, Google Classroom, Testmoz
 8. **Grade scaffolding** — Grade 9 = max detail (zero prior experience), Grade 10 = moderate, Grade 11-12 = tool-specific

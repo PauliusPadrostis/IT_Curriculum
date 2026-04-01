@@ -54,7 +54,7 @@ Generated: {YYYY-MM-DD} | Module: {module path} | Lessons audited: {N}
 
 - **Issue ID prefixes:** C = Critical, M = Major, m = minor, X = cross-lesson
 - **Numbering:** Sequential within each prefix (C-01, C-02, M-01, M-02, etc.)
-- **Location paths:** Relative to the module folder (e.g., `001_L - Ergonomics/Theory_Pack.pdf`)
+- **Location paths:** Relative to the module folder (e.g., `001_L - Ergonomics/Theory_Pack.docx`)
 - **Suggested actions:** Must name the specific generation skill (e.g., "Re-run theory-pack-gen") or manual edit (e.g., "Update README Būsena from ✅ to 🚧"). Never vague ("fix this").
 - **Cross-lesson findings** get their own section because they reference multiple lessons and don't sort neatly into per-lesson severity tiers.
 - If zero issues found in a severity tier, omit that section entirely. Don't print empty sections.

@@ -1,7 +1,7 @@
 ---
 name: student-task-gen
 description: >
-  Generate Lithuanian-language Student_Task.pdf files for L and I lessons in the
+  Generate Lithuanian-language Student_Task.docx files for L and I lessons in the
   IT Curriculum repo (PauliusPadrostis/IT_Curriculum). Use this skill whenever the
   teacher asks to create, generate, write, or build a student task, student worksheet,
   task sheet, or užduoties lapas. Also triggers on: "sugeneruok užduotį", "padaryk
@@ -63,6 +63,9 @@ The transformation pipeline:
 Also read from the lesson-plan-gen skill:
 3. `/mnt/skills/user/lesson-plan-gen/references/teacher_profile.md` — teaching
    style, constraints, classroom reality, approved software. §9–§11 are critical.
+
+**Accumulated corrections (mandatory):**
+4. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
 
 These files are the skill's operational backbone. Do not generate without them.
 
@@ -263,7 +266,7 @@ the Student_Task and other lesson materials.
    - If the plan says students use Excel but the task says Word → fix the task.
    - If the plan describes 3 sub-tasks but the task has 5 → reconcile.
 
-2. **Theory_Pack.pdf (if it exists on disk):**
+2. **Theory_Pack.docx (if it exists on disk):**
    - Every technical term used in the Student_Task should appear in the
      Theory_Pack. If a term is missing from the theory pack, either remove
      it from the task or flag it for the teacher.
@@ -281,7 +284,7 @@ the Student_Task and other lesson materials.
 
 ---
 
-## Step 6 — Render .docx and convert to PDF
+## Step 6 — Render .docx
 
 Read `references/task_format.md` for formatting specs. Use theory-pack-consistent
 visual identity: navy headings, colored info boxes, grey metadata.
@@ -293,9 +296,7 @@ use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū,
 Unicode escapes make character-level errors invisible and are the primary root
 cause of Lithuanian spelling errors in generated content.
 
-**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
-opening „ and `\u201C` for closing ") because the closing quote conflicts
-with JavaScript string delimiters.
+Use straight double quotes "..." only. No escapes needed for quotes.
 
 ### 6b. Em dash post-processing
 
@@ -352,34 +353,24 @@ have handled em dashes.
 
 ### 6c. Write plain-text sidecar
 
-After building the .docx but before PDF conversion, write all Lithuanian
-text to `Student_Task_text.txt` in the same lesson folder. This sidecar
-enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md "Plain-Text
-Sidecar Protocol"). Collect every paragraph, heading, table cell, and list
-item text during generation and write as plain UTF-8, one paragraph per line.
+After building the .docx, write all Lithuanian
+text to `Student_Task_text.txt` in the same lesson folder. Collect every
+paragraph, heading, table cell, and list item text during generation and
+write as plain UTF-8, one paragraph per line.
 
-After lt-qa POST-GEN passes (Step 7 or equivalent), delete the sidecar file.
-If POST-GEN finds issues, fix them in the .docx, regenerate the sidecar,
-and re-run POST-GEN.
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
 
-### 6d. Convert to PDF
-
-After generating the .docx and writing the sidecar, convert to PDF:
-
-```bash
-python -c "from docx2pdf import convert; convert('input.docx', 'output.pdf')"
-```
-
-This uses Microsoft Word for high-fidelity conversion. After confirming the
-PDF exists and has non-zero size, **delete the intermediate .docx file**.
-The final deliverable is PDF only (per locked decision in CLAUDE.md).
-
-If `docx2pdf` is not installed: `pip install docx2pdf`.
-If conversion fails (Word not available): keep the .docx and inform the
-teacher that PDF conversion requires Microsoft Word.
+After POST-GEN passes, delete the sidecar file. If POST-GEN finds issues,
+fix them in the .docx, regenerate the sidecar, and re-run POST-GEN.
 
 **Output location:**
-- Single: lesson folder as `Student_Task.pdf`
+- Single: lesson folder as `Student_Task.docx`
 - Batch: each task to its respective lesson folder
 
 After saving, use `present_files` to share.

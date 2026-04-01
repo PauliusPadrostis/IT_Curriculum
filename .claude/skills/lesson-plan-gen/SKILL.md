@@ -36,10 +36,12 @@ when generating would produce an obviously broken plan.
 3. `references/exemplars/` — read the exemplar matching the lesson type being generated
    (L, I, or P). These calibrate tone, density, and type-specific rhythm.
 
-**Lithuanian QA (mandatory):**
-4. Read `/mnt/skills/user/lt-qa/SKILL.md` and run **Phase 1 (PRE-GEN)** — load
-   the mistake library, AI pattern rules, and audience calibration before writing
-   any Lithuanian text.
+**Lithuanian mistake prevention (mandatory):**
+4. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+   Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
+
+**Accumulated corrections (mandatory):**
+5. Read `tasks/lessons.md` from the repo root. Follow every rule in it.
 
 These files are the skill's operational backbone. Do not generate without them.
 
@@ -397,7 +399,7 @@ other lesson materials.
 
 ### What to check:
 
-1. **Student_Task.pdf (if it exists on disk):**
+1. **Student_Task.docx (if it exists on disk):**
    - Read it. The plan's taikymo užduotys / savarankiška užduotis section
      must describe the same task the Student_Task contains: same scenario
      names, same tool references, same deliverable description.
@@ -406,7 +408,7 @@ other lesson materials.
    - If Student_Task does not exist yet (common in forward generation) →
      skip this check.
 
-2. **Theory_Pack.pdf (if it exists on disk):**
+2. **Theory_Pack.docx (if it exists on disk):**
    - Verify the plan's teaching phase covers the same core concepts that
      the Theory_Pack presents. If the theory pack introduces a term the
      plan never mentions → add it to the teaching phase or retrieval.
@@ -416,9 +418,9 @@ other lesson materials.
    - If the visual aid's slide 5 (key concepts) contains terms not in the
      plan's teaching phase → flag the discrepancy.
 
-4. **Practice_Task.pdf (if it exists on disk, P lessons only):**
+4. **Practice_Task.docx (if it exists on disk, P lessons only):**
    - Read it. The plan's main activity phase MUST reference the practice task
-     (use "praktikos užduotis" in generated text, not the filename "Practice_Task.pdf"):
+     (use "praktikos užduotis" in generated text, not the filename "Practice_Task.docx"):
      when it is distributed, how students work with it, and how much time is allocated.
    - The plan's in-class questions/scenarios MUST match Practice_Task content.
      Do not create a parallel question set that covers the same topics with
@@ -450,9 +452,7 @@ use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū,
 Unicode escapes make character-level errors invisible and are the primary root
 cause of Lithuanian spelling errors in generated content.
 
-**Exception:** Lithuanian typographic quotes must use escapes (`\u201E` for
-opening „ and `\u201C` for closing ") because the closing quote conflicts
-with JavaScript string delimiters.
+Use straight double quotes "..." only. No escapes needed for quotes.
 
 ### Em dash post-processing
 
@@ -590,22 +590,23 @@ script claims to have handled em dashes.
 
 After generating the .docx (Step 4) and before the QA pass, write all
 Lithuanian text to `Teacher_Plan_text.txt` in the same lesson folder.
-This sidecar enables reliable lt-qa POST-GEN checking (see lt-qa SKILL.md
-"Plain-Text Sidecar Protocol"). Collect every paragraph, heading, table
-cell, and list item text from the generated document and write as plain
-UTF-8, one paragraph per line. Delete the sidecar after POST-GEN passes.
+Collect every paragraph, heading, table cell, and list item text from the
+generated document and write as plain UTF-8, one paragraph per line.
+Delete the sidecar after POST-GEN passes.
 
 ---
 
 ## Step 6 — Lithuanian QA Pass
 
-After generating the .docx file and writing the sidecar, run **Phase 2
-(POST-GEN)** from `/mnt/skills/user/lt-qa/SKILL.md`, reading from the
-`Teacher_Plan_text.txt` sidecar. This includes the full checklist: mistake
-library scan, grammar & morphology check, punctuation audit, AI pattern
-elimination, audience calibration, VLKK terminology check, and final
-natural-read test. Fix all issues found. Delete the sidecar after POST-GEN
-passes. Present the .docx to the user.
+**Lithuanian POST-GEN verification (mandatory):**
+Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+(both CRITICAL and FULL LIBRARY sections). Also check for:
+- Condition-last word order (jei clause should come first, not last)
+- Register consistency (formal "jūs" throughout, no "tu" slips)
+- AI text patterns (formulaic openings, triad structures, transition stuffing)
+Fix any matches found, then update the sidecar.
+
+Delete the sidecar after POST-GEN passes. Present the .docx to the user.
 
 ---
 

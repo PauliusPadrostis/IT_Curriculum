@@ -37,7 +37,7 @@ In summary:
 ### Lithuanian Language (Dimension 3)
 Apply these rules to ALL Lithuanian text you read:
 - Em dash (—) is BANNED. Flag every instance.
-- Quotation marks must be „..." (lower-upper). Flag « » or " ".
+- Quotation marks: straight double quotes "..." only. Flag « » (guillemets). Do NOT flag straight quotes as errors.
 - Flag AI text patterns: formulaic openings, triad structures ("pirma... antra... trečia..."), transition stuffing, hedging phrases.
 - Check against these mistake patterns:
 {lt_mistakes_yaml_content}

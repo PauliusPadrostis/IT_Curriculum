@@ -53,8 +53,8 @@ Every lesson that has a Student_Task or Practice_Task must allocate
 
 | Lesson | Task file | Allocated time | Notes |
 |--------|-----------|---------------|-------|
-| 001 | Student_Task.pdf | _ min | |
-| 002 | Student_Task.pdf | _ min | |
+| 001 | Student_Task.docx | _ min | |
+| 002 | Student_Task.docx | _ min | |
 | ... | | | |
 
 **Red flag:** If a lesson has a task file but 0 min allocated,
