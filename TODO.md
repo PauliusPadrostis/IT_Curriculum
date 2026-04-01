@@ -90,6 +90,12 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 
 ---
 
+## ~~end-session skill revision: split mechanical vs judgment steps~~ DONE (2026-04-01)
+
+Skill perskirstytas į dvi fazes: Phase 1 (agentas) vykdo Steps 0-3 (mechaninis disko skenavimas), Phase 2 (orkestratoriaus sesija) vykdo Steps 1g, 4, 5 (reikalauja sesijos konteksto). Atlikta 22 simuliacijos (2 rundai), rasti ir pataisyti: explicit scope instrukcija agento prompte, AGENT STOP HERE marker tarp 1f/1g, Contract Validation blokas su recovery keliu, pašalinta pasenusi „end-session agent" kalba Step 4e, 80-char limitas matomas dispatch metu, Step 1g Skip scope ir failo sąrašo šaltinis, Phase 2 handoff trigger, tuščio repo division-by-zero fix.
+
+---
+
 ## Automated QA pipeline (po 2 modulio turinio generavimo)
 
 **Kada:** kai 2 modulio turinys sugeneruotas ir paruoštas QA.
@@ -111,14 +117,3 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 
 ---
 
-## end-session skill revision: split mechanical vs judgment steps
-
-**Kada:** kai bus laisva sesija skill priežiūrai.
-
-**Kas:** end-session skill dabar deleguoja visus 5 žingsnius vienam agentui su švariu kontekstu. Problema: agentas neturi sesijos konteksto, todėl Step 4 (sprendimų/pamokų siūlymas) yra neefektyvus — orkestratoriui reikia iš anksto susiūti visą sesijos santrauką ir perduoti agentui, o agentas vis tiek negali pasiūlyti to, ko nepastebėjo.
-
-**Siūlomas pakeitimas:**
-- Steps 1-3 (folderių skenavimas, README atnaujinimas, status.md perrašymas) — deleguoti agentui (mechaniniai, naudoja švarų kontekstą).
-- Steps 4-5 (sprendimai, pamokos, todo valymas) — vykdyti orkestruojančioje sesijoje, kuri turi pilną sesijos kontekstą.
-
-**Kodėl:** Mechaniniai žingsniai naudojasi švariu kontekstu (nėra attention degradation). Sprendimų žingsniai reikalauja sesijos konteksto (ką mokytojas koregavo, kokios klaidos buvo). Dabartinis dizainas priverčia orkestratoriui dubliuoti kontekstą kaip prompt — tai ir brangiau, ir mažiau patikima.

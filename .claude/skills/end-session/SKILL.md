@@ -18,28 +18,84 @@ and prompts the teacher for manual confirmations. Runs 5 steps in strict order.
 
 ## Execution Model
 
-When the teacher triggers /end-session, the orchestrating session MUST dispatch the
-entire end-session process to a dedicated agent with a fresh context window.
+Two phases, two executors, one clean boundary: **disk vs. session context**.
 
-The orchestrating session does NOT run Steps 0-5 itself. Instead:
+### Phase 1 — Agent (Steps 0–3)
 
-1. Acknowledge the teacher's request: "Paleidziu end-session agenta su svariu kontekstu."
-2. Dispatch an agent with this full SKILL.md as its prompt, plus:
-   - The repo root path
-   - The current date
-   - A brief summary of what was done this session (for the changelog)
-3. The agent runs Steps 0-5 autonomously and returns results
-4. The orchestrator presents the agent's proposals (decisions, lessons) to the teacher
-5. Teacher confirms/rejects each proposal
-6. The orchestrator (or a second agent) applies confirmed changes
+Steps 0–3 read only from disk. No session context needed.
 
-**Why:** End-session runs when context is most depleted. The skill has 5 steps requiring
-careful attention (folder scanning, README updates, status rewrite, decision proposals,
-skill propagation). An agent with one job and a fresh context window has no reason to
-skip steps. This follows CLAUDE.md rule 5 (delegate multi-step pipelines to agents).
+1. Acknowledge: "Paleidziu end-session agenta su svariu kontekstu."
+2. Dispatch agent with:
+   - This full SKILL.md
+   - An explicit scope instruction at the TOP of the agent prompt:
+     "SCOPE: Execute Steps 0, 1a–1f, 2, and 3 ONLY.
+      Return the Agent Return Contract and stop.
+      Do NOT execute Steps 1g, 4, or 5 — those belong to the orchestrating session."
+   - Repo root path
+   - Current date
+   - One-line changelog entry (~80 chars, what changed this session — for status.md only,
+     not a substitute for session context in Step 4)
+3. Agent runs Steps 0–3 and returns the Agent Return Contract (see below).
 
-**Exception:** If the session was trivial (no file changes, no decisions), the
-orchestrator may skip agent dispatch and just say "Nieko naujo sioje sesijoje."
+**Why agent for Steps 0–3:** Mechanical filesystem work. Clean context = no attention
+degradation on scanning, README updates, and status.md rewrite.
+
+### Agent Return Contract
+
+The Phase 1 agent MUST return exactly this structure before finishing:
+
+```
+## End-Session Agent Report
+
+### README changes
+[List of lesson folders where README was updated, with old → new Busena]
+OR: "No changes."
+
+### Lessons transitioned to "Failai sukurti"
+[List of NNN_T lesson folders now at ✅ Failai sukurti]
+OR: "None."
+
+### status.md
+Rewritten. Last updated: YYYY-MM-DD.
+Active gaps: [brief list or "none"]
+```
+
+### Contract Validation
+
+Confirm the agent returned all three sections:
+- "### README changes"
+- "### Lessons transitioned to 'Failai sukurti'"
+- "### status.md"
+
+**If valid: immediately proceed: Step 1g → Steps 4a–4e → Step 5.**
+
+If any section is missing or the response is a narrative summary:
+1. Re-dispatch with the same scope instruction plus: "Your previous response was a
+   narrative. Return ONLY the structured Return Contract. Do not summarize."
+2. If re-dispatch also fails: read lesson READMEs and status.md directly to reconstruct
+   the missing data, then proceed. Log under Active Gaps: "Phase 1 agent returned
+   unstructured output on YYYY-MM-DD."
+
+### Phase 2 — Orchestrator (Steps 1g, 4, 5)
+
+The orchestrator runs:
+- Step 1g: ask teacher about "Failai sukurti" transitions (requires one disk read per
+  lesson; this is the one exception to Phase 2 being conversation-only)
+- Steps 4a–4e: propose decisions and lessons — drawn exclusively from the orchestrating
+  session's conversation history, NOT from the changelog entry passed to Phase 1
+- Step 5: clear todo.md
+
+**Why orchestrator for Steps 1g, 4, 5:** These steps read from the conversation — what
+the teacher said, what was corrected, what format choices were made. The agent never
+had this context. Passing a session summary to the agent is lossy and expensive; the
+orchestrator already has the full context for free.
+
+**Exception:** If the session was trivial (no file changes, no decisions, no corrections),
+skip Phase 1 agent dispatch. Say "Nieko naujo sioje sesijoje." and clear todo.md directly.
+
+---
+
+> **Phase 1 — Agent runs Steps 0–3** (reads from disk only, no session context needed)
 
 ---
 
@@ -117,16 +173,27 @@ lesson type exist on disk, not just that the README table has no ❌ rows.
 Replace the `Busena` field value and the `Reikalingi failai` table in the README.
 Do NOT touch any other section of the README. Preserve all content exactly.
 
-### 1g. Prompt for manual check (if applicable)
+---
 
-If a lesson just transitioned to **✅ Failai sukurti** (all files present, not yet checked):
+> **AGENT: STOP HERE. Do NOT execute Step 1g or anything below it.**
+> Proceed directly to Step 2. Step 1g belongs to the orchestrating session only.
+
+---
+
+### 1g. [ORCHESTRATOR ONLY] Prompt for manual check (if applicable)
+
+For each lesson listed under "Lessons transitioned to 'Failai sukurti'" in the agent report:
+read the lesson folder to get the current file list, then ask the teacher one lesson at a time:
 
 > "Pamoka NNN_T turi visus failus. Ar norite patikrinti ir pažymeti kaip Baigta?"
 
-List the files. Wait for teacher response:
+List the files (read them from disk — the agent report does not include the file list).
+Wait for teacher response:
 - **Yes / Taip** → flip all `Patikrinta` to ✅, set Busena to ✅ Baigta
-- **No / specific file** → leave as is, note which files teacher wants to revisit
-- **Skip** → move on, don't ask again this session
+- **No / specific file** → leave as is, note the lesson under Active Gaps in status.md
+- **Skip** → skip ALL remaining 1g prompts for this session, move on immediately
+
+If "Lessons transitioned" was "None." in the agent report, skip this step entirely.
 
 ---
 
@@ -208,6 +275,12 @@ Last updated: YYYY-MM-DD
 - Keep maximum 20 entries
 - If >20, remove oldest entries from the bottom
 - Each entry is ONE line, max ~80 characters. Focus on what changed, not process.
+- If lesson folders = 0: write "N/A (no lesson folders)" for File completeness.
+
+---
+
+> **AGENT STOP POINT.** Your work ends here. Return the Agent Return Contract to the
+> orchestrating session. Do not proceed to Steps 1g, 4, or 5.
 
 ---
 
@@ -276,9 +349,9 @@ Move the entry to the correct section if needed. Skip this step if the yaml was 
 
 ### 4e. Propagate confirmed entries to affected skills
 
-**Important:** The end-session agent identifies what needs propagation and returns this
-information to the orchestrating session. The orchestrating session then dispatches the
-updater and verifier agents below. The end-session agent does NOT dispatch sub-agents itself.
+**Important:** The orchestrator (Phase 2) identifies what needs propagation and dispatches
+the updater and verifier agents below. This step runs entirely in the orchestrating session
+using session context — not via the Phase 1 agent.
 
 After ALL decisions and lessons are confirmed and appended, check whether any of them
 affect content generation skills. A decision/lesson affects a skill if it changes:
@@ -313,8 +386,8 @@ lt-qa and module-qa need updating. Also check their reference files.
 **Orchestrator action:** Review the verifier report. If any skills were missed,
 fix them directly (small targeted edits). Do NOT re-dispatch agents for stragglers.
 
-**If the updater or verifier fails:** Note the pending updates in status.md under
-"Active Gaps" so the next session can pick them up:
+**If the updater or verifier fails:** Patch only the Active Gaps section of status.md
+(do NOT regenerate the full file — Phase 1 already rewrote it). Add:
 
 ```markdown
 - **Pending skill update:** [rule summary] affects [skill list]. Not yet encoded.

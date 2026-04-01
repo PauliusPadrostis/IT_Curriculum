@@ -398,3 +398,11 @@ The following are **not yet decided** and need resolution:
 **Context**: 17 generation scripts and `package.json` persisted in `_scripts/` for 2 days after the ban decision was logged. The folder's existence invited reuse. Root-level `package.json` implied the repo is a Node project.
 
 **Rationale**: Deleting the folder itself prevents drift. Generation scripts are ephemeral session artifacts — run them, keep the output, discard the script. If npm packages are needed for a one-off generation, install them transiently and clean up.
+
+## 2026-04-01 — end-session skill split into Phase 1 (agent) / Phase 2 (orchestrator)
+
+**Decision**: The end-session skill now runs in two phases with a clean boundary at "disk vs. session context". Phase 1 dispatches a clean-context agent to run Steps 0–3 (mechanical filesystem work: read context files, scan lesson READMEs, update module READMEs, rewrite status.md). Phase 2 runs in the orchestrating session to execute Steps 1g, 4, and 5 (judgment work requiring conversation history). The boundary is enforced three ways: scope instruction at agent prompt top, imperative `AGENT: STOP HERE` marker between Steps 1f/1g, and `AGENT STOP POINT` at end of Step 3. The agent returns a structured Agent Return Contract; the orchestrator validates it before proceeding.
+
+**Context**: The previous design dispatched all 5 steps to a single agent. Step 4 (propose decisions/lessons) requires knowing what the teacher said, what was corrected, what format choices were made — context the agent never had. Passing a session summary to the agent is lossy and expensive; the orchestrator already has the full context for free.
+
+**Rationale**: Mechanical steps benefit from clean context (no attention degradation on repetitive file scanning). Judgment steps require session context (decisions and lessons can only be identified from the conversation, not from disk state). Splitting on this boundary gives each phase the right executor for its work type. Three enforcement layers ensure the agent cannot accidentally execute Phase 2 steps.

@@ -7,7 +7,7 @@
 
 > **Teacher note:** Pairs well with Tech Foundations, consider co-scheduling the assessment.
 
-**Modulio būsena:** 0/7 📋 Šablonas (laukia regeneravimo su atnaujintais skill'ais)
+**Modulio būsena:** 7/7 📋 Šablonas
 
 ## Lesson Index
 

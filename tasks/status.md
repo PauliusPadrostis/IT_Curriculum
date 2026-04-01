@@ -5,29 +5,30 @@ Last updated: 2026-04-01
 ## Current State
 
 - **Grades in repo:** Grade 9, Grade 10, Grade 11, Grade 12
-- **Modules:** 39 total across all grades
+- **Modules:** 26 total (Grade 9: 7, Grade 10: 3, Grade 11: 10, Grade 12: 6)
 - **Lesson folders:** 351 total
-- **File completeness:** 0 content files exist. All Safety module content deleted for regeneration.
+- **File completeness:** 0/351 required content files exist (0%) — all folders contain README.md only
 - **Lessons Baigta:** 0 | Failai sukurti: 0 | WIP: 0 | Sablonas: 351
 
 ## Active Gaps
 
-- **01_Safety module:** All 7 lessons reset to Sablonas. Ready for regeneration with updated skills (DOCX format, patched references, lessons.md integration).
-- **Module_Design.md:** Does not exist for 01_Safety. Required before content generation (2026-03-30 decision). Create before regenerating.
+- **All 351 lessons:** Sablonas (README only). No content generation started for any module.
+- **01_Safety (Grade 9):** 7 lessons ready for regeneration. Skills patched and canonical format locked (DOCX). Must create Module_Design.md before generating (2026-03-30 decision).
 - **003_L missing visuals:** Phishing example and algorithm schema still needed (teacher-created). Tracked in lesson README.
-- **All other modules (344 lessons):** Sablonas (README only). No content generation started.
+- **All other modules (344 lessons):** No content generation started.
 
 ## Structural Notes
 
-- **Output format:** DOCX for all documents except Visual_Aid (PDF) and Assessment_Task (XLSX). Reversed the 2026-03-28 PDF decision.
-- **lt-mistakes.yaml:** Moved from lt-qa/ to _references/. All 45 path references updated across skills.
-- **Skills:** All 22 skill/reference files patched for DOCX format, _references/ path, lessons.md reading. Project-only (no global copies).
-- **Deleted:** 26 stale content files (01_Safety), 17 banned scripts (_scripts/), 24 stale skill backups, seed-mistakes.yaml, package.json + node_modules, lt-qa/ folder.
+- **Output format:** DOCX for all documents except Visual_Aid (PDF) and Assessment_Task (XLSX).
+- **lt-mistakes.yaml:** Lives in _references/. All skill path references updated.
+- **Module READMEs:** All module-level READMEs now have Busena column and summary line (updated this session for Grade 10, 11, 12).
+- **_Theory_Load folders:** Grade 11 (6 packs) and Grade 12 (7 packs). Non-standard folder naming (TL01_ prefix); no lesson README scan applies.
 
 ## Changelog
 
 | Date | Summary |
 |------|---------|
+| 2026-04-01 | end-session skill: Phase 1/2 split implemented; 22 sim tests; 13 patches |
 | 2026-04-01 | Prep session for Safety module regeneration. DOCX canonical format decision. Patched 22 skill/reference files. Deleted 26 stale content files, 17 banned scripts, 24 stale backups, seed-mistakes.yaml, package.json + node_modules. Moved lt-mistakes.yaml to _references/. Updated 45 path refs. Added 2 lessons learned. All 7 Safety lessons reset to Sablonas. |
 | 2026-04-01 | Systemic: deleted 9 stale global skills, fixed skill resolution (personal>project). |
 | 2026-04-01 | Systemic: all 8 gen skills now read tasks/lessons.md. 5 were missing it. |
@@ -47,4 +48,3 @@ Last updated: 2026-04-01
 | 2026-03-30 | Analyzed QA root causes, added 6 TODO items. Multiple fix passes. |
 | 2026-03-30 | Ran module-qa on 01_Safety: 24 issues (1C/7M/16m). |
 | 2026-03-29 | First generation pass: all 7 Safety lesson content files. |
-| 2026-03-28 | Skills created: assessment-task-gen, practice-task-gen, answer-key-gen, visual-aid-gen. |
