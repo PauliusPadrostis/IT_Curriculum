@@ -382,3 +382,19 @@ The following are **not yet decided** and need resolution:
 **Context**: Teacher found that PDF output creates a costly maintenance loop: any minor mistake or preference change requires a full token-burning regeneration cycle, which risks introducing new errors. DOCX files can be edited manually in Word in seconds.
 
 **Rationale**: The original PDF rationale (students can't edit, consistent rendering) doesn't outweigh the maintenance cost. Teachers distribute materials via Google Classroom where file editing is controlled by sharing permissions, not file format. The third format change in 10 days, but this time the reasoning addresses the actual pain point (editability for corrections) rather than aesthetics.
+
+## 2026-04-01 — lt-mistakes.yaml canonical location is _references/
+
+**Decision**: lt-mistakes.yaml moved from `lt-qa/` to `_references/`. The `lt-qa/` data folder at repo root is deleted. All 8 generation skills and lt-qa standalone skill now reference `_references/lt-mistakes.yaml`. This is the single source of truth for the Lithuanian mistake library.
+
+**Context**: lt-qa was demoted to standalone tool (2026-04-01). The yaml file logically belongs with other reference materials (`informatika_programa.md`, VBE docs) in `_references/`. The `lt-qa/` folder held only this one file after `seed-mistakes.yaml` was deleted as redundant.
+
+**Rationale**: Consolidating reference materials in one folder. The lt-qa skill definition still lives at `.claude/skills/lt-qa/` — only the data file moved.
+
+## 2026-04-01 — _scripts/ folder permanently banned
+
+**Decision**: The `_scripts/` folder and its contents are permanently deleted. The 2026-03-30 decision "No generation scripts in repo" is now enforced at the structural level — the folder itself no longer exists, not just the files within it. `package.json` at repo root also removed. `.gitignore` already blocks `node_modules/` and `package-lock.json`.
+
+**Context**: 17 generation scripts and `package.json` persisted in `_scripts/` for 2 days after the ban decision was logged. The folder's existence invited reuse. Root-level `package.json` implied the repo is a Node project.
+
+**Rationale**: Deleting the folder itself prevents drift. Generation scripts are ephemeral session artifacts — run them, keep the output, discard the script. If npm packages are needed for a one-off generation, install them transiently and clean up.
