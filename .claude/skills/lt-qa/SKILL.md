@@ -31,9 +31,9 @@ Activate this skill when the user:
 
 ### Step 0: Load Resources
 
-1. Read `lt-qa/lt-mistakes.yaml` (full file, both sections).
-2. Read `lt-qa/references/ai-patterns.md`.
-3. Read `lt-qa/references/audience-calibration.md`.
+1. Read `_references/lt-mistakes.yaml` (full file, both sections).
+2. Read `references/ai-patterns.md`.
+3. Read `references/audience-calibration.md`.
 4. Determine the target audience from context (see audience-calibration.md
    detection rules). If unclear, ask the user.
 
@@ -151,7 +151,7 @@ If a correction was made that does NOT already exist in the loaded library:
 - After presenting results, ask:
   "Radau nauja klaidu sablona: [wrong] -> [correct]. Ar itraukti i klaidu
   biblioteka?"
-- If user confirms, append to `lt-qa/lt-mistakes.yaml`.
+- If user confirms, append to `_references/lt-mistakes.yaml`.
 
 ### When the user flags a mistake
 
@@ -167,7 +167,7 @@ Regardless of format:
    preference).
 3. Confirm with user: "Itraukiu i klaidu biblioteka: [wrong] -> [correct]
    ([category]). Gerai?"
-4. On confirmation, append to `lt-qa/lt-mistakes.yaml`.
+4. On confirmation, append to `_references/lt-mistakes.yaml`.
 
 Format for new entries:
 ```yaml

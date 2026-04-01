@@ -141,7 +141,7 @@ Teacher_Plan teaching phase content.
 ## Step 2: Lithuanian QA (PRE-GEN)
 
 **Lithuanian mistake prevention (mandatory):**
-Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
 Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 Hard rules that apply to Visual_Aid content:
@@ -335,7 +335,7 @@ Delete the sidecar after POST-GEN passes in Step 4.
 After generating the .docx and writing the sidecar, perform a structured review:
 
 1. **Read the sidecar** `Visual_Aid_text.txt` as the canonical text to check.
-2. **Mistake library scan:** Compare all text against `lt-qa/lt-mistakes.yaml`.
+2. **Mistake library scan:** Compare all text against `_references/lt-mistakes.yaml`.
    Focus on slide 5 definitions and slide 4 task brief (these contain
    generated/summarized text, not verbatim extractions).
 3. **Grammar check:** Scan generated text for case agreement, verb form,

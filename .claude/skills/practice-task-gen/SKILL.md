@@ -48,7 +48,7 @@ must exist. If no A lesson follows the P lesson in the module sequence, abort.
 
 ### Lithuanian mistake prevention (mandatory)
 
-7. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+7. Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
    Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 8. Determine target audience from the P lesson README (grade, prior knowledge assumptions)
 
@@ -296,7 +296,7 @@ heading, table cell, checklist item, and hint text as plain UTF-8, one
 paragraph per line. Delete the sidecar after POST-GEN passes.
 
 **Lithuanian POST-GEN verification (mandatory):**
-Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
 - Register consistency (formal "jūs" throughout, no "tu" slips)
@@ -422,7 +422,7 @@ Read before every generation:
 - `.claude/skills/student-task-gen/references/task_format.md` — student-facing document formatting baseline
 
 ### Lithuanian QA references
-- `lt-qa/lt-mistakes.yaml` (CRITICAL section for PRE-GEN, full file for POST-GEN)
+- `_references/lt-mistakes.yaml` (CRITICAL section for PRE-GEN, full file for POST-GEN)
 
 ### Repo context
 - `tasks/lessons.md` — accumulated corrections (mandatory read)

@@ -359,7 +359,7 @@ paragraph, heading, table cell, and list item text during generation and
 write as plain UTF-8, one paragraph per line.
 
 **Lithuanian POST-GEN verification (mandatory):**
-Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
 - Register consistency (formal "jūs" throughout, no "tu" slips)

@@ -71,7 +71,7 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 ## 2026-03-29 — Condition-last word order is an English calque
 
 - Problem: Generated "Net taisyklinga poza nepakanka, jei sėdite valandų valandas be pertraukos." This is a direct calque of English "Even X isn't enough if Y" — condition at the end, nominative + nepakanka construction. Natural Lithuanian puts the condition first and uses genitive-negative: "Jei sėdėsite valandų valandas be pertraukos, taisyklingos pozos nepakaks."
-- Rule: (1) Place "jei" clauses first in Lithuanian, not at the end as in English. (2) "X nepakanka" with nominative subject is an English pattern. Use genitive + nepakaks/neužtenka instead. Both patterns added to lt-mistakes.yaml and lt-qa/references/ai-patterns.md.
+- Rule: (1) Place "jei" clauses first in Lithuanian, not at the end as in English. (2) "X nepakanka" with nominative subject is an English pattern. Use genitive + nepakaks/neužtenka instead. Both patterns added to lt-mistakes.yaml and .claude/skills/lt-qa/references/ai-patterns.md.
 - Applies to: theory-pack-gen, lt-qa, any Lithuanian content generation
 
 ## 2026-03-29 — Visual Aid landscape: pass portrait dimensions to docx-js

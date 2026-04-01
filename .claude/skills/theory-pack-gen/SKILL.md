@@ -39,7 +39,7 @@ approves each before moving to the next.
    criteria, curriculum alignment checks.
 
 **Lithuanian mistake prevention (mandatory):**
-3. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+3. Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
    Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
    This supplements (not replaces) the quality_checklist.md.
 
@@ -204,7 +204,7 @@ heading, table cell, info box, and list item text as plain UTF-8, one
 paragraph per line.
 
 **Lithuanian POST-GEN verification (mandatory):**
-Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
 - Register consistency (formal "jūs" throughout, no "tu" slips)

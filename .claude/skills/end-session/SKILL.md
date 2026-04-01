@@ -261,7 +261,7 @@ Say so. Don't fabricate decisions or lessons to seem productive.
 
 ### 4d. Check lt-mistakes.yaml section placement
 
-If `lt-qa/lt-mistakes.yaml` was modified during this session (new entries added),
+If `_references/lt-mistakes.yaml` was modified during this session (new entries added),
 check whether each new entry is in the correct section:
 
 - **CRITICAL** (top) — patterns the LLM produces frequently. Read before every generation.

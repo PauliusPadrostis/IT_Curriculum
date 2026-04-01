@@ -30,7 +30,7 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 - Quotation marks: straight double quotes "..." only. No Lithuanian „...", no guillemets. Simplest for LLM generation, no escapes needed.
 - No AI text patterns: no formulaic openings, no triad structures, no transition stuffing, no hedging.
 - VLKK terminology as baseline. Teacher overrides stored in lt-qa mistake library.
-- When generating Lithuanian, load lt-qa/lt-mistakes.yaml from this repo before writing.
+- When generating Lithuanian, load _references/lt-mistakes.yaml from this repo before writing.
 - After generating, self-check against the mistake library. Fix before presenting output.
 
 ## Mistakes Log — Self-Improvement
@@ -63,8 +63,9 @@ Grade_XX/
   skills/
     assessment-task-gen/SKILL.md (generates Assessment_Task.xlsx + Rubric.docx)
     end-session/SKILL.md         (repo reconciliation on /end-session)
-lt-qa/
+_references/
   lt-mistakes.yaml               (growing mistake library)
+  informatika_programa.md        (national curriculum reference)
 tasks/
   status.md                      (rolling repo snapshot — rewritten by /end-session)
   decisions.md                   (append-only decision log)

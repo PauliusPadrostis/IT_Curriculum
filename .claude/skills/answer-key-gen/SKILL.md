@@ -46,7 +46,7 @@ follow mode-specific rules.
 5. `.claude/skills/assessment-task-gen/references/cs_assessment_progression.md` — grade expectations (cross-skill read)
 
 **Lithuanian mistake prevention (mandatory):**
-6. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+6. Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
    Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 **Lessons learned (mandatory):**
@@ -241,7 +241,7 @@ proceeding to Lithuanian QA.
 ## Step 5 — Lithuanian QA
 
 **Lithuanian POST-GEN verification (mandatory):**
-Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
 - Register consistency (formal "jūs" throughout, no "tu" slips)

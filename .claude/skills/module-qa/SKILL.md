@@ -40,7 +40,7 @@ hypothetical ones.
 
 **External files (mandatory):**
 6. `tasks/lessons.md` from the repo root — accumulated correction rules. Follow every rule.
-7. `lt-qa/lt-mistakes.yaml` from the repo root — Lithuanian mistake patterns.
+7. `_references/lt-mistakes.yaml` from the repo root — Lithuanian mistake patterns.
 
 ---
 
@@ -95,7 +95,7 @@ For each eligible lesson, dispatch a subagent using the Agent tool:
   - `{grade_level}`, `{grade_number}`
   - `{file_list_with_paths}` — every file in the lesson folder, with full paths
   - `{pedagogical_checks_content}` — the full content of `references/pedagogical_checks.md` (inline, so subagent doesn't need to read it)
-  - `{lt_mistakes_yaml_content}` — the full content of `lt-qa/lt-mistakes.yaml` (inline, so subagent doesn't need to read it)
+  - `{lt_mistakes_yaml_content}` — the full content of `_references/lt-mistakes.yaml` (inline, so subagent doesn't need to read it)
   - `{lessons_md_content}` — the full content of `tasks/lessons.md` (inline)
 
 **Dispatch all subagents in parallel** — use a single message with multiple Agent tool calls. Do NOT dispatch sequentially.
@@ -185,4 +185,4 @@ When sources conflict, use this hierarchy:
 | `references/report_format.md` | Report template and conventions |
 | `references/subagent_prompt.md` | Per-lesson subagent prompt template |
 | `tasks/lessons.md` (repo root) | Accumulated correction rules |
-| `lt-qa/lt-mistakes.yaml` (repo root) | Lithuanian mistake patterns |
+| `_references/lt-mistakes.yaml` (repo root) | Lithuanian mistake patterns |

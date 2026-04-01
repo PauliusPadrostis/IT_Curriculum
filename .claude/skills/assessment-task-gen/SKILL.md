@@ -39,7 +39,7 @@ reasoning, wait for teacher approval, then generate.
 7. Relevant exemplar from `references/exemplars/`
 
 **Lithuanian mistake prevention (mandatory):**
-8. Read `lt-qa/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+8. Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
    Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 **Lessons learned (mandatory):**
@@ -63,7 +63,7 @@ reasoning, wait for teacher approval, then generate.
 | 6 | **Curriculum reference** (`_references/informatika_programa.md`) | National competency expectations |
 | 7 | **VBE reference files** (grades 11-12 only) | Exam format alignment |
 | 8 | **Skill reference docs** | Assessment design rules, grading policy |
-| 9 | **lt-qa/lt-mistakes.yaml** (CRITICAL section for PRE-GEN, full file for POST-GEN) | Lithuanian QA |
+| 9 | **_references/lt-mistakes.yaml** (CRITICAL section for PRE-GEN, full file for POST-GEN) | Lithuanian QA |
 
 ### Path parsing
 
@@ -423,7 +423,7 @@ the same lesson folder (e.g., `Rubric_text.txt`). For .xlsx files
 to `Assessment_Task_text.txt`. Delete sidecars after POST-GEN passes.
 
 **Lithuanian POST-GEN verification (mandatory):**
-Read the sidecar `_text.txt` file. Scan its content against the FULL `lt-qa/lt-mistakes.yaml`
+Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
 - Register consistency (formal "jūs" throughout, no "tu" slips)

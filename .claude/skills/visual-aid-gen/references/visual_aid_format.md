@@ -4,7 +4,7 @@
 `/mnt/skills/public/docx/SKILL.md` — it contains the docx-js setup,
 table formatting, styles, and validation rules.
 
-**For Lithuanian language rules**, read `lt-qa/lt-mistakes.yaml` (CRITICAL
+**For Lithuanian language rules**, read `_references/lt-mistakes.yaml` (CRITICAL
 section only) before writing any Lithuanian text. Slide 5 term definitions
 are the primary generated Lithuanian content and must pass POST-GEN checks.
 
