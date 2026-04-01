@@ -152,6 +152,12 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Rule: Never cite statistics that cannot be traced to a specific, publicly accessible source document. If a statistic sounds plausible but you cannot confirm the exact publication, do not include it. Replace with a verifiable source (NKSC, Eurostat, or other official body with a confirmable URL or document title). When in doubt, use qualitative claims ("vis daugiau") instead of fake precision.
 - Applies to: theory-pack-gen, any content generation that includes statistical claims
 
+## 2026-04-01 — Do not delete files the teacher didn't ask to delete
+
+- Problem: During a cleanup session, Claude deleted root TODO.md assuming it was redundant because tasks/todo.md exists. TODO.md holds project-level deferred items (docx template library, automated QA pipeline). tasks/todo.md holds session-level ephemeral plans. Different purpose, different scope.
+- Rule: Never delete a file the teacher didn't explicitly ask to delete, even if it looks redundant during a cleanup. If you think a file should be removed, say so and wait for confirmation. This applies especially to files at repo root that aren't obviously generated content.
+- Applies to: all cleanup and reorganization tasks
+
 ## 2026-04-01 — Decisions must be encoded into all affected skills, not just logged
 
 - Problem: decisions.md accumulated 30+ decisions over 10 days. Most content-affecting decisions were only encoded into whichever skill was being worked on at the time. The 5 oldest, highest-volume skills (lesson-plan-gen, student-task-gen, theory-pack-gen, visual-aid-gen, lesson-readme-gen) never read tasks/lessons.md. The straight quotes decision (2026-03-31) was logged in decisions.md and CLAUDE.md but 7 skills still actively enforced the opposite rule. module-qa's subagent prompt would flag the correct behavior as an error.
