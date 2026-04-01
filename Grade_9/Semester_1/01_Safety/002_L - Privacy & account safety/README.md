@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 002 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                  |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
@@ -92,10 +92,10 @@ Nėra.
 
 | Failas                              | Būsena | Patikrinta | Pastaba                                         |
 |-------------------------------------|--------|------------|-------------------------------------------------|
-| Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                                      |
-| Theory_Pack.pdf                     | ✅     | ❌         | Teorijos medžiaga                               |
-| Student_Task.pdf                    | ✅     | ❌         | Situacijų vertinimo užduotis                    |
-| Visual_Aid.pdf                      | ✅     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
+| Teacher_Plan.docx                   | ❌     | ❌         | Privalomas                                      |
+| Theory_Pack.docx                    | ❌     | ❌         | Teorijos medžiaga                               |
+| Student_Task.docx                   | ❌     | ❌         | Situacijų vertinimo užduotis                    |
+| Visual_Aid.pdf                      | ❌     | ❌         | Slaptažodžių pavyzdžiai, 2FA schema, situacijos |
 
 ---
 

@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 004 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                  |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
@@ -95,10 +95,10 @@ Nėra.
 
 | Failas                                       | Būsena | Patikrinta | Pastaba                                     |
 |----------------------------------------------|--------|------------|---------------------------------------------|
-| Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                                  |
-| Theory_Pack.pdf                              | ✅     | ❌         | Teorijos medžiaga                           |
-| Student_Task.pdf                             | ✅     | ❌         | Priežastis, poveikis, sprendimas lapas      |
-| Visual_Aid.pdf                               | ✅     | ❌         | Projekcinė medžiaga (6 skaidrės)            |
+| Teacher_Plan.docx                            | ❌     | ❌         | Privalomas                                  |
+| Theory_Pack.docx                             | ❌     | ❌         | Teorijos medžiaga                           |
+| Student_Task.docx                            | ❌     | ❌         | Priežastis, poveikis, sprendimas lapas      |
+| Visual_Aid.pdf                               | ❌     | ❌         | Projekcinė medžiaga (6 skaidrės)            |
 
 ---
 

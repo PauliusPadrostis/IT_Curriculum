@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 003 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                  |
+| **Būsena**      | 📋 Šablonas                                       |
 
 ---
 
@@ -92,10 +92,10 @@ Nėra.
 
 | Failas                                       | Būsena | Patikrinta | Pastaba                               |
 |----------------------------------------------|--------|------------|---------------------------------------|
-| Teacher_Plan.docx                            | ✅     | ❌         | Privalomas                            |
-| Theory_Pack.pdf                              | ✅     | ❌         | Teorijos medžiaga                     |
-| Student_Task.pdf                             | ✅     | ❌         | Scenarijų analizės lapas              |
-| Visual_Aid.pdf                               | ✅     | ❌         | Phishing požymiai, algoritmo schema   |
+| Teacher_Plan.docx                            | ❌     | ❌         | Privalomas                            |
+| Theory_Pack.docx                             | ❌     | ❌         | Teorijos medžiaga                     |
+| Student_Task.docx                            | ❌     | ❌         | Scenarijų analizės lapas              |
+| Visual_Aid.pdf                               | ❌     | ❌         | Phishing požymiai, algoritmo schema   |
 
 ---
 

@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 006 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                   |
+| **Būsena**      | 📋 Šablonas                                        |
 
 ---
 
@@ -91,9 +91,9 @@ Nėra.
 
 | Failas                 | Būsena | Patikrinta | Pastaba                                   |
 |------------------------|--------|------------|-------------------------------------------|
-| Teacher_Plan.docx      | ✅     | ❌         | Privalomas                                |
-| Practice_Task.pdf      | ✅     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
-| Answer_Key.pdf         | ✅     | ❌         | Atsakymai su paaiškinimais (mokiniams)     |
+| Teacher_Plan.docx      | ❌     | ❌         | Privalomas                                |
+| Practice_Task.docx     | ❌     | ❌         | Praktikos klausimai vertinimui pasiruošti  |
+| Answer_Key.docx        | ❌     | ❌         | Atsakymai su paaiškinimais (mokiniams)     |
 
 ---
 

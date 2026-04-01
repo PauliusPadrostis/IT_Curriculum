@@ -125,14 +125,14 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 ## 2026-03-31 — Practice_Task must be referenced in Teacher_Plan for P lessons
 
 - Problem: 006_P Teacher_Plan ran a full 34-min oral session with its own 6 questions + 3 scenarios. Practice_Task.pdf (10 completely different questions) existed in the folder but was never mentioned in the plan. Teacher had two disconnected question sets with no guidance on their relationship.
-- Rule: When generating a P lesson Teacher_Plan where Practice_Task already exists, the plan MUST reference Practice_Task.pdf and explain its role (in-class handout, homework, or self-study). The timeline must account for Practice_Task distribution. Similarly, when practice-task-gen creates a task, it should flag if the Teacher_Plan doesn't reference it.
+- Rule: When generating a P lesson Teacher_Plan where Practice_Task already exists, the plan MUST reference Practice_Task.docx and explain its role (in-class handout, homework, or self-study). The timeline must account for Practice_Task distribution. Similarly, when practice-task-gen creates a task, it should flag if the Teacher_Plan doesn't reference it.
 - Applies to: lesson-plan-gen, practice-task-gen
 
-## 2026-03-31 — Patching .docx requires PDF reconversion
+## 2026-03-31 — Patching .docx requires PDF reconversion [OBSOLETE as of 2026-04-01]
 
 - Problem: 004 Theory_Pack.docx was patched with text fixes but the PDF was not regenerated. Students receive PDF, so the fix was not effectively deployed. The .docx sat orphaned for a day.
-- Rule: After patching a student-facing .docx, always reconvert to PDF immediately. Delete the .docx if it's supposed to be PDF-only. Add this as a checklist item in the patch workflow.
-- Applies to: any text-only patch to student-facing documents (Theory_Pack, Student_Task, Practice_Task, Answer_Key)
+- Rule: ~~After patching a student-facing .docx, always reconvert to PDF immediately.~~ **OBSOLETE:** All student-facing documents are now DOCX (2026-04-01 format decision). Only Visual_Aid remains PDF. No reconversion needed.
+- Applies to: N/A (superseded)
 
 ## 2026-03-31 — Em dashes in README template caused recurring regressions
 
@@ -142,8 +142,8 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 
 ## 2026-03-31 — Repo naming conventions must never appear in generated content
 
-- Problem: Four skills leaked internal repo naming into student-facing and teacher-facing materials. practice-task-gen put lesson codes (001_L), type codes (tipas "P"), and file categories (Theory_Pack) into Practice_Task.pdf text and help tables. theory-pack-gen used non-canonical filenames ({NNN}_{T}_{Title}_Theory_Pack.pdf) that exposed lesson codes to students via the filename. answer-key-gen used "Theory_Pack section" in student study key cross-references. lesson-plan-gen referenced "Practice_Task.pdf" by filename in generated teacher plan text. Skills were written from a developer mental model where these names felt natural, but students and teachers should never see repo internals.
-- Rule: (1) Generated content must never contain lesson codes (001_L, 007_A), file category names (Theory_Pack, Student_Task, Practice_Task), or type codes (tipas "P", L tipas). Use descriptive Lithuanian: topic names, "teorijos santrauka", "praktikos užduotis". (2) File outputs use canonical names only (Theory_Pack.pdf, not 001_L_Ergonomika_Theory_Pack.pdf). (3) This rule is now in CLAUDE.md under Content Generation Rules. (4) When writing skill templates or exemplars, always ask: "Would a student understand this text without knowing how the repo is organized?" If no, rewrite.
+- Problem: Four skills leaked internal repo naming into student-facing and teacher-facing materials. practice-task-gen put lesson codes (001_L), type codes (tipas "P"), and file categories (Theory_Pack) into Practice_Task text and help tables. theory-pack-gen used non-canonical filenames ({NNN}_{T}_{Title}_Theory_Pack) that exposed lesson codes to students via the filename. answer-key-gen used "Theory_Pack section" in student study key cross-references. lesson-plan-gen referenced "Practice_Task.pdf" by filename in generated teacher plan text. Skills were written from a developer mental model where these names felt natural, but students and teachers should never see repo internals.
+- Rule: (1) Generated content must never contain lesson codes (001_L, 007_A), file category names (Theory_Pack, Student_Task, Practice_Task), or type codes (tipas "P", L tipas). Use descriptive Lithuanian: topic names, "teorijos santrauka", "praktikos užduotis". (2) File outputs use canonical names only (Theory_Pack.docx, not 001_L_Ergonomika_Theory_Pack.docx). (3) This rule is now in CLAUDE.md under Content Generation Rules. (4) When writing skill templates or exemplars, always ask: "Would a student understand this text without knowing how the repo is organized?" If no, rewrite.
 - Applies to: practice-task-gen, theory-pack-gen, answer-key-gen, lesson-plan-gen, all content generation skills
 
 ## 2026-04-01 — Decisions must be encoded into all affected skills, not just logged

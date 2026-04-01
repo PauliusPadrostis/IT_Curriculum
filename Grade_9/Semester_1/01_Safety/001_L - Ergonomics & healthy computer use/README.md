@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 001 iš metų sekos                                 |
-| **Būsena**      | ✅ Failai sukurti                                   |
+| **Būsena**      | 📋 Šablonas                                        |
 
 ---
 
@@ -94,10 +94,10 @@ Nėra.
 
 | Failas                              | Būsena | Patikrinta | Pastaba                          |
 |-------------------------------------|--------|------------|----------------------------------|
-| Teacher_Plan.docx                   | ✅     | ❌         | Privalomas                       |
-| Theory_Pack.pdf                     | ✅     | ❌         | Teorijos medžiaga                |
-| Student_Task.pdf                    | ✅     | ❌         | Ergonomikos užduotis             |
-| Visual_Aid.pdf                      | ✅     | ❌         | Vaizdinė medžiaga projekcijai   |
+| Teacher_Plan.docx                   | ❌     | ❌         | Privalomas                       |
+| Theory_Pack.docx                    | ❌     | ❌         | Teorijos medžiaga                |
+| Student_Task.docx                   | ❌     | ❌         | Ergonomikos užduotis             |
+| Visual_Aid.pdf                      | ❌     | ❌         | Vaizdinė medžiaga projekcijai   |
 
 ---
 
