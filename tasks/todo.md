@@ -1,3 +1,3 @@
 # Session TODO
 
-(cleared — no active session)
+(cleared -- no active session)
