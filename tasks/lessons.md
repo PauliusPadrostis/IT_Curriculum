@@ -146,6 +146,12 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Rule: (1) Generated content must never contain lesson codes (001_L, 007_A), file category names (Theory_Pack, Student_Task, Practice_Task), or type codes (tipas "P", L tipas). Use descriptive Lithuanian: topic names, "teorijos santrauka", "praktikos užduotis". (2) File outputs use canonical names only (Theory_Pack.docx, not 001_L_Ergonomika_Theory_Pack.docx). (3) This rule is now in CLAUDE.md under Content Generation Rules. (4) When writing skill templates or exemplars, always ask: "Would a student understand this text without knowing how the repo is organized?" If no, rewrite.
 - Applies to: practice-task-gen, theory-pack-gen, answer-key-gen, lesson-plan-gen, all content generation skills
 
+## 2026-04-01 — No unverifiable statistics in generated content
+
+- Problem: Lesson 003 Theory_Pack cited "2025 m. daugiau nei 80 % phishing laiškų pasaulyje buvo sukurti naudojant dirbtinį intelektą (ENISA, 2025)." This statistic could not be verified against any ENISA publication. Fabricated statistics undermine Theory_Pack credibility.
+- Rule: Never cite statistics that cannot be traced to a specific, publicly accessible source document. If a statistic sounds plausible but you cannot confirm the exact publication, do not include it. Replace with a verifiable source (NKSC, Eurostat, or other official body with a confirmable URL or document title). When in doubt, use qualitative claims ("vis daugiau") instead of fake precision.
+- Applies to: theory-pack-gen, any content generation that includes statistical claims
+
 ## 2026-04-01 — Decisions must be encoded into all affected skills, not just logged
 
 - Problem: decisions.md accumulated 30+ decisions over 10 days. Most content-affecting decisions were only encoded into whichever skill was being worked on at the time. The 5 oldest, highest-volume skills (lesson-plan-gen, student-task-gen, theory-pack-gen, visual-aid-gen, lesson-readme-gen) never read tasks/lessons.md. The straight quotes decision (2026-03-31) was logged in decisions.md and CLAUDE.md but 7 skills still actively enforced the opposite rule. module-qa's subagent prompt would flag the correct behavior as an error.
