@@ -4,8 +4,8 @@ description: >
   Generate assessment materials for A lessons in the IT Curriculum repo
   (PauliusPadrostis/IT_Curriculum). Use this skill whenever the teacher asks to
   create, generate, write, or build an assessment, test, quiz, kontrolinis,
-  atsiskaitomasis darbas, or vertinimo užduotis. Also triggers on: "sugeneruok
-  vertinimą", "sukurk testą", "paruošk atsiskaitomąjį darbą", "generate
+  atsiskaitomasis darbas, or vertinimo uÅ¾duotis. Also triggers on: "sugeneruok
+  vertinimÄ…", "sukurk testÄ…", "paruoÅ¡k atsiskaitomÄ…jÄ¯ darbÄ…", "generate
   assessment", "create test for this lesson", "build assessment materials".
   Only generates for A lesson types. Do NOT use for lesson plans (use
   lesson-plan-gen), student tasks (use student-task-gen), theory packs (use
@@ -26,20 +26,20 @@ reasoning, wait for teacher approval, then generate.
 
 ---
 
-## Step 0 — Read References
+## Step 0 â€” Read References
 
 **Before generating any assessment, always read these files:**
 
-1. `references/assessment_design_guide.md` — pedagogy knowledge base
-2. `references/grading_policy.md` — school grading rules and constraints
-3. `references/question_design.md` — item writing rules and variant generation
-4. `references/cs_assessment_progression.md` — grade-appropriate question type defaults
-5. `references/assessment_format.md` — output document structure
-6. If Testmoz format: `references/testmoz_format.md` — import file specification AND `references/testmoz_import_template.xlsx` — official Testmoz template (open and study before generating)
+1. `references/assessment_design_guide.md` â€” pedagogy knowledge base
+2. `references/grading_policy.md` â€” school grading rules and constraints
+3. `references/question_design.md` â€” item writing rules and variant generation
+4. `references/cs_assessment_progression.md` â€” grade-appropriate question type defaults
+5. `references/assessment_format.md` â€” output document structure
+6. If Testmoz format: `references/testmoz_format.md` â€” import file specification AND `references/testmoz_import_template.xlsx` â€” official Testmoz template (open and study before generating)
 7. Relevant exemplar from `references/exemplars/`
 
 **Lithuanian mistake prevention (mandatory):**
-8. Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+8. Read `_references/lt-mistakes.yaml` â€” CRITICAL section only (stop at "FULL LIBRARY" marker).
    Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 **Lessons learned (mandatory):**
@@ -49,14 +49,14 @@ reasoning, wait for teacher approval, then generate.
 
 ---
 
-## Step 1 — Gather Context
+## Step 1 â€” Gather Context
 
 ### Input priority
 
 | Priority | Source | What to Extract |
 |----------|--------|-----------------|
 | 1 | **A lesson README** | Format hints, Bloom's level, success criteria, question types, platform, duration, conditions, required files |
-| 2 | **All L/I Teacher_Plans in scope** | Learning objectives, key concepts, task types used, common mistakes (Dažniausios klaidos), Bloom's levels per lesson |
+| 2 | **All L/I Teacher_Plans in scope** | Learning objectives, key concepts, task types used, common mistakes (DaÅ¾niausios klaidos), Bloom's levels per lesson |
 | 3 | **All L/I Theory_Packs in scope** | Actual content taught, terminology, depth |
 | 4 | **All L/I Student_Tasks in scope** | What students practiced, scaffolding level, task formats |
 | 5 | **Module README** | Lesson sequence, A lesson position, sibling A lessons |
@@ -77,7 +77,7 @@ Extract from the lesson folder path:
 
 When a module has multiple A lessons:
 - An A lesson's scope = L/I lessons since the previous A (or since module start if first A)
-- Example: L1-L2-L3-A1-L4-L5-A2 → A1 scope: L1-L3. A2 scope: L4-L5.
+- Example: L1-L2-L3-A1-L4-L5-A2 â†’ A1 scope: L1-L3. A2 scope: L4-L5.
 - Coverage must not overlap in core items between A lessons (warm-up recall items may overlap)
 - Build the full distribution before generating any individual A
 
@@ -97,14 +97,14 @@ When generating assessments for a module or grade:
 | Condition | Action |
 |-----------|--------|
 | A lesson README does not exist or has no learning objectives | **Stop.** Cannot generate without objectives. |
-| No L/I Teacher_Plans exist in scope (all Šablonas) | **Stop.** "Siūlau pirma sugeneruoti L/I pamokų planus, kad vertinimas atitiktų dėstytą turinį." |
+| No L/I Teacher_Plans exist in scope (all Å ablonas) | **Stop.** "SiÅ«lau pirma sugeneruoti L/I pamokÅ³ planus, kad vertinimas atitiktÅ³ dÄ—stytÄ… turinÄ¯." |
 | Some L/I Teacher_Plans exist but not all | **Warn and proceed.** Generate from available plans. Flag uncovered objectives in the proposal. |
 | Module README missing | **Proceed with degraded context.** Use lesson README and available plans only. |
 | VBE reference files missing (grades 11-12) | **Proceed.** Use cs_assessment_progression.md defaults. |
 
 ---
 
-## Step 2 — Content Inventory
+## Step 2 â€” Content Inventory
 
 Build a coverage matrix mapping every learning objective from every L/I lesson in scope:
 
@@ -123,7 +123,7 @@ This matrix drives all subsequent decisions. Every objective must have at least 
 
 ### Common mistakes extraction
 
-The "Dažniausios klaidos" sections from Teacher_Plans become:
+The "DaÅ¾niausios klaidos" sections from Teacher_Plans become:
 - MCQ distractors (the wrong answer a student would pick)
 - Debugging task errors (the bug a student must find)
 - Scenario analysis traps (the mistake a student must identify)
@@ -132,7 +132,7 @@ If no common mistakes data exists, use domain knowledge from cs_assessment_progr
 
 ---
 
-## Step 3 — Assessment Format Proposal
+## Step 3 â€” Assessment Format Proposal
 
 **The skill proposes a format, presents it to the teacher, and STOPS to wait for approval.**
 
@@ -140,8 +140,8 @@ If no common mistakes data exists, use domain knowledge from cs_assessment_progr
 
 | Factor | How It Influences the Proposal |
 |--------|-------------------------------|
-| **Domain** | Theory → Testmoz/written test. Programming → practical coding task. Tools → practical product task. Data → spreadsheet task. Mixed → combined format. |
-| **Bloom's level** (from README) | Remember/Understand → closed questions (MCQ, matching, fill-in-blank). Apply → practical tasks, code completion. Analyze/Evaluate → scenario analysis, debugging, code tracing. Create → open-ended production. |
+| **Domain** | Theory â†’ Testmoz/written test. Programming â†’ practical coding task. Tools â†’ practical product task. Data â†’ spreadsheet task. Mixed â†’ combined format. |
+| **Bloom's level** (from README) | Remember/Understand â†’ closed questions (MCQ, matching, fill-in-blank). Apply â†’ practical tasks, code completion. Analyze/Evaluate â†’ scenario analysis, debugging, code tracing. Create â†’ open-ended production. |
 | **Grade** | 9-10: more structure, lower cognitive ceiling. 11-12: VBE-adjacent formats, higher autonomy. |
 | **Module position** | Mid-module A: narrower scope. End-module A: cumulative, full module coverage. |
 | **Duration** (from README) | Determines item count. Atsiskaitomasis darbas >= 30 min. |
@@ -156,32 +156,32 @@ Every assessment must be designed around four competency levels:
 | I | Slenkstinis | 4 (30-44%) | ~20% of items | Basic recall and recognition |
 | II | Patenkinamas | 5-6 (45-64%) | ~30% of items | Standard tasks independently |
 | III | Pagrindinis | 7-8 (65-84%) | ~30% of items | Applies in new situations, justifies |
-| IV | Aukštesnysis | 9-10 (85-100%) | ~20% of items | Analyzes, evaluates, creates independently |
+| IV | AukÅ¡tesnysis | 9-10 (85-100%) | ~20% of items | Analyzes, evaluates, creates independently |
 
 ### Proposal output
 
 Present to teacher:
 
 ```
-VERTINIMO FORMATO PASIŪLYMAS: [Lesson code + title]
+VERTINIMO FORMATO PASIÅªLYMAS: [Lesson code + title]
 
-Formatas: [e.g., Testmoz testas + praktinė užduotis]
-Trukmė: [e.g., 35 min]
+Formatas: [e.g., Testmoz testas + praktinÄ— uÅ¾duotis]
+TrukmÄ—: [e.g., 35 min]
 Platforma: [e.g., Testmoz (testas) + Code::Blocks (praktika)]
 
 Turinio paskirstymas:
 - Slenkstinis (20%): [N items], [description]
 - Patenkinamas (30%): [N items], [description]
 - Pagrindinis (30%): [N items], [description]
-- Aukštesnysis (20%): [N items], [description]
+- AukÅ¡tesnysis (20%): [N items], [description]
 
-Klausimų tipai:
+KlausimÅ³ tipai:
 - [N] MCQ (vieno atsakymo)
 - [N] trumpas atviras atsakymas
-- [N] scenarijaus analizė
-- [1] praktinė užduotis
+- [N] scenarijaus analizÄ—
+- [1] praktinÄ— uÅ¾duotis
 
-Taškų paskirstymas: [total points], konvertavimas į pažymį pagal mokyklos skalę.
+TaÅ¡kÅ³ paskirstymas: [total points], konvertavimas Ä¯ paÅ¾ymÄ¯ pagal mokyklos skalÄ™.
 
 Pedagoginis pagrindimas:
 [2-3 sentences explaining WHY this format fits this assessment]
@@ -193,7 +193,7 @@ If the teacher modifies the proposal, incorporate changes before proceeding.
 
 ---
 
-## Step 4 — Item Generation
+## Step 4 â€” Item Generation
 
 After teacher approval, generate assessment items.
 
@@ -202,10 +202,10 @@ After teacher approval, generate assessment items.
 - Every item traces to a specific objective in the coverage matrix
 - Every item tagged with competency level (I-IV)
 - Points shown next to every question/task
-- Items progress easier to harder (school policy §29.3)
+- Items progress easier to harder (school policy Â§29.3)
 - Total points convert cleanly to 1-10 via percentage table
 - C++ only for programming (locked decision)
-- Em dash (—) banned in all generated text
+- Em dash (â€”) banned in all generated text
 - Code completion: "Duoto kodo keisti negalima" stated explicitly
 
 ### 4.2 Question type specifications
@@ -216,7 +216,7 @@ After teacher approval, generate assessment items.
 - Same length/structure across options. Vary correct answer position.
 
 **Short Answer / Fill-in-Blank:**
-- Specify scope ("1-2 sakiniais paaiškinkite...")
+- Specify scope ("1-2 sakiniais paaiÅ¡kinkite...")
 - One concept per question. Cannot be answered by verbatim recall.
 
 **Scenario Analysis:**
@@ -228,7 +228,7 @@ After teacher approval, generate assessment items.
 - Grade 10: linear + one control structure. Grade 11: loops, arrays, strings. Grade 12: file I/O, structs, functions.
 
 **Code Completion:**
-- Working program with marked completion zone (// === JŪSŲ KODAS ČIA === //)
+- Working program with marked completion zone (// === JÅªSÅ² KODAS ÄŒIA === //)
 - "Duoto kodo keisti negalima" stated explicitly
 - Rubric: correct logic + compiles + handles edge cases
 
@@ -253,15 +253,18 @@ When format is Testmoz:
 ### 4.4 Rubric generation
 
 Every assessment gets a Rubric document:
-- MCQ/short answer: point allocation per question + percentage-to-grade conversion
+- MCQ/short answer: point allocation by item type/topic bucket + percentage-to-grade conversion
 - Practical tasks: per-criterion rubric with 3-4 performance levels and specific observable descriptors
 - Descriptors must be concrete ("Teisingai identifikuoja abu kintamuosius," not "Gerai supranta")
-- Rubric is student-facing (shared before assessment per §29.2)
+- Rubric is student-facing (shared before assessment per Â§29.2)
 - Maximum 6 criteria for practical task rubrics
+- For Testmoz question banks, never anchor the rubric to fixed visible
+  question numbers if pool order could change. Describe coverage by topic,
+  question type, and point value instead.
 
 ---
 
-## Step 5 — Validity Self-Check
+## Step 5 â€” Validity Self-Check
 
 Before outputting, verify every item:
 
@@ -270,22 +273,23 @@ Before outputting, verify every item:
 | **Coverage** | Every objective in the matrix has >= 1 assessment item |
 | **No extras** | No item tests content not taught in scope L/I lessons |
 | **Bloom's alignment** | Each item's cognitive demand matches its tagged competency level |
-| **Competency distribution** | ~20% slenkstinis, ~30% patenkinamas, ~30% pagrindinis, ~20% aukštesnysis |
+| **Competency distribution** | ~20% slenkstinis, ~30% patenkinamas, ~30% pagrindinis, ~20% aukÅ¡tesnysis |
 | **Difficulty ordering** | Items progress from easier to harder |
 | **Point total** | Converts cleanly to 1-10 via school percentage scale |
 | **Distractor quality** | MCQ distractors represent real misconceptions |
 | **Rubric specificity** | Every criterion uses observable, measurable descriptors |
+| **Testmoz rubric order safety** | Rubric does not assume fixed question numbering for pooled Testmoz items |
 | **Time realism** | Item count x expected time per item <= available duration |
 | **Format match** | Output matches the teacher-approved proposal |
 | **No P leakage** | Items are NOT identical to what P lessons will use (similar format, different content) |
 | **Tool validity** | Only approved software (Code::Blocks, Excel, Word, Inkscape, Canva, Testmoz) |
 | **Language** | Lithuanian, formal, no teacher jargon in student-facing materials |
-| **Em dash ban** | No em dashes (—) anywhere. Replace with comma, period, colon, or restructure. |
+| **Em dash ban** | No em dashes (â€”) anywhere. Replace with comma, period, colon, or restructure. |
 | **Grade appropriateness** | Question types match grade level per cs_assessment_progression.md |
 
 ---
 
-## Step 5b — Cross-file Coherence Check
+## Step 5b â€” Cross-file Coherence Check
 
 After generating assessment items and passing the validity self-check,
 verify alignment with sibling lesson files before proceeding to output.
@@ -295,7 +299,7 @@ verify alignment with sibling lesson files before proceeding to output.
 1. **Coverage of L/I lesson objectives:**
    - Re-read all L/I lesson READMEs in scope. Every learning objective
      listed in those READMEs must be tested by at least one assessment
-     item. If an objective is missing from the coverage matrix → add an
+     item. If an objective is missing from the coverage matrix â†’ add an
      item or flag the gap to the teacher.
    - No assessment item may test content outside the scope of the L/I
      lessons that precede this A lesson (per the scope rules in Step 1).
@@ -305,10 +309,10 @@ verify alignment with sibling lesson files before proceeding to output.
    - Every technical term used in assessment questions, answer options,
      and rubric descriptors must match the Theory_Pack's definition and
      spelling. If the assessment uses a term differently from the
-     Theory_Pack → use the Theory_Pack definition (it is the authoritative
+     Theory_Pack â†’ use the Theory_Pack definition (it is the authoritative
      reference for terminology).
    - If an assessment question introduces a term not covered in any
-     Theory_Pack → flag it to the teacher.
+     Theory_Pack â†’ flag it to the teacher.
 
 3. **Scenario consistency with Student_Task (if it exists on disk):**
    - If Student_Task.docx exists in any L/I lesson folder in scope, verify
@@ -324,13 +328,13 @@ verify alignment with sibling lesson files before proceeding to output.
 
 ---
 
-## Step 6 — Output Files
+## Step 6 â€” Output Files
 
-### Assessment pattern → output mapping
+### Assessment pattern â†’ output mapping
 
 | Pattern | Assessment_Task | Rubric | Additional |
 |---------|----------------|--------|------------|
-| **Testmoz test** | .xlsx (import file with question banks) | Rubric.docx (percentage-to-grade + per-question point map) | None |
+| **Testmoz test** | .xlsx (import file with question banks) | Rubric.docx (percentage-to-grade + topic/type point map, not fixed question numbering) | None |
 | **Practical task** | Assessment_Task.docx (task instructions) | Rubric.docx (per-criterion scoring rubric) | Input data files if needed (.txt, .csv) |
 | **Mixed format** | Assessment_Task.docx + .xlsx (if applicable) | Rubric.docx (combined rubric) | Input data files if needed |
 
@@ -341,10 +345,10 @@ verify alignment with sibling lesson files before proceeding to output.
 
 ### File format rules
 
-- Student-facing documents → DOCX
-- Testmoz import files → .xlsx (teacher uploads)
-- Rubric → DOCX (student-facing, shared before assessment)
-- Input data files → .txt or .csv
+- Student-facing documents â†’ DOCX
+- Testmoz import files â†’ .xlsx (teacher uploads)
+- Rubric â†’ DOCX (student-facing, shared before assessment)
+- Input data files â†’ .txt or .csv
 
 ### Em dash post-processing
 
@@ -370,7 +374,7 @@ Automated code-level replacement is the only reliable fix.
 
 After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
 run this standalone post-processing step. This is NOT part of the generation
-script — it runs on the saved .docx file as a separate operation.
+script â€” it runs on the saved .docx file as a separate operation.
 
 ```python
 import zipfile, os, shutil, tempfile
@@ -414,7 +418,7 @@ Follow assessment_format.md for exact document structure and visual identity.
 
 ---
 
-## Step 7 — Lithuanian QA Pass
+## Step 7 â€” Lithuanian QA Pass
 
 **Before running QA, write plain-text sidecars:** For each generated .docx
 file (Rubric.docx), write all Lithuanian text to a `_text.txt` sidecar in
@@ -426,9 +430,16 @@ to `Assessment_Task_text.txt`. Delete sidecars after POST-GEN passes.
 Read the sidecar `_text.txt` file. Scan its content against the FULL `_references/lt-mistakes.yaml`
 (both CRITICAL and FULL LIBRARY sections). Also check for:
 - Condition-last word order (jei clause should come first, not last)
-- Register consistency (formal "jūs" throughout, no "tu" slips)
+- Register consistency (formal "jÅ«s" throughout, no "tu" slips)
 - AI text patterns (formulaic openings, triad structures, transition stuffing)
+- Replacement-character corruption in student-facing outputs, especially
+  `Rubric.docx`. Zero tolerance for patterns like `klas?`, `ta?kai`,
+  `u?daro`, `trukm?`, `Internetin?s`, or any `\p{L}\?\p{L}` match.
 Fix any matches found, then update the sidecar.
+
+After fixing, reopen every generated `Rubric.docx` in Word and confirm it
+still opens cleanly. Do not present a rubric that passes the sidecar but
+fails in the real document.
 
 Fix all issues before presenting.
 
@@ -438,13 +449,13 @@ Fix all issues before presenting.
 
 When sources disagree:
 
-1. **A lesson README** — assessment-specific scope, format, constraints
-2. **Teacher-approved proposal** (Step 3) — format decisions confirmed by teacher
-3. **School grading policy** — institutional rules (percentage scale, difficulty distribution)
-4. **L/I lesson content** — what was actually taught (coverage matrix)
-5. **Skill reference docs** — assessment design standards and defaults
-6. **Curriculum reference** — national expectations
-7. **cs_assessment_progression.md** — grade-appropriate defaults (lowest priority)
+1. **A lesson README** â€” assessment-specific scope, format, constraints
+2. **Teacher-approved proposal** (Step 3) â€” format decisions confirmed by teacher
+3. **School grading policy** â€” institutional rules (percentage scale, difficulty distribution)
+4. **L/I lesson content** â€” what was actually taught (coverage matrix)
+5. **Skill reference docs** â€” assessment design standards and defaults
+6. **Curriculum reference** â€” national expectations
+7. **cs_assessment_progression.md** â€” grade-appropriate defaults (lowest priority)
 
 ---
 
@@ -453,15 +464,15 @@ When sources disagree:
 Read before every generation:
 
 ### Core references
-- `references/assessment_design_guide.md` — Backward design, Bloom's mapping, constructive alignment, validity, formative vs summative
-- `references/grading_policy.md` — Žemynos gimnazija percentage scale, difficulty distribution, assessment rules
-- `references/question_design.md` — MCQ rules, short answer rules, rubric design, code task hierarchy, variant generation
-- `references/cs_assessment_progression.md` — Grade-appropriate question types and code task ceiling per grade
-- `references/assessment_format.md` — Assessment_Task.docx and Rubric.docx document structure and formatting
-- `references/testmoz_format.md` — Testmoz .xlsx import specification and pool structure
-- `references/testmoz_import_template.xlsx` — Official Testmoz template file. Open and study before generating any .xlsx.
+- `references/assessment_design_guide.md` â€” Backward design, Bloom's mapping, constructive alignment, validity, formative vs summative
+- `references/grading_policy.md` â€” Å½emynos gimnazija percentage scale, difficulty distribution, assessment rules
+- `references/question_design.md` â€” MCQ rules, short answer rules, rubric design, code task hierarchy, variant generation
+- `references/cs_assessment_progression.md` â€” Grade-appropriate question types and code task ceiling per grade
+- `references/assessment_format.md` â€” Assessment_Task.docx and Rubric.docx document structure and formatting
+- `references/testmoz_format.md` â€” Testmoz .xlsx import specification and pool structure
+- `references/testmoz_import_template.xlsx` â€” Official Testmoz template file. Open and study before generating any .xlsx.
 
 ### Exemplars
-- `references/exemplars/theory_safety_example.md` — Theory assessment: MCQ + short answer + scenario + practical. Grade 9 safety.
-- `references/exemplars/practical_graphics_example.md` — Tool-based practical: theory test + Inkscape task. Grade 9 graphics.
-- `references/exemplars/programming_algorithms_example.md` — Code completion: 5 C++ tasks with scaffolds. Grade 10-11 algorithms.
+- `references/exemplars/theory_safety_example.md` â€” Theory assessment: MCQ + short answer + scenario + practical. Grade 9 safety.
+- `references/exemplars/practical_graphics_example.md` â€” Tool-based practical: theory test + Inkscape task. Grade 9 graphics.
+- `references/exemplars/programming_algorithms_example.md` â€” Code completion: 5 C++ tasks with scaffolds. Grade 10-11 algorithms.

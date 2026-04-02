@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 007 iš metų sekos                                 |
-| **Būsena**      | 📋 Šablonas                                        |
+| **Būsena**      | ✅ Failai sukurti                                   |
 
 ---
 
@@ -89,10 +89,10 @@ Nėra.
 
 | Failas                | Būsena | Patikrinta | Pastaba                                           |
 |-----------------------|--------|------------|---------------------------------------------------|
-| Teacher_Plan.docx     | ❌     | ❌         | Privalomas                                        |
-| Assessment_Task.xlsx  | ❌     | ❌         | **Privalomas**, Testmoz importo failas           |
-| Rubric.docx           | ❌     | ❌         | **Bent vienas privalomas**, vertinimo kriterijai |
-| Answer_Key.docx       | ❌     | ❌         | Atsakymų raktas (mokytojo vidinis dokumentas)      |
+| Teacher_Plan.docx     | ✅     | ❌         | Privalomas                                        |
+| Assessment_Task.xlsx  | ✅     | ❌         | **Privalomas**, Testmoz importo failas           |
+| Rubric.docx           | ✅     | ❌         | **Bent vienas privalomas**, vertinimo kriterijai |
+| Answer_Key.docx       | ✅     | ❌         | Atsakymų raktas (mokytojo vidinis dokumentas)      |
 
 ---
 

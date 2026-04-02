@@ -16,6 +16,183 @@
 
 ---
 
+## Canva visual aid production line
+
+**Kada:** pradeti dabar, pries masinį L pamoku Visual_Aid atnaujinima.
+
+**Tikslas:** pakeisti dabartini standu `visual-aid-gen` docx->pdf istraukimo kelia i Canva pagrista masines gamybos pipeline, kuriame Codex generuoja strukturuota Canva-ready paketa, o Canva atlieka vienoda vizualini renderi per uzrakintus sablonus.
+
+**Kodel:**
+- Dabartinis modelis generuoja techniskai tvarkingus, bet vizualiai silpnus PDF.
+- Fiksuota 6 skaidriu schema per daznai praleidzia tai, ka mokytojas realiai turi rodyti projektoriuje.
+- Canva geriau sprendzia tipografija, kompozicija, vizualini vientisuma ir pakartotini eksporta nei repo-native docx skaidres.
+- Rankinis darbas turi buti perkeltas i vienkartini setup, ne kartojamas kiekvienai pamokai.
+
+### Siulomas vykdymo planas
+
+1. Aprasyti stabilu duomenu kontrakta tarp Codex ir Canva.
+2. Aprasyti 5 skaidriu archetipus, kurie padengia beveik visas 9 klases L pamokas.
+3. Sukurti 3-5 Canva master templates su uzrakintais stiliais ir identiskais placeholder pavadinimais.
+4. Sukurti nauja skill `canva-visual-pack-gen`, kuris generuoja batch-ready paketa vietoje galutinio PDF.
+5. Istestuoti pipeline ant 2-3 Safety pamoku pries pleciant i kitus modulius.
+6. Tik po sekmingo pilotinio bandymo spresti, ar sena `visual-aid-gen`:
+   - pakeisti nauju workflow,
+   - palikti kaip fallback,
+   - ar sumazinti jo role iki preview generatoriaus.
+
+### Canva-ready paketo isvestys
+
+Kiekvienai pamokai skill turi generuoti:
+- `canva_rows.csv` - po viena eilute kiekvienai skaidrei
+- `visual_spec.json` - strukturuota pamokos vizualine schema ir QA metadata
+- `asset_prompts.md` - kokiu vizualu reikia, jei ju dar nera asset library
+- `export_checklist.md` - trumpa rankine QA pries PDF eksporta
+
+Jei reikia, veliau galima prideti:
+- lokalius SVG asset'us (`assets/visual-aid/`)
+- modulio asset kataloga pasikartojantiems diagramu blokams
+
+### Slide archetipu rinkinys
+
+Naudoti tik 5 archetipus:
+- `title`
+- `questions`
+- `process`
+- `comparison`
+- `scenario`
+
+**Pastabos:**
+- `title` - modulio/pamokos atidarymo skaidre
+- `questions` - pradzios arba pabaigos klausimai
+- `process` - eiga, algoritmas, seka, 2FA veikimas, darbo veiksmai
+- `comparison` - saugu/nesaugu, poveikis/nauda, geras/blogas pavyzdys
+- `scenario` - worked example, analizes kortele, rotacijos scenarijus
+
+Tai samoningai mazas rinkinys. Kuo maziau layout tipu, tuo stabilesnis batch renderinimas Canva.
+
+### Siulomas CSV / schema kontraktas
+
+Kiekviena `canva_rows.csv` eilute atitinka viena skaidre. Laukai:
+
+| Field | Paskirtis |
+|------|-----------|
+| `lesson_id` | Pvz. `G9-S1-M01-003` |
+| `lesson_folder` | Pilnas lesson folder pavadinimas |
+| `grade` | Pvz. `9` |
+| `module_name` | Pvz. `Sauga` |
+| `lesson_title_lt` | Pilnas lietuviskas pamokos pavadinimas |
+| `slide_no` | Skaidres numeris |
+| `template_type` | Vienas is 5 archetipu |
+| `slide_role` | `title`, `start_questions`, `core_explainer`, `worked_example`, `end_questions` ir pan. |
+| `slide_title` | Skaidres antraste |
+| `slide_subtitle` | Pasirenkama paantraste |
+| `main_text` | Pagrindinis tekstinis blokas |
+| `left_title` | Kairio stulpelio antraste |
+| `left_text` | Kairio stulpelio turinys |
+| `right_title` | Desinio stulpelio antraste |
+| `right_text` | Desinio stulpelio turinys |
+| `callout_1` | Trumpas isryskinimas / etikete |
+| `callout_2` | Antras isryskinimas / etikete |
+| `visual_kind` | `diagram`, `icon-grid`, `comparison-cards`, `scenario-card`, `none` |
+| `visual_prompt` | Trumpa instrukcija asset'ui arba Canva elementu parinkimui |
+| `must_show` | `true/false`, ar si skaidre kritine mokytojo projekcijai |
+| `source_refs` | Is kuriu failu ir sekciju paimtas turinys |
+| `notes_for_export` | Trumpas QA priminimas pries eksporta |
+
+### Template placeholder taisykle
+
+Visi Canva master templates turi naudoti tuos pacius placeholder vardus, net jei dalis ju konkreciame template lieka tusti:
+- `slide_title`
+- `slide_subtitle`
+- `main_text`
+- `left_title`
+- `left_text`
+- `right_title`
+- `right_text`
+- `callout_1`
+- `callout_2`
+
+Tai yra stabilumo pagrindas. Jokio per-template pervadinimo.
+
+### Siulomas Canva template set
+
+1. `VA-Title`
+- Pilno ekrano tituline skaidre
+- 1 didelis antrastes blokas + maza modulio eilute
+
+2. `VA-Questions`
+- Didele antraste + 3-5 klausimu sarasas
+- Tinka pradzios ir pabaigos klausimams
+
+3. `VA-Process`
+- Horizontalus arba vertikalus 3-5 zingsniu flow
+- Tinka algoritmams, 2FA veikimui, taisykliu sekai
+
+4. `VA-Comparison`
+- 2 stulpeliu arba korteliu palyginimas
+- Tinka saugu/nesaugu, neigiamas/teigiamas poveikis, gera/bloga praktika
+
+5. `VA-Scenario`
+- Vienas worked example arba analizes kortele
+- Tinka phishing pavyzdziui, scenarijaus isskaidymui, mokytojo demonstracijai
+
+### Turinio parinkimo taisykles skill'ui
+
+Naujas skill neturi aklai mapinti kiekvienos pamokos i ta pacia 6-slide seka.
+Jis pirmiausia turi identifikuoti projection-critical content:
+- ka mokytojas turi parodyti ant ekrano, kad pamoka veiktu;
+- kokie zingsniai / palyginimai / pavyzdziai turi buti vizualizuoti;
+- kurie Teacher_Plan nurodymai negali likti tik tekste.
+
+Tik tada parenkamas slide mix is archetipu.
+
+### Minimalus batch workflow Canva puseje
+
+1. Skill sugeneruoja `canva_rows.csv` visam moduliui.
+2. Canva importuoja CSV i vieninga data source.
+3. Kiekviena eilute uzpildo atitinkama master template varianta.
+4. Sugeneruojamas visas pamokos skaidriu rinkinys.
+5. Atliekama greita vizualine perziura:
+   - antrastes netelpa?
+   - ar kritiniai vizualai tikrai yra?
+   - ar nera per tankaus teksto?
+6. Eksportuojama i PDF ir perkeliama atgal i lesson folder.
+
+### Pilotinio bandymo seka
+
+Pilotui naudoti visas 5 Safety module pamokas, kurioms Visual_Aid yra privalomas:
+- `001_L - Ergonomics & healthy computer use`
+- `002_L - Privacy & account safety`
+- `003_L - Online risks & safe response logic`
+- `004_L - Environmental impact of digital technologies`
+- `005_I - Scenario rotation task`
+
+**Kodel visas 1-5, ne tik 2-4:**
+- tai realus privalomu Visual_Aid scope siame modulyje;
+- 001 duoda paprasciausia bazini L pamokos atveji;
+- 002 patikrina `process` + `comparison`;
+- 003 patikrina `process` + `scenario`;
+- 004 patikrina `comparison` + platesni explanatory turini;
+- 005 patikrina I tipo pamokos workflow ir demonstracinio scenarijaus poreiki.
+
+Jei 001-005 iseina stabiliai, pipeline tiketina pakels beveik visa L/I Visual_Aid generavimo poreiki moduliuose.
+
+### Sekmes kriterijai
+
+- Vienam moduliui skill gali sugeneruoti pilna `canva_rows.csv` be rankinio skaidriu perrasinejimo.
+- Canva master templates priima ta pati lauku rinkini be rankinio placeholder taisymo.
+- Vizualu kokybe aiskiai aukstesne nei dabartinio docx pagrindo Visual_Aid.
+- Rankinis darbas po setup sutrumpeja iki importo, trumpos perziuros ir eksporto.
+
+### Sprendimai, kuriuos reikes priimti po spec patvirtinimo
+
+- Ar `Visual_Aid.pdf` lieka 6 skaidres, ar leidziame 5-7 pagal pamokos poreiki
+- Ar batch generavimas eis per viena bendra modulio CSV, ar po viena CSV kiekvienai pamokai
+- Kur laikyti pasikartojancius Canva / SVG asset'us repo viduje
+- Ar sena `visual-aid-gen` skill laikyti kaip fallback, ar palaipsniui isjungti
+
+---
+
 ## QA root-cause fixes (iš qa-report-01_Safety.md, 2026-03-30)
 
 ### ~~P1 — Cross-file coherence step in generation skills~~ DONE (2026-03-30)
@@ -96,6 +273,44 @@ Skill perskirstytas į dvi fazes: Phase 1 (agentas) vykdo Steps 0-3 (mechaninis 
 
 ---
 
+## Safety module remaining phases (4–7)
+
+**Phase 4 — 005_I (Scenario rotation task): 3 files**
+- [x] Teacher_Plan.docx (must come first)
+- [x] Student_Task.docx
+- [x] Visual_Aid.pdf
+
+**~~Phase 5 — 006_P (Safety checklist rehearsal): 3 files~~ DONE (2026-04-01)**
+- [x] Teacher_Plan.docx
+- [x] Practice_Task.docx (elevated from 007_A Assessment_Task)
+- [x] Answer_Key.docx (study key, student-facing)
+
+Corrected: canonical P-lesson files are Teacher_Plan + Practice_Task + Answer_Key (not Visual_Aid.pdf).
+
+**~~Phase 6 — 007_A (Safety structured assessment): 4 files~~ DONE (2026-04-01)**
+- [x] Teacher_Plan.docx
+- [x] Assessment_Task.xlsx (Testmoz, 10 pools, 30 pts, 3 variants/pool)
+- [x] Rubric.docx (student-facing, shared before assessment)
+- [x] Answer_Key.docx (grading key, teacher-only)
+
+Corrected: canonical A-lesson files are Teacher_Plan + Assessment_Task + Rubric + Answer_Key (not Visual_Aid.pdf).
+Phase 6 was executed before Phase 5 because Practice_Task depends on Assessment_Task existing.
+
+**Phase 7 — Module close-out**
+- [x] Update lesson READMEs 001–007: flip file statuses (done by end-session 2026-04-01)
+- [x] Update module README busena summary (done by end-session 2026-04-01)
+- [ ] Cross-document consistency check across all 7 lessons
+- [ ] Run /module-qa on 01_Safety
+
+**Notes:**
+- 001–004_L complete (Teacher_Plan, Theory_Pack, Student_Task, Visual_Aid all exist). Await Patikrinta review.
+- 005_I type I: no Theory_Pack needed.
+- 006_P type P: Practice_Task replaces Student_Task.
+- 007_A type A: Assessment_Task.xlsx + Rubric.docx replace Student_Task.
+- 005–007 Teacher_Plans should be generated sequentially (retrieval questions chain).
+
+---
+
 ## Automated QA pipeline (po 2 modulio turinio generavimo)
 
 **Kada:** kai 2 modulio turinys sugeneruotas ir paruoštas QA.
@@ -116,4 +331,3 @@ Skill perskirstytas į dvi fazes: Phase 1 (agentas) vykdo Steps 0-3 (mechaninis 
 **Priklausomybės:** Baigtas 1 modulio rankinis QA (šablonas), sugeneruotas 2 modulio turinys (test case).
 
 ---
-

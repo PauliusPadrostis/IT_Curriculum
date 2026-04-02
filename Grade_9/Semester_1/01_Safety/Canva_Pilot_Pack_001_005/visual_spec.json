@@ -1,0 +1,100 @@
+{
+  "module": {
+    "grade": 9,
+    "semester": 1,
+    "module_code": "01_Safety",
+    "module_name": "Sauga",
+    "batch_scope": ["001_L", "002_L", "003_L", "004_L", "005_I"],
+    "pilot_rule": "Allow 5-7 slides per lesson.",
+    "approved_templates": ["title", "questions", "process", "comparison", "scenario"],
+    "shared_placeholders": [
+      "slide_title",
+      "slide_subtitle",
+      "main_text",
+      "left_title",
+      "left_text",
+      "right_title",
+      "right_text",
+      "callout_1",
+      "callout_2"
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_id": "G9-S1-M01-001",
+      "lesson_folder": "001_L - Ergonomics & healthy computer use",
+      "lesson_title_lt": "Ergonomika ir sveikas kompiuterio naudojimas",
+      "slide_count": 5,
+      "focus": "Gyva laikysenos korekcija ir akių bei pertraukų logika.",
+      "slides": [
+        {"slide_no": 1, "template_type": "title", "slide_role": "title", "must_show": true, "source_refs": "README; Teacher_Plan"},
+        {"slide_no": 2, "template_type": "questions", "slide_role": "start_questions", "must_show": true, "source_refs": "Teacher_Plan: start questions"},
+        {"slide_no": 3, "template_type": "comparison", "slide_role": "correct_vs_incorrect_setup", "must_show": true, "source_refs": "Teacher_Plan: posture, screen, wrist"},
+        {"slide_no": 4, "template_type": "process", "slide_role": "eye_breaks_and_rest", "must_show": true, "source_refs": "Teacher_Plan: 20-20-20; work and rest rhythm"},
+        {"slide_no": 5, "template_type": "questions", "slide_role": "end_questions", "must_show": true, "source_refs": "Teacher_Plan: end questions"}
+      ]
+    },
+    {
+      "lesson_id": "G9-S1-M01-002",
+      "lesson_folder": "002_L - Privacy & account safety",
+      "lesson_title_lt": "Privatumas ir paskyrų sauga",
+      "slide_count": 7,
+      "focus": "Stipraus slaptažodžio logika, 2FA procesas ir saugaus elgesio situacijos.",
+      "slides": [
+        {"slide_no": 1, "template_type": "title", "slide_role": "title", "must_show": true, "source_refs": "README; Teacher_Plan"},
+        {"slide_no": 2, "template_type": "questions", "slide_role": "start_questions", "must_show": true, "source_refs": "Teacher_Plan: start questions"},
+        {"slide_no": 3, "template_type": "comparison", "slide_role": "password_strength", "must_show": true, "source_refs": "Teacher_Plan: password safety"},
+        {"slide_no": 4, "template_type": "process", "slide_role": "two_factor_auth", "must_show": true, "source_refs": "Teacher_Plan: 2FA"},
+        {"slide_no": 5, "template_type": "comparison", "slide_role": "safe_vs_unsafe_data_sharing", "must_show": true, "source_refs": "Teacher_Plan: personal data; task situations"},
+        {"slide_no": 6, "template_type": "scenario", "slide_role": "worked_example", "must_show": true, "source_refs": "Teacher_Plan: task situation 3"},
+        {"slide_no": 7, "template_type": "questions", "slide_role": "end_questions", "must_show": true, "source_refs": "Teacher_Plan: end questions"}
+      ]
+    },
+    {
+      "lesson_id": "G9-S1-M01-003",
+      "lesson_folder": "003_L - Online risks & safe response logic",
+      "lesson_title_lt": "Internetinės rizikos ir saugaus reagavimo logika",
+      "slide_count": 7,
+      "focus": "Phishing požymiai, reagavimo algoritmas ir vienas išanalizuotas pavyzdys.",
+      "slides": [
+        {"slide_no": 1, "template_type": "title", "slide_role": "title", "must_show": true, "source_refs": "README; Teacher_Plan"},
+        {"slide_no": 2, "template_type": "questions", "slide_role": "start_questions", "must_show": true, "source_refs": "Teacher_Plan: start questions"},
+        {"slide_no": 3, "template_type": "comparison", "slide_role": "phishing_signs", "must_show": true, "source_refs": "Teacher_Plan: phishing section"},
+        {"slide_no": 4, "template_type": "process", "slide_role": "core_process", "must_show": true, "source_refs": "Teacher_Plan: SUSTOTI -> PATIKRINTI -> PRANEŠTI"},
+        {"slide_no": 5, "template_type": "scenario", "slide_role": "worked_example", "must_show": true, "source_refs": "Teacher_Plan: phishing example; task situations"},
+        {"slide_no": 6, "template_type": "comparison", "slide_role": "misinformation_vs_disinformation", "must_show": true, "source_refs": "Teacher_Plan: misinformation and disinformation"},
+        {"slide_no": 7, "template_type": "questions", "slide_role": "end_questions", "must_show": true, "source_refs": "Teacher_Plan: end questions"}
+      ]
+    },
+    {
+      "lesson_id": "G9-S1-M01-004",
+      "lesson_folder": "004_L - Environmental impact of digital technologies",
+      "lesson_title_lt": "Skaitmeninių technologijų poveikis aplinkai",
+      "slide_count": 6,
+      "focus": "Poveikio kontrastai, kasdieniai pavyzdžiai ir konkretūs Lietuvos atvejai.",
+      "slides": [
+        {"slide_no": 1, "template_type": "title", "slide_role": "title", "must_show": true, "source_refs": "README; Teacher_Plan"},
+        {"slide_no": 2, "template_type": "questions", "slide_role": "start_questions", "must_show": true, "source_refs": "Teacher_Plan: infrastructure intro; start questions"},
+        {"slide_no": 3, "template_type": "comparison", "slide_role": "negative_vs_positive_impact", "must_show": true, "source_refs": "Teacher_Plan: negative impact; positive impact"},
+        {"slide_no": 4, "template_type": "comparison", "slide_role": "resource_use_examples", "must_show": true, "source_refs": "Teacher_Plan: digital footprint examples"},
+        {"slide_no": 5, "template_type": "scenario", "slide_role": "lithuania_examples", "must_show": true, "source_refs": "Teacher_Plan: Lithuanian examples"},
+        {"slide_no": 6, "template_type": "questions", "slide_role": "end_questions", "must_show": true, "source_refs": "Teacher_Plan: end questions"}
+      ]
+    },
+    {
+      "lesson_id": "G9-S1-M01-005",
+      "lesson_folder": "005_I - Scenario rotation task",
+      "lesson_title_lt": "Scenarijų rotacijos užduotis",
+      "slide_count": 6,
+      "focus": "Aiški analizės struktūra, demonstracinis pavyzdys ir refleksija.",
+      "slides": [
+        {"slide_no": 1, "template_type": "title", "slide_role": "title", "must_show": true, "source_refs": "README; Teacher_Plan"},
+        {"slide_no": 2, "template_type": "questions", "slide_role": "start_questions", "must_show": true, "source_refs": "Teacher_Plan: start questions"},
+        {"slide_no": 3, "template_type": "process", "slide_role": "analysis_structure", "must_show": true, "source_refs": "Teacher_Plan: task introduction"},
+        {"slide_no": 4, "template_type": "scenario", "slide_role": "worked_example", "must_show": true, "source_refs": "Teacher_Plan: demonstration example"},
+        {"slide_no": 5, "template_type": "comparison", "slide_role": "analysis_checks", "must_show": true, "source_refs": "Teacher_Plan: what to watch; common mistake"},
+        {"slide_no": 6, "template_type": "questions", "slide_role": "end_questions", "must_show": true, "source_refs": "Teacher_Plan: end questions"}
+      ]
+    }
+  ]
+}

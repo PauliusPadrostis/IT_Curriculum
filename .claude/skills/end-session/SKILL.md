@@ -335,15 +335,27 @@ Say so. Don't fabricate decisions or lessons to seem productive.
 ### 4d. Check lt-mistakes.yaml section placement
 
 If `_references/lt-mistakes.yaml` was modified during this session (new entries added),
-check whether each new entry is in the correct section:
+check whether each new entry is in the correct section.
 
-- **CRITICAL** (top) — patterns the LLM produces frequently. Read before every generation.
-- **FULL LIBRARY** (bottom) — rarer patterns. Used in POST-GEN verification only.
+**Section criteria:**
 
-For each new entry, ask the teacher:
+- **CRITICAL** (top) — pre-gen priming. Use ONLY when ALL three conditions hold:
+  1. The LLM produces this pattern across multiple topic areas (not topic-specific)
+  2. Pre-gen priming actively prevents it (the model changes behavior when warned)
+  3. Recurrence is likely in future generation runs regardless of subject matter
+  Examples: em dashes, register slips (jūs/tu), calques that appear in any topic.
 
-> "Naujas lt-mistakes.yaml įrašas: [wrong → correct]. Ar tai CRITICAL (skaityti prieš
-> kiekvieną generavimą) ar FULL LIBRARY (tik POST-GEN patikrai)?"
+- **FULL LIBRARY** (bottom) — post-gen scan only. Use when ANY of these apply:
+  1. The error is topic-specific (only appears when discussing X)
+  2. It appeared in one session or narrow context
+  3. Pre-gen priming would add noise without preventing recurrence
+  Examples: wrong inflection of a specific word, a stem error in one vocabulary item.
+
+**Default: FULL LIBRARY.** Promote to CRITICAL only when a pattern recurs across
+multiple topic areas in future sessions. Do not escalate on first occurrence.
+
+For each new entry, propose the section based on the criteria above. If uncertain,
+default to FULL LIBRARY. Ask the teacher only if the case is genuinely ambiguous.
 
 Move the entry to the correct section if needed. Skip this step if the yaml was not modified.
 

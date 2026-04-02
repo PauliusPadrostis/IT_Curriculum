@@ -140,6 +140,9 @@ Every extracted element must be rewritten for the student:
 
 **Voice:** Second person formal imperative ("Sukurkite...", "Patikrinkite...",
 "Pagrįskite..."). No teacher jargon (Bloom's, "pasiekimų lygis", etc.).
+No repo-facing labels in student text: do not show lesson type codes such as
+"L pamoka" or "I pamoka". If a header needs a type label, use a descriptive
+Lithuanian phrase like "Mokymosi pamoka" or omit the type entirely.
 
 ### Building the Darbo eiga
 
@@ -390,7 +393,7 @@ After saving, use `present_files` to share.
 | Stuck? boxes | L only, 1-3 per doc, at genuine high-risk points |
 | Extension | I has Papildoma užduotis. L usually does not (exception: grade 11-12). |
 | Self-check | Simple ☐ checklist, no explanations |
-| Answer leakage | Every self-check question must not narrow the answer space for any task step or scenario. If a checklist item reveals whether the student's work is correct, rephrase to check process, not outcome. |
+| Answer leakage | Self-check items, hints, and "Įstrigote?" boxes must not narrow the answer space for any task step or scenario. If a hint names the exact category, threat type, or correct classification the student is supposed to infer, rewrite it to direct attention to evidence instead of giving away the answer. |
 | Domain | Code/formula examples match lesson's actual tools |
 | Scope | Requirements don't exceed README/plan scope |
 | Tools | Only approved software |

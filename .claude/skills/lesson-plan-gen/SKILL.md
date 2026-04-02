@@ -370,6 +370,10 @@ examples, clear success criteria.
 
 **P lessons:** tasks resemble assessment format. For grades 11-12 with VBE
 relevance, use structured questions, data analysis tasks, or programming practicals.
+If `Practice_Task.docx` already exists, the main independent-work block must
+be solving that practical task itself. Do not route students into a separate,
+detached answer set (for example, a different Google Classroom prompt or a
+parallel scenario sheet) as the primary activity.
 
 ### Differentiation:
 - L: strong support for all.
@@ -428,6 +432,10 @@ other lesson materials.
      not competes with it.
    - If the plan has its own questions, they must be warm-up/preview versions
      of Practice_Task questions, not independent content.
+   - The plan's independent work artifact must also match Practice_Task.
+     If students solve the practice questions in Word or Google Classroom,
+     that external document may only be the response sheet. The substantive
+     task content must still come from the existing praktikos užduotis.
    - If Practice_Task does not exist yet → skip this check.
 
 ### On mismatch:

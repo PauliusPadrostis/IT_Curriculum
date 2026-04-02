@@ -10,6 +10,14 @@ last-updated: 2026-03-22
 
 Append-only log. Never edit or delete existing entries.
 
+## 2026-04-01 — lt-mistakes.yaml CRITICAL vs FULL LIBRARY placement criteria
+
+**Decision**: CRITICAL entries must meet all three conditions: (1) multi-topic recurrence, (2) pre-gen priming actively prevents it, (3) high recurrence probability regardless of subject. Default on first occurrence is always FULL LIBRARY. Promote to CRITICAL only when a pattern recurs across multiple topic areas in future sessions.
+
+**Context**: After the Safety module Teacher_Plan batch, several topic-specific inflection errors were proposed for CRITICAL. Adding every session error to CRITICAL would bloat the section and make pre-gen reads noisy and ineffective.
+
+**Rationale**: CRITICAL is read before every generation — noise there degrades all generation runs. FULL LIBRARY is a post-gen scan and can grow freely without cost.
+
 ## 2026-03-22 — Curriculum Scope
 
 **Decision**: 7-lesson website design curriculum for 9th graders.

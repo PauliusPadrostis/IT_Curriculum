@@ -2,6 +2,12 @@
 
 Accumulated corrections and rules. NEVER delete entries. Read at session start. Follow every rule.
 
+## 2026-04-01 — Agent produces morphologically wrong adjective forms in Teacher_Plans
+
+- Problem: Teacher_Plan batch agent generated kasdienii (×3), skaitmeninia (×4 + 2 double-replacement artifacts), jaurių (×3 across 002+003_L), pėdsalą (×3), elgesy (×2), individualu (×1) — all wrong inflection forms. Required post-gen XML fixes after delivery.
+- Rule: After receiving any Teacher_Plan .docx from an agent, run a targeted XML scan before signing off: check for kasdienii, skaitmeninia, konkreičius/iose, jaurių, elgesy, and accusative forms with dropped stem consonants (e.g., -salą instead of -saką). These are agent-specific failure modes not caught by generic POST-GEN QA.
+- Applies to: lesson-plan-gen (post-gen QA), orchestrator review after agent dispatch
+
 ## 2026-03-25 — Format changes don't fix layout problems
 
 - Problem: Teacher_Plan.docx had messy formatting — half-filled pages, orphaned headers, unclean page breaks. Switched Student_Task and Theory_Pack to PDF output, but the underlying layout issues (content flow, spacing, page break logic) persisted in the new format. The format change cost rework across multiple skills and reference files without solving the root cause.
@@ -169,3 +175,69 @@ Accumulated corrections and rules. NEVER delete entries. Read at session start. 
 - Problem: Completed a TODO item by deleting it from TODO.md. Teacher corrected: completed items must remain visible with a struck-through title and a brief summary of what was done. Deleting entries erases the decision trail and makes it impossible to see what was actually built and when.
 - Rule: When completing a TODO item, wrap the title in `~~strikethrough~~`, append `DONE (YYYY-MM-DD)`, and add 1–3 sentences describing what was done. Never delete TODO entries, even trivial ones. The deletion-vs-marking distinction matters: deletion signals "this was never relevant"; strikethrough signals "this was resolved."
 - Applies to: all session work that involves TODO.md
+
+## 2026-04-01 — Ghost reference to nonexistent spellcheck_lt.py
+
+- Problem: theory-pack-gen Step 6d referenced `python _scripts/spellcheck_lt.py` — a script that was never created. The `_scripts/` directory is permanently banned (2026-03-30 decision). Agents either skipped the step silently or wasted time looking for it.
+- Rule: Do not reference tools, scripts, or files in skill specs unless they actually exist. When adding a tool reference to a skill, verify the tool exists first. If a skill step depends on an external tool that hasn't been built yet, mark it as `[TODO: not yet implemented]` so agents know to skip it rather than fail silently.
+- Applies to: all skill authoring, theory-pack-gen
+
+## 2026-04-02 — lt-mistakes.yaml entries must cover stem patterns, not single inflected forms
+
+- Problem: lt-mistakes.yaml had "jaurių" → "jautrių" (genitive plural) from a 2026-04-01 Teacher_Plan batch fix. But 002 Teacher_Plan contained "jaurūs" (nominative plural) — the same missing-t stem error in a different case form. POST-GEN scan matched literally against the library and didn't catch it because jaurių ≠ jaurūs.
+- Rule: When adding a morphology error to lt-mistakes.yaml that involves a wrong stem (missing consonant, wrong vowel), add at least 2 case forms (nominative + the form that was caught) and include a STEM ERROR note listing the pattern to scan for (e.g., "jaur* without t"). POST-GEN QA should regex-scan for the stem pattern, not just exact string matches.
+- Applies to: lt-mistakes.yaml maintenance, all generation skills POST-GEN QA
+
+## 2026-04-02 â€” Teacher_Plan QA must hard-gate metadata and scope sections
+
+- Problem: The Safety module Teacher_Plan batch shipped widespread language corruption in the exact sections most likely to be skimmed rather than deeply proofread: metadata table, "Temos ribos", and "Pamokos aprasymas (dienynui)". The generic sidecar QA step existed in the skill, but it was instruction-level and too weak to block delivery. The mistake library also lacked many of the actual broken stems from the batch.
+- Rule: lesson-plan-gen must run a hard-gate Teacher_Plan scan after generic POST-GEN QA. The scan must explicitly inspect metadata, "Temos ribos", "Pamokos tikslai", and "Pamokos aprasymas (dienynui)", then block delivery until all known bad stems and dropped-diacritic forms are gone. When QA uncovers new recurring Teacher_Plan stems, add them to _references/lt-mistakes.yaml in the same session.
+- Applies to: lesson-plan-gen, _references/lt-mistakes.yaml maintenance, orchestrator review of generated Teacher_Plans
+
+## 2026-04-02 â€” Theory_Pack must not front-run the next lesson's topic
+
+- Problem: Lesson 002 Theory_Pack added a full phishing glossary row and standalone section even though the current lesson is about passwords, 2FA, and sensitive data, while phishing is the next lesson's core topic. This created a scope contradiction with Teacher_Plan and duplicated future content too early.
+- Rule: If the current lesson uses a neighboring topic only as a boundary example or bridge to the next lesson, Theory_Pack may keep at most a one-sentence forward reference tied to the current objective. Do not add that topic as a term-table entry, standalone section, or self-check focus until its own lesson.
+- Applies to: theory-pack-gen, cross-file coherence review when Teacher_Plan and Theory_Pack scopes are compared
+
+## 2026-04-02 - A-mode Answer_Key must cover every Testmoz pool variant
+
+- Problem: Lesson 007 Answer_Key covered only one variant per Testmoz pool, while Assessment_Task.xlsx contained 28 selectable variants across 10 pools. If Testmoz surfaced variant 2 or 3, the teacher had no keyed answer or grading guidance.
+- Rule: For A lessons that use Testmoz pools, Answer_Key must cover every variant in every pool. Variants may be grouped under one pool heading, but each variant needs its own correct answer or model answer, plus grading notes appropriate to the question type. Never collapse coverage to "representative variant only."
+- Applies to: answer-key-gen, QA of A lesson Answer_Key against Assessment_Task.xlsx
+
+## 2026-04-02 - Student_Task hints must guide evidence, not reveal the answer
+
+- Problem: Lesson 003 Student_Task hint explicitly told students that "2 situacija susijusi su socialine inžinerija", giving away the classification they were meant to infer. Lesson 002 Student_Task header also exposed the internal type label "L pamoka" to students.
+- Rule: In Student_Task documents, hints may direct attention to evidence ("kas siunčia", "ar toks elgesys būdingas"), but must not name the exact threat type, category, or classification the student is supposed to deduce. Student-facing headers must use descriptive Lithuanian labels or no type label at all, never internal repo type codes.
+- Applies to: student-task-gen, QA of student-facing instructional hints and headers
+
+## 2026-04-02 - Visual_Aid must prioritize projection-critical content
+
+- Problem: Safety lessons 003-005 had Teacher_Plan instructions to show phishing signs, an algorithm schema, lecture support, or a worked demo on screen, but the generated Visual_Aid rigidly spent slide 4 on a generic task summary and slide 5 on a term list. The projection file existed, yet it omitted exactly what the teacher was told to display.
+- Rule: If Teacher_Plan explicitly says to show a demo example, sign list, schema, comparison, or worked analysis on screen, visual-aid-gen must prioritize that projection-critical content on slides 4-5 within the 6-slide cap. Generic task summaries yield to what the teacher actually needs projected live.
+- Applies to: visual-aid-gen, QA of Visual_Aid against Teacher_Plan projection instructions
+
+## 2026-04-02 - Testmoz rubrics must not depend on fixed question numbers
+
+- Problem: Lesson 007 Rubric tied topics to question numbers ("1-2 ergonomika", etc.), but Testmoz pools make that mapping structurally fragile. Even if the current order stays stable, the rubric should not assume visible numbering is the pedagogical source of truth.
+- Rule: For Testmoz assessments, Rubric.docx must describe scoring by topic bucket, item type, and point value, not by fixed visible question numbers, unless order has been explicitly verified and locked for that assessment.
+- Applies to: assessment-task-gen, QA of A lesson Rubric against Assessment_Task.xlsx
+
+## 2026-04-02 - Visual_Aid PDF must be verified after render, not only before conversion
+
+- Problem: Safety lesson 003 shipped a `Visual_Aid.pdf` where Lithuanian letters were replaced by `?` across rendered slides. The QA chain focused on source text and pre-PDF checks, so the final PDF artifact was never hard-gated against render corruption.
+- Rule: After converting any Visual_Aid to PDF, verify the final PDF itself: extract its text, scan for `?` inside Lithuanian words, and raster-preview at least the title slide plus one content slide. If the PDF fails, regenerate. Never sign off a PDF based only on the source docx or sidecar text.
+- Applies to: visual-aid-gen, any PDF-only projected deliverable
+
+## 2026-04-02 - Title slides must use deterministic vertical centering
+
+- Problem: Safety module visual aids had inconsistent title-slide alignment because the layout depended on approximate top spacing rather than a deterministic centering container. Different title lengths produced visibly different vertical positions.
+- Rule: Title slides must be built with a full-height centered container, for example a borderless table cell with vertical center alignment. Do not fake centering with hardcoded `spacing.before` guesses.
+- Applies to: visual-aid-gen, visual_aid_format reference, any projected slide layout
+
+## 2026-04-02 - Rubric.docx needs a replacement-character hard gate and real open-check
+
+- Problem: Safety lesson 007 Rubric.docx shipped with `klas?`, `u?daro`, `ta?kai`, `trukm?` style corruption because the assessment pipeline had no explicit replacement-character hard gate and the final rubric was not reopened in Word before sign-off.
+- Rule: For every generated Rubric.docx, scan the sidecar for `\p{L}\?\p{L}` and representative broken forms, then reopen the final document in Word before delivery. If either check fails, regenerate or patch before sign-off.
+- Applies to: assessment-task-gen, QA of generated rubric documents

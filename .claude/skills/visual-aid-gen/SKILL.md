@@ -4,8 +4,8 @@ description: >
   Generate Lithuanian-language Visual_Aid.pdf files for L and I lessons in the
   IT Curriculum repo (PauliusPadrostis/IT_Curriculum). Use this skill whenever the
   teacher asks to create, generate, write, or build a visual aid, projection slides,
-  or vaizdinė medžiaga. Also triggers on: "sugeneruok vizualinę priemonę", "padaryk
-  Visual_Aid", "sukurk vaizdinę medžiagą", "generate visual aid", "create visual aid",
+  or vaizdinÃ„â€” medÃ…Â¾iaga. Also triggers on: "sugeneruok vizualinÃ„â„¢ priemonÃ„â„¢", "padaryk
+  Visual_Aid", "sukurk vaizdinÃ„â„¢ medÃ…Â¾iagÃ„â€¦", "generate visual aid", "create visual aid",
   "make projection slides", "build visual aids for module", or any mention of generating
   Visual_Aid files for lesson folders. This skill handles both single visual aid
   generation and batch generation for entire modules or grades. Only generates for
@@ -42,12 +42,19 @@ The 6 slides map directly to the lesson flow:
 | 1 | Title (module + lesson) | ~30 sec |
 | 2 | Start retrieval questions | ~5 min |
 | 3 | Learning objectives | ~1 min |
-| 4 | Task brief or integration targets | ~1 min |
-| 5 | Key concepts for the task | ~15-20 min |
+| 4 | Task brief or teacher-led visual scaffold | ~1 min |
+| 5 | Key concepts or decision scaffold | ~15-20 min |
 | 6 | End retrieval questions | ~5 min |
 
 Slide 5 stays projected the longest: it remains on screen during independent
-student work so students can reference key terms without asking the teacher.
+student work or during the densest teaching block so students can reference
+key terms, cues, or algorithm steps without asking the teacher.
+
+If the Teacher_Plan explicitly says to show a demo example, schema, warning
+signs, comparison, or worked example on screen, that projection-critical
+content outranks a generic task summary on slides 4-5. Keep the 6-slide
+structure, but use slides 4-5 to surface what the teacher actually needs to
+project live.
 
 ---
 
@@ -87,14 +94,14 @@ These files are the skill's operational backbone. Do not generate without them.
 These conditions abort generation with a Lithuanian-language message:
 
 - **Teacher_Plan.docx must exist.** If missing: "Negalima generuoti Visual_Aid
-  be Teacher_Plan.docx. Pirmiausia sugeneruokite pamokos planą naudodami
+  be Teacher_Plan.docx. Pirmiausia sugeneruokite pamokos planÃ„â€¦ naudodami
   /lesson-plan-gen."
 - **Lesson type must be L or I.** If other type: "Visual_Aid generuojamas tik
-  L ir I pamokoms. Ši pamoka yra {type} tipo."
+  L ir I pamokoms. Ã…Â i pamoka yra {type} tipo."
 - **Both retrieval question phases must exist in the plan.** If missing: "Teacher_Plan
-  neturi {missing section} skyriaus. Patikrinkite planą."
-- **Objectives must exist in the plan.** If missing: "Teacher_Plan neturi tikslų
-  skyriaus. Patikrinkite planą."
+  neturi {missing section} skyriaus. Patikrinkite planÃ„â€¦."
+- **Objectives must exist in the plan.** If missing: "Teacher_Plan neturi tikslÃ…Â³
+  skyriaus. Patikrinkite planÃ„â€¦."
 
 ### When to stop and ask the teacher
 
@@ -115,39 +122,52 @@ exact wording.
 Use the concise form. If the plan lists 5+ objectives, select the top 4
 that are most directly tied to the lesson task.
 
-**Slide 4 (task brief):** Write in neutral/descriptive voice, not teacher-directed
-phrasing from the plan. The Teacher_Plan uses teacher voice ("Mokiniai sukuria...",
-"Paaiškinkite..."), but the visual aid is projected to students.
+**Slide 4 (task brief / visual scaffold):** Write in neutral/descriptive voice,
+not teacher-directed phrasing from the plan. The Teacher_Plan uses teacher voice ("Mokiniai sukuria...",
+"PaaiÃ…Â¡kinkite..."), but the visual aid is projected to students.
 - **L lessons:** 2-4 sentence summary of the hands-on task from the
-  application phase ("Taikymo užduotys" / "Savarankiška užduotis").
+  application phase ("Taikymo uÃ…Â¾duotys" / "SavarankiÃ…Â¡ka uÃ…Â¾duotis").
 - **I lessons:** If the application phase names a concrete deliverable,
   describe that task briefly. If no single deliverable exists (multiple
   activities, discussion-based, scenario analysis), use the format:
-  "Šios pamokos metu sujungsite:" followed by bullet points listing
+  "Ã…Â ios pamokos metu sujungsite:" followed by bullet points listing
   integration targets.
+- **Projection-critical exception:** If the Teacher_Plan explicitly says
+  "Parodykite ... projektoriuje / skaidreje / vizualineje priemoneje",
+  or depends on a visual demo/example/schema/list of warning signs, Slide 4
+  may become that scaffold instead of a generic task summary. Keep it brief:
+  a worked example, a comparison list, or a 3-step analysis frame. If the
+  lesson still has a separate task, end the slide with a 1-sentence task cue.
 
-**Slide 5 (key concepts):** Content priority, in strict order:
-1. Terms/concepts required to complete the task (from Student_Task if available)
-2. Core terms from the teaching phase of Teacher_Plan
-3. Terms from Theory_Pack terminology table (if it exists)
-4. Hard cap: **4 items maximum** (5 items overflow the landscape page at 28pt/48pt)
-5. Each item: **bold term** + colon + one-line definition (~15 words max)
+**Slide 5 (key concepts / decision scaffold):** Content priority, in strict order:
+1. Projection-critical cues from Teacher_Plan that students must keep seeing
+   during the main lecture/work block: phishing signs, algorithm steps,
+   comparison points, worked-analysis frames
+2. Terms/concepts required to complete the task (from Student_Task if available)
+3. Core terms from the teaching phase of Teacher_Plan
+4. Terms from Theory_Pack terminology table (if it exists)
+5. Hard cap: **4 items maximum** (5 items overflow the landscape page at 28pt/48pt)
+6. Each item: **bold term** + colon + one-line definition (~15 words max)
 
 If no Student_Task or Theory_Pack exists, build entirely from the
 Teacher_Plan teaching phase content.
+
+If Slide 5 is built as a decision scaffold rather than a glossary list,
+format each row as a bold cue label plus one-line actionable explanation,
+for example "Skubos spaudimas: tikrinkite, ar zinute vercia veikti tuoj pat."
 
 ---
 
 ## Step 2: Lithuanian QA (PRE-GEN)
 
 **Lithuanian mistake prevention (mandatory):**
-Read `_references/lt-mistakes.yaml` — CRITICAL section only (stop at "FULL LIBRARY" marker).
+Read `_references/lt-mistakes.yaml` Ã¢â‚¬â€ CRITICAL section only (stop at "FULL LIBRARY" marker).
 Keep these patterns in mind while generating. Do not produce any of the listed "wrong" forms.
 
 Hard rules that apply to Visual_Aid content:
 - No em dashes anywhere. Replace with comma, period, colon, or restructure.
-- Straight double quotes "..." only. No Lithuanian „..." required.
-- Formal "jūs" address in any student-facing text.
+- Straight double quotes "..." only. No Lithuanian Ã¢â‚¬Å¾..." required.
+- Formal "jÃ…Â«s" address in any student-facing text.
 - No AI text patterns (formulaic openings, triad structures, hedging).
 
 **Primary risk areas:** slide 5 term definitions (generated text, not
@@ -165,9 +185,9 @@ these sub-steps:
 ### One-page-per-slide rule (CRITICAL)
 
 Every slide's content MUST fit on a single landscape A4 page. Landscape A4
-usable height = 11906 - 2×1134 = 9638 DXA (~16.9 cm). The accent bar
+usable height = 11906 - 2Ãƒâ€”1134 = 9638 DXA (~16.9 cm). The accent bar
 consumes ~680 DXA + 300-400 spacer = ~1080 DXA. That leaves ~8558 DXA
-(~15 cm) for content. At 28pt body text with 1.5× line spacing, each
+(~15 cm) for content. At 28pt body text with 1.5Ãƒâ€” line spacing, each
 line is ~600 DXA. Budget: roughly 14 content lines per slide.
 
 If content overflows, cut items (not font size). Slide 5 is the most
@@ -209,16 +229,16 @@ centered horizontally and vertically.
 
 | Slide | Label | Fill color |
 |-------|-------|------------|
-| 2 | PAMOKOS PRADŽIOS KLAUSIMAI | F57C00 (Retrieval) |
+| 2 | PAMOKOS PRADÃ…Â½IOS KLAUSIMAI | F57C00 (Retrieval) |
 | 3 | PAMOKOS TIKSLAI | 5E35B1 (Objectives) |
-| 4 | UŽDUOTIS | 2E7D32 (Application) |
-| 5 | PAGRINDINĖS SĄVOKOS | 1565C0 (Teaching) |
+| 4 | UÃ…Â½DUOTIS | 2E7D32 (Application) |
+| 5 | PAGRINDINÃ„â€“S SÃ„â€žVOKOS | 1565C0 (Teaching) |
 | 6 | PAMOKOS PABAIGOS KLAUSIMAI | F57C00 (Retrieval) |
 
 ### 3c. Lithuanian text encoding
 
 Write all Lithuanian text as plain UTF-8 in the generation script. Never
-use `\u` unicode escapes for Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž).
+use `\u` unicode escapes for Lithuanian letters (Ã„â€¦, Ã„Â, Ã„â„¢, Ã„â€”, Ã„Â¯, Ã…Â¡, Ã…Â³, Ã…Â«, Ã…Â¾).
 Use straight double quotes "..." only. No escapes needed for quotes.
 
 ### 3d. Em dash post-processing
@@ -243,7 +263,7 @@ lesson folder.
 
 After the .docx file is saved to disk and BEFORE any QA or sidecar steps,
 run this standalone post-processing step. This is NOT part of the generation
-script — it runs on the saved .docx file as a separate operation.
+script Ã¢â‚¬â€ it runs on the saved .docx file as a separate operation.
 
 ```python
 import zipfile, os, shutil, tempfile
@@ -281,23 +301,30 @@ have handled em dashes.
 
 ---
 
-## Step 3f — Cross-file Coherence Check
+## Step 3f Ã¢â‚¬â€ Cross-file Coherence Check
 
 After generating the Visual_Aid.docx and before Lithuanian QA, verify
 alignment between the visual aid content and sibling lesson files.
 
 ### What to check:
 
-1. **Slide 5 terms vs. Theory_Pack.docx (if it exists):**
-   - Every term on slide 5 must appear in the Theory_Pack's terminology
-     table. If a slide 5 term contradicts the Theory_Pack definition →
-     use the Theory_Pack definition (it is the authoritative reference).
-   - If slide 5 uses a term the Theory_Pack doesn't cover → flag it.
+1. **Slide 5 content vs. Theory_Pack.docx and Teacher_Plan.docx:**
+   - If Slide 5 is a terminology slide, every term should appear in the
+     Theory_Pack's terminology table. If a term contradicts the Theory_Pack
+     definition, use the Theory_Pack definition.
+   - If Slide 5 is a decision scaffold (algorithm steps, warning signs,
+     comparison cues), verify every cue is explicitly supported by the
+     Teacher_Plan teaching phase and does not contradict the Theory_Pack.
+   - If Slide 5 introduces a new technical term the Theory_Pack does not
+     cover, flag it.
 
-2. **Slide 4 task brief vs. Student_Task.docx (if it exists):**
-   - The task brief must describe the same activity as the Student_Task.
-     Same scenario name, same deliverable, same tools.
-   - If they diverge → align slide 4 to match the Student_Task.
+2. **Slide 4 content vs. Student_Task.docx and Teacher_Plan.docx (if they exist):**
+   - If Slide 4 is a task brief, it must describe the same activity as the
+     Student_Task. Same scenario name, same deliverable, same tools.
+   - If Slide 4 is a visual scaffold, verify it matches the exact example,
+     schema, sign list, or analysis frame that the Teacher_Plan says to show
+     on screen.
+   - If they diverge, align slide 4 to the lesson's actual projected use.
 
 3. **Slides 2, 6 retrieval questions vs. Teacher_Plan.docx (mandatory):**
    - Already required to be verbatim extractions. This step explicitly
@@ -306,7 +333,8 @@ alignment between the visual aid content and sibling lesson files.
 
 4. **Slide 3 objectives vs. Teacher_Plan.docx:**
    - Objectives must match the plan's objectives section. If the plan
-     was updated after the visual aid was started → use the plan's
+     was updated after the visual aid was started, use the plan's
+     current objectives.
      current objectives.
 
 ### On mismatch:
@@ -344,7 +372,7 @@ After generating the .docx and writing the sidecar, perform a structured review:
 4. **Em dash scan:** Search for any em dash in the entire document.
    Zero tolerance. Replace every instance.
 5. **Quote format check:** Verify all quotation marks use straight double
-   quotes "..." only. No Lithuanian „...", no guillemets.
+   quotes "..." only. No Lithuanian Ã¢â‚¬Å¾...", no guillemets.
 6. **Fix and regenerate** if any issues are found. Do not present a
    document with known errors.
 
@@ -401,10 +429,10 @@ When the teacher requests visual aids for a module or multiple lessons:
 7. **Report a summary table** after completion:
 
 ```
-| Pamoka | Būsena | Pastaba |
+| Pamoka | BÃ…Â«sena | Pastaba |
 |--------|--------|---------|
 | 001_L - ... | Sukurta | - |
-| 002_L - ... | Praleista | Nėra Teacher_Plan.docx |
+| 002_L - ... | Praleista | NÃ„â€”ra Teacher_Plan.docx |
 | 003_I - ... | Sukurta | Be Theory_Pack |
 ```
 

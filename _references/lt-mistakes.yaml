@@ -230,6 +230,42 @@
   source: "auto-detected"
   date: "2026-03-30"
 
+# ── Topic-specific inflection errors (Teacher_Plan batch, 2026-04-01) ───────
+- wrong: "kasdienii"
+  correct: "kasdieniai"
+  category: morphology
+  note: "Wrong masc. pl. nominative. kasdieniai (everyday) — adj. nominative plural"
+  source: "user-flagged"
+  date: "2026-04-01"
+
+- wrong: "skaitmeninia"
+  correct: "skaitmeniniai"
+  category: morphology
+  note: "Wrong masc. pl. nominative. skaitmeniniai (digital) — adj. nominative plural"
+  source: "user-flagged"
+  date: "2026-04-01"
+
+- wrong: "jaurių"
+  correct: "jautrių"
+  category: morphology
+  note: "Non-existent word. jautrus (sensitive) genitive plural = jautrių. STEM ERROR: scan all forms of jaur* without t (jaurūs, jauraus, jauriam, jaurų, etc.) — the missing t affects every case form."
+  source: "user-flagged"
+  date: "2026-04-01"
+
+- wrong: "jaurūs"
+  correct: "jautrūs"
+  category: morphology
+  note: "Non-existent word. jautrus (sensitive) nom. plural = jautrūs. Same stem error as jaurių — missing t before r."
+  source: "cross-doc-qa"
+  date: "2026-04-02"
+
+- wrong: "pėdsalą"
+  correct: "pėdsaką"
+  category: morphology
+  note: "Stem error in accusative. pėdsakas (footprint) accusative = pėdsaką"
+  source: "user-flagged"
+  date: "2026-04-01"
+
 # ── Adjective-noun case agreement ────────────────────────────
 - wrong: "Apgaulingą žinutė"
   correct: "Apgaulinga žinutė"
@@ -252,3 +288,255 @@
   note: "Hallucinated conditional. suprasti → suprastų, not suprasėtų."
   source: "module-qa"
   date: "2026-03-31"
+
+- wrong: "si pamoka"
+  correct: "ši pamoka"
+  category: spelling
+  note: "Dropped š in Teacher_Plan metadata/scope prose. Check similar section-openers like 'šiame'."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "siame"
+  correct: "šiame"
+  category: spelling
+  note: "Dropped š in locative pronoun. Common in Teacher_Plan metadata strings."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "maždąug"
+  correct: "maždaug"
+  category: spelling
+  note: "Wrong nosinė in frequency/quantity wording."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "sekundių"
+  correct: "sekundžių"
+  category: morphology
+  note: "Genitive plural of sekundė uses dž, not dz."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "slaptažodių"
+  correct: "slaptažodžių"
+  category: morphology
+  note: "Genitive plural of slaptažodis keeps dž."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "konkreičias"
+  correct: "konkrečias"
+  category: morphology
+  note: "Spurious i in adjective stem before -čias."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "konkreišios"
+  correct: "konkrečios"
+  category: morphology
+  note: "Teacher_Plan batch corruption of konkrečios."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "pažistos"
+  correct: "pažeistos"
+  category: morphology
+  note: "Dropped e in pažeisti participle family."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "sukiai"
+  correct: "sukčiai"
+  category: morphology
+  note: "Missing č in sukčius stem. STEM ERROR: scan for suk- forms where the intended stem is sukč-."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "sukius"
+  correct: "sukčius"
+  category: morphology
+  note: "Missing č in sukčius family. STEM ERROR: scan for suk- forms where the intended stem is sukč-."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "sukiavimas"
+  correct: "sukčiavimas"
+  category: morphology
+  note: "Missing č in sukčiavimas."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "siųnėjas"
+  correct: "siuntėjas"
+  category: morphology
+  note: "Wrong stem in siuntėjas."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "veikslą"
+  correct: "veiksmą"
+  category: morphology
+  note: "Dropped m in veiksmas stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "veiktumetė"
+  correct: "veiktumėte"
+  category: morphology
+  note: "Wrong conditional ending."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "ketėnimų"
+  correct: "ketinimų"
+  category: morphology
+  note: "Spurious ė in ketinimas stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "tyia"
+  correct: "tyčia"
+  category: spelling
+  note: "Missing č in tyčia."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "šaltiniį"
+  correct: "šaltinį"
+  category: morphology
+  note: "Double-vowel corruption in accusative singular."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "atsiųia"
+  correct: "atsiunčia"
+  category: morphology
+  note: "Wrong present tense stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "atsiųntė"
+  correct: "atsiuntė"
+  category: morphology
+  note: "Wrong past tense stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "draugasė"
+  correct: "draugė"
+  category: morphology
+  note: "Nonexistent feminine noun form."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "melaidingą"
+  correct: "melagingą"
+  category: morphology
+  note: "Hallucinated adjective stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "priekabiąvimo"
+  correct: "priekabiavimo"
+  category: morphology
+  note: "Wrong nosinė in priekabiavimas family."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "suaugusen"
+  correct: "suaugusiajam"
+  category: morphology
+  note: "Hallucinated dative-like form in classroom guidance."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "skiriamūsios"
+  correct: "skiriamosios"
+  category: morphology
+  note: "Wrong long-vowel form in adjective."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "įrenginų"
+  correct: "įrenginių"
+  category: morphology
+  note: "Dropped i in genitive plural of įrenginys."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "didiausią"
+  correct: "didžiausią"
+  category: morphology
+  note: "Dropped ž in didžiausias stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "siuciamas"
+  correct: "siunčiamas"
+  category: morphology
+  note: "Wrong present passive stem of siųsti."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "nelegaliųs"
+  correct: "nelegalius"
+  category: morphology
+  note: "Wrong ending in accusative plural adjective."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "sąvartynųs"
+  correct: "sąvartynus"
+  category: morphology
+  note: "Wrong ending in accusative plural noun."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "imsėsi"
+  correct: "imsis"
+  category: morphology
+  note: "Future tense corruption of imtis."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "imsėsitės"
+  correct: "imsitės"
+  category: morphology
+  note: "Future 2nd person plural corruption of imtis."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "abstrakius"
+  correct: "abstrakčius"
+  category: morphology
+  note: "Dropped č in adjective stem."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "infrastruktura"
+  correct: "infrastruktūra"
+  category: spelling
+  note: "Missing ū in infrastruktūra."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "skaiciavimo"
+  correct: "skaičiavimo"
+  category: spelling
+  note: "Missing č in skaičiavimas family."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "šiukšliadežę"
+  correct: "šiukšliadėžę"
+  category: spelling
+  note: "Missing ė in šiukšliadėžė."
+  source: "qa-remediation"
+  date: "2026-04-02"
+
+- wrong: "dirvožiį"
+  correct: "dirvožemį"
+  category: morphology
+  note: "Corrupted accusative of dirvožemis."
+  source: "qa-remediation"
+  date: "2026-04-02"

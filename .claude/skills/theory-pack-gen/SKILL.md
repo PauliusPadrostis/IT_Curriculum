@@ -163,6 +163,10 @@ Theory_Pack never covers.
    - Verify the plan's scope aligns with the theory pack's scope. If the
      plan covers less than the theory pack → the extra content should be
      in "Ar žinojote?" boxes, not main text.
+   - If the plan explicitly defers a neighboring topic to the next lesson
+     (for example phishing in a privacy lesson), do not add that topic as
+     a term-table row or standalone section. At most, keep a one-sentence
+     bridge note tied to the current lesson's actual objective.
 
 3. **Visual_Aid.pdf (if it exists on disk):**
    - Slide 5 key concepts should match theory pack terms. Flag mismatches.
@@ -210,6 +214,14 @@ Read the sidecar `_text.txt` file. Scan its content against the FULL `_reference
 - Register consistency (formal "jūs" throughout, no "tu" slips)
 - AI text patterns (formulaic openings, triad structures, transition stuffing)
 Fix any matches found, then update the sidecar.
+
+**Source-traceability verification (mandatory):**
+For every statistic, percentage, count, date-based trend, or named report in
+main text, info boxes, and "Šaltiniai":
+- verify that an exact public source exists,
+- make sure the source list contains that exact publication title, year, and URL,
+- if the claim is only loosely supported, rewrite it qualitatively instead of
+  keeping fake precision.
 
 This adds mistake library scan, AI pattern elimination, audience calibration,
 and VLKK terminology enforcement on top of the quality_checklist.md checks.
@@ -337,6 +349,22 @@ This step is SEPARATE from the noEmDash helper in the generation script.
 Both layers must exist. This step must run even if the generation script claims to
 have handled em dashes.
 
+### 6b-iii. Mechanical Quote Normalization (mandatory)
+
+After the .docx file is saved, normalize curly quotation marks to straight
+double quotes across `word/document.xml`:
+
+```python
+def normalize_quotes_in_docx_bytes(data):
+    return (data
+        .replace('\u201e'.encode('utf-8'), '"'.encode('utf-8'))
+        .replace('\u201c'.encode('utf-8'), '"'.encode('utf-8'))
+        .replace('\u201d'.encode('utf-8'), '"'.encode('utf-8')))
+```
+
+Run this in the same saved-file post-processing stage as the em dash strip.
+Prompt-only quote rules are not reliable enough.
+
 ### 6c. Page breaks
 
 Use `keepNext: true` and `keepLines: true` on all H1 and H3 paragraphs to
@@ -348,21 +376,20 @@ content will land on the page. Explicit page breaks almost always create
 large empty gaps (30–50% of a page). Let Word's layout engine handle
 pagination naturally via keepNext/keepLines.
 
-### 6d. Post-generation spell-check
+### 6d. Post-generation phantom vowel scan
 
-After generating the .docx, run the Lithuanian spell-checker:
+After generating the .docx, scan the document XML for phantom vowel patterns
+(uų, aą, eę) that indicate hallucinated declension endings. These are the
+most common mechanical errors and can be caught with a simple regex:
 
-```bash
-python _scripts/spellcheck_lt.py <output.docx>
+```python
+import re
+# Flag any: uų, aą, eę, iį sequences (phantom double-vowel endings)
+phantoms = re.findall(r'[uųaąeęiį]{2,}', text)
 ```
 
-This catches phantom vowels (uų, aą patterns) and known diacritical errors.
-Fix any reported issues before delivering to teacher.
-
-Note: the checker catches ~50% of error categories (phantom vowels + known
-diacritical errors). The remaining categories (wrong stem vowels, dropped
+Fix any matches. The remaining error categories (wrong stem vowels, dropped
 consonants, hallucinated verb forms) require Step 5c web verification.
-Both safeguards are needed together.
 
 ### File naming
 
@@ -384,7 +411,7 @@ Always use the canonical name. Do not prefix with lesson codes or titles
 - Do separate terminology + grammar QA passes
 - Align self-check questions to achievement levels
 - Flag uncertain translations
-- Run spell-checker after generation
+- Run phantom vowel scan after generation
 
 ### MUST NOT do
 

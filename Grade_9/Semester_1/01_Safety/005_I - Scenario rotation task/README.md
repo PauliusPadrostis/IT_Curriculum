@@ -7,7 +7,7 @@
 | **Semestras**   | 1                                                 |
 | **Tema**        | Sauga                                             |
 | **Eilės nr.**   | 005 iš metų sekos                                 |
-| **Būsena**      | 📋 Šablonas                                        |
+| **Būsena**      | ✅ Failai sukurti                                   |
 
 ---
 
@@ -94,9 +94,9 @@ Nėra.
 
 | Failas               | Būsena | Patikrinta | Pastaba                                  |
 |----------------------|--------|------------|------------------------------------------|
-| Teacher_Plan.docx    | ❌     | ❌         | Privalomas                               |
-| Student_Task.docx    | ❌     | ❌         | Scenarijų kortelės ir sprendimų lapas    |
-| Visual_Aid.pdf       | ❌     | ❌         | 6 skaidrės (privalomas I tipo pamokoms)  |
+| Teacher_Plan.docx    | ✅     | ❌         | Privalomas                               |
+| Student_Task.docx    | ✅     | ❌         | Scenarijų kortelės ir sprendimų lapas    |
+| Visual_Aid.pdf       | ✅     | ❌         | 6 skaidrės (privalomas I tipo pamokoms)  |
 
 ---
 

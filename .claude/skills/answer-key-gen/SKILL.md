@@ -97,12 +97,12 @@ Source from these: learning objectives, key concepts, common mistakes (for expla
 ## Step 2 — Extract Questions
 
 Parse the source file question by question:
-- For .xlsx (Testmoz): read pools, extract one representative question per pool (first variant). The answer key covers the question concept, not each individual variant.
+- For .xlsx (Testmoz): read pools and extract **every variant in every pool**. In A mode, the answer key must cover all variants that Testmoz can surface, not just one representative question per pool.
 - For .pdf: extract questions in order.
 
 Build a question inventory:
 
-| # | Question text (summary) | Type | Points | Competency Level |
+| Pool / Variant | Question text (summary) | Type | Points | Competency Level |
 |---|------------------------|------|--------|-----------------|
 
 ---
@@ -139,6 +139,20 @@ For each question, apply `marking_scheme_guide.md` rules:
 
 Source explanations from L/I Teacher_Plans (common mistakes → reject list) and Theory_Packs (content details → alternative phrasings).
 
+### Variant coverage rule for Testmoz assessments
+
+When the source is `Assessment_Task.xlsx`, treat each pool variant as a real,
+gradeable question:
+
+- **A mode:** include an answer entry for every variant. You may group them under
+  one numbered pool heading, but each variant must be clearly labeled
+  ("1 klausimas, 2 variantas", etc.) with its own correct answer or model answer.
+- MCQ variants need their own correct option and distractor reasoning.
+- Open/scenario variants need their own model answer, acceptable alternatives,
+  and rejection notes.
+- Never collapse a pool into "same concept as variant 1" or "applies analogously."
+  The teacher needs grading guidance for the exact variant Testmoz selects.
+
 ### P mode (Study Key)
 
 For each question:
@@ -174,7 +188,7 @@ Tone: teaching, not judging. Formal "jūs". No point values or grading language.
 
 | Check | Rule |
 |-------|------|
-| **Coverage** | Every question/task in the source file has a matching answer key entry |
+| **Coverage** | Every question/task variant in the source file has a matching answer key entry |
 | **Point alignment** | Point values in key match Rubric exactly (A mode only) |
 | **No extras** | No answers for questions that don't exist in the source |
 | **Content grounding** | Explanations reference content actually taught in L/I lessons |
