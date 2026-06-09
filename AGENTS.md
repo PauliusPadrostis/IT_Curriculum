@@ -15,7 +15,7 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 
 ## Content Generation Rules
 
-- Output formats: Teacher_Plan → .docx. Student_Task → .docx. Theory_Pack → .docx. Practice_Task → .docx. Answer_Key → .docx. Rubric → .docx. Visual_Aid → .pdf. Assessment_Task → .xlsx. README → .md.
+- Output formats: Teacher_Plan → .docx. Student_Task → .docx. Theory_Pack → .docx. Practice_Task → .docx. Answer_Key → .docx. Rubric → .docx. Visual_Aid → .html. Assessment_Task → .xlsx. README → .md.
 - Approved software ONLY: Code::Blocks, Excel, Word, Inkscape, Canva, Google Classroom, Testmoz.
 - No phones. No Python. C++ only for programming.
 - No paper/notebooks — students don't carry them.
@@ -97,8 +97,8 @@ The `Patikrinta` column in the Reikalingi failai table is teacher-only. Never fl
 - C++ only for programming (no Python, no JavaScript for teaching)
 - 1–10 grading scale (1 = no work, 2 = everything bad, 3–10 proportional)
 - No student PII in repo (BDAR/GDPR)
-- All document outputs as DOCX except Visual_Aid (PDF) and Assessment_Task (XLSX)
-- Teacher can manually edit any DOCX; Visual_Aid stays PDF (projection-only, no manual edits needed)
+- All document outputs as DOCX except Visual_Aid (HTML) and Assessment_Task (XLSX)
+- Teacher can manually edit any DOCX; Visual_Aid is HTML (browser/projection, no manual edits needed)
 - Em dash banned in all generated text
 - Skills handle their own formatting specs — AGENTS.md does not duplicate them
 - Būsena chain with manual check gate (see above)
