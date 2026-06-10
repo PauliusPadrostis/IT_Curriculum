@@ -131,3 +131,20 @@ don't carry them. Lesson-plan timing estimates sum to **≤37 min**.
   patenkinamas / ~30% pagrindinis / ~20% aukštesnysis). Both are intentional; keep them distinct.
 - answer-key-gen's POST-GEN historically read a `_text.txt` sidecar it never wrote — once merged
   into assessment-task-gen (which does write sidecars), this resolves. See `project-spec/grading.md`.
+
+---
+
+## 9. Session interface
+
+The fixed contract the session skills (`/end-session`, the SessionStart brief) read. Same schema in
+every project; only the values differ.
+
+- **todo_file:** `TODO.md` — the project's running to-do at the repo root. When the teacher says
+  "add X to the to-do", append `- [ ] X` here. `/end-session` may also propose items here.
+- **decision_homes** — where `/end-session` files each confirmed decision:
+  - language → `~/.claude/skills/_shared/lt-rulebook.md` (folded in by lt-qa)
+  - pedagogy → `~/.claude/skills/_shared/pedagogy-standards.md`
+  - render / grading → `.claude/project-spec/render-docx.md` / `project-spec/grading.md`
+  - project rule → `.claude/project-spec.md` or `CLAUDE.md` (+ `AGENTS.md` mirror)
+  - skill behavior → the owning skill's `SKILL.md`
+  - teacher preference (cross-project) → user auto-memory
