@@ -85,6 +85,28 @@ still opens cleanly. Do not present a rubric that passes the sidecar but fails i
 `keepLines: true` on all H1/H3 paragraphs (no orphaned headings) and `cantSplit: true` on info-box
 and term-table rows.
 
+## Paragraph spacing & box styling (teacher-approved)
+Exact TWIPs values extracted from the teacher's manually fixed exemplar `.docx` files. Use these
+verbatim — do not round or re-estimate.
+
+**Theory_Pack spacing:** H1 `before=360`, `after=160`; body `after=100`.
+
+**Student_Task spacing:** H2 `before=300`, `after=120`.
+
+**Student_Task step / hint / checklist styling:**
+- Step headings: `spacing.before: 360`.
+- Hints (Užuomina): color `#808080` grey, `spacing.before: 120`.
+- Success checks (✓): color `#2E7D32` green, `spacing.before: 120`.
+- All checklist items except the last: `keepNext: true`.
+
+**Teacher_Plan warning box & diary label:**
+- "Dažna klaida" warning-box paragraphs: `spacing.before: 200` (not 80 — `before: 80` collapses
+  with the preceding paragraph's `after: 80`, leaving no visible gap).
+- "Pamokos aprašymas (dienynui)" diary label paragraph: `keepNext: true` (plus the horizontal rule
+  above it) so the label cannot split from its content across pages.
+
+After a structural change, regenerate the file from source; never patch the generated .docx in place.
+
 ## QA sidecar (mandatory — also trips the lt-mistakes hook)
 Before the grammar QA pass, write all Lithuanian text to a plain-UTF-8 sidecar named
 `<Artifact>_text.txt` (e.g. `Theory_Pack_text.txt`, `Student_Task_text.txt`, `Rubric_text.txt`,

@@ -72,9 +72,9 @@ Grade_XX/ Semester_X/ Module_Name/
   > **Fix during rework:** student-task-gen previously named this file `informatika.docx` — that is
   > wrong; the real file is `_references/informatika_programa.md`. The reworked skills must use the
   > correct path.
-- **Accumulated corrections (mandatory):** read **`tasks/lessons.md`** at start and follow every
-  rule in it. Other `tasks/` files: `status.md` (rolling snapshot, written by end-session),
-  `decisions.md` (append-only), `todo.md` (ephemeral). Do not hand-edit `status.md`/`decisions.md`.
+- **Accumulated corrections:** these now live in their canonical homes — language rules in
+  `~/.claude/skills/_shared/lt-rulebook.md` (folded in by lt-qa), render/grading rules in this
+  spec's `project-spec/` files, pedagogy in `~/.claude/skills/_shared/pedagogy-standards.md`.
 
 ---
 
@@ -111,7 +111,7 @@ don't carry them. Lesson-plan timing estimates sum to **≤37 min**.
   (em dash banned; straight double quotes only; no AI text patterns; VLKK baseline). PRE-GEN load
   `~/.claude/skills/_shared/lt-mistakes.yaml` (CRITICAL rules); POST-GEN scan a `*_text.txt` sidecar
   against the full rulebook + RESIDUAL, fix, delete sidecar, and **end the turn with the
-  `lt-mistakes updated:` marker** (Stop hook enforces it). Also follow `tasks/lessons.md`.
+  `lt-mistakes updated:` marker** (Stop hook enforces it).
 - **Pedagogy:** apply `~/.claude/skills/_shared/pedagogy-standards.md` (S1–S5).
 - **No repo naming in content (HARD):** never put lesson codes (`001_L`, `007_A`), file-category
   names (`Theory_Pack`, `Student_Task`), or type codes (`P`, `L tipas`) in student-/teacher-facing

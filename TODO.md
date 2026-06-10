@@ -237,7 +237,7 @@ Pridėti cross-file coherence check žingsniai 5 skill'ams:
 **Veiksmas:**
 1. end-session skill: kryžmiškai tikrinti pamokos failus diske pagal `file_requirements.md`, ne pagal README lentelę
 2. Jei trūksta privalomo failo — nustatyti Būseną į 🚧 WIP nepriklausomai nuo README teiginio
-3. Kai sprendimas prideda naujus privalomus failus — pridėti follow-up užduotį į tasks/todo.md su paveiktų pamokų sąrašu
+3. Kai sprendimas prideda naujus privalomus failus — įtraukti follow-up užduotį į sesijos planą su paveiktų pamokų sąrašu
 
 **Įgyvendinta:**
 - Step 0: pridėtas `file_requirements.md` skaitymas

@@ -6,7 +6,7 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 
 ## Workflow
 
-1. **Plan before generating.** For any task touching 2+ files or lessons, write the plan to tasks/todo.md first. Get confirmation before executing.
+1. **Plan before generating.** For any task touching 2+ files or lessons, plan first and get confirmation before executing.
 2. **One task per session.** Don't mix grading with content generation with skill editing. Start fresh sessions for different task types. If you find that you need to mix tasks, warn the user.
 3. **Verify before done.** Open generated .docx/.pdf files and confirm they render. Compile .cpp files. Never mark complete without proof.
 4. **Include the artifact.** When the teacher references work from another AI or a prior session, ask for the actual file or paste — don't reconstruct from description.
@@ -35,16 +35,13 @@ All student-facing content in Lithuanian. Respond to the teacher in whatever lan
 
 ## Mistakes Log — Self-Improvement
 
-When the teacher corrects anything — structure, content, language, pedagogy — add a rule to tasks/lessons.md that prevents recurrence. Format:
+When the teacher corrects anything, file the rule into its canonical home so it persists and is applied next run:
+- **Language** → the lt-qa rulebook (`~/.claude/skills/_shared/lt-mistakes.yaml`), folded in automatically by lt-qa.
+- **Pedagogy** → `~/.claude/skills/_shared/pedagogy-standards.md`.
+- **Render / grading / project rules** → this repo's `.claude/project-spec.md` (+ `project-spec/`).
+- **A skill's behavior** → the owning skill's `SKILL.md`.
 
-```
-## YYYY-MM-DD — Short title
-- Problem: what went wrong
-- Rule: what to do instead
-- Applies to: which skill or task type
-```
-
-Read tasks/lessons.md at session start. Follow every rule in it.
+The `/end-session` skill proposes these on confirmation and files them into the homes above. There is no separate corrections file; the skills read these homes on every run.
 
 ## Repo Structure
 
@@ -61,23 +58,15 @@ Grade_XX/
         *.cpp (scaffolds, solutions)
 _references/
   informatika_programa.md        (national curriculum reference)
-tasks/
-  status.md                      (rolling repo snapshot — rewritten by /end-session)
-  decisions.md                   (append-only decision log)
-  lessons.md                     (accumulated corrections — NEVER delete entries)
-  todo.md                        (ephemeral session plan — cleared per session)
 ```
 
 ## Persistent Context
 
-Tracking files live in `tasks/` within this repo:
-- `tasks/status.md` (rolling snapshot of repo state, rewritten by `/end-session` skill)
-- `tasks/decisions.md` (locked — append only, never edit existing entries)
-- `tasks/lessons.md` (accumulated corrections — never delete entries)
-- `tasks/todo.md` (ephemeral session plan — cleared per session)
-
-On session start, read `tasks/status.md`, `tasks/decisions.md`, and `tasks/lessons.md`.
-On session end, run `/end-session` skill. Do NOT manually update status.md or decisions.md — the skill handles reconciliation, prompts for decisions/lessons confirmation, and rewrites status.md as a rolling snapshot.
+Project rules and decisions live in their canonical homes, not a separate tracking file: this repo's
+`CLAUDE.md` + `.claude/project-spec.md` (+ `project-spec/`), the global `~/.claude/skills/_shared/`
+rules, and the user auto-memory. On session end, run the `/end-session` skill — it traces what
+changed, proposes any new decisions/rules for confirmation, files them into those canonical homes,
+and (if the repo has a remote) commits + pushes.
 
 ## Lesson Būsena Chain
 
@@ -110,3 +99,6 @@ The `Patikrinta` column in the Reikalingi failai table is teacher-only. Never fl
 - Don't generate batch content without reading module README first for sequence context.
 - Don't commit format decisions (docx vs pdf, rubric structure) without asking — these have been changed before and the rework is expensive.
 - Don't build infrastructure (frameworks, hooks, governance systems) when content is missing. Content first.
+- Don't delete files the teacher didn't explicitly ask to delete.
+- Don't leave ghost references to tools, skills, or files that no longer exist.
+- Don't add scripts, `package.json`, or a `_scripts/` folder to the repo (it's a content repo, not a code project).

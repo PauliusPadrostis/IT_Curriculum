@@ -85,7 +85,7 @@
 
 - **Algorithm notation:** SUSTOTI → PATIKRINTI → PRANEŠTI. Use this exact Lithuanian form in all files (003_L Theory_Pack, Student_Task, Visual_Aid, Teacher_Plan; 005_I; 006_P; 007_A).
 - **Grading scale:** 1-10. Assessment_Task.xlsx scoring must map to this.
-- **No statistics without verifiable source** (lessons.md rule 2026-04-01): 004_L Theory_Pack must not cite unverifiable environmental statistics. Use "vis daugiau" qualitative claims if exact figures are unavailable.
+- **No statistics without verifiable source** (pedagogy-standards S5): 004_L Theory_Pack must not cite unverifiable environmental statistics. Use "vis daugiau" qualitative claims if exact figures are unavailable.
 - **Phishing email example (003_L):** Teacher-created asset. Visual_Aid.pdf for 003_L should include a stylized phishing email diagram with 5 labeled signs -- do not leave this to Teacher_Plan description alone.
 
 ---
